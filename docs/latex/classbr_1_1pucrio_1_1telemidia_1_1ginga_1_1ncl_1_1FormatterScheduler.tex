@@ -1,0 +1,152 @@
+\section{FormatterScheduler Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler}\index{br::pucrio::telemidia::ginga::ncl::FormatterScheduler@{br::pucrio::telemidia::ginga::ncl::FormatterScheduler}}
+Inheritance diagram for FormatterScheduler:Collaboration diagram for FormatterScheduler:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterScheduler} (PlayerAdapterManager $\ast${\bf playerManager}, RuleAdapter $\ast${\bf ruleAdapter}, IFormatterMultiDevice $\ast$multiDevice, void $\ast${\bf compiler})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_c7fba821a3a680c50462d5061697297a}
+
+\item 
+void \textbf{stopListening} (void $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_30fe02416806f60f10cfcc8e42cbefb3}
+
+\item 
+bool \textbf{setKeyHandler} (bool isHandler)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_0e3bb20e5956653c0c0b112fb3b66a54}
+
+\item 
+void \textbf{setStandByState} (bool standBy)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_ec91d5450ec8c5bd48870cb2e1f5596f}
+
+\item 
+FormatterFocusManager $\ast$ \textbf{getFocusManager} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_a5721535660122566c1451dad207a84d}
+
+\item 
+FormatterLayout $\ast$ \textbf{getFormatterLayout} (CascadingDescriptor $\ast$descriptor)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_6f82c59cdc5f61ce5ede0e43df99e29b}
+
+\item 
+void \textbf{runAction} (void $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_6007065b1cfc53c07ceedd9c414c67b4}
+
+\item 
+void \textbf{startEvent} (FormatterEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_9fad3d7096a88aa37d86ad1833920741}
+
+\item 
+void \textbf{stopEvent} (FormatterEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_2ea5a8b6d0184d2b7f5fb6149de8de06}
+
+\item 
+void \textbf{pauseEvent} (FormatterEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_d7e6c45d21b53a7f50b177f141874d26}
+
+\item 
+void \textbf{resumeEvent} (FormatterEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_5bd8af7291f1978754c40944c7d5059e}
+
+\item 
+void \textbf{startDocument} (FormatterEvent $\ast$documentEvent, vector$<$ FormatterEvent $\ast$ $>$ $\ast$entryEvents)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_ae24d63a3d9926c6196e4441f08866c1}
+
+\item 
+void \textbf{stopDocument} (FormatterEvent $\ast$documentEvent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_830828333e3772d94169698b9908d470}
+
+\item 
+void \textbf{pauseDocument} (FormatterEvent $\ast$documentEvent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_e27cfdc1d4c312eeffbbc93830922139}
+
+\item 
+void \textbf{resumeDocument} (FormatterEvent $\ast$documentEvent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_7bf5f19558a490261d6192f3519f2002}
+
+\item 
+void \textbf{stopAllDocuments} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_9e953d5d6d4127f31ac9f1f94c6e8718}
+
+\item 
+void \textbf{pauseAllDocuments} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_c44094f08e7963fdbc0ac7d9af4bab70}
+
+\item 
+void \textbf{resumeAllDocuments} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_6f35a7d1116ac7833ff1b0fce6441791}
+
+\item 
+void \textbf{eventStateChanged} (void $\ast$someEvent, short transition, short previousState)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_e3c1ec29e93bffe641750e6209a8b2b8}
+
+\item 
+short \textbf{getPriorityType} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_ae7d2f7d0ac4466813deee19bbea7ebe}
+
+\item 
+void \textbf{addSchedulerListener} ({\bf IFormatterSchedulerListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_28f74053852556d44977be918461c194}
+
+\item 
+void \textbf{removeSchedulerListener} ({\bf IFormatterSchedulerListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_e99d0f7c4fdc6aaadfa655ee653a6a06}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool \textbf{isDocumentRunning} (FormatterEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_b3e80e645a2f5fd55a236dde15fe72b2}
+
+\item 
+void \textbf{setTimeBaseObject} (ExecutionObject $\ast$object, FormatterPlayerAdapter $\ast$objectPlayer, string nodeId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_9d82013652bc0adefd6cd3d0c2e555b3}
+
+\item 
+void \textbf{runAction} (FormatterEvent $\ast$event, void $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_690bb2112bf373011dba3974a4e2b637}
+
+\item 
+void \textbf{runActionOverProperty} (FormatterEvent $\ast$event, LinkSimpleAction $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_b29871da156a6dfc20d51628120b6ff0}
+
+\item 
+void \textbf{runActionOverApplicationObject} (ApplicationExecutionObject $\ast$executionObject, FormatterEvent $\ast$event, FormatterPlayerAdapter $\ast$player, LinkSimpleAction $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_b3a5fbe30042040c16c493342667824a}
+
+\item 
+void \textbf{runActionOverComposition} (CompositeExecutionObject $\ast$compositeObject, LinkSimpleAction $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_bb4be79487e23f3eca7260e346b9a859}
+
+\item 
+void \textbf{runActionOverSwitch} (ExecutionObjectSwitch $\ast$switchObject, SwitchEvent $\ast$event, LinkSimpleAction $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_0295a56fe0e8ea4f5034fda56540439a}
+
+\item 
+void \textbf{runSwitchEvent} (ExecutionObjectSwitch $\ast$switchObject, SwitchEvent $\ast$switchEvent, ExecutionObject $\ast$selectedObject, LinkSimpleAction $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_c573e1e83f74fc1db7659c1fc28d0f50}
+
+\item 
+string \textbf{solveImplicitRefAssessment} (string propValue, LinkAssignmentAction $\ast$action, AttributionEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_9a6d1cf6b5dd4d68d30e9b2df901d597}
+
+\item 
+void \textbf{initializeDefaultSettings} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_a04cf268fa4a284bc6c827f3886896a2}
+
+\item 
+void \textbf{initializeDocumentSettings} (Node $\ast$node)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_2950eaaa76f2bce16c9917d38d10bd61}
+
+\item 
+void \textbf{removeDocument} (FormatterEvent $\ast$documentEvent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_81a30c280aac17c437d9d6211f93984d}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+RuleAdapter $\ast$ {\bf ruleAdapter}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_50d33e558d7649f9855c50bfdafee9ff}
+
+\item 
+PlayerAdapterManager $\ast$ {\bf playerManager}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_4df40f950b752188368d90063891852c}
+
+\item 
+IFormatterMultiDevice $\ast$ {\bf layoutManager}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_d3c4e0d9d17e334f8c167d3c01b3189d}
+
+\item 
+FormatterFocusManager $\ast$ {\bf focusManager}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_a41997690dc7b9096171a259c924e3ba}
+
+\item 
+void $\ast$ {\bf compiler}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_d6d3abac4b9a7f680d64030e2a14731b}
+
+\item 
+vector$<$ {\bf IFormatterSchedulerListener} $\ast$ $>$ $\ast$ {\bf schedulerListeners}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_86041f459908508c828169bcdb410acc}
+
+\item 
+vector$<$ FormatterEvent $\ast$ $>$ $\ast$ {\bf documentEvents}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_b4d68f61ec58c904bb569b621c60f134}
+
+\item 
+map$<$ FormatterEvent $\ast$, bool $>$ $\ast$ {\bf documentStatus}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_c7d4f65c3792da8ebed796aa5de1c367}
+
+\item 
+set$<$ string $>$ {\bf typeSet}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterScheduler_145b3afaa194308141d367cc1393d565}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 130 of file FormatterScheduler.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/FormatterScheduler.h\end{CompactItemize}

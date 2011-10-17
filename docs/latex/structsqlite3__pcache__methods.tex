@@ -1,0 +1,50 @@
+\section{sqlite3\_\-pcache\_\-methods Struct Reference}
+\label{structsqlite3__pcache__methods}\index{sqlite3_pcache_methods@{sqlite3\_\-pcache\_\-methods}}
+Collaboration diagram for sqlite3\_\-pcache\_\-methods:\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+void $\ast$ {\bf pArg}\label{structsqlite3__pcache__methods_5a7d47e76f80bf2a08cba5fe83b61d2a}
+
+\item 
+int($\ast$ \textbf{xInit} )(void $\ast$)\label{structsqlite3__pcache__methods_707c4748dcafc75384a806d13bb68bdd}
+
+\item 
+void($\ast$ \textbf{xShutdown} )(void $\ast$)\label{structsqlite3__pcache__methods_34a88425495f42099aadbe3fa9676a06}
+
+\item 
+sqlite3\_\-pcache $\ast$($\ast$ \textbf{xCreate} )(int szPage, int bPurgeable)\label{structsqlite3__pcache__methods_95eff7d8c7a094b2dbf030338e284eb3}
+
+\item 
+void($\ast$ \textbf{xCachesize} )(sqlite3\_\-pcache $\ast$, int nCachesize)\label{structsqlite3__pcache__methods_1a71e7cecb9abff1fcc9594e0120091b}
+
+\item 
+int($\ast$ \textbf{xPagecount} )(sqlite3\_\-pcache $\ast$)\label{structsqlite3__pcache__methods_2b94d01bdb0e2496c486b48a37a00fea}
+
+\item 
+void $\ast$($\ast$ \textbf{xFetch} )(sqlite3\_\-pcache $\ast$, unsigned key, int createFlag)\label{structsqlite3__pcache__methods_a00c85f49dc6fbf28c89853e0f40e32b}
+
+\item 
+void($\ast$ \textbf{xUnpin} )(sqlite3\_\-pcache $\ast$, void $\ast$, int discard)\label{structsqlite3__pcache__methods_0179cdf335a93eb2be5b94a6c2754a94}
+
+\item 
+void($\ast$ \textbf{xRekey} )(sqlite3\_\-pcache $\ast$, void $\ast$, unsigned oldKey, unsigned newKey)\label{structsqlite3__pcache__methods_58ac2c2bfa7cc9811e46368ea0ea73f7}
+
+\item 
+void($\ast$ \textbf{xTruncate} )(sqlite3\_\-pcache $\ast$, unsigned iLimit)\label{structsqlite3__pcache__methods_1c61888ab80e7d81e2815f0fea2d87a0}
+
+\item 
+void($\ast$ \textbf{xDestroy} )(sqlite3\_\-pcache $\ast$)\label{structsqlite3__pcache__methods_c818e6091765fe201ab5727d515141a7}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 5291 of file sqlite3.h.
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/Database/include/sqlite3.h\end{CompactItemize}

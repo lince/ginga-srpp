@@ -1,0 +1,143 @@
+\section{CompositeExecutionObject Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject}\index{br::pucrio::telemidia::ginga::ncl::model::components::CompositeExecutionObject@{br::pucrio::telemidia::ginga::ncl::model::components::CompositeExecutionObject}}
+Inheritance diagram for CompositeExecutionObject:Collaboration diagram for CompositeExecutionObject:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{CompositeExecutionObject} (string {\bf id}, Node $\ast${\bf dataObject}, bool handling)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_4632003b2c6494502ce23c8e901ae641}
+
+\item 
+\textbf{CompositeExecutionObject} (string {\bf id}, Node $\ast${\bf dataObject}, CascadingDescriptor $\ast${\bf descriptor}, bool handling)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_ad709f378861cd088d8a5b28f15515d4}
+
+\item 
+void \textbf{stopListening} (void $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_30fe02416806f60f10cfcc8e42cbefb3}
+
+\item 
+bool \textbf{addExecutionObject} ({\bf ExecutionObject} $\ast$execObj)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_ebb3c8b8bea80863211d28899f38e3c7}
+
+\item 
+bool \textbf{containsExecutionObject} (string execObjId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_bed578d3972bad0f1be9bc19c2085e75}
+
+\item 
+{\bf ExecutionObject} $\ast$ \textbf{getExecutionObject} (string execObjId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_cbe6647c9b5b8dca26405df562c44670}
+
+\item 
+map$<$ string, {\bf ExecutionObject} $\ast$ $>$ $\ast$ \textbf{getExecutionObjects} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_a1826cd6008f8f2498ec2b8fb0f92af1}
+
+\item 
+map$<$ string, {\bf ExecutionObject} $\ast$ $>$ $\ast$ \textbf{recursivellyGetExecutionObjects} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_f514aa14542e938b3e5fc14082d89b2d}
+
+\item 
+int \textbf{getNumExecutionObjects} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_49c5f99a22e49c5c5f2a426fadea837d}
+
+\item 
+bool \textbf{removeExecutionObject} ({\bf ExecutionObject} $\ast$execObj)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_d033f20c8aa93f28d3ee9ef336f25d38}
+
+\item 
+set$<$ Link $\ast$ $>$ $\ast$ \textbf{getUncompiledLinks} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_ecb64c5c246bfcbea637a91230c6c564}
+
+\item 
+bool \textbf{containsUncompiledLink} (Link $\ast$dataLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_3054bea2954dcfbcc25718f8ebe48e0b}
+
+\item 
+void \textbf{removeLinkUncompiled} (Link $\ast$ncmLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_6f7849eb893394b96f9745b6e6f564f9}
+
+\item 
+void \textbf{setLinkCompiled} (FormatterLink $\ast$formatterLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_4b44e0f61da331984a8b381c9100b44c}
+
+\item 
+void \textbf{setLinkUncompiled} (FormatterLink $\ast$formatterLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_9d0085df39c388490a53cba1bf1a864f}
+
+\item 
+void \textbf{addNcmLink} (Link $\ast$ncmLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_f89556347ec991789545bd9c38c3aa0d}
+
+\item 
+void \textbf{removeNcmLink} (Link $\ast$ncmLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_b38f47387644ec358ff768aa6c6cb9d6}
+
+\item 
+void \textbf{setAllLinksAsUncompiled} (bool isRecursive)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_c624474ccd677dd3cc47e6a19ff5ce43}
+
+\item 
+set$<$ FormatterLink $\ast$ $>$ $\ast$ \textbf{getLinks} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_ef6e646747ad4be30c20822a43ae90b3}
+
+\item 
+void \textbf{setParentsAsListeners} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_8e4517d1881f5d119c66802baec69003}
+
+\item 
+void \textbf{unsetParentsAsListeners} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_2ae9f89ddf33816fc04b4576e9184ec1}
+
+\item 
+void \textbf{eventStateChanged} (void $\ast$event, short transition, short previousState)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_db50d000dea7e01eceb25920bbb1e902}
+
+\item 
+short \textbf{getPriorityType} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_ae7d2f7d0ac4466813deee19bbea7ebe}
+
+\item 
+void \textbf{linkEvaluationStarted} (FormatterCausalLink $\ast$link)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_fd5679361fbcfca493946c09ae54edc7}
+
+\item 
+void \textbf{linkEvaluationFinished} (FormatterCausalLink $\ast$link, bool start)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_5cbc8d8cefa58a8eafc81e78eada3c4f}
+
+\item 
+bool \textbf{setPropertyValue} (AttributionEvent $\ast$event, string value, Animation $\ast$anim)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_3e4b84e57de627326fc7bf7c4e129ba5}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{initializeCompositeExecutionObject} (string {\bf id}, Node $\ast${\bf dataObject}, CascadingDescriptor $\ast${\bf descriptor})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_d493b13da9801a0f0a2642c6bc37b384}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, {\bf ExecutionObject} $\ast$ $>$ $\ast$ {\bf execObjList}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_e008dff04ef1e0b913526eab9b4be95d}
+
+\item 
+pthread\_\-mutex\_\-t {\bf mutexComposite}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_88e07893e891d6df24765f25ef1dccd1}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{listRunningObjects} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_9aad29725005fd658d7c88f59f92a8c6}
+
+\item 
+void \textbf{lockComposite} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_08e2e145efdd29a18ccca0f769bad539}
+
+\item 
+void \textbf{unlockComposite} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_6b5ece810d00e30f0ca32f146a0c8003}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+set$<$ FormatterLink $\ast$ $>$ $\ast$ {\bf links}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_894d017c429516fe3b1619dcb6cd6391}
+
+\item 
+set$<$ Link $\ast$ $>$ $\ast$ {\bf uncompiledLinks}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_f244f73baa0380c5d978715febd914e1}
+
+\item 
+set$<$ FormatterEvent $\ast$ $>$ $\ast$ {\bf runningEvents}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_8d911e04a472a1c98eb867d18f5d3cf0}
+
+\item 
+set$<$ FormatterEvent $\ast$ $>$ $\ast$ {\bf pausedEvents}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_43417cb0025d8a1f90f8b07244cf70b5}
+
+\item 
+short {\bf lastTransition}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_72a29d1b80fc78ca433be31f3f9de7c3}
+
+\item 
+map$<$ FormatterLink $\ast$, int $>$ $\ast$ {\bf pendingLinks}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1CompositeExecutionObject_70a778f4f5eb2a720aa31be7c7a16c9f}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 90 of file CompositeExecutionObject.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/CompositeExecutionObject.h\end{CompactItemize}

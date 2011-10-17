@@ -1,0 +1,511 @@
+\section{IMiningAlgorithmApriori Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori}\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+Inheritance diagram for IMiningAlgorithmApriori:Collaboration diagram for IMiningAlgorithmApriori:\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef unsigned long {\bf itemtype}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_d52fc854b8eb63e6b5ed0529f63f2dee}
+
+\begin{CompactList}\small\item\em define o tipo itemtype utilizado pelo algoritmo apriori para contagem dos elementos \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf IMiningAlgorithmApriori} ()
+\item 
+{\bf $\sim$IMiningAlgorithmApriori} ()
+\item 
+bool {\bf setParams} (vector$<$ char $\ast$ $>$ params)
+\item 
+bool {\bf prepare} (const char $\ast$data, const char $\ast$delimiter)
+\item 
+bool {\bf prepare} ({\bf Database} $\ast$db, const char $\ast$table)
+\item 
+bool {\bf start} ()
+\item 
+bool {\bf stop} ()
+\item 
+void {\bf setOutput} (char $\ast$data, long size, const char $\ast$delimiter)
+\item 
+void {\bf setOutput} ({\bf Database} $\ast$db, const char $\ast$table)
+\item 
+void {\bf setOutput} (const char $\ast$file)
+\item 
+void {\bf execute} (string file, double min\_\-sup, double min\_\-confi)
+\item 
+void {\bf encode} (char $\ast$fileCodeTable, char $\ast$fileOutMining, char $\ast$fileOut)
+\item 
+void \textbf{code\_\-file\_\-process} (char $\ast$code\_\-file\_\-name)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_83934f8602a0f8aa09b4a334a959961e}
+
+\item 
+void \textbf{code\_\-file\_\-process\_\-out\_\-Algorithm} (char $\ast$outAlgorithm)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_efaa03d2ef87f6c1a5edd22c69d1a659}
+
+\item 
+void \textbf{code\_\-file\_\-process\_\-out} (char $\ast$outAlgorithm)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_4a36e20173013f15beadbd0c2b1c664b}
+
+\item 
+void {\bf write\_\-decoded\_\-item} ({\bf itemtype} item)
+\item 
+void {\bf decode} ()
+\item 
+vector$<$ {\bf si} $\ast$ $>$ $\ast$ {\bf restoreCacheInformation} (string nomeCache)
+\item 
+vector$<$ {\bf User} $\ast$ $>$ $\ast$ {\bf getUserInformation} ()
+\item 
+vector$<$ std::string $>$ {\bf prepareDataUser} (vector$<$ {\bf User} $\ast$ $>$ $\ast$user)
+\item 
+void {\bf saveUserInformation} (vector$<$ string $>$ user, string file)
+\item 
+vector$<$ {\bf User} $\ast$ $>$ $\ast$ {\bf mountObject} (vector$<$ string $>$ retornaConsulta, vector$<$ string $>$ retornaHead)
+\item 
+string {\bf getValueByTime} (string dataColectedByUser)
+\item 
+string {\bf getPercentualByTime} (const string dataColectedByUser, vector$<$ {\bf si} $\ast$ $>$ $\ast$dataCacheByTable)
+\item 
+vector$<$ string $>$ {\bf getPercentualByTime} (const string nomePrograma, double tempoUsuario, string dataInicio, vector$<$ {\bf si} $\ast$ $>$ $\ast$dataCacheByTable)
+\item 
+int {\bf getRandom} (int min, int max)
+\item 
+int {\bf ReadFile} (char $\ast$arquivo)
+\item 
+vector$<$ string $>$ \textbf{getLine} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_47ab34ded8949760c89b88454f6368db}
+
+\item 
+void \textbf{setLine} (vector$<$ string $>$ {\bf line})\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_482383ede9a7ee10a1d5a5f4513cff4f}
+
+\item 
+vector$<$ string $>$ {\bf searchProgrambyId} (string genero, string subgenero, string per\_\-dia, vector$<$ string $>$ $\ast$programacao)
+\item 
+string {\bf getGenProgram} (string gen, string subgen)
+\item 
+void {\bf controlDuplicate} ()
+\item 
+void {\bf saveRecommender} (string arquivo, vector$<$ string $>$ $\ast$user, string horario)
+\item 
+void {\bf prepareToSaveRecommender} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static std::string {\bf verifyDuration} (double duration)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf count}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_d43c3812e6d13e0518d9f8b8f463ffcf}
+
+\item 
+vector$<$ string $>$ {\bf line}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_53f348d0b7f4dda8c42d53e745bb69a7}
+
+\item 
+string $\ast$ {\bf inData}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_887c36a36796ab35ba00165db7a407e2}
+
+\item 
+string $\ast$ {\bf inDataDelimiter}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_66020546f21d6f186dbb890ad1099f53}
+
+\item 
+{\bf Database} $\ast$ {\bf inDB}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_06ccb3a2a94a232aafcbd36f7e9b2742}
+
+\item 
+string $\ast$ {\bf inTableName}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_d707f7b74871c2c1d8fbc6f948a227d7}
+
+\item 
+char $\ast$ {\bf outDataBuffer}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_566990342c408ef3ce947195ff300511}
+
+\item 
+long $\ast$ {\bf outDataSize}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_df7bf282dc27bae4a1681f2e93b54e52}
+
+\item 
+string $\ast$ {\bf outDataDelimiter}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_63533c5b9d1165773067c1268441d0ea}
+
+\item 
+{\bf Database} $\ast$ {\bf outDB}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_3f20b851d6afe731b1ca2fdd37bcac43}
+
+\item 
+string $\ast$ {\bf outTableName}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_4021c5a59abba9294061f558f14a6e59}
+
+\item 
+string $\ast$ {\bf outFileName}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_8cb17fe578108c3a65a540ef2f2bed46}
+
+\item 
+double {\bf minSup}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_2159104425ac960348daf3faa502ea82}
+
+\item 
+double {\bf minConfi}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_8b10c05b06a0ab50a53d12ce5f5bdc9c}
+
+\item 
+string {\bf siCacheFileName}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_4094c972f73182b61abd606e0d8f7970}
+
+\item 
+vector$<$ {\bf User} $\ast$ $>$ $\ast$ {\bf userInfo}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_ae664f3a1820bef5b8c41362dc13f5e2}
+
+\item 
+FILE $\ast$ {\bf code\_\-file\_\-algorithm}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_135554b58af786f2529ac02d720e3f43}
+
+\begin{CompactList}\small\item\em abstração para o arquivo que contém os dados da interação do usuário \item\end{CompactList}\item 
+ofstream {\bf code\_\-file\_\-out}
+\item 
+map$<$ {\bf itemtype}, string $>$ {\bf codearray}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_e10fc48acea4607e4ee86f0827ba9843}
+
+\begin{CompactList}\small\item\em conta a quantidade de itens (programas) de acordo com a base de dados do usuário \item\end{CompactList}\item 
+string {\bf imprimir}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_ea4f3fab9effd2c910badfd3ecfadb74}
+
+\item 
+ofstream {\bf outfile}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_667ad9d6ce915ec7e7499928043aee8a}
+
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const int {\bf DESPREZIVEL} = 10\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_6cf1b6531cf3127710b089c278d78d94}
+
+\item 
+static const int {\bf POUCO} = 30\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_d7286d9e2a7342fb2a06c28cf4c12782}
+
+\item 
+static const int {\bf MEDIO} = 65\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_af577de93d20bcebfa4c7b521a3da959}
+
+\item 
+static const int {\bf ALTO} = 100\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_0c00b6a424a04f5b37039bfd5634a518}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 54 of file IMiningAlgorithmApriori.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!IMiningAlgorithmApriori@{IMiningAlgorithmApriori}}
+\index{IMiningAlgorithmApriori@{IMiningAlgorithmApriori}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf IMiningAlgorithmApriori} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_57270917612d182a3f0ff5a8ec5af299}
+
+
+Construtor. \index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!~IMiningAlgorithmApriori@{$\sim$IMiningAlgorithmApriori}}
+\index{~IMiningAlgorithmApriori@{$\sim$IMiningAlgorithmApriori}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf IMiningAlgorithmApriori} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_833d80ca804fecbd8683fe4a9fa1d462}
+
+
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!setParams@{setParams}}
+\index{setParams@{setParams}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setParams (vector$<$ char $\ast$ $>$ {\em params})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_7d8c377abf51c61dfd58e25546e607db}
+
+
+Inicializa o algoritmo com os parâmetros especificados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em params}]parâmetros para o algoritmo: params[0]: min\_\-sup parametros do algoritmo. Utilizado para desconsiderar poucas interações do usuário. params[1]: min\_\-confi Confiabilidade dos dados. Quanto maior esse parâmetro, menos regras são produzidas. params[2]: banco de dados tabela contendo a tabela SI (uma abstração para as tabelas EIT e SDT). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_02777f004e37b054d444ea15c4adbb6b}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!prepare@{prepare}}
+\index{prepare@{prepare}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool prepare (const char $\ast$ {\em data}, const char $\ast$ {\em delimiter})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_00b52dfcbf3e0378bc09aa2f768fbdf2}
+
+
+Prepara os dados para serem processados pelo algoritmo. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]dados a serem pre-processados. \item[{\em delimiter}]delimitador dos dados. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_cbf17d04f21fbf98de2e205f1b556f6d}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!prepare@{prepare}}
+\index{prepare@{prepare}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool prepare ({\bf Database} $\ast$ {\em db}, const char $\ast$ {\em table})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_874aca17926543fbd79505e83928650a}
+
+
+Prepara os dados para serem processados pelo algoritmo. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em db}]banco de dados que contém a tabela a ser pre-processada. \item[{\em table}]tabela com os dados a serem pre-processados. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_f3064666af4fa8ec6ef4dabc6324bdc3}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!start@{start}}
+\index{start@{start}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool start ()\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_ad5997aaaa2d622f0ca57f8b24a51a7b}
+
+
+Executa o algoritmo. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_d64c54ab3191981b2443c47007f38516}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!stop@{stop}}
+\index{stop@{stop}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool stop ()\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_68a350717fe6bf9012843e7c977d87b2}
+
+
+Pára a execução do algoritmo. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_913e49a415a81ff266f461523a0c66da}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setOutput (char $\ast$ {\em data}, long {\em size}, const char $\ast$ {\em delimiter})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_0acdaf7783d1cd652a07f4605d643150}
+
+
+Define a saída dos dados processados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]variável para armazenamento dos dados processados. \item[{\em size}]tamanho (em bytes) da variável para armazenamento dos dados. \item[{\em delimiter}]delimitador dos dados. \end{description}
+\end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_536be54295c1922429721b6baee0f710}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setOutput ({\bf Database} $\ast$ {\em db}, const char $\ast$ {\em table})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_5c8f92559e65d2619ff3af74efaa31af}
+
+
+Define a saída dos dados processados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em db}]banco de dados que contém a tabela onde serão armazenados os dados processados. \item[{\em table}]tabela onde serão armazenados os dados processados. \end{description}
+\end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_64c04f43476643fe50d12c5394b19ed8}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setOutput (const char $\ast$ {\em file})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_51cb88effc40497a670e824c93241d42}
+
+
+Define a saída dos dados processados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em file}]caminho do arquivo para armazenamento dos dados processados. \end{description}
+\end{Desc}
+
+
+Implements {\bf MiningAlgorithm} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm_79929e33f3b21c16a5737d036e8c6af2}.\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!execute@{execute}}
+\index{execute@{execute}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void execute (string {\em file}, double {\em min\_\-sup}, double {\em min\_\-confi})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_e045b7424cb04dcfbc7f0ebb1e8d8692}
+
+
+Executa o algoritmo apriori \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em file}]arquivo que contém as interações do usuário (comportamento do usuário) \item[{\em min\_\-sup}]parametros do algoritmo. Utilizado para desconsiderar poucas interações do usuário. \item[{\em min\_\-confi}]Confiabilidade dos dados. Quanto maior esse parâmetro, menos regras são produzidas. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!encode@{encode}}
+\index{encode@{encode}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void encode (char $\ast$ {\em fileCodeTable}, char $\ast$ {\em fileOutMining}, char $\ast$ {\em fileOut})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_b75625922c432df4e699893b32b39ed3}
+
+
+O algoritmo apriori produz a saída toda em formato numérico. Esse método mapea a saída do algoritmo numérico para strings. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fileCodeTable}]tabela usada para o mapeamento string --$>$ numérico \item[{\em fileOutMining}]arquivo gerado pelo algoritmo apriori (numérico) \item[{\em fileOut}]arquivo de saída mapeado numérico --$>$ string \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!write_decoded_item@{write\_\-decoded\_\-item}}
+\index{write_decoded_item@{write\_\-decoded\_\-item}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void write\_\-decoded\_\-item ({\bf itemtype} {\em item})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_4e6867e37bae90e119f52ec5428e490d}
+
+
+Adiciona o item decodificado à string que será impressa ao final da execução. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em item}]elemento que será escrito. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!decode@{decode}}
+\index{decode@{decode}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void decode ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_baca1023f5b99e4444f66e3b59836537}
+
+
+Decodifica o arquivo que contém os dados da interação do usuário com o middleware. \index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!restoreCacheInformation@{restoreCacheInformation}}
+\index{restoreCacheInformation@{restoreCacheInformation}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf si}$\ast$$>$$\ast$ restoreCacheInformation (string {\em nomeCache})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_3b8019c620767517590f95c3dcd5d0e2}
+
+
+Recupera as informações das tabelas EIT e SDT \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nomeCache}]o nome do cache que contém as informações das tabelas EIT \& SDT \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]um ponteiro para um vector contendo os registros recuperados. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!getUserInformation@{getUserInformation}}
+\index{getUserInformation@{getUserInformation}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf User}$\ast$$>$$\ast$ getUserInformation ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_b6ab3cc6b8bafa393cf5971da1176aee}
+
+
+Converte informações relacionais do banco de dados em objetos da classe \doxyref{User}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1User}. \begin{Desc}
+\item[Returns:]um ponteiro de vector $<$User$\ast$$>$ \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!prepareDataUser@{prepareDataUser}}
+\index{prepareDataUser@{prepareDataUser}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$std::string$>$ prepareDataUser (vector$<$ {\bf User} $\ast$ $>$ $\ast$ {\em user})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_738cb3e22638666c9c4b94183e3de204}
+
+
+Converte objetos da classe \doxyref{User}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1User} em strings para serem submetidas aos algoritmos de mineração \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em user}]um ponteiro para um vector$<$User $\ast$$>$ $\ast$user \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]{\bf  string } com os objetos da classe \doxyref{User}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1User} convertidos no padrão basket\_\-file do algoritmo apriori. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!saveUserInformation@{saveUserInformation}}
+\index{saveUserInformation@{saveUserInformation}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void saveUserInformation (vector$<$ string $>$ {\em user}, string {\em file})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_1435841444ffb434b83d12db8ed11a71}
+
+
+Realiza a persistência das informações processadas pelo método prepareDataUser \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em user}]recebe uma string com os dados a serem persistidos na \item[{\em file}]recebe uma string que informa o path e nome do arquivo a ser criado em disco. em disco. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!mountObject@{mountObject}}
+\index{mountObject@{mountObject}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf User} $\ast$$>$$\ast$ mountObject (vector$<$ string $>$ {\em retornaConsulta}, vector$<$ string $>$ {\em retornaHead})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_0572e8e9d7672c149aedf3b629d506aa}
+
+
+Monta objetos da classe \doxyref{User}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1User} a partir das tuplas passadas por referência. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em retornaConsulta}]: dados contidos nas tuplas. \item[{\em retornaHead}]: nome das tabelas. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]vetor com os usuários. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!getValueByTime@{getValueByTime}}
+\index{getValueByTime@{getValueByTime}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string getValueByTime (string {\em dataColectedByUser})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_71cd14185c050429dd1e2047368ab074}
+
+
+Calcular o período do dia em que um programa foi sintonizado. Exemplo: Programa sintonizado das 09:30hs até 11:00hs. retorna: manhã. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dataColectedByUser}]string contendo as informações do programa, horário, data. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string informando em qual horário o programa foi sintonizado \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!getPercentualByTime@{getPercentualByTime}}
+\index{getPercentualByTime@{getPercentualByTime}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string getPercentualByTime (const string {\em dataColectedByUser}, vector$<$ {\bf si} $\ast$ $>$ $\ast$ {\em dataCacheByTable})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_d8b8f581628bd178664957162b60e2db}
+
+
+Calcular o percentual de tempo que o usuário sintonizou determinando programa. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dataColectedByUser}]string contendo as informações do programa, horário, data. \item[{\em dataCacheByTable}]vector $<$si$\ast$$>$ $\ast$ um ponteiro para os dados restaurados da tabela EIT \& SDT. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string informando: pouco, medio,alto \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!getPercentualByTime@{getPercentualByTime}}
+\index{getPercentualByTime@{getPercentualByTime}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ getPercentualByTime (const string {\em nomePrograma}, double {\em tempoUsuario}, string {\em dataInicio}, vector$<$ {\bf si} $\ast$ $>$ $\ast$ {\em dataCacheByTable})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_b40f6834e08c23fb7cfc6eb350d10629}
+
+
+Calcular o percentual de tempo que o usuário sintonizou determinando programa. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nomePrograma}]string contendo as informações do programa para comparação com as informações da EIT no cache. \item[{\em tempoUsuario}]tempoUsuario double contendo o tempo em que o usuário ficou sintonizado no programa \item[{\em dataInicio}]string contendo a data atual para recuperar os programas da tabela EIT \& SDT \item[{\em dataCacheByTable}]vector si$\ast$ um ponteiro para os dados restaurados da tabela EIT \& SDT. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]vector contendo o tempo que o usuário assitiu cada programa. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!getRandom@{getRandom}}
+\index{getRandom@{getRandom}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getRandom (int {\em min}, int {\em max})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_709d01ad03817a7fe2f89c3a93dbdf17}
+
+
+Quando não existirem dados suficiente para o algoritmo apriori processar é necessário preencher o arquivo de saída lua com informações randômicas. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em min}]informa o menor valor gerado \item[{\em max}]informa o máximo valor gerado \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]{\bf  int } onde esse valor é maior igual ao minimo e menor igual ao máximo. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!verifyDuration@{verifyDuration}}
+\index{verifyDuration@{verifyDuration}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static std::string verifyDuration (double {\em duration})\hspace{0.3cm}{\tt  [static]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_232c80f53e786574230c618813491fb4}
+
+
+Retorna uma string representando o tempo que usuário permaneceu conectado em determinado programa. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em duration}]double que representa o percentual de tempo em que o usuário ficou conectado em um determinado programa.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]{\bf  string } que pode ser: pouco, medio, alto \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int ReadFile (char $\ast$ {\em arquivo})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_c09d785e7037579cb127e400ec41a7b9}
+
+
+Leitura de arquivo texto do disco \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em arquivo}]nome do arquivo a ser lido \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]número de bytes lidos do arquivo \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!searchProgrambyId@{searchProgrambyId}}
+\index{searchProgrambyId@{searchProgrambyId}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ searchProgrambyId (string {\em genero}, string {\em subgenero}, string {\em per\_\-dia}, vector$<$ string $>$ $\ast$ {\em programacao})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_21210f8f97468f29b655e5075658f52f}
+
+
+Busca na tabela EIT o programa recomendado \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em genero}]string que informa o genero do programa \item[{\em subgenero}]string que informa o sub-genero do programa \item[{\em per\_\-dia}]string que informa o dia para procurar na tabela EIT \item[{\em programacao}]a tabela EIT \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!getGenProgram@{getGenProgram}}
+\index{getGenProgram@{getGenProgram}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string getGenProgram (string {\em gen}, string {\em subgen})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_cda179775d457ee9e8e9d3da4758f2f4}
+
+
+retorna o Genero do Programa a partir do codigo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em gen}]string com o genero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]o genero, por exemplo, Jornalismo \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!controlDuplicate@{controlDuplicate}}
+\index{controlDuplicate@{controlDuplicate}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void controlDuplicate ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_929ab2280c7fe26a7b6bef125e081aca}
+
+
+Evita que ocorram duplicações nas recomedações \index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!saveRecommender@{saveRecommender}}
+\index{saveRecommender@{saveRecommender}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void saveRecommender (string {\em arquivo}, vector$<$ string $>$ $\ast$ {\em user}, string {\em horario})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_428e70e8772c24ec6435f97b41726adf}
+
+
+Salva a recomendação no arquivo de formato lua. Exemplo de arquivo salvo: NOITE\{ Genero Cod = \char`\"{}0x0\char`\"{}, SubGenero Cod = \char`\"{}0x02\char`\"{}, Inicio = \char`\"{}2008-03-12 23:32:00\char`\"{}, Fim = \char`\"{}2008-03-13 00:29:00\char`\"{}, Programa = \char`\"{}REPORTER RECORD SG\char`\"{}, Emissora = \char`\"{}006\char`\"{}, \}
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em arquivo}]nome do arquivo para salvar as recomendações \item[{\em user}]recomendações ofertadas para o usuário \item[{\em horario}]que pode ser: madrugada, manha, tarde e noite \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!prepareToSaveRecommender@{prepareToSaveRecommender}}
+\index{prepareToSaveRecommender@{prepareToSaveRecommender}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void prepareToSaveRecommender ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_3118d88f7eed9944b05a27b9601ce8a1}
+
+
+Prepara o banco para receber as novas recomendacoes 
+
+\subsection{Member Data Documentation}
+\index{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}!code_file_out@{code\_\-file\_\-out}}
+\index{code_file_out@{code\_\-file\_\-out}!br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori@{br::ufscar::lince::ginga::recommender::IMiningAlgorithmApriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}ofstream {\bf code\_\-file\_\-out}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IMiningAlgorithmApriori_ecaa5d43a860d8c7c11a31d4009f7222}
+
+
+abstração para o arquivo de saída produzido pelo algoritmo apriori. O arquivo de saída ainda não está pronto, necessitando ser submetido aos algoritmos do módulo FilterAgent \begin{Desc}
+\item[See also:]br.ufscar.lince.ginga.recommender.filteragent \end{Desc}
+
+
+Definition at line 352 of file IMiningAlgorithmApriori.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/MiningAlgorithm/include/IMiningAlgorithmApriori.h\end{CompactItemize}

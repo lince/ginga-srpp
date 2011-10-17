@@ -1,0 +1,182 @@
+\section{PrivateBaseContext Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext}\index{br::pucrio::telemidia::ginga::ncl::PrivateBaseContext@{br::pucrio::telemidia::ginga::ncl::PrivateBaseContext}}
+Inheritance diagram for PrivateBaseContext:Collaboration diagram for PrivateBaseContext:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{createPrivateBase} (string id)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_0dce35539707ed546bc00c8c0ad63cb3}
+
+\item 
+NclDocument $\ast$ \textbf{addDocument} (string location, IDeviceLayout $\ast$deviceLayout)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_36facb1f9b268086261cb6832fb922e4}
+
+\item 
+NclDocument $\ast$ \textbf{embedDocument} (string docId, string nodeId, string location, IDeviceLayout $\ast$deviceLayout)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_119635f92ccfb42cac0ed9a615b31b78}
+
+\item 
+void $\ast$ \textbf{addVisibleDocument} (string location, IDeviceLayout $\ast$deviceLayout)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_7d0478e2d967cf7afcba3ee494669d1b}
+
+\item 
+string \textbf{getDocumentLocation} (string docId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_c949be85812dd5519805b1e0a32d48ff}
+
+\item 
+string \textbf{getEmbeddedDocumentLocation} (string parentDocId, string nodeId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_f049beb565e14cc88b481b0cc8f79fe3}
+
+\item 
+NclDocument $\ast$ \textbf{getDocument} (string id)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_75a91eb9d4e16f4115d01caaf636d569}
+
+\item 
+NclDocument $\ast$ \textbf{getEmbeddedDocument} (string parendDocId, string nodeId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_685036ae629e9f56b9bf168da4da8740}
+
+\item 
+vector$<$ NclDocument $\ast$ $>$ $\ast$ \textbf{getDocuments} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_7c823ae3648cf529edf492ba1935cdb4}
+
+\item 
+NclDocument $\ast$ \textbf{removeDocument} (string id)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_abe8b34d24f1d51e3bb0a4a93c280b00}
+
+\item 
+NclDocument $\ast$ \textbf{removeEmbeddedDocument} (string parentDocId, string nodeId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_e109c9d0d3a6c040febae1268ef86336}
+
+\item 
+void \textbf{clear} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_c8bb3912a3ce86b15842e79d0b421204}
+
+\item 
+LayoutRegion $\ast$ \textbf{addRegion} (string documentId, string regionBaseId, string regionId, string xmlRegion)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_45200d403e40ab0e38040063ce76cfc8}
+
+\item 
+LayoutRegion $\ast$ \textbf{removeRegion} (string documentId, string regionBaseId, string regionId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_961c5e8fd2a9d9109d8042a5f0c96c5d}
+
+\item 
+RegionBase $\ast$ \textbf{addRegionBase} (string documentId, string xmlRegionBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_933903847ac6104c8c9f3d0593702e09}
+
+\item 
+RegionBase $\ast$ \textbf{removeRegionBase} (string documentId, string regionBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_40009c2361c7b8102bd01717e2237f2a}
+
+\item 
+Rule $\ast$ \textbf{addRule} (string documentId, string xmlRule)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_0053a0bc9270d05c905d60f9f7541102}
+
+\item 
+Rule $\ast$ \textbf{removeRule} (string documentId, string ruleId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_ec789db0e3bd130c406bcdccff22b00d}
+
+\item 
+RuleBase $\ast$ \textbf{addRuleBase} (string documentId, string xmlRuleBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_c65fd8bb92c284f5502069387e098ea6}
+
+\item 
+RuleBase $\ast$ \textbf{removeRuleBase} (string documentId, string ruleBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_9cf642a62b77554fd598b148c747da00}
+
+\item 
+Transition $\ast$ \textbf{addTransition} (string documentId, string xmlTransition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_cf4331acb3a571be6153c6fe08e7d310}
+
+\item 
+Transition $\ast$ \textbf{removeTransition} (string documentId, string transitionId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_7a85c7c0baab0711707c7e02d2f66cf5}
+
+\item 
+TransitionBase $\ast$ \textbf{addTransitionBase} (string documentId, string xmlTransitionBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_604b12ac877a8a71b5ff36b62af708aa}
+
+\item 
+TransitionBase $\ast$ \textbf{removeTransitionBase} (string documentId, string transitionBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_3bde27cae28f25bba665051caf477ab9}
+
+\item 
+Connector $\ast$ \textbf{addConnector} (string documentId, string xmlConnector)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_0129d574f8a1cfd4d2763ecb02daa0d7}
+
+\item 
+Connector $\ast$ \textbf{removeConnector} (string documentId, string connectorId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_1af2765cc40affc56a032cb8ee3013bf}
+
+\item 
+ConnectorBase $\ast$ \textbf{addConnectorBase} (string documentId, string xmlConnectorBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_ae24f2e152451189e758150de62fa12a}
+
+\item 
+ConnectorBase $\ast$ \textbf{removeConnectorBase} (string documentId, string connectorBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_eadc9d5e322e934e9ab7db1b9f7c0436}
+
+\item 
+GenericDescriptor $\ast$ \textbf{addDescriptor} (string documentId, string xmlDescriptor)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_ce5a78d3e81f33420cb2ba391ec99948}
+
+\item 
+GenericDescriptor $\ast$ \textbf{removeDescriptor} (string documentId, string descriptorId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_338c6b6118d0127b2d0c3baf65853a94}
+
+\item 
+DescriptorBase $\ast$ \textbf{addDescriptorBase} (string documentId, string xmlDescriptorBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_c0f903fe477853764170bcd07eb8103d}
+
+\item 
+DescriptorBase $\ast$ \textbf{removeDescriptorBase} (string documentId, string descriptorBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_1c5809c5f42f888e39696182aa4d5c02}
+
+\item 
+Base $\ast$ \textbf{addImportBase} (string documentId, string docBaseId, string xmlImportBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_5f390e05f5e0746ff24b3cc4277b3a02}
+
+\item 
+Base $\ast$ \textbf{removeImportBase} (string documentId, string docBaseId, string documentURI)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_24ac4045fc9659ea929263a8dae63fd6}
+
+\item 
+NclDocument $\ast$ \textbf{addImportedDocumentBase} (string documentId, string xmlImportedDocumentBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_67bc061d4662a6ea0cb0e7f04fca2b8e}
+
+\item 
+NclDocument $\ast$ \textbf{removeImportedDocumentBase} (string documentId, string importedDocumentBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_dcaca18dc569f437b7cf8cc08d9c1b75}
+
+\item 
+NclDocument $\ast$ \textbf{addImportNCL} (string documentId, string xmlImportNCL)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_f01972b80689e1e15035431c74cdc589}
+
+\item 
+NclDocument $\ast$ \textbf{removeImportNCL} (string documentId, string documentURI)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_ec83344e580ce947b94398ad67ffc445}
+
+\item 
+Node $\ast$ \textbf{addNode} (string documentId, string compositeId, string xmlNode)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_eeb7118e73f86f9e196d4335fd21e6db}
+
+\item 
+InterfacePoint $\ast$ \textbf{addInterface} (string documentId, string nodeId, string xmlInterface)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_9712c1fafd77b7c5ee0a29dac44c677d}
+
+\item 
+Link $\ast$ \textbf{addLink} (string documentId, string compositeId, string xmlLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_a12a5aaa41a65dbf50538494f18a8de9}
+
+\item 
+PrivateBase $\ast$ \textbf{getPrivateBase} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_a3a82893d9e6a3a9e8431dc66df083f5}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+NclDocument $\ast$ \textbf{compileDocument} (string location, IDeviceLayout $\ast$deviceLayout)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_f592b03c21423d78db7d85655cf2a3ec}
+
+\item 
+NclDocument $\ast$ \textbf{getBaseDocument} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_d9f6a993e3bca4b0f913818a90681c4c}
+
+\item 
+void $\ast$ \textbf{compileEntity} (string location, NclDocument $\ast$document, void $\ast$parentObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_eef497c88b5fdc30f78fa95b16b5b06a}
+
+\item 
+Base $\ast$ \textbf{getBase} (NclDocument $\ast$document, string baseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_82e97727f635b97d4a8b5cd7faf2d7c7}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, NclDocument $\ast$ $>$ $\ast$ {\bf baseDocuments}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_16f91ad22f8115c752d9246ca060ce1a}
+
+\item 
+map$<$ string, NclDocument $\ast$ $>$ $\ast$ {\bf visibleDocuments}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_39c1cbd75659d5612421be0db4b4c2eb}
+
+\item 
+map$<$ string, {\bf EmbeddedNclData} $\ast$ $>$ $\ast$ {\bf embeddedDocuments}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_c00a4fc41835c4235f4614929791d226}
+
+\item 
+map$<$ string, string $>$ $\ast$ {\bf idToLocation}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_ef934cb37d8e23713b4ff609ae966e22}
+
+\item 
+map$<$ NclDocument $\ast$, IDeviceLayout $\ast$ $>$ $\ast$ {\bf layouts}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_f62ea6b0c82e2fbe423a1a1c0ae431ad}
+
+\item 
+set$<$ IDeviceLayout $\ast$ $>$ $\ast$ {\bf layoutsGB}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_43bb6f663d2158ddf478823175576c2d}
+
+\item 
+PrivateBase $\ast$ {\bf privateBase}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseContext_e5995716b77e5c52a1bdac19bba128dd}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 113 of file PrivateBaseContext.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/privatebase/PrivateBaseContext.h\end{CompactItemize}

@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{Thread\n|# threadMutex\l# isSleeping\l# threadFlagMutex\l# threadFlagConditionVariable\l# isWaiting\l# threadFlagMutexLockUntilSignal\l# threadFlagCVLockUntilSignal\l# tattr\l- threadId_\l|+ Thread()\l+ ~Thread()\l+ start()\l+ sleep()\l+ usleep()\l+ wakeUp()\l+ lock()\l+ unlock()\l+ waitForUnlockCondition()\l+ unlockConditionSatisfied()\l# run()\l- function()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{LocalAgent\n|- listeners\l- iters\l- db\l- tuner\l- pressedKey\l- estado\l- cm\l- stateManager\l- ps\l- document\l- nclStateMachine\l- context\l- media\l- user\l- _instance\l|+ LocalAgent()\l+ ~LocalAgent()\l+ getDatabase()\l+ stop()\l+ addAgentListener()\l+ removeAgentListener()\l+ run()\l+ getEstado()\l+ setEstado()\l+ getValue()\l+ setPressedKey()\l+ getPressedKey()\l+ addIteraction()\l+ removeIteraction()\l+ getKeyName()\l+ setTuner()\l+ setPrimaryKey()\l+ setNewUser()\l+ getInstance()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent.html"];
+}

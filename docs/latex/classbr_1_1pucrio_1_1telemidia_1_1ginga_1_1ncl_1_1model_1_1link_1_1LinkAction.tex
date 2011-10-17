@@ -1,0 +1,65 @@
+\section{LinkAction Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction}\index{br::pucrio::telemidia::ginga::ncl::model::link::LinkAction@{br::pucrio::telemidia::ginga::ncl::model::link::LinkAction}}
+Inheritance diagram for LinkAction:Collaboration diagram for LinkAction:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{LinkAction} (double {\bf delay})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_7b6879a978b136161fe770e1958823de}
+
+\item 
+bool \textbf{instanceOf} (string s)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_4081cb1ebb5adebc1d0858ff6f69af0d}
+
+\item 
+double \textbf{getWaitDelay} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_8d2a209d7f72371c9d6d1f88cfe8da36}
+
+\item 
+void \textbf{setWaitDelay} (double {\bf delay})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_ea0ff3516d9409b34fa29ce7b08bb8a2}
+
+\item 
+bool \textbf{hasDelay} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_aa700587d83e2db129e8229e2572bb09}
+
+\item 
+void \textbf{addActionProgressionListener} ({\bf LinkActionProgressionListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_c35560b4dac5e980173375b7b83ac534}
+
+\item 
+void \textbf{removeActionProgressionListener} ({\bf LinkActionProgressionListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_22d8a46458ce5e9e9ffd26e5ab84c6c6}
+
+\item 
+void \textbf{notifyProgressionListeners} (bool start)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_019e523665e8727c1fdcf4d6498d82b9}
+
+\item 
+virtual vector$<$ FormatterEvent $\ast$ $>$ $\ast$ \textbf{getEvents} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_8e62c6fde84172b6262fece11f155a89}
+
+\item 
+virtual vector$<$ {\bf LinkAction} $\ast$ $>$ $\ast$ \textbf{getImplicitRefRoleActions} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_996adea864c04ab061419b9c50ed72e4}
+
+\item 
+virtual void \textbf{run} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_72fcb26a14f6beb1c3fbace9ab3e7dbb}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+set$<$ string $>$ {\bf typeSet}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_145b3afaa194308141d367cc1393d565}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+double {\bf delay}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_0bf98c9ae4eac6da250cb1e2fac20365}
+
+\item 
+vector$<$ {\bf LinkActionProgressionListener} $\ast$ $>$ $\ast$ {\bf progressionListeners}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction_f9862ac297b09166ec633cdf05fb322c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 76 of file LinkAction.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/LinkAction.h\end{CompactItemize}

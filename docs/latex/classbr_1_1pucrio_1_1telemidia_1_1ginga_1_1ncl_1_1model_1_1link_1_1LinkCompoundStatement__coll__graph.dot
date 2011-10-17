@@ -1,0 +1,22 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{LinkCompoundStatement\n|# statements\l# negated\l# op\l|+ LinkCompoundStatement()\l+ ~LinkCompoundStatement()\l+ getOperator()\l+ addStatement()\l+ getStatements()\l+ isNegated()\l+ setNegated()\l+ getEvents()\l+ evaluate()\l# returnEvaluationResult()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{LinkStatement\n||+ LinkStatement()\l+ ~LinkStatement()\l+ evaluate()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkStatement.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{LinkCondition\n|# typeSet\l|+ LinkCondition()\l+ ~LinkCondition()\l+ instanceOf()\l+ getEvents()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCondition.html"];
+  Node4 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open"];
+  Node4 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>"];
+  Node5 [label="{set\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="statements",arrowtail="open"];
+  Node6 [label="{vector\< LinkStatement * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node6 [dir=back,color="orange",fontsize=10,style="dashed",label="\< LinkStatement * \>"];
+  Node7 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="op",arrowtail="open"];
+  Node8 [label="{short\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="negated",arrowtail="open"];
+  Node9 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

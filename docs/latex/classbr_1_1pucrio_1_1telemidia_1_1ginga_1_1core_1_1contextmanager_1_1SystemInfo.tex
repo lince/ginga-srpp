@@ -1,0 +1,86 @@
+\section{SystemInfo Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo}\index{br::pucrio::telemidia::ginga::core::contextmanager::SystemInfo@{br::pucrio::telemidia::ginga::core::contextmanager::SystemInfo}}
+Inheritance diagram for SystemInfo:Collaboration diagram for SystemInfo:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{setSystemTable} (map$<$ string, string $>$ $\ast${\bf sysTable})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_fe2c37138c6bb31dfa1d4f67d95a7152}
+
+\item 
+string \textbf{getSystemLanguage} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_1d6c0f603875e7fd53f28ea119e33d0c}
+
+\item 
+string \textbf{getCaptionLanguage} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_8a9cf278b1deb3b74a6e3ec90c409667}
+
+\item 
+string \textbf{getSubtitleLanguage} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_a26b9d9da53cc8c38ceeaec25167a185}
+
+\item 
+float \textbf{getReturnBitRate} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_2e3a73a14f94905299823859e0bed5c7}
+
+\item 
+void \textbf{getScreenSize} (int $\ast$width, int $\ast$height)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_106d1b5758de007ddabca000d27098ad}
+
+\item 
+void \textbf{getScreenGraphicSize} (int $\ast$width, int $\ast$height)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_c62e5213a540b372384c8e574d8fd29e}
+
+\item 
+string \textbf{getAudioType} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_a5e339d54eca9b24ae8bcf69d0d0d219}
+
+\item 
+float \textbf{getCPUClock} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_9bb5dd5bd8b19eda69ac1170370816d0}
+
+\item 
+float \textbf{getMemorySize} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_099308eb9975bdd9082de1571e728bae}
+
+\item 
+string \textbf{getOperatingSystem} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_d54b92d20e40c64d0020897132c36b85}
+
+\item 
+string \textbf{getJavaConfiguration} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_87d34fc109fd8f6db4d27abec78b9619}
+
+\item 
+string \textbf{getJavaProfile} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_a27ac30dc458c90b5437d779de8d3fb2}
+
+\item 
+string \textbf{getLuaVersion} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_58a67d4ebad189ff1958e3d1aebbe6fd}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{initializeClockSpeed} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_32f16a7174ada009f9bab61879196303}
+
+\item 
+string \textbf{getValue} (string attribute)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_ba4a54f3cbcad4f6225bd94f6146ebe8}
+
+\item 
+void \textbf{printSysTable} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_1ba09efda63d97f77d79420f63424cc2}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+utsname {\bf sn}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_9b402aad1b8c08bb3a3421b128c63cf8}
+
+\item 
+sysinfo {\bf info}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_1c6b3fa2f7897150767f8544aebb40a9}
+
+\item 
+float {\bf clockSpeed}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_d0b1853d20a12e61a5c3ec3d7becb64d}
+
+\item 
+map$<$ string, string $>$ $\ast$ {\bf sysTable}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1SystemInfo_aeb2270907b828eeabb99902e35a1403}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 67 of file SystemInfo.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingacc-cpp/gingacc-contextmanager/include/system/SystemInfo.h\end{CompactItemize}

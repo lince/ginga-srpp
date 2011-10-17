@@ -1,0 +1,65 @@
+\section{ApplicationExecutionObject Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject}\index{br::pucrio::telemidia::ginga::ncl::model::components::ApplicationExecutionObject@{br::pucrio::telemidia::ginga::ncl::model::components::ApplicationExecutionObject}}
+Inheritance diagram for ApplicationExecutionObject:Collaboration diagram for ApplicationExecutionObject:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{ApplicationExecutionObject} (string {\bf id}, Node $\ast$node, bool handling)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_d6169f288080ad0f4619f023dfbc042f}
+
+\item 
+\textbf{ApplicationExecutionObject} (string {\bf id}, Node $\ast$node, GenericDescriptor $\ast${\bf descriptor}, bool handling)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_fb2ec0abce688be4d48e7c22b1f09353}
+
+\item 
+\textbf{ApplicationExecutionObject} (string {\bf id}, Node $\ast$node, CascadingDescriptor $\ast${\bf descriptor}, bool handling)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_8b2d7b587fe01487d386fe4b90add513}
+
+\item 
+void \textbf{setCurrentEvent} (FormatterEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_de4aa1c8ab712eb3eef786af68214470}
+
+\item 
+bool \textbf{prepare} (FormatterEvent $\ast$event, double {\bf offsetTime})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_480a18449b619a46a8196c895a39dd68}
+
+\item 
+bool \textbf{start} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_ad5997aaaa2d622f0ca57f8b24a51a7b}
+
+\item 
+bool \textbf{stop} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_68a350717fe6bf9012843e7c977d87b2}
+
+\item 
+bool \textbf{abort} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_e75017b64297bc5a74260a768fb86cf1}
+
+\item 
+bool \textbf{pause} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_2853250ac5b9806e29d41f6f37b3b7f0}
+
+\item 
+bool \textbf{resume} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_28614c8a58170f93be7e0eab1c70a2bd}
+
+\item 
+bool \textbf{unprepare} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_ddc43e37140881425a111f275ad1c1da}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{initializeApplicationObject} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_b4de2820c65c9d06e5739a173b8c981b}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, FormatterEvent $\ast$ $>$ $\ast$ {\bf preparedEvents}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_a43d2bb8f3756816973fe3cefcdcd569}
+
+\item 
+FormatterEvent $\ast$ {\bf currentEvent}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1components_1_1ApplicationExecutionObject_513496d6a12bbfe8aa02a68a3572701c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 63 of file ApplicationExecutionObject.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/ApplicationExecutionObject.h\end{CompactItemize}

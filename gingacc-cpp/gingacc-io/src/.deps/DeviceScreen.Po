@@ -1,0 +1,4 @@
+DeviceScreen.o DeviceScreen.o: interface/output/DeviceScreen.cpp \
+  interface/output/../../../include/DeviceScreen.h
+
+interface/output/../../../include/DeviceScreen.h:

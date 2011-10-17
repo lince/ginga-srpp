@@ -1,0 +1,83 @@
+\section{PresentationEvent Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent}\index{br::pucrio::telemidia::ginga::ncl::model::event::PresentationEvent@{br::pucrio::telemidia::ginga::ncl::model::event::PresentationEvent}}
+Inheritance diagram for PresentationEvent:Collaboration diagram for PresentationEvent:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{PresentationEvent} (string {\bf id}, void $\ast${\bf executionObject}, ContentAnchor $\ast${\bf anchor})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_bb2688d1fdba291826eb3f7fd06ed882}
+
+\item 
+virtual {\bf $\sim$PresentationEvent} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_0b118747fafb5ccef4fc51166623279e}
+
+\item 
+bool \textbf{stop} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_68a350717fe6bf9012843e7c977d87b2}
+
+\item 
+double \textbf{getDuration} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_2e60fa87eb3c95c873109e928530a875}
+
+\item 
+double \textbf{getRepetitionInterval} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_886d1187d9e9da97ca85c6f451c3f644}
+
+\item 
+long \textbf{getRepetitions} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_df811128997837cc0d2e9a9b18c14d90}
+
+\item 
+void \textbf{setDuration} (double dur)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_9085316d32bc9b3030442f4811323bac}
+
+\item 
+void \textbf{setEnd} (double e)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_351990ea9254cb416abd71004f39470d}
+
+\item 
+void \textbf{setRepetitionSettings} (long repetitions, double {\bf repetitionInterval})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_02220b3870a4691bc2428cab122b23df}
+
+\item 
+double \textbf{getBegin} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_4a0dfb47c743a26a39e49696c0e5e1fe}
+
+\item 
+double \textbf{getEnd} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_9601985844def39b11f5b2499802e912}
+
+\item 
+void \textbf{incrementOccurrences} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_e517c2eaa88c947a2df8ef7376b4f63c}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static bool \textbf{isUndefinedInstant} (double value)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_c3d5bcb61a09025c32d742cc3c5c7053}
+
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const double {\bf UNDEFINED\_\-INSTANT}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_2befe4ce992e2353f387bfb141003f94}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+double {\bf begin}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_d5a257d1d61c6ba22b332bfc93059304}
+
+\item 
+double {\bf end}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_2c6c1302fc577e5e226869e3b899043e}
+
+\item 
+double {\bf duration}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_b9f68ef753113e9b47b3363a00156209}
+
+\item 
+long {\bf numPresentations}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_1516fd6ab65dd5487f937e108340841d}
+
+\item 
+double {\bf repetitionInterval}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1PresentationEvent_fc3516338462c7cb1df417e2816e21b8}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 72 of file PresentationEvent.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/PresentationEvent.h\end{CompactItemize}

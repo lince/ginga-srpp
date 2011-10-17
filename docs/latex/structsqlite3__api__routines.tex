@@ -1,0 +1,482 @@
+\section{sqlite3\_\-api\_\-routines Struct Reference}
+\label{structsqlite3__api__routines}\index{sqlite3_api_routines@{sqlite3\_\-api\_\-routines}}
+Collaboration diagram for sqlite3\_\-api\_\-routines:\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+void $\ast$($\ast$ \textbf{aggregate\_\-context} )(sqlite3\_\-context $\ast$, int nBytes)\label{structsqlite3__api__routines_a3f6a07d8461f938e6d7dfbe182ac934}
+
+\item 
+int($\ast$ \textbf{aggregate\_\-count} )(sqlite3\_\-context $\ast$)\label{structsqlite3__api__routines_f49dd1a65986741dbd67915afa2ba18d}
+
+\item 
+int($\ast$ \textbf{bind\_\-blob} )(sqlite3\_\-stmt $\ast$, int, const void $\ast$, int n, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_1f151062d21ab39ae05dd7668797411e}
+
+\item 
+int($\ast$ \textbf{bind\_\-double} )(sqlite3\_\-stmt $\ast$, int, double)\label{structsqlite3__api__routines_c26b919f2090d20b5dc32132a1b1e486}
+
+\item 
+int($\ast$ \textbf{bind\_\-int} )(sqlite3\_\-stmt $\ast$, int, int)\label{structsqlite3__api__routines_bfbb026281ef9abe27f04e0c31e732f2}
+
+\item 
+int($\ast$ \textbf{bind\_\-int64} )(sqlite3\_\-stmt $\ast$, int, sqlite\_\-int64)\label{structsqlite3__api__routines_fbeddc325be8ab3b97c5aee112e531e1}
+
+\item 
+int($\ast$ \textbf{bind\_\-null} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_336722666f298118a8ec0bad1983aa9b}
+
+\item 
+int($\ast$ \textbf{bind\_\-parameter\_\-count} )(sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_1abd04201b7c4c008327028499e45977}
+
+\item 
+int($\ast$ \textbf{bind\_\-parameter\_\-index} )(sqlite3\_\-stmt $\ast$, const char $\ast$zName)\label{structsqlite3__api__routines_21e8a0a87660bf39be444cbca873bb5c}
+
+\item 
+const char $\ast$($\ast$ \textbf{bind\_\-parameter\_\-name} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_8c801db3685ffe33f19dbfed925aef3b}
+
+\item 
+int($\ast$ \textbf{bind\_\-text} )(sqlite3\_\-stmt $\ast$, int, const char $\ast$, int n, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_9475a194b191eb7566128f4d9f61d759}
+
+\item 
+int($\ast$ \textbf{bind\_\-text16} )(sqlite3\_\-stmt $\ast$, int, const void $\ast$, int, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_1864dde550ef9c69bf68d36f11633159}
+
+\item 
+int($\ast$ \textbf{bind\_\-value} )(sqlite3\_\-stmt $\ast$, int, const sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_cecedb9c3a26b1a2cd6df6bd73054e58}
+
+\item 
+int($\ast$ \textbf{busy\_\-handler} )(sqlite3 $\ast$, int($\ast$)(void $\ast$, int), void $\ast$)\label{structsqlite3__api__routines_07863280cc4db06232073af2500e16dc}
+
+\item 
+int($\ast$ \textbf{busy\_\-timeout} )(sqlite3 $\ast$, int ms)\label{structsqlite3__api__routines_4a77eede68e8279d2429ad52ff7c4926}
+
+\item 
+int($\ast$ \textbf{changes} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_93870c0f7d19862394b0a8f5a391980f}
+
+\item 
+int($\ast$ \textbf{close} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_1f45b3481032b930398184dc31d805e9}
+
+\item 
+int($\ast$ \textbf{collation\_\-needed} )(sqlite3 $\ast$, void $\ast$, void($\ast$)(void $\ast$, sqlite3 $\ast$, int eTextRep, const char $\ast$))\label{structsqlite3__api__routines_ac7c05d742d1a2d86660c7e2d301cd9d}
+
+\item 
+int($\ast$ \textbf{collation\_\-needed16} )(sqlite3 $\ast$, void $\ast$, void($\ast$)(void $\ast$, sqlite3 $\ast$, int eTextRep, const void $\ast$))\label{structsqlite3__api__routines_9bf97924e10fe4594149002ce4eff816}
+
+\item 
+const void $\ast$($\ast$ \textbf{column\_\-blob} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_e65af8ed71bc847bc84634a7c3bc1848}
+
+\item 
+int($\ast$ \textbf{column\_\-bytes} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_9154a95e6a64e9aee74a0aa5ba1f356e}
+
+\item 
+int($\ast$ \textbf{column\_\-bytes16} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_c530c05ed061ba8657bf3608ad07ba59}
+
+\item 
+int($\ast$ \textbf{column\_\-count} )(sqlite3\_\-stmt $\ast$pStmt)\label{structsqlite3__api__routines_6e6725314a39923c38579ae0bd1a5893}
+
+\item 
+const char $\ast$($\ast$ \textbf{column\_\-database\_\-name} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_a8686074c774e2516df58b81bc587372}
+
+\item 
+const void $\ast$($\ast$ \textbf{column\_\-database\_\-name16} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_a5d92e88e326cf366beba3ef8be37504}
+
+\item 
+const char $\ast$($\ast$ \textbf{column\_\-decltype} )(sqlite3\_\-stmt $\ast$, int i)\label{structsqlite3__api__routines_fbd2bf759da299627ea832cb63775be0}
+
+\item 
+const void $\ast$($\ast$ \textbf{column\_\-decltype16} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_768e6df27b87415f073c967d32d5460a}
+
+\item 
+double($\ast$ \textbf{column\_\-double} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_4a93b1b12ac2def6b8153c9d1b723f9f}
+
+\item 
+int($\ast$ \textbf{column\_\-int} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_375da027bfdc8ec22d8834e79752c0fd}
+
+\item 
+sqlite\_\-int64($\ast$ \textbf{column\_\-int64} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_7aa6bb26b6c060b8cc61876bc54f1d07}
+
+\item 
+const char $\ast$($\ast$ \textbf{column\_\-name} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_784cfd596610faa920342ed09f1a37a6}
+
+\item 
+const void $\ast$($\ast$ \textbf{column\_\-name16} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_fce883abe254baded5b3c190d5504d3b}
+
+\item 
+const char $\ast$($\ast$ \textbf{column\_\-origin\_\-name} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_b9ef4b94066c03896867cd3eb2d46a44}
+
+\item 
+const void $\ast$($\ast$ \textbf{column\_\-origin\_\-name16} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_ccef16dde46cff11a2f6d08ab94bd932}
+
+\item 
+const char $\ast$($\ast$ \textbf{column\_\-table\_\-name} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_125f3bd7b214f90e5bd227306c1d95a9}
+
+\item 
+const void $\ast$($\ast$ \textbf{column\_\-table\_\-name16} )(sqlite3\_\-stmt $\ast$, int)\label{structsqlite3__api__routines_dfa56aa5c054beb26b3d8349b3567d94}
+
+\item 
+const unsigned char $\ast$($\ast$ \textbf{column\_\-text} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_6ac63f3249346b8ee37a6cfa58446b2a}
+
+\item 
+const void $\ast$($\ast$ \textbf{column\_\-text16} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_02068b3d4f675c884583c5f8616bc88a}
+
+\item 
+int($\ast$ \textbf{column\_\-type} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_77ff781fca9180fee79824796056da5c}
+
+\item 
+sqlite3\_\-value $\ast$($\ast$ \textbf{column\_\-value} )(sqlite3\_\-stmt $\ast$, int iCol)\label{structsqlite3__api__routines_eeffe0610fed9bfb6747671a10be60aa}
+
+\item 
+void $\ast$($\ast$ \textbf{commit\_\-hook} )(sqlite3 $\ast$, int($\ast$)(void $\ast$), void $\ast$)\label{structsqlite3__api__routines_e7b3d173267ff39b850ef7db9f9f7536}
+
+\item 
+int($\ast$ \textbf{complete} )(const char $\ast$sql)\label{structsqlite3__api__routines_1b63e29169449d94c6d1cbb46135532e}
+
+\item 
+int($\ast$ \textbf{complete16} )(const void $\ast$sql)\label{structsqlite3__api__routines_770e7e8496726906c79bcf1058409ae9}
+
+\item 
+int($\ast$ \textbf{create\_\-collation} )(sqlite3 $\ast$, const char $\ast$, int, void $\ast$, int($\ast$)(void $\ast$, int, const void $\ast$, int, const void $\ast$))\label{structsqlite3__api__routines_c055315336067426d0297f1765605651}
+
+\item 
+int($\ast$ \textbf{create\_\-collation16} )(sqlite3 $\ast$, const void $\ast$, int, void $\ast$, int($\ast$)(void $\ast$, int, const void $\ast$, int, const void $\ast$))\label{structsqlite3__api__routines_7517b31879a871758be900568ea2ccf9}
+
+\item 
+int($\ast$ \textbf{create\_\-function} )(sqlite3 $\ast$, const char $\ast$, int, int, void $\ast$, void($\ast$xFunc)(sqlite3\_\-context $\ast$, int, sqlite3\_\-value $\ast$$\ast$), void($\ast$xStep)(sqlite3\_\-context $\ast$, int, sqlite3\_\-value $\ast$$\ast$), void($\ast$xFinal)(sqlite3\_\-context $\ast$))\label{structsqlite3__api__routines_6488d9b672d6b3834b70b4747e8c568a}
+
+\item 
+int($\ast$ \textbf{create\_\-function16} )(sqlite3 $\ast$, const void $\ast$, int, int, void $\ast$, void($\ast$xFunc)(sqlite3\_\-context $\ast$, int, sqlite3\_\-value $\ast$$\ast$), void($\ast$xStep)(sqlite3\_\-context $\ast$, int, sqlite3\_\-value $\ast$$\ast$), void($\ast$xFinal)(sqlite3\_\-context $\ast$))\label{structsqlite3__api__routines_7eecbd4fed986bdc02c0ab172dc2cb47}
+
+\item 
+int($\ast$ \textbf{create\_\-module} )(sqlite3 $\ast$, const char $\ast$, const {\bf sqlite3\_\-module} $\ast$, void $\ast$)\label{structsqlite3__api__routines_5a1ad5b274ad3c925e1ae8f830a938bc}
+
+\item 
+int($\ast$ \textbf{data\_\-count} )(sqlite3\_\-stmt $\ast$pStmt)\label{structsqlite3__api__routines_7e58400e657a621db63af81bc25536ac}
+
+\item 
+sqlite3 $\ast$($\ast$ \textbf{db\_\-handle} )(sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_be8f9392ea9325806fa302cd340755ba}
+
+\item 
+int($\ast$ \textbf{declare\_\-vtab} )(sqlite3 $\ast$, const char $\ast$)\label{structsqlite3__api__routines_b0a34e0d4a96fd1f902d0f6f06685b47}
+
+\item 
+int($\ast$ \textbf{enable\_\-shared\_\-cache} )(int)\label{structsqlite3__api__routines_c1237ed9fc4243e26bad6a1b6dde1e35}
+
+\item 
+int($\ast$ \textbf{errcode} )(sqlite3 $\ast$db)\label{structsqlite3__api__routines_dc08ede03018a2d35a3d8d8c60fbcf9d}
+
+\item 
+const char $\ast$($\ast$ \textbf{errmsg} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_0e9fafd41411b21d65433baa08841336}
+
+\item 
+const void $\ast$($\ast$ \textbf{errmsg16} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_f3b33f0643951c198db3decd57c8106d}
+
+\item 
+int($\ast$ \textbf{exec} )(sqlite3 $\ast$, const char $\ast$, sqlite3\_\-callback, void $\ast$, char $\ast$$\ast$)\label{structsqlite3__api__routines_e0659d13c53d1a695cec5fccaca76b9c}
+
+\item 
+int($\ast$ \textbf{expired} )(sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_3b7bdc1ea9eee2b52d8a082d252e1829}
+
+\item 
+int($\ast$ \textbf{finalize} )(sqlite3\_\-stmt $\ast$pStmt)\label{structsqlite3__api__routines_d5418cddfc1a9bf90af588a894ddb594}
+
+\item 
+void($\ast$ \textbf{free} )(void $\ast$)\label{structsqlite3__api__routines_b11e308af4d13f0e0e4bd2c66dd5c1a0}
+
+\item 
+void($\ast$ \textbf{free\_\-table} )(char $\ast$$\ast$result)\label{structsqlite3__api__routines_4339b8200f8cade769773cd0e41225ac}
+
+\item 
+int($\ast$ \textbf{get\_\-autocommit} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_3bba0c59be3759e884be9f1651c86eef}
+
+\item 
+void $\ast$($\ast$ \textbf{get\_\-auxdata} )(sqlite3\_\-context $\ast$, int)\label{structsqlite3__api__routines_26978c033bf9e8132f5a2a5e84f2f922}
+
+\item 
+int($\ast$ \textbf{get\_\-table} )(sqlite3 $\ast$, const char $\ast$, char $\ast$$\ast$$\ast$, int $\ast$, int $\ast$, char $\ast$$\ast$)\label{structsqlite3__api__routines_26519b89594fca7ab6970dd5b92b8038}
+
+\item 
+int($\ast$ \textbf{global\_\-recover} )(void)\label{structsqlite3__api__routines_918aa1cd34b7573aac518d595026e3aa}
+
+\item 
+void($\ast$ \textbf{interruptx} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_4d958a09991a2c8238221ad562606838}
+
+\item 
+sqlite\_\-int64($\ast$ \textbf{last\_\-insert\_\-rowid} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_338a77e3cd0c9d7f664acec5e5abfe02}
+
+\item 
+const char $\ast$($\ast$ \textbf{libversion} )(void)\label{structsqlite3__api__routines_639729f68a52dfbc3827cf7903185bad}
+
+\item 
+int($\ast$ \textbf{libversion\_\-number} )(void)\label{structsqlite3__api__routines_3686398609925b47cf3a1543c02913b9}
+
+\item 
+void $\ast$($\ast$ \textbf{malloc} )(int)\label{structsqlite3__api__routines_7e6bbd5166f217b9aae04eddedc03039}
+
+\item 
+char $\ast$($\ast$ \textbf{mprintf} )(const char $\ast$,...)\label{structsqlite3__api__routines_02888424ae73cf3c7c0c67498e814162}
+
+\item 
+int($\ast$ \textbf{open} )(const char $\ast$, sqlite3 $\ast$$\ast$)\label{structsqlite3__api__routines_fa37a9239bbb695aee83ad18ef93881a}
+
+\item 
+int($\ast$ \textbf{open16} )(const void $\ast$, sqlite3 $\ast$$\ast$)\label{structsqlite3__api__routines_666c7efd77ff24494a5d554705124f28}
+
+\item 
+int($\ast$ \textbf{prepare} )(sqlite3 $\ast$, const char $\ast$, int, sqlite3\_\-stmt $\ast$$\ast$, const char $\ast$$\ast$)\label{structsqlite3__api__routines_a74749c95e34e59552b05aebbbd3b212}
+
+\item 
+int($\ast$ \textbf{prepare16} )(sqlite3 $\ast$, const void $\ast$, int, sqlite3\_\-stmt $\ast$$\ast$, const void $\ast$$\ast$)\label{structsqlite3__api__routines_c7388262aa9bdb624f1bf2510af53dd9}
+
+\item 
+void $\ast$($\ast$ \textbf{profile} )(sqlite3 $\ast$, void($\ast$)(void $\ast$, const char $\ast$, sqlite\_\-uint64), void $\ast$)\label{structsqlite3__api__routines_562fdf3ecaaee38a04acfde7ee5f16fa}
+
+\item 
+void($\ast$ \textbf{progress\_\-handler} )(sqlite3 $\ast$, int, int($\ast$)(void $\ast$), void $\ast$)\label{structsqlite3__api__routines_82835ee5de262ba3f2c8eafa8084239a}
+
+\item 
+void $\ast$($\ast$ \textbf{realloc} )(void $\ast$, int)\label{structsqlite3__api__routines_a674e9e888b9062d223eac5705593d1f}
+
+\item 
+int($\ast$ \textbf{reset} )(sqlite3\_\-stmt $\ast$pStmt)\label{structsqlite3__api__routines_278b50008671f4d2c9fe2cd714914755}
+
+\item 
+void($\ast$ \textbf{result\_\-blob} )(sqlite3\_\-context $\ast$, const void $\ast$, int, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_055f8281c2d07ab170b2b772deb77f1a}
+
+\item 
+void($\ast$ \textbf{result\_\-double} )(sqlite3\_\-context $\ast$, double)\label{structsqlite3__api__routines_d732954deb9dda531cd138ce9c706361}
+
+\item 
+void($\ast$ \textbf{result\_\-error} )(sqlite3\_\-context $\ast$, const char $\ast$, int)\label{structsqlite3__api__routines_12976ccb8189106083edd7995abe09a3}
+
+\item 
+void($\ast$ \textbf{result\_\-error16} )(sqlite3\_\-context $\ast$, const void $\ast$, int)\label{structsqlite3__api__routines_cb9025515faae2d91a3f9b8025430a3c}
+
+\item 
+void($\ast$ \textbf{result\_\-int} )(sqlite3\_\-context $\ast$, int)\label{structsqlite3__api__routines_02cb29ba59fa2f6d5767d52824e97f82}
+
+\item 
+void($\ast$ \textbf{result\_\-int64} )(sqlite3\_\-context $\ast$, sqlite\_\-int64)\label{structsqlite3__api__routines_780f3d8b790e1786d54918dba4d06429}
+
+\item 
+void($\ast$ \textbf{result\_\-null} )(sqlite3\_\-context $\ast$)\label{structsqlite3__api__routines_9019c21bbe68c6f5b50179b2e42e847d}
+
+\item 
+void($\ast$ \textbf{result\_\-text} )(sqlite3\_\-context $\ast$, const char $\ast$, int, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_0db1250dc54d4005762c7a590837fad1}
+
+\item 
+void($\ast$ \textbf{result\_\-text16} )(sqlite3\_\-context $\ast$, const void $\ast$, int, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_49cb3aea6d5e9dbe91bf00454e28195a}
+
+\item 
+void($\ast$ \textbf{result\_\-text16be} )(sqlite3\_\-context $\ast$, const void $\ast$, int, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_cc52777595a2c9eeda5e43f79ace6f3e}
+
+\item 
+void($\ast$ \textbf{result\_\-text16le} )(sqlite3\_\-context $\ast$, const void $\ast$, int, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_110983f2ce7d5ee1a1c80f5ba6a5b340}
+
+\item 
+void($\ast$ \textbf{result\_\-value} )(sqlite3\_\-context $\ast$, sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_11e4fd04208a83ba842fa96762b7f857}
+
+\item 
+void $\ast$($\ast$ \textbf{rollback\_\-hook} )(sqlite3 $\ast$, void($\ast$)(void $\ast$), void $\ast$)\label{structsqlite3__api__routines_69ab0f4340fb0cbf7cdc0c089ff8f6ba}
+
+\item 
+int($\ast$ \textbf{set\_\-authorizer} )(sqlite3 $\ast$, int($\ast$)(void $\ast$, int, const char $\ast$, const char $\ast$, const char $\ast$, const char $\ast$), void $\ast$)\label{structsqlite3__api__routines_c679926d70c6e29d4dba3f06f4c5eb4b}
+
+\item 
+void($\ast$ \textbf{set\_\-auxdata} )(sqlite3\_\-context $\ast$, int, void $\ast$, void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_0de2a233e569fb5892365cf016b73b0d}
+
+\item 
+char $\ast$($\ast$ \textbf{snprintf} )(int, char $\ast$, const char $\ast$,...)\label{structsqlite3__api__routines_92e1be60503dfef206002fb8fa3586b2}
+
+\item 
+int($\ast$ \textbf{step} )(sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_3a5f5770449dbcccecf49352383a2e30}
+
+\item 
+int($\ast$ \textbf{table\_\-column\_\-metadata} )(sqlite3 $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, char const $\ast$$\ast$, char const $\ast$$\ast$, int $\ast$, int $\ast$, int $\ast$)\label{structsqlite3__api__routines_466f3c946ec753ae502783313c64c6ca}
+
+\item 
+void($\ast$ \textbf{thread\_\-cleanup} )(void)\label{structsqlite3__api__routines_d12a881cadf72c0af17243aa7993121e}
+
+\item 
+int($\ast$ \textbf{total\_\-changes} )(sqlite3 $\ast$)\label{structsqlite3__api__routines_fe877b33cc6849b7d9aa02c9ad1bb57a}
+
+\item 
+void $\ast$($\ast$ \textbf{trace} )(sqlite3 $\ast$, void($\ast$xTrace)(void $\ast$, const char $\ast$), void $\ast$)\label{structsqlite3__api__routines_e3c08ba6289b63a42be96bf8da52d8a2}
+
+\item 
+int($\ast$ \textbf{transfer\_\-bindings} )(sqlite3\_\-stmt $\ast$, sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_b786ce7288754a0be04ef6d46e7596fe}
+
+\item 
+void $\ast$($\ast$ \textbf{update\_\-hook} )(sqlite3 $\ast$, void($\ast$)(void $\ast$, int, char const $\ast$, char const $\ast$, sqlite\_\-int64), void $\ast$)\label{structsqlite3__api__routines_c40dbbad3100106caa20bd27c912a5c2}
+
+\item 
+void $\ast$($\ast$ \textbf{user\_\-data} )(sqlite3\_\-context $\ast$)\label{structsqlite3__api__routines_fb39188578dd0f6dac40cbeb44b6ce3a}
+
+\item 
+const void $\ast$($\ast$ \textbf{value\_\-blob} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_d9180b5b37542f97cfd7ea1bf9a9bab4}
+
+\item 
+int($\ast$ \textbf{value\_\-bytes} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_c722dfd6cd6337db8c7f200d5b11f95e}
+
+\item 
+int($\ast$ \textbf{value\_\-bytes16} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_06b01d2b6f80a5b94ca28f7b3b47c98d}
+
+\item 
+double($\ast$ \textbf{value\_\-double} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_a6c0e19bf1a58ad9f05a8c75717cb6eb}
+
+\item 
+int($\ast$ \textbf{value\_\-int} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_c55457e54f0c23e19bbfd8c585a402e4}
+
+\item 
+sqlite\_\-int64($\ast$ \textbf{value\_\-int64} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_36316fdb3b6503e04540a1a10ea94cf5}
+
+\item 
+int($\ast$ \textbf{value\_\-numeric\_\-type} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_1c6a8035966527371c64ff22ad251857}
+
+\item 
+const unsigned char $\ast$($\ast$ \textbf{value\_\-text} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_be14a00d2f88559b155e84569f355190}
+
+\item 
+const void $\ast$($\ast$ \textbf{value\_\-text16} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_3cdd34fde377f5bbf37ba5cecbbc9ed7}
+
+\item 
+const void $\ast$($\ast$ \textbf{value\_\-text16be} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_1e75569d37ccbc28e24545c12f0b6320}
+
+\item 
+const void $\ast$($\ast$ \textbf{value\_\-text16le} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_1ff6b93be70f2aeafb9920602bd8bd8f}
+
+\item 
+int($\ast$ \textbf{value\_\-type} )(sqlite3\_\-value $\ast$)\label{structsqlite3__api__routines_ffe88bff4b7cecdcb2a1adb719648405}
+
+\item 
+char $\ast$($\ast$ \textbf{vmprintf} )(const char $\ast$, va\_\-list)\label{structsqlite3__api__routines_53b5ad4f776be9610d1a902dcdfb46c7}
+
+\item 
+int($\ast$ \textbf{overload\_\-function} )(sqlite3 $\ast$, const char $\ast$zFuncName, int nArg)\label{structsqlite3__api__routines_c85e89a1ce3eb9318e4653b542c0eff1}
+
+\item 
+int($\ast$ \textbf{prepare\_\-v2} )(sqlite3 $\ast$, const char $\ast$, int, sqlite3\_\-stmt $\ast$$\ast$, const char $\ast$$\ast$)\label{structsqlite3__api__routines_58099ce19816a66c90763e18e2a48a95}
+
+\item 
+int($\ast$ \textbf{prepare16\_\-v2} )(sqlite3 $\ast$, const void $\ast$, int, sqlite3\_\-stmt $\ast$$\ast$, const void $\ast$$\ast$)\label{structsqlite3__api__routines_d1ff561fae4cafcd84457c135014c668}
+
+\item 
+int($\ast$ \textbf{clear\_\-bindings} )(sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_d3b4576b95aeaad7901189be22ff181d}
+
+\item 
+int($\ast$ \textbf{create\_\-module\_\-v2} )(sqlite3 $\ast$, const char $\ast$, const {\bf sqlite3\_\-module} $\ast$, void $\ast$, void($\ast$xDestroy)(void $\ast$))\label{structsqlite3__api__routines_db23aa0a0e87e87a49fd966bd76074c6}
+
+\item 
+int($\ast$ \textbf{bind\_\-zeroblob} )(sqlite3\_\-stmt $\ast$, int, int)\label{structsqlite3__api__routines_ef29af08d96132a9c1614e71d3fd5565}
+
+\item 
+int($\ast$ \textbf{blob\_\-bytes} )(sqlite3\_\-blob $\ast$)\label{structsqlite3__api__routines_fec8ae98efedcf23cf4c905c4d19a827}
+
+\item 
+int($\ast$ \textbf{blob\_\-close} )(sqlite3\_\-blob $\ast$)\label{structsqlite3__api__routines_de93370fd15e0448e6772f7b78a84fc6}
+
+\item 
+int($\ast$ \textbf{blob\_\-open} )(sqlite3 $\ast$, const char $\ast$, const char $\ast$, const char $\ast$, sqlite3\_\-int64, int, sqlite3\_\-blob $\ast$$\ast$)\label{structsqlite3__api__routines_18a0c32756c791c5a73bb4c45ee7ce50}
+
+\item 
+int($\ast$ \textbf{blob\_\-read} )(sqlite3\_\-blob $\ast$, void $\ast$, int, int)\label{structsqlite3__api__routines_29cc9b9b5b2c27b811b9a88fb58baafb}
+
+\item 
+int($\ast$ \textbf{blob\_\-write} )(sqlite3\_\-blob $\ast$, const void $\ast$, int, int)\label{structsqlite3__api__routines_3e901af06611d2fb2b5149f46ec860bc}
+
+\item 
+int($\ast$ \textbf{create\_\-collation\_\-v2} )(sqlite3 $\ast$, const char $\ast$, int, void $\ast$, int($\ast$)(void $\ast$, int, const void $\ast$, int, const void $\ast$), void($\ast$)(void $\ast$))\label{structsqlite3__api__routines_a3e459de0245e62a8dec024afd2826a8}
+
+\item 
+int($\ast$ \textbf{file\_\-control} )(sqlite3 $\ast$, const char $\ast$, int, void $\ast$)\label{structsqlite3__api__routines_b03f5516b9f04024b8530a083d9f646a}
+
+\item 
+sqlite3\_\-int64($\ast$ \textbf{memory\_\-highwater} )(int)\label{structsqlite3__api__routines_7512654c388986f791506d2ae1f6d90c}
+
+\item 
+sqlite3\_\-int64($\ast$ \textbf{memory\_\-used} )(void)\label{structsqlite3__api__routines_be5f5ab6961ecf223720018250232728}
+
+\item 
+sqlite3\_\-mutex $\ast$($\ast$ \textbf{mutex\_\-alloc} )(int)\label{structsqlite3__api__routines_1694d7b331f61cf5c7a7fb05cc39b580}
+
+\item 
+void($\ast$ \textbf{mutex\_\-enter} )(sqlite3\_\-mutex $\ast$)\label{structsqlite3__api__routines_21975d5ff465199d3b79e9e313cfc801}
+
+\item 
+void($\ast$ \textbf{mutex\_\-free} )(sqlite3\_\-mutex $\ast$)\label{structsqlite3__api__routines_e34caaf8a9e17927a23175ebbd9866d1}
+
+\item 
+void($\ast$ \textbf{mutex\_\-leave} )(sqlite3\_\-mutex $\ast$)\label{structsqlite3__api__routines_372dd2c4aaa7f71090f76b9c9256ad2f}
+
+\item 
+int($\ast$ \textbf{mutex\_\-try} )(sqlite3\_\-mutex $\ast$)\label{structsqlite3__api__routines_afd79e089da26e858ba70fa309ff1ef4}
+
+\item 
+int($\ast$ \textbf{open\_\-v2} )(const char $\ast$, sqlite3 $\ast$$\ast$, int, const char $\ast$)\label{structsqlite3__api__routines_40dd32889e0ba459db99fdef07663d0a}
+
+\item 
+int($\ast$ \textbf{release\_\-memory} )(int)\label{structsqlite3__api__routines_7e32043b1aa7ba1b825bb5aeabb080cf}
+
+\item 
+void($\ast$ \textbf{result\_\-error\_\-nomem} )(sqlite3\_\-context $\ast$)\label{structsqlite3__api__routines_df40275acd4f8897118d5d4780af4e6c}
+
+\item 
+void($\ast$ \textbf{result\_\-error\_\-toobig} )(sqlite3\_\-context $\ast$)\label{structsqlite3__api__routines_a8929fef49d9d32ac8f2f687dc3977e0}
+
+\item 
+int($\ast$ \textbf{sleep} )(int)\label{structsqlite3__api__routines_88a57bd1e9f540f7b210ef06c658483e}
+
+\item 
+void($\ast$ \textbf{soft\_\-heap\_\-limit} )(int)\label{structsqlite3__api__routines_8a05a4d3e8498bb401178416a55b0e69}
+
+\item 
+{\bf sqlite3\_\-vfs} $\ast$($\ast$ \textbf{vfs\_\-find} )(const char $\ast$)\label{structsqlite3__api__routines_3b9749bc98464266911212e3b571f9d3}
+
+\item 
+int($\ast$ \textbf{vfs\_\-register} )({\bf sqlite3\_\-vfs} $\ast$, int)\label{structsqlite3__api__routines_9436d0293c93ea3aa35cf7aa794ed0e6}
+
+\item 
+int($\ast$ \textbf{vfs\_\-unregister} )({\bf sqlite3\_\-vfs} $\ast$)\label{structsqlite3__api__routines_28c15d0ffc8685e987ea18541f98c8e7}
+
+\item 
+int($\ast$ \textbf{xthreadsafe} )(void)\label{structsqlite3__api__routines_25a74c6b3c02e7251f035ce03876b8a8}
+
+\item 
+void($\ast$ \textbf{result\_\-zeroblob} )(sqlite3\_\-context $\ast$, int)\label{structsqlite3__api__routines_4f6430e30b489dde7afa225ab704eca0}
+
+\item 
+void($\ast$ \textbf{result\_\-error\_\-code} )(sqlite3\_\-context $\ast$, int)\label{structsqlite3__api__routines_33e15d94e505888a18a734f5bb12e091}
+
+\item 
+int($\ast$ \textbf{test\_\-control} )(int,...)\label{structsqlite3__api__routines_9749797cdc3abe3157e7e64de25b9f71}
+
+\item 
+void($\ast$ \textbf{randomness} )(int, void $\ast$)\label{structsqlite3__api__routines_5630ff8a2452b43e5e6a751068e16d6d}
+
+\item 
+sqlite3 $\ast$($\ast$ \textbf{context\_\-db\_\-handle} )(sqlite3\_\-context $\ast$)\label{structsqlite3__api__routines_c3934b6c328c2b96bd4d43a151a50955}
+
+\item 
+int($\ast$ \textbf{extended\_\-result\_\-codes} )(sqlite3 $\ast$, int)\label{structsqlite3__api__routines_1f78b8bab8274d0f71d8bae21353c938}
+
+\item 
+int($\ast$ \textbf{limit} )(sqlite3 $\ast$, int, int)\label{structsqlite3__api__routines_39a7782da1b101f003c77cb7feba963c}
+
+\item 
+sqlite3\_\-stmt $\ast$($\ast$ \textbf{next\_\-stmt} )(sqlite3 $\ast$, sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_92949cd4e4c4330f35403651f2b2568e}
+
+\item 
+const char $\ast$($\ast$ \textbf{sql} )(sqlite3\_\-stmt $\ast$)\label{structsqlite3__api__routines_afbaa0d319c4375458c4ba0a15f2d766}
+
+\item 
+int($\ast$ \textbf{status} )(int, int $\ast$, int $\ast$, int)\label{structsqlite3__api__routines_2cdcfe3ca0aaa5153a385f6c1e14b2df}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 38 of file sqlite3ext.h.
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/Database/include/sqlite3ext.h\end{CompactItemize}

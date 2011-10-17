@@ -1,0 +1,139 @@
+#ifndef _SCHEDULER_H_
+#define _SCHEDULER_H_
+
+#include <vector>
+
+#include <pthread.h>
+#include <string>
+#include <iostream>
+#include <fstream>
+
+#include <cstdlib>
+#include <cstdio>
+
+using namespace std;
+
+#ifdef HAVE_RECOMMENDER
+
+#include <util/functions.h>
+using namespace br::pucrio::telemidia::util;
+
+#include "recommender/utils/Utils.h"
+
+#include "contextmanager/ImplicitContextManager.h"
+
+#else
+
+#include <../../telemidia-util-cpp/include/functions.h>
+using namespace br::pucrio::telemidia::util;
+
+#include <../../Utils/include/Utils.h>
+
+#include <../../gingacc-cpp/gingacc-contextmanager/include/ImplicitContextManager.h>
+
+#endif
+
+using namespace br::ufscar::lince::ginga::recommender::util;
+
+using namespace std;
+
+namespace br {
+    namespace ufscar {
+        namespace lince {
+            namespace ginga {
+                namespace recommender {
+		  
+		    class Scheduler;
+		    
+		    void *runThread(void * p );
+		    
+                    class Scheduler {
+                    public:
+
+                        /**
+                         * Construtor.
+                         * Devolve uma instância de Scheduler.
+                         */
+                        Scheduler();
+
+                        /**
+                         * Destrutor.
+                         */
+                        ~Scheduler();
+
+			/**
+			 * Retorna uma instância da classe Agendadora
+			 * @return Um objeto do tipo da classe Scheduler
+			 */
+			 static Scheduler* getInstance();
+			
+			 /**
+			  * Verifica e detecta o momento de realizar a mineração dos dados
+			  */
+			  void checkRecommenderModule();
+	    
+	    
+			  /**
+			  * Obtém acesso a thread que executa o scheduler do módulo Recommender
+			  * @return thread
+			  */
+			  pthread_t getThread();
+			  
+			
+			 
+                        /**
+                         * Agenda a execução de uma aplicação.
+                         * @param lib nome da biblioteca que contém a aplicação a ser executada.
+                         * @param constructor construtor da aplicação que devolve uma instância para a interface SchedulerItem.
+                         * @param destructor destrutor da aplicação.
+                         * @param params parâmetros para a aplicação.
+                         * @param begin data e horário para iniciar a execução da aplicação (formato: dd/MM/aaaa-hh:mm:ss).
+                         * @param end data e horário para o fim da execução da aplicação (formato: dd/MM/aaaa-hh:mm:ss).
+                         * @param period periodicidade do agendamento: 1 - uma única vez; 2 - uma vez por dia; 3 - indefinidamente; 4 - uma vez por semana; 5 - uma vez por mês.
+                         * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                         */
+                        bool schedule(const char* lib, const char* constructor, const char* destructor, vector<char*>* params, const char* begin, const char* end, int period);
+
+                        /**
+                         * Carrega para a memória as informações de agendamentos armazenadas em arquivo.
+                         * @param file arquivo XML com informações de agendamentos.
+                         * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                         */
+                        bool load(const char* file);
+
+                        /**
+                         * Salva em arquivo as informações de agendamentos em memória.
+                         * @param file arquivo XML para destino das informações de agendamentos.
+                         * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                         */
+                        bool store(const char* file);
+			
+			double timeTomin;
+			
+			bool should_stop(void) {
+			  return stopflag;
+			}
+
+			void stop(void) {
+			  stopflag = true;
+			}
+			
+		private:
+			/**
+			* singleton
+			*/
+			static Scheduler* _instance;
+			void *temp;
+			pthread_t recomenda;
+			volatile bool stopflag;
+		      
+
+                    };
+                }
+            }
+        }
+    }
+}
+
+#endif
+

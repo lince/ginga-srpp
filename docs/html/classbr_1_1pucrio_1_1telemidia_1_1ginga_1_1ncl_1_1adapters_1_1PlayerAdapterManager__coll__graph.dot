@@ -1,0 +1,34 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{PlayerAdapterManager\n|- objectPlayers\l- deletePlayers\l- playerNames\l- mimeDefaultTable\l- playerTable\l- editingCommandListener\l- epgFactoryAdapter\l- running\l- timeBaseProvider\l- nclPlayerData\l- mutexPlayer\l|+ PlayerAdapterManager()\l+ ~PlayerAdapterManager()\l+ getNclPlayerData()\l+ setTimeBaseProvider()\l+ getTimeBaseProvider()\l+ setVisible()\l+ removePlayer()\l+ setNclEditListener()\l+ getPlayer()\l+ setStandByState()\l+ pushEPGEventToEPGFactory()\l+ timeShift()\l+ isEmbeddedApp()\l# clearDeletePlayers()\l# run()\l- getPlayerClass()\l- removePlayer()\l- clear()\l- readConfigFiles()\l- initializePlayer()\l- isEmbeddedAppMediaType()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{Thread\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node3 [label="{IPlayerAdapterManager\n||+ ~IPlayerAdapterManager()\l+ setStandByState()\l+ getNclPlayerData()\l+ getTimeBaseProvider()\l+ removePlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1IPlayerAdapterManager.html"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="mimeDefaultTable\nplayerTable",arrowtail="open",fontname="FreeSans.ttf"];
+  Node4 [label="{map\< string, string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, string \>",fontname="FreeSans.ttf"];
+  Node5 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="editingCommandListener",arrowtail="open",fontname="FreeSans.ttf"];
+  Node6 [label="{INclEditListener\n||+ ~INclEditListener()\l+ nclEdit()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1INclEditListener.html"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="deletePlayers\nobjectPlayers",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 [label="{map\< string, IPlayerAdapter * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node7 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, IPlayerAdapter * \>",fontname="FreeSans.ttf"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="epgFactoryAdapter",arrowtail="open",fontname="FreeSans.ttf"];
+  Node8 [label="{IPlayerAdapter\n||+ ~IPlayerAdapter()\l+ getPlayer()\l+ setPropertyValue()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1IPlayerAdapter.html"];
+  Node9 -> Node8 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node9 [label="{IStateProvider\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="mutexPlayer",arrowtail="open",fontname="FreeSans.ttf"];
+  Node10 [label="{pthread_mutex_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="running",arrowtail="open",fontname="FreeSans.ttf"];
+  Node11 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="nclPlayerData",arrowtail="open",fontname="FreeSans.ttf"];
+  Node12 [label="{NclPlayerData *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="timeBaseProvider",arrowtail="open",fontname="FreeSans.ttf"];
+  Node13 [label="{ITimeBaseProvider *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node14 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="playerNames",arrowtail="open",fontname="FreeSans.ttf"];
+  Node14 [label="{map\< IPlayerAdapter *, string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node14 [dir=back,color="orange",fontsize=10,style="dashed",label="\< IPlayerAdapter *, string \>",fontname="FreeSans.ttf"];
+}

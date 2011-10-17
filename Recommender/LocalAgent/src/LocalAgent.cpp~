@@ -1,0 +1,127 @@
+#include "../include/LocalAgent.h"
+
+namespace br {
+    namespace ufscar {
+        namespace lince {
+            namespace ginga {
+                namespace recommender {
+                
+                	LocalAgent* LocalAgent::_instance = 0;
+
+                    /**
+                     * Construtor
+                     */
+                    LocalAgent::LocalAgent() {
+                    	this->estado = true;
+                    	SystemResource* sys;
+                    }
+
+                    /**
+                     * Destrutor.
+                     */
+                    LocalAgent::~LocalAgent() {
+                        db->closeDatabase();
+                    }
+
+                    /**
+                     * Inicializa parâmetros necessários da classe.
+                     * @param DB banco de dados onde serão armazendas as informações coletadas.
+                     * @param Prop informa quais tipos de interação devem ser coletadas: 1 - Canal; 10 - Volume; 100 - NCL 
+                     * (exemplo: 101 coleta informações de interações com canal e com aplicações NCL.
+                     */
+                    void LocalAgent::initialize(Database* DB, int prop) {
+                        db = DB;
+                        
+                        channel = ((prop % 2) == 1);
+                        volume = ((prop / 10) % 2 == 1);                                
+                        ncl = ((prop / 100) == 1);
+
+                        listeners = NULL;
+						db->query("CREATE TABLE HISTORICO (CODE INT, KEY VARCHAR(3), DOC_ID VARCHAR(30), FILENAME VARCHAR(256),DATA DATETEXT, HOUR DATETEXT, WEEKDAY VARCHAR (1),TIME REAL)");
+                    }
+                    
+                    /**
+                     * Retorna a instancia única da classe
+                     */
+                    LocalAgent* LocalAgent::getInstance() {
+                    	if(LocalAgent::_instance == NULL) {
+                    		LocalAgent::_instance = new LocalAgent();
+                    	}
+                    	return LocalAgent::_instance;
+                    }
+
+                    /**
+                     * Retorna o banco de dados onde são armazendas as informações coletadas.
+                     * @return banco de dados onde são armazendas as informações coletadas.
+                     */
+                    Database* LocalAgent::getDatabase() {
+                        return db;
+                    }
+
+                    /**
+                     * Inicia a execução do LocalAgent.
+                     * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                     */
+                    void LocalAgent::start() {
+						if(db != NULL) {
+							static char sql[1024];
+							lock();
+							string data = info->getDay() + "/" + info->getMonth() + "/" + info->getYear();
+							string hora = info->getHour() + ":" + info->getMinute() + ":" + info->getSecond();
+							sprintf(sql, "INSERT INTO HISTORICO (CODE,KEY,DOC_ID,FILENAME,DATA,HOUR,WEEKDAY,TIME) VALUES (%d,'%s','%s','%s','%s','%s','%s',%f)",info->getCode(),info->getKeyCode().c_str(),info->getDocId().c_str(),info->getFilename().c_str(),data.c_str(),hora.c_str(),info->getDayWeek().c_str(),info->getTime());
+							db->query(sql); // insere informações no banco de dados atual
+							unlock();
+						}
+                    }
+
+					/**
+                     * Pára a execução do LocalAgent.
+                     * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                     */
+                    bool LocalAgent::stop() {
+                    	// TODO: parar execução da thread
+                    	this->unlock();
+                    }
+
+                    /**
+                     * Adiciona um AgentListener ao LocalAgent.
+                     * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                     */
+                    bool LocalAgent::addAgentListener(AgentListener* listener) {
+                    	if (listener != NULL) {
+                        	listeners->push_back(listener);
+                        	return true;
+                        }
+                        return false;
+                    }
+
+                    /**
+                     * Remove um AgentListener do LocalAgent.
+                     * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                     */
+                    bool LocalAgent::removeAgentListener(AgentListener* listener) {
+                    	vector<AgentListener*>::iterator it;
+                        for (it = listeners->begin(); it < listeners->end(); ++it) {
+                            if ((AgentListener*)(*it) == listener) {
+                                listeners->erase(it);
+                                if(listeners != NULL && listeners->empty()) {
+									delete listeners;
+									listeners = NULL;
+								}
+								return true;
+                            }
+                        }
+                        return false;
+                    }
+                    
+					bool LocalAgent::getEstado(){return estado;}
+
+					void LocalAgent::setEstado(bool estado){this->estado = estado;}
+
+					void LocalAgent::setInfo(User* info){this->info = info;}
+                }
+            }
+        }
+    }
+}
+

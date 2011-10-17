@@ -1,0 +1,6 @@
+RemoteDevice.o RemoteDevice.o: RemoteDevice.cpp ../include/RemoteDevice.h \
+  ../include/IRemoteDevice.h
+
+../include/RemoteDevice.h:
+
+../include/IRemoteDevice.h:

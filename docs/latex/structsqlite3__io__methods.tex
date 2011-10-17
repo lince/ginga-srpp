@@ -1,0 +1,56 @@
+\section{sqlite3\_\-io\_\-methods Struct Reference}
+\label{structsqlite3__io__methods}\index{sqlite3_io_methods@{sqlite3\_\-io\_\-methods}}
+Collaboration diagram for sqlite3\_\-io\_\-methods:\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf iVersion}\label{structsqlite3__io__methods_1138620d71393e6105389670719d9685}
+
+\item 
+int($\ast$ \textbf{xClose} )({\bf sqlite3\_\-file} $\ast$)\label{structsqlite3__io__methods_38f9e3ecb6bc5ed12f45fca5d85344c8}
+
+\item 
+int($\ast$ \textbf{xRead} )({\bf sqlite3\_\-file} $\ast$, void $\ast$, int iAmt, sqlite3\_\-int64 iOfst)\label{structsqlite3__io__methods_fd9c9bd674df251d9fc83fe3c9264e49}
+
+\item 
+int($\ast$ \textbf{xWrite} )({\bf sqlite3\_\-file} $\ast$, const void $\ast$, int iAmt, sqlite3\_\-int64 iOfst)\label{structsqlite3__io__methods_da19091e7f4ffc5accb40e38d001a801}
+
+\item 
+int($\ast$ \textbf{xTruncate} )({\bf sqlite3\_\-file} $\ast$, sqlite3\_\-int64 size)\label{structsqlite3__io__methods_206ff66f685638f41a052036912f3303}
+
+\item 
+int($\ast$ \textbf{xSync} )({\bf sqlite3\_\-file} $\ast$, int flags)\label{structsqlite3__io__methods_66cbb6be226b7c7a09d2f3c43a9f95b5}
+
+\item 
+int($\ast$ \textbf{xFileSize} )({\bf sqlite3\_\-file} $\ast$, sqlite3\_\-int64 $\ast$pSize)\label{structsqlite3__io__methods_b64f72852b709be630716b073ee18d81}
+
+\item 
+int($\ast$ \textbf{xLock} )({\bf sqlite3\_\-file} $\ast$, int)\label{structsqlite3__io__methods_a2fca6e81fd5d6a66a0d301014634e8c}
+
+\item 
+int($\ast$ \textbf{xUnlock} )({\bf sqlite3\_\-file} $\ast$, int)\label{structsqlite3__io__methods_8029cb982202ac5d08f5a556f3b3d49b}
+
+\item 
+int($\ast$ \textbf{xCheckReservedLock} )({\bf sqlite3\_\-file} $\ast$, int $\ast$pResOut)\label{structsqlite3__io__methods_5eb19302e4f81de062ae2f589d3c5955}
+
+\item 
+int($\ast$ \textbf{xFileControl} )({\bf sqlite3\_\-file} $\ast$, int op, void $\ast$pArg)\label{structsqlite3__io__methods_6ef23eda890920cc3fe586fc9ef1f7b1}
+
+\item 
+int($\ast$ \textbf{xSectorSize} )({\bf sqlite3\_\-file} $\ast$)\label{structsqlite3__io__methods_355a7a9ee3b728f7c3976130d24774bd}
+
+\item 
+int($\ast$ \textbf{xDeviceCharacteristics} )({\bf sqlite3\_\-file} $\ast$)\label{structsqlite3__io__methods_224cdced99e3c80391ccf1ffab06562f}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 583 of file sqlite3.h.
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/Database/include/sqlite3.h\end{CompactItemize}

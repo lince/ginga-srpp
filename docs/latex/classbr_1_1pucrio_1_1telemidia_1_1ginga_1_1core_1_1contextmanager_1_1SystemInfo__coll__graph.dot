@@ -1,0 +1,18 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{SystemInfo\n|- sn\l- info\l- clockSpeed\l- sysTable\l|+ SystemInfo()\l+ ~SystemInfo()\l+ setSystemTable()\l+ getSystemLanguage()\l+ getCaptionLanguage()\l+ getSubtitleLanguage()\l+ getReturnBitRate()\l+ getScreenSize()\l+ getScreenGraphicSize()\l+ getAudioType()\l+ getCPUClock()\l+ getMemorySize()\l+ getOperatingSystem()\l+ getJavaConfiguration()\l+ getJavaProfile()\l+ getLuaVersion()\l- initializeClockSpeed()\l- getValue()\l- printSysTable()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{ISystemInfo\n||+ ~ISystemInfo()\l+ setSystemTable()\l+ getSystemLanguage()\l+ getCaptionLanguage()\l+ getSubtitleLanguage()\l+ getReturnBitRate()\l+ getScreenSize()\l+ getScreenGraphicSize()\l+ getAudioType()\l+ getCPUClock()\l+ getMemorySize()\l+ getOperatingSystem()\l+ getJavaConfiguration()\l+ getJavaProfile()\l+ getLuaVersion()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ISystemInfo.html"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="sysTable",arrowtail="open"];
+  Node3 [label="{map\< string, string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node3 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, string \>"];
+  Node4 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="clockSpeed",arrowtail="open"];
+  Node5 [label="{float\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="info",arrowtail="open"];
+  Node6 [label="{sysinfo\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="sn",arrowtail="open"];
+  Node7 [label="{utsname\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

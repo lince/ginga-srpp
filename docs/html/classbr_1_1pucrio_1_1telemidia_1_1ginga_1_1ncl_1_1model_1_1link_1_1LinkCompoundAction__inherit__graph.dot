@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{LinkCompoundAction\n|# actions\l# op\l- pendingActions\l- hasStart\l- runing\l|+ LinkCompoundAction()\l+ ~LinkCompoundAction()\l+ getOperator()\l+ addAction()\l+ getActions()\l+ getEvents()\l+ actionProcessed()\l+ getImplicitRefRoleActions()\l- run()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{LinkAction\n|# typeSet\l- delay\l- progressionListeners\l|+ LinkAction()\l+ LinkAction()\l+ ~LinkAction()\l+ instanceOf()\l+ getWaitDelay()\l+ setWaitDelay()\l+ hasDelay()\l+ addActionProgressionListener()\l+ removeActionProgressionListener()\l+ notifyProgressionListeners()\l+ getEvents()\l+ getImplicitRefRoleActions()\l+ run()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node3 [label="{Thread\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node4 [label="{LinkActionProgressionListener\n||+ ~LinkActionProgressionListener()\l+ actionProcessed()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkActionProgressionListener.html"];
+}

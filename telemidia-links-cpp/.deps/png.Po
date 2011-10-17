@@ -1,0 +1,5 @@
+png.o png.o: png.c cfg.h config.h
+
+cfg.h:
+
+config.h:

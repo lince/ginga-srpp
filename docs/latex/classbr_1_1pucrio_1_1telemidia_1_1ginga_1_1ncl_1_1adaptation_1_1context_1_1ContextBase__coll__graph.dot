@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{ContextBase\n|+ SYSTEM_LANGUAGE\l+ SYSTEM_CAPTION\l+ SYSTEM_SUBTITLE\l+ SYSTEM_RETURN_BIT_RATE\l+ SYSTEM_SCREEN_SIZE\l+ SYSTEM_SCREEN_GRAPHIC_SIZE\l+ SYSTEM_AUDIO_TYPE\l+ SYSTEM_CPU\l+ SYSTEM_MEMORY\l+ SYSTEM_OPERATING_SYSTEM\l+ SYSTEM_JAVA_CONFIG\l+ SYSTEM_JAVA_PROFILE\l+ SYSTEM_LUA_VERSION\l+ SYSTEM_DEVNUMBER\l+ SYSTEM_CLASSTYPE\l+ SYSTEM_INFO\l+ SYSTEM_CLASS_NUMBER\l+ USER_AGE\l+ USER_LOCATION\l+ USER_GENRE\l+ DEFAULT_FOCUS_BORDER_COLOR\l+ DEFAULT_FOCUS_BORDER_WIDTH\l+ DEFAULT_FOCUS_BORDER_TRANSPARENCY\l+ DEFAULT_SEL_BORDER_COLOR\l|+ ContextBase()\l+ ~ContextBase()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="DEFAULT_FOCUS_BORDER_WIDTH\nSYSTEM_SCREEN_SIZE\nSYSTEM_CAPTION\nSYSTEM_LANGUAGE\nSYSTEM_LUA_VERSION\nSYSTEM_SUBTITLE\nSYSTEM_JAVA_CONFIG\nUSER_LOCATION\nUSER_AGE\nSYSTEM_JAVA_PROFILE\nSYSTEM_CLASSTYPE\nSYSTEM_SCREEN_GRAPHIC_SIZE\nDEFAULT_SEL_BORDER_COLOR\nDEFAULT_FOCUS_BORDER_COLOR\nSYSTEM_OPERATING_SYSTEM\nSYSTEM_AUDIO_TYPE\nSYSTEM_CPU\nSYSTEM_RETURN_BIT_RATE\nUSER_GENRE\nSYSTEM_DEVNUMBER\nSYSTEM_MEMORY\nDEFAULT_FOCUS_BORDER_TRANSPARENCY\nSYSTEM_INFO\nSYSTEM_CLASS_NUMBER",arrowtail="open"];
+  Node2 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node3 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>"];
+  Node4 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+}

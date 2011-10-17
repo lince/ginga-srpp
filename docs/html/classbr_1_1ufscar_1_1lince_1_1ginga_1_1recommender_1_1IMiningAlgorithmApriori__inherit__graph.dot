@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{IMiningAlgorithmApriori\n|+ count\l+ line\l+ inData\l+ inDataDelimiter\l+ inDB\l+ inTableName\l+ outDataBuffer\l+ outDataSize\l+ outDataDelimiter\l+ outDB\l+ outTableName\l+ outFileName\l+ minSup\l+ minConfi\l+ siCacheFileName\l+ userInfo\l+ code_file_algorithm\l+ code_file_out\l+ codearray\l+ imprimir\l+ outfile\l+ DESPREZIVEL\l+ POUCO\l+ MEDIO\l+ ALTO\l|+ IMiningAlgorithmApriori()\l+ ~IMiningAlgorithmApriori()\l+ setParams()\l+ prepare()\l+ prepare()\l+ start()\l+ stop()\l+ setOutput()\l+ setOutput()\l+ setOutput()\l+ execute()\l+ encode()\l+ code_file_process()\l+ code_file_process_out_Algorithm()\l+ code_file_process_out()\l+ write_decoded_item()\l+ decode()\l+ restoreCacheInformation()\l+ getUserInformation()\l+ prepareDataUser()\l+ saveUserInformation()\l+ mountObject()\l+ getValueByTime()\l+ getPercentualByTime()\l+ getPercentualByTime()\l+ getRandom()\l+ ReadFile()\l+ getLine()\l+ setLine()\l+ searchProgrambyId()\l+ getGenProgram()\l+ controlDuplicate()\l+ saveRecommender()\l+ prepareToSaveRecommender()\l+ verifyDuration()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{MiningAlgorithm\n||+ setParams()\l+ prepare()\l+ prepare()\l+ start()\l+ stop()\l+ setOutput()\l+ setOutput()\l+ setOutput()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm.html"];
+}

@@ -1,0 +1,53 @@
+\section{FormatterActiveDevice Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice}\index{br::pucrio::telemidia::ginga::ncl::multidevice::FormatterActiveDevice@{br::pucrio::telemidia::ginga::ncl::multidevice::FormatterActiveDevice}}
+Inheritance diagram for FormatterActiveDevice:Collaboration diagram for FormatterActiveDevice:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterActiveDevice} (IDeviceLayout $\ast${\bf deviceLayout}, int x, int y, int w, int h)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_54fe648b2555054a1c4bc376b5f55464}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+bool {\bf newDeviceConnected} (int newDevClass, int w, int h)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_4820c061de3b177c376e96dd45c4fca0}
+
+\item 
+void \textbf{connectedToBaseDevice} (unsigned int domainAddr)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_f7e3b3635d3e38bed8ead0321733791b}
+
+\item 
+bool \textbf{receiveRemoteEvent} (int remoteDevClass, int eventType, string eventContent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_d0ee06b25589fbeea9b03c945ff41b29}
+
+\item 
+bool {\bf receiveRemoteContent} (int remoteDevClass, char $\ast$stream, int streamSize)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_f4051428a3f94469cac462ee8e875bd5}
+
+\item 
+bool \textbf{receiveRemoteContent} (int remoteDevClass, string contentUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_a70ef1a18d742b5c8d124330f1c37871}
+
+\item 
+bool \textbf{receiveRemoteContentInfo} (string contentId, string contentUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_d1057c4c80f1db9849210468a0f3bad9}
+
+\item 
+bool \textbf{userEventReceived} (IInputEvent $\ast$ev)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_1520ea57105d2db3e7f818b4d60667af}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+IPlayer $\ast$ {\bf player}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_977a4dfa7c350d9028a3bb60be00e0c1}
+
+\item 
+map$<$ string, string $>$ $\ast$ {\bf contentsInfo}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterActiveDevice_4fb26a784864b62420ae63b3338a79a2}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 61 of file FormatterActiveDevice.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/multidevice/FormatterActiveDevice.h\end{CompactItemize}

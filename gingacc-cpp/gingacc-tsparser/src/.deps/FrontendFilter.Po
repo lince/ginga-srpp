@@ -1,0 +1,12 @@
+FrontendFilter.o FrontendFilter.o: FrontendFilter.cpp \
+  ../include/FrontendFilter.h \
+  /usr/local/include/ginga/tuner/providers/frontends/IFrontendFilter.h \
+  ../include/ITSFilter.h ../include/ITSPacket.h
+
+../include/FrontendFilter.h:
+
+/usr/local/include/ginga/tuner/providers/frontends/IFrontendFilter.h:
+
+../include/ITSFilter.h:
+
+../include/ITSPacket.h:

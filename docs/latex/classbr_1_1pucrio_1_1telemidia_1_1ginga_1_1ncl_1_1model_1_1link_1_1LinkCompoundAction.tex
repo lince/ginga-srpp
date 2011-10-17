@@ -1,0 +1,65 @@
+\section{LinkCompoundAction Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction}\index{br::pucrio::telemidia::ginga::ncl::model::link::LinkCompoundAction@{br::pucrio::telemidia::ginga::ncl::model::link::LinkCompoundAction}}
+Inheritance diagram for LinkCompoundAction:Collaboration diagram for LinkCompoundAction:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{LinkCompoundAction} (short {\bf op})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_8bc99dd0faf432e7fc8251d0c9ecc209}
+
+\item 
+short \textbf{getOperator} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_1303a32e05e883b65d250ca25fa871ad}
+
+\item 
+void \textbf{addAction} ({\bf LinkAction} $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_2b5528e3a7ad9fac124e907f4fcf19cc}
+
+\item 
+vector$<$ {\bf LinkAction} $\ast$ $>$ $\ast$ \textbf{getActions} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_d5f1c38b810d7762883559acbe673925}
+
+\item 
+virtual vector$<$ FormatterEvent $\ast$ $>$ $\ast$ \textbf{getEvents} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_77d29bf7857d5b09d0ef4fb69cfc31cd}
+
+\item 
+void \textbf{actionProcessed} (bool start)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_b513b06891fd2a5cb513ea5628127af2}
+
+\item 
+virtual vector$<$ {\bf LinkAction} $\ast$ $>$ $\ast$ \textbf{getImplicitRefRoleActions} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_adcae512f9241400f1d53744415530a9}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+vector$<$ {\bf LinkAction} $\ast$ $>$ $\ast$ {\bf actions}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_2720bd13554491c68e3d514f86d3d6cb}
+
+\item 
+short {\bf op}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_d974463b4b2532a79f54eb0ade5c0c2d}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \textbf{run} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_72fcb26a14f6beb1c3fbace9ab3e7dbb}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf pendingActions}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_9b53f7d80c64653007a633b59c789c97}
+
+\item 
+bool {\bf hasStart}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_44e48e2dbd933863a3fb5a25d46a2e53}
+
+\item 
+bool {\bf runing}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCompoundAction_961a80764438100fd2d7741446831a63}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 72 of file LinkCompoundAction.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/LinkCompoundAction.h\end{CompactItemize}

@@ -1,0 +1,31 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterLayout\n|# typeSet\l- childs\l- deviceRegion\l- sortedRegions\l- regionZIndex\l- regionMap\l- objectMap\l- mutex\l|+ FormatterLayout()\l+ ~FormatterLayout()\l+ addChild()\l+ getChild()\l+ getBitMapRegionId()\l+ getNcmRegion()\l+ getScreenShot()\l+ getObject()\l+ prepareFormatterRegion()\l+ showObject()\l+ hideObject()\l+ getFormatterRegionsFromNcmRegion()\l+ clear()\l- printRegionMap()\l- printObjectMap()\l- createDeviceRegion()\l- sortRegion()\l- lock()\l- unlock()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="objectMap",arrowtail="open",fontname="FreeSans.ttf"];
+  Node2 [label="{map\< FormatterRegion *, ExecutionObject * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node2 [dir=back,color="orange",fontsize=10,style="dashed",label="\< FormatterRegion *, ExecutionObject * \>",fontname="FreeSans.ttf"];
+  Node3 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="childs",arrowtail="open",fontname="FreeSans.ttf"];
+  Node4 [label="{map\< string, FormatterLayout * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, FormatterLayout * \>",fontname="FreeSans.ttf"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="sortedRegions",arrowtail="open",fontname="FreeSans.ttf"];
+  Node5 [label="{vector\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node5 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>",fontname="FreeSans.ttf"];
+  Node6 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="deviceRegion",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 [label="{LayoutRegion *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open",fontname="FreeSans.ttf"];
+  Node8 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node8 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>",fontname="FreeSans.ttf"];
+  Node9 [label="{set\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="regionZIndex",arrowtail="open",fontname="FreeSans.ttf"];
+  Node10 [label="{map\< string, int \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node10 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, int \>",fontname="FreeSans.ttf"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="mutex",arrowtail="open",fontname="FreeSans.ttf"];
+  Node11 [label="{pthread_mutex_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="regionMap",arrowtail="open",fontname="FreeSans.ttf"];
+  Node12 [label="{map\< string, set\< FormatterRegion * \> * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node12 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, set\< FormatterRegion * \> * \>",fontname="FreeSans.ttf"];
+}

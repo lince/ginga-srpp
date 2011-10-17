@@ -1,0 +1,71 @@
+\section{sqlite3\_\-vfs Struct Reference}
+\label{structsqlite3__vfs}\index{sqlite3_vfs@{sqlite3\_\-vfs}}
+Collaboration diagram for sqlite3\_\-vfs:\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf iVersion}\label{structsqlite3__vfs_1138620d71393e6105389670719d9685}
+
+\item 
+int {\bf szOsFile}\label{structsqlite3__vfs_96670e11731f3227851f651b807a63c8}
+
+\item 
+int {\bf mxPathname}\label{structsqlite3__vfs_04df9f08eb19e4567ea3899f8a938d5c}
+
+\item 
+{\bf sqlite3\_\-vfs} $\ast$ {\bf pNext}\label{structsqlite3__vfs_1df0afd6b472628ed51a8881efb07a61}
+
+\item 
+const char $\ast$ {\bf zName}\label{structsqlite3__vfs_b014fc02d99cc45050cdfcda485c780a}
+
+\item 
+void $\ast$ {\bf pAppData}\label{structsqlite3__vfs_1e6eda095a5b3e9fc4d6c3d88236a844}
+
+\item 
+int($\ast$ \textbf{xOpen} )({\bf sqlite3\_\-vfs} $\ast$, const char $\ast${\bf zName}, {\bf sqlite3\_\-file} $\ast$, int flags, int $\ast$pOutFlags)\label{structsqlite3__vfs_6cc44918b6646d3b005b0b04c01e3fe5}
+
+\item 
+int($\ast$ \textbf{xDelete} )({\bf sqlite3\_\-vfs} $\ast$, const char $\ast${\bf zName}, int syncDir)\label{structsqlite3__vfs_912173a4206a6fb4d7ae9e76420a8596}
+
+\item 
+int($\ast$ \textbf{xAccess} )({\bf sqlite3\_\-vfs} $\ast$, const char $\ast${\bf zName}, int flags, int $\ast$pResOut)\label{structsqlite3__vfs_bc25aba7356d962a9602b37f3b769001}
+
+\item 
+int($\ast$ \textbf{xFullPathname} )({\bf sqlite3\_\-vfs} $\ast$, const char $\ast${\bf zName}, int nOut, char $\ast$zOut)\label{structsqlite3__vfs_e25f89e6402cb0f9cb50eaafa663c7a1}
+
+\item 
+void $\ast$($\ast$ \textbf{xDlOpen} )({\bf sqlite3\_\-vfs} $\ast$, const char $\ast$zFilename)\label{structsqlite3__vfs_1bd905c95befee4d686c0d3e10edd70b}
+
+\item 
+void($\ast$ \textbf{xDlError} )({\bf sqlite3\_\-vfs} $\ast$, int nByte, char $\ast$zErrMsg)\label{structsqlite3__vfs_2a682fd5ad29e633f65441e7147c6b38}
+
+\item 
+void($\ast$($\ast$ \textbf{xDlSym} )({\bf sqlite3\_\-vfs} $\ast$, void $\ast$, const char $\ast$zSymbol))(void)\label{structsqlite3__vfs_e43e7134858d88b6104cef2a4aef72d4}
+
+\item 
+void($\ast$ \textbf{xDlClose} )({\bf sqlite3\_\-vfs} $\ast$, void $\ast$)\label{structsqlite3__vfs_9afef84db68e33bf6d94add4a8a7b24f}
+
+\item 
+int($\ast$ \textbf{xRandomness} )({\bf sqlite3\_\-vfs} $\ast$, int nByte, char $\ast$zOut)\label{structsqlite3__vfs_b2a1ae7c84e12eafb727d8def03d28a0}
+
+\item 
+int($\ast$ \textbf{xSleep} )({\bf sqlite3\_\-vfs} $\ast$, int microseconds)\label{structsqlite3__vfs_78dd047fb761ec85fb58582ba98b8bf9}
+
+\item 
+int($\ast$ \textbf{xCurrentTime} )({\bf sqlite3\_\-vfs} $\ast$, double $\ast$)\label{structsqlite3__vfs_d219f77cf376bde9d3c4cfd831116144}
+
+\item 
+int($\ast$ \textbf{xGetLastError} )({\bf sqlite3\_\-vfs} $\ast$, int, char $\ast$)\label{structsqlite3__vfs_489cbf27a20784bc30fec3bf363e62b2}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 762 of file sqlite3.h.
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/Database/include/sqlite3.h\end{CompactItemize}

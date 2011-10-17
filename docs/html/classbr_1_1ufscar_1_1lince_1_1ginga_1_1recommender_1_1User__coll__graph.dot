@@ -1,0 +1,22 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{User\n|- code\l- keycode\l- doc_id\l- filename\l- hour\l- minute\l- second\l- day\l- month\l- year\l- dayweek\l- time\l- ID\l- userGenre\l- locationZip\l- locationLatitude\l- locationLongitude\l- userBirth\l- device\l- docId\l- idUser\l|+ User()\l+ ~User()\l+ getCode()\l+ setCode()\l+ getKey()\l+ setKey()\l+ getDocid()\l+ setDocid()\l+ getFilename()\l+ setFilename()\l+ getHour()\l+ setHour()\l+ getMinute()\l+ setMinute()\l+ getSecond()\l+ setSecond()\l+ getDay()\l+ setDay()\l+ getMonth()\l+ setMonth()\l+ getYear()\l+ setYear()\l+ getWeekDay()\l+ setWeekDay()\l+ getTimeDuration()\l+ setTimeDuration()\l+ getFormatDate()\l+ getFormatTime()\l+ User()\l+ generateSql()\l+ generateSql2()\l+ generateSql3()\l+ generateSql4()\l+ generateSql5()\l+ getIdUser()\l+ setIdUser()\l+ incIdUser()\l+ getID()\l+ setID()\l+ getUserGenre()\l+ setUserGenre()\l+ getLocationZip()\l+ setLocationZip()\l+ getLocationLatitude()\l+ setLocationLatitude()\l+ getLocationLongitude()\l+ setLocationLongitude()\l+ getUserBirth()\l+ setUserBirth()\l+ getDevice()\l+ setDevice()\l+ getDocId()\l+ setDocId()\l+ getFilename()\l+ setFilename()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="time",arrowtail="open",fontname="FreeSans.ttf"];
+  Node2 [label="{double\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="code",arrowtail="open",fontname="FreeSans.ttf"];
+  Node3 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="userBirth\nuserGenre\ndoc_id\nlocationLatitude\nlocationZip\nlocationLongitude\nhour\nday\nsecond\nminute\nkeycode\nmonth\nID\ndocId\ndayweek\nyear\nfilename",arrowtail="open",fontname="FreeSans.ttf"];
+  Node4 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node5 -> Node4 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node5 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node5 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>",fontname="FreeSans.ttf"];
+  Node6 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="device",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 [label="{Device\n|- prof\l- serialNumber\l- tp\l- idDevice\l|+ Device()\l+ generateSql()\l+ getIdDevice()\l+ getProf()\l+ setProf()\l+ getSerialNumber()\l+ setSerialNumber()\l+ getTp()\l+ setTp()\l+ setIdDevice()\l+ incIdDevice()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Device.html"];
+  Node4 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="prof\ntp\nserialNumber",arrowtail="open",fontname="FreeSans.ttf"];
+  Node8 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idDevice",arrowtail="open",fontname="FreeSans.ttf"];
+  Node8 [label="{static int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idUser",arrowtail="open",fontname="FreeSans.ttf"];
+}

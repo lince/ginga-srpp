@@ -1,0 +1,41 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterFocusManager\n|- focusTable\l- focusSequence\l- isHandler\l- currentFocus\l- objectToSelect\l- selectedObject\l- defaultFocusBorderColor\l- defaultFocusBorderWidth\l- defaultSelBorderColor\l- playerManager\l- parentManager\l- multiDevice\l- converter\l- mutexFocus\l- mutexTable\l- im\l|+ FormatterFocusManager()\l+ ~FormatterFocusManager()\l+ setParent()\l+ setKeyHandler()\l+ setKeyMaster()\l+ setStandByState()\l+ setFocus()\l+ showObject()\l+ hideObject()\l+ setDefaultFocusBorderColor()\l+ setDefaultFocusBorderWidth()\l+ setDefaultSelBorderColor()\l+ userEventReceived()\l- setHandlingObjects()\l- setFocus()\l- recoveryDefaultState()\l- getObjectFromFocusIndex()\l- insertObject()\l- removeObject()\l- keyCodeOk()\l- keyCodeBack()\l- enterSelection()\l- exitSelection()\l- registerNavigationKeys()\l- registerBackKeys()\l- unregister()\l- changeSettingState()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{IInputEventListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="playerManager",arrowtail="open"];
+  Node3 [label="{PlayerAdapterManager *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="focusSequence",arrowtail="open"];
+  Node4 [label="{vector\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>"];
+  Node5 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="focusTable",arrowtail="open"];
+  Node6 [label="{map\< string, set\< ExecutionObject * \> * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node6 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, set\< ExecutionObject * \> * \>"];
+  Node7 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="mutexTable\nmutexFocus",arrowtail="open"];
+  Node8 [label="{pthread_mutex_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="parentManager",arrowtail="open"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="defaultFocusBorderWidth",arrowtail="open"];
+  Node9 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="defaultFocusBorderColor\ndefaultSelBorderColor",arrowtail="open"];
+  Node10 [label="{Color *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="selectedObject",arrowtail="open"];
+  Node11 [label="{ExecutionObject *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="objectToSelect\ncurrentFocus",arrowtail="open"];
+  Node12 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node13 -> Node12 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node13 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node14 -> Node13 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>"];
+  Node14 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node15 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="isHandler",arrowtail="open"];
+  Node15 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node16 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="im",arrowtail="open"];
+  Node16 [label="{static IInputManager *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node17 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="converter",arrowtail="open"];
+  Node17 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node18 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="multiDevice",arrowtail="open"];
+  Node18 [label="{IFormatterMultiDevice *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

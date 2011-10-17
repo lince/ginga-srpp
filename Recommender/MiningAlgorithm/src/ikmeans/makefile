@@ -1,0 +1,26 @@
+PRGNAME = test
+DEPENDS = cb.o         \
+          file.o       \
+          interfc.o    \
+          memctrl.o    \
+          random.o     \
+          reporting.o  \
+          ikmeans.o  \
+          kmeans.o
+	  
+OPT     = -O3 -Wall -I. -I../../../../include/lince/miningagent/ikmeans/
+#OPT     = -Wall -I. 
+all: $(PRGNAME)
+
+$(PRGNAME): $(PRGNAME).o $(DEPENDS) 
+	g++ -o $(PRGNAME) $(OPT) $(PRGNAME).o $(DEPENDS) -lm
+
+$(PRGNAME).o: $(PRGNAME).cpp
+	g++ $(OPT) -c $(PRGNAME).cpp -o $(PRGNAME).o
+
+$(OBJECTS)%.o: %.cpp
+	g++ $(OPT) -c $< -o $@
+
+.PHONY : clean
+clean: 
+	rm $(DEPENDS) $(PRGNAME).o

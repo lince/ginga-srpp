@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterConverter\n|- depthLevel\l- executionObjects\l- settingObjects\l- linkCompiler\l- scheduler\l- ruleAdapter\l- objectsMutex\l- handling\l|+ FormatterConverter()\l+ ~FormatterConverter()\l+ stopListening()\l+ getRunningObjects()\l+ setHandlingStatus()\l+ getObjectFromNodeId()\l+ setScheduler()\l+ setDepthLevel()\l+ getDepthLevel()\l+ checkGradSameInstance()\l+ addSameInstance()\l+ compileExecutionObjectLinks()\l+ getExecutionObject()\l+ getSettingNodeObjects()\l+ getEvent()\l+ compileExecutionObjectLinks()\l+ processExecutionObjectSwitch()\l+ insertContext()\l+ removeExecutionObject()\l+ removeExecutionObject()\l+ hasExecutionObject()\l+ addCausalLink()\l+ eventStateChanged()\l+ getPriorityType()\l+ reset()\l+ getCascadingDescriptor()\l- addExecutionObject()\l- getParentExecutionObject()\l- createMultichannelObject()\l- createExecutionObject()\l- setActionListener()\l- resolveSwitchEvents()\l- insertNode()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{IEventListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

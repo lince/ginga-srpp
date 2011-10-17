@@ -1,0 +1,838 @@
+/*
+$Revision: 1.2 $
+$Date: 2005/06/27 11:18:17 $
+$Author: mtuonone $
+$Name:  $
+$Id: kmeans.c,v 1.2 2005/06/27 11:18:17 mtuonone Exp $
+*/
+
+/*-------------------------------------------------------------------*/
+/* KMEANS.C     Marko Tuononen                                       */
+/*                                                                   */
+/* Fast repeated K-means implementation. Uses activity detection     */
+/* method presented in                                               */
+/*                                                                   */
+/*    "A fast exact GLA based on code vector activity detection"     */
+/*    IEEE Trans. on Image Processing, 9 (8), 1337-1342, August 2000.*/
+/*    Timo Kaukoranta, Pasi Fr�nti and Olli Nevalainen               */
+/*                                                                   */
+/* Naming conventions used in the code                               */
+/*                                                                   */
+/*    TS        training set (data objects)                          */
+/*    CB        codebook (cluster representatives, centroids)        */
+/*    P         partitioning (pointing from TS to CB)                */
+/*                                                                   */
+/*    p-prefix  pointer, e.g. pTS is pointer to the training set TS  */
+/*                                                                   */
+/*-------------------------------------------------------------------*/
+
+#define ProgName       "KMEANS"
+#define VersionNumber  "Version 0.61" /* mt */
+#define LastUpdated    "27.06.2005"
+
+
+//add by QP on 2k8-11-10 as there is no definitin on DBL_MAX
+#define DBL_MAX   100000000
+#define pi  3.1415
+/*-------------------------------------------------------------------*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+#ifdef HAVE_RECOMMENDER
+#include "recommender/cb.h"
+#include "recommender/random.h"
+#include "recommender/reporting.h"
+#include "recommender/interfc.h"
+#else
+#include "../../include/ikmeans/cb.h"
+#include "../../include/ikmeans/random.h"
+#include "../../include/ikmeans/reporting.h"
+#include "../../include/ikmeans/interfc.h"
+#endif
+
+
+/* =================== PROTOTYPES =================================== */
+
+int PerformKMeans(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP,
+    int clus, int repeats, int quietLevel, int useInitial);
+static void InitializeSolutions(TRAININGSET *pTS, CODEBOOK *pCB, 
+    PARTITIONING *pP, CODEBOOK *pCBnew, PARTITIONING *pPnew, 
+    CODEBOOK *pCBinit, PARTITIONING *pPinit, llong *distanceInit, 
+    int clus, int initial);
+static void GenerateSolution(TRAININGSET *pTS, CODEBOOK *pCBnew, 
+    PARTITIONING *pPnew, CODEBOOK *pCBinit, PARTITIONING *pPinit, 
+    llong *distance, llong *distanceInit, int initial);
+static void KMeansIterate(TRAININGSET *pTS, CODEBOOK *pCBnew, 
+    PARTITIONING *pPnew, llong *distance, int quietLevel, int i, 
+    int *iter, double *time, double *error, int initial);
+
+int BinarySearch(int *arr, int size, int key);
+char* KMeansInfo(void);
+
+
+void SelectRandomRepresentatives(TRAININGSET *pTS, CODEBOOK *pCB);
+
+void CalculateDistances(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP,
+    llong *distance); //, DISTANCETYPE Dis
+
+void OptimalRepresentatives(PARTITIONING *pP, TRAININGSET *pTS,
+    CODEBOOK *pCB, int *active, int *activeCount);
+
+void OptimalPartition(CODEBOOK *pCB, TRAININGSET *pTS, PARTITIONING *pP,
+    int *active, int activeCount, llong *distance);//, DISTANCETYPE Dis
+
+
+// cluster validity criteria here:
+double ValidityDunn(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP);
+double ValidityFratio(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP);
+double FTest(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP);
+VECTORTYPE MeanOfTs(TRAININGSET *pTS, CODEBOOK *pCB);
+double ValidityDBI(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP);
+double ValidityMSE(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP);
+double ValidityBIC(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP);
+double Xie_Beni(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP);
+
+
+
+/* =================== PUBLIC FUNCTIONS ============================= */
+
+/* Gets training set pTS (and optionally initial codebook pCB or 
+   partitioning pP) as a parameter, generates solution (codebook pCB + 
+   partitioning pP) and returns 0 if clustering completed successfully. 
+   N.B. Random number generator (in random.c) must be initialized! */
+
+int PerformKMeans(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP,
+int clus, int repeats, int quietLevel, int useInitial)
+{
+  PARTITIONING  Pnew, Pinit;
+  CODEBOOK      CBnew, CBinit;
+  llong         distance[BookSize(pTS)];
+  llong         distanceInit[BookSize(pTS)];
+  double        totalTime, error, currError;
+  int           i, better, iter, totalIter;
+
+  SetClock(&totalTime);
+  totalIter = 0;
+  currError = error = 0;
+  
+  if ((clus < 1) || (BookSize(pTS) < clus) || (repeats < 1))
+  {
+    return 1;   /* clustering failed */
+  }
+
+  InitializeSolutions(pTS, pCB, pP, &CBnew, &Pnew, &CBinit, &Pinit, 
+      distanceInit, clus, useInitial);
+
+//  PrintHeader(quietLevel);
+
+  /* perform repeats time full K-means */
+  for (i = 0; i < repeats; i++)
+  {
+    better = iter = 0;
+
+    GenerateSolution(pTS, &CBnew, &Pnew, &CBinit, &Pinit, distance, 
+        distanceInit, useInitial);          
+    KMeansIterate(pTS, &CBnew, &Pnew, distance, quietLevel, i, &iter, 
+        &totalTime, &error, useInitial);
+
+    totalIter += iter;
+
+    /* got better result */
+    if ((i == 0) || (error < currError)) 
+    {
+      CopyCodebook(&CBnew, pCB);
+      CopyPartitioning(&Pnew, pP);
+      currError = error;
+      better = 1;
+    }
+
+    //PrintRepeat(quietLevel, repeats, i, iter, error, GetClock(totalTime), better);
+  }
+
+//  PrintFooterKM(quietLevel, currError, repeats, GetClock(totalTime), totalIter);
+
+  FreeCodebook(&CBnew);
+  FreePartitioning(&Pnew);
+  FreeCodebook(&CBinit);
+  FreePartitioning(&Pinit);
+
+  return 0;
+}  /* PerformKmeans() */
+
+/* ------------------------------------------------------------------ */
+
+char* KMeansInfo(void)
+{
+  char* p;
+  int len;
+  
+  len = strlen(ProgName)+strlen(VersionNumber)+strlen(LastUpdated)+4;  
+  p   = (char*) malloc(len*sizeof(char));
+  
+  if (!p) 
+  {
+    ErrorMessage("ERROR: Allocating memory failed!\n");
+    ExitProcessing(FATAL_ERROR);
+  }
+  
+  sprintf(p, "%s\t%s\t%s", ProgName, VersionNumber, LastUpdated);
+  
+  return p;
+}  /* KMeansInfo() */
+
+
+/* ====================== PRIVATE FUNCTIONS ========================= */
+
+static void InitializeSolutions(TRAININGSET *pTS, CODEBOOK *pCB, 
+PARTITIONING *pP, CODEBOOK *pCBnew, PARTITIONING *pPnew, CODEBOOK *pCBinit, 
+PARTITIONING *pPinit, llong *distanceInit, int clus, int initial)
+{
+  CreateNewCodebook(pCBnew, clus, pTS);
+  CreateNewPartitioning(pPnew, pTS, clus);
+  CreateNewCodebook(pCBinit, clus, pTS);
+  CreateNewPartitioning(pPinit, pTS, clus);
+  
+  if (initial) 
+  {  
+    if (initial == 1)
+    {
+      GenerateOptimalPartitioningGeneral(pTS, pCB, pP, MSE);
+    } 
+    else if (initial == 2)
+    {
+      GenerateOptimalCodebookGeneral(pTS, pCB, pP, MSE);
+    } 
+      
+    CopyCodebook(pCB, pCBinit);
+    CopyPartitioning(pP, pPinit);
+    CalculateDistances(pTS, pCBinit, pPinit, distanceInit);
+  }
+}  /* InitializeSolutions() */
+
+/* ------------------------------------------------------------------ */
+
+static void GenerateSolution(TRAININGSET *pTS, CODEBOOK *pCBnew, 
+PARTITIONING *pPnew, CODEBOOK *pCBinit, PARTITIONING *pPinit, 
+llong *distance, llong *distanceInit, int initial) 
+{
+  int i;
+  
+  if (initial)
+  {
+    CopyCodebook(pCBinit, pCBnew);
+    CopyPartitioning(pPinit, pPnew);
+    for (i = 0; i < BookSize(pTS); i++)
+    {
+      distance[i] = distanceInit[i];      
+    }
+  }
+  else
+  {
+    SelectRandomRepresentatives(pTS, pCBnew);
+    GenerateOptimalPartitioningGeneral(pTS, pCBnew, pPnew, MSE);    
+    CalculateDistances(pTS, pCBnew, pPnew, distance);
+  }
+}  /* GenerateSolution() */
+
+/* ------------------------------------------------------------------ */
+
+static void KMeansIterate(TRAININGSET *pTS, CODEBOOK *pCBnew, 
+PARTITIONING *pPnew, llong *distance, int quietLevel, int i, int *iter, 
+double *time, double *error, int initial)
+{
+  int       active[BookSize(pCBnew)];
+  int       activeCount;
+  double    oldError, lerror;
+
+  *iter  = 1;
+  //PrintIterationKM(quietLevel, i, *iter, *error, GetClock(*time));
+
+  oldError = DBL_MAX;
+  /* K-means iterations */
+  while (1)  
+  {
+    lerror = AverageErrorForSolution(pTS, pCBnew, pPnew, MSE);
+    // The next line should appear right before the call for OptimalPartition
+    // We put it here to cope with a strange behaviour of the compiler optimizer
+    // gcc version 4.1.2 20070925 (Red Hat 4.1.2-27), Marco Cristo
+    OptimalRepresentatives(pPnew, pTS, pCBnew, active, &activeCount);
+    //PrintIterationKM(quietLevel, i, *iter, lerror, GetClock(*time));
+    if (lerror >= oldError) 
+	break;
+    oldError = lerror;
+    OptimalPartition(pCBnew, pTS, pPnew, active, activeCount, distance);
+    (*iter)++;
+  }
+  *error = lerror;
+
+}  /* KMeansIterate() */
+
+/* generates optimal codebook with respect to a given partitioning */
+void OptimalRepresentatives(PARTITIONING *pP, TRAININGSET *pTS, 
+CODEBOOK *pCB, int *active, int *activeCount)
+{
+  int i, j;
+  VECTORTYPE v;
+
+  j = 0;
+  v = CreateEmptyVector(VectorSize(pCB));
+
+  for(i = 0; i < BookSize(pCB); i++)
+  {
+    if (CCFreq(pP, i) > 0)
+    {
+      CopyVector(Vector(pCB, i), v, VectorSize(pCB));
+
+      /* calculate mean values for centroid */
+      PartitionCentroid(pP, i, &Node(pCB, i));
+
+      /* if centroid changed, cluster is active */
+      if (CompareVectors(Vector(pCB, i), v, VectorSize(pCB)) != 0)
+      {
+        active[j] = i;
+        j++; 
+      }
+    }
+    else
+    {
+      VectorFreq(pCB, i) = 0;
+    }
+  }
+
+  FreeVector(v);
+  (*activeCount) = j;
+}  /* OptimalRepresentatives() */
+
+
+/* generates optimal partitioning with respect to a given codebook */
+void OptimalPartition(CODEBOOK *pCB, TRAININGSET *pTS, PARTITIONING *pP, 
+int *active, int activeCount, llong *distance) //, DISTANCETYPE Dis
+{
+  int i, j, k;
+  int nearest;
+  llong error, dist;
+  CODEBOOK CBact;
+
+  if (activeCount < 1)  
+  {
+    /* all vectors are static; there is nothing to do */
+    return;
+  }
+
+  /* creating subcodebook (active clusters) */
+  CreateNewCodebook(&CBact, activeCount, pTS);
+
+  for (i = 0; i < activeCount; i++) 
+  {
+    CopyVector(Vector(pCB, active[i]), Vector(&CBact, i), VectorSize(pCB));
+  }
+
+  for(i = 0; i < BookSize(pTS); i++)
+  {
+     j     = Map(pP, i);
+     k     = BinarySearch(active, activeCount, j);
+//	 switch(Dis)
+//	 {
+//	 case 2: 
+		 dist  = VectorDistance(Vector(pTS, i), Vector(pCB, j), VectorSize(pTS), 
+				MAXLLONG, EUCLIDEANSQ); 
+//		 break;
+		
+//	 }
+
+     if (k < 0)  /* static vector */
+     {
+       // search subcodebook
+       nearest = FindNearestVector(&Node(pTS,i), &CBact, &error, 0, 
+                 EUCLIDEANSQ);
+       nearest = (error < dist) ? active[nearest] : j;
+     } 
+     else if (dist < distance[i])  /* active vector, centroid moved closer */
+     {
+       // search subcodebook
+       nearest = FindNearestVector(&Node(pTS,i), &CBact, &error, k, 
+                 EUCLIDEANSQ);
+       nearest = active[nearest];
+     } 
+     else  /* active vector, centroid moved farther */
+     {
+       // search full codebook
+       nearest = FindNearestVector(&Node(pTS,i), pCB, &error, j, 
+                 EUCLIDEANSQ);
+     }
+     
+     if (nearest != j)  
+     {
+       /* closer cluster was found */
+       ChangePartition(pTS, pP, nearest, i);
+       distance[i] = error;
+     } 
+     else 
+     {
+       distance[i] = dist;
+     }     
+  }
+
+  FreeCodebook(&CBact);  
+}  /* OptimalPartition() */
+
+
+
+void SelectRandomRepresentatives(TRAININGSET *pTS, CODEBOOK *pCB)
+{
+  int i, j, k;
+  
+  k = BookSize(pTS) / BookSize(pCB);
+
+  for (i = 0; i < BookSize(pCB); i++) 
+  {
+    /* interval [0,BookSize(pTS)) is divided M subintervals and 
+       random number is chosen from every subinterval */
+    if (i == (BookSize(pCB) - 1))
+    {   
+      /* random number generator must be initialized! */
+      j = IRI(i*k, BookSize(pTS));
+    } 
+    else 
+    {   
+      j = IRI(i*k, (i+1)*k);
+    }
+
+    CopyVector(Vector(pTS, j), Vector(pCB, i), VectorSize(pTS));
+    VectorFreq(pCB, i) = 1;
+  }
+
+}  /* SelectRandomRepresentatives() */
+
+
+/*-------------------------------------------------------------------*/
+//modify by QP on 2k7-11-8
+//need distance type here instead of only "EUCLIDEANSQ"
+/* calculates data objects current distances to their cluster centroids */
+void CalculateDistances(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP, 
+llong *distance) //, DISTANCETYPE Dis
+{
+  int i, j;
+
+  for (i = 0; i < BookSize(pTS); i++) 
+  {
+    j = Map(pP, i);
+//	switch(Dis)
+//	{
+//	case 2:  
+	distance[i] = VectorDistance(Vector(pTS, i), Vector(pCB, j), 
+                  VectorSize(pTS), MAXLLONG, EUCLIDEANSQ);  
+//		break;
+//	case 3: 
+
+//	}
+  }
+}  /* CalculateDistances */
+
+
+/*-------------------------------------------------------------------*/
+
+/* arr must be sorted ascending order! */
+int BinarySearch(int *arr, int size, int key)
+{
+  int top, bottom, middle;
+
+  top = 0;
+  bottom = size - 1;
+  middle = (top + bottom) / 2;
+
+  do 
+  {
+    if (arr[middle] < key)
+    {
+      top = middle + 1;
+    }
+    else
+    {
+      bottom = middle;
+    }
+
+    middle = (top + bottom) / 2;
+  } 
+  while (top < bottom);
+
+  if (arr[middle] == key)
+  {
+    return middle;
+  }
+  else
+  {
+    return -1;
+  }
+}  /* BinarySearch() */
+
+
+
+/*-------------------------------------------------------------------*/
+/*---------------------For clustering validity-----------------------*/
+/*-------------------------------------------------------------------*/
+// add by QP on 2k7-11-22
+// This function calculates the Validity of clusters in a certain number of clusters
+// After we use PerformRLS(),we will get the clustered codebook and partioning, So
+// calculate the inter-cluster / intra-cluster using Euclidean distance
+double ValidityDunn(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP)
+{
+	/*  this section of code is implemented by the 1st version. which refer to
+	// the file 
+	int         i = 0;
+	int         j = 0;
+	int         t = 0; 
+	llong       MaxRadius = 0;
+	llong       MinDistance = 0;
+	llong       IntraDistance = 0;//, Num1Cluster;
+	llong       InterDistance = 0;
+	double      IndiceValue = 0;
+	//for each cluster, PartitionCount(P) is the BOOKSIZE(CB)
+	for( i = 0; i < PartitionCount(pP); i++)
+	{   
+		// find the farest vector from centroid in a cluster
+		MaxRadius = 0;
+		MinDistance = DBL_MAX;
+		InterDistance = 0;
+		for( j = 0; j < BookSize(pTS); j++)
+		{
+			if(Map(pP,j) == i)
+			{
+				IntraDistance = sqrt(VectorDistance(Vector(pTS, j), Vector(pCB, i),
+					VectorSize(pTS), MAXLLONG, EUCLIDEANSQ));
+				IntraDistance *= IntraDistance;
+				if( IntraDistance > MaxRadius)
+					MaxRadius = IntraDistance;			
+			}
+		}
+		//find the shortest cluster from current cluster
+		for(t= 0; t < PartitionCount(pP); t++)
+		{
+			if( t != i)
+			{
+				InterDistance = sqrt(VectorDistance(Vector(pCB, t), Vector(pCB, i),
+					VectorSize(pCB), MAXLLONG, EUCLIDEANSQ));
+				InterDistance *= InterDistance;
+				if (InterDistance < MinDistance)
+					MinDistance = InterDistance;
+			}
+		}
+
+		IndiceValue += ((double)MaxRadius/(double)MinDistance);
+	}
+	return IndiceValue/PartitionCount(pP);	*/ 
+
+	// min distance between clusters	
+	double		min_dist = DBL_MAX;
+	double		max_dist = 0;
+	double		m_max = 0; //max in k clusters
+//	double		temp = 0;
+	double		dist = 0;
+	int         i = 0;
+	int         j = 0;
+	int         k = 0;
+	int         t = 0;
+	
+	for( i = 0; i < PartitionCount(pP); i++)
+		for(j = i+1; j < PartitionCount(pP); j++)
+			for( k = FirstVector(pP, i); !EndOfPartition(k); k = NextVector(pP, k))
+				for( t = FirstVector(pP, j); !EndOfPartition(t); t = NextVector(pP, t))
+				{
+					dist = VectorDistance(Vector(pTS, k), Vector(pTS, t),
+									VectorSize(pTS), MAXLLONG, EUCLIDEANSQ);
+					if (dist < min_dist)
+						min_dist = dist;			
+				}
+
+		
+	// max distance in clusters
+	for( k = 0; k < PartitionCount(pP); k++)
+	{
+		for( i = 0; i < BookSize(pTS); i++)
+			for( j = i+1; j < BookSize(pTS); j++)
+			{
+				if(Map(pP,i)== k && Map(pP, j) == k)
+					dist = VectorDistance(Vector(pTS, i), Vector(pTS, j),
+						VectorSize(pTS), MAXLLONG, EUCLIDEANSQ);
+				if(dist > max_dist)
+					max_dist = dist;
+			}
+		if(max_dist > m_max)
+			m_max = max_dist;
+	}
+	//return min_dist/m_max;
+	return m_max;
+
+}/*ValidityDunn( )*/
+
+// f-ratio F-ratio is defined as the ratio of the within-class variance 
+// against the between-class variance. the smaller, the more seperated 
+// the clusters are.
+double ValidityFratio(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP)
+{
+	int		   i = 0;
+	int        j = 0;
+	int        t = 0;
+	double     InterGroup_sum = 0;
+	double     temp_dist = 0;
+	double     F_ratio = 0;
+	double	   sum = 0;
+	double     IntraGroup = 0;
+	VECTORTYPE MeanVector;
+	// mean vector of all training set/
+	MeanVector = MeanOfTs(pTS,pCB);
+	// calculate between-group variance
+	for( j = 0; j < PartitionCount(pP); j++)
+	{
+		int cluster_size = 0;
+		for( t = FirstVector(pP, j); !EndOfPartition(t); t = NextVector(pP, t))
+		{
+			cluster_size ++;
+		} // actually cluster_size = VectorFreq(pCB, i);
+		temp_dist = sqrt(VectorDistance(Vector(pCB, j), MeanVector,
+			VectorSize(pCB), MAXLLONG, EUCLIDEANSQ));
+		temp_dist *= temp_dist;
+		temp_dist /= PartitionCount(pP);
+		InterGroup_sum += cluster_size * temp_dist;				
+	}
+//	InterGroup_sum /= (VectorSize(pCB)-1);
+	// calculate within-group variance
+	for( i = 0; i < BookSize(pTS); i++)
+	{
+		j = Map(pP, i);
+		temp_dist = sqrt(VectorDistance(Vector(pTS, i), Vector(pCB, j), 
+			VectorSize(pTS), MAXLLONG, EUCLIDEANSQ) * VectorFreq(pTS, i));
+		sum += temp_dist*temp_dist;
+	}
+	IntraGroup = sum; // / (BookSize(pTS)-PartitionCount(pP))
+//	IntraGroup /= (BookSize(pTS)-VectorSize(pCB));
+//	InterGroup_sum = InterGroup_sum / PartitionCount(pP);
+	F_ratio =  IntraGroup/InterGroup_sum ;
+	return F_ratio;
+}
+//end of F_ratio
+
+//F-test: refer to implementation in ftest.c 
+//function float CalculateFTest(DistanceInfo* DI, TRAININGSET* TS,
+//    CODEBOOK* CB, PARTITIONING* PA, void* AuxiliaryData)
+double FTest(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP)
+{
+	int          j = 0;
+	double       QB = 0; //distance between clusters
+	double       NMSE = 0;
+	double       MSE = 0;
+	double       temp_dist = 0;
+	VECTORTYPE   MeanVector;
+	// mean vector of all training set/
+	MeanVector = MeanOfTs(pTS,pCB);
+	// calculate between-group variance		
+	for( j = 0; j < PartitionCount(pP); j++)
+	{		
+		// EUCLIDEANSQ (without square)
+		temp_dist = sqrt(VectorDistance(Vector(pCB, j), MeanVector,
+			VectorSize(pCB), MAXLLONG, EUCLIDEANSQ));
+		temp_dist *= temp_dist;	
+		QB += VectorFreq(pCB,j)*temp_dist;
+	}
+	// Inter-Group
+	QB /= VectorSize(pTS) * (BookSize(pCB) - 1);
+	
+	//Intra-Group
+	//calculte MSE distance intra-cluters	
+	MSE = ValidityMSE(pTS,pCB,pP); 
+	// end MSE
+	NMSE = TotalFreq(pTS)* MSE;		
+	NMSE /= BookSize(pTS) - BookSize(pCB);
+	return NMSE*1000/QB;
+}
+//end F-test
+
+// function for getting mean vector of total dataset
+VECTORTYPE MeanOfTs(TRAININGSET *pTS, CODEBOOK *pCB)
+{
+	int          i = 0;
+	int          k = 0;
+	double       vector_sum = 0;
+	double       vector_mean = 0;
+	VECTORTYPE   MeanVector;
+	MeanVector = CreateEmptyVector(VectorSize(pCB));
+	// mean vector of all training set/
+	// VectorSize => dimension
+	for( k = 0; k < VectorSize(pCB); k++ )
+	{
+		for( i = 0; i < BookSize(pTS); i++)	
+		{
+			vector_sum += (llong) VectorScalar(pTS,i,k);
+		}
+		vector_mean = vector_sum/BookSize(pTS);
+		MeanVector[k] = vector_mean;
+	}
+	return MeanVector;
+}
+// end of MeanOfTs
+
+// DBI implementaion:
+/* 2k7-12-7
+DBI: the ratio of the sum of within-cluster scatter to between-cluster
+separation. the lower the better
+*/
+double ValidityDBI(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP)
+{
+	int		   i = 0;
+	int        j = 0;
+	int        t = 0;
+	int        NumEachCluster = 0;
+	llong      sum = 0;
+	llong      DistClusters;
+	double     DBIndex = 0;
+	double     SumRatio = 0;
+	double     CurrRatio = 0;
+	llong      Scatter[PartitionCount(pP)];	
+		
+	//get the Si,Sj - within cluster scatter
+	for( i = 0; i < PartitionCount(pP); i++)
+	{ 
+		NumEachCluster = 0;
+		sum = 0;
+		for( t = 0; t < BookSize(pTS); t++)
+		{
+			if(Map(pP,t) == i)
+			{	
+				NumEachCluster++;
+				llong temp = sqrt(VectorDistance(Vector(pTS, t), Vector(pCB, i),
+					VectorSize(pTS), MAXLLONG, EUCLIDEANSQ));
+				sum += temp*temp;
+			}
+		}
+		Scatter[i] = sum/NumEachCluster;
+	}
+	//get the ratio here	
+	for(i = 0; i < PartitionCount(pP); i++)
+	{
+		double MaxRatio = 0;
+		llong  temp = 0;
+		for(j = i+1; j < PartitionCount(pP); j++)
+		{
+			CurrRatio = 0;
+			DistClusters = 0;
+			//distance between 2 centroids
+			DistClusters = sqrt(VectorDistance(Vector(pCB, i), Vector(pCB, j),
+					VectorSize(pCB), MAXLLONG, EUCLIDEANSQ));
+			DistClusters *= DistClusters;
+			//ratio of the sum of within cluster scatter to between cluster separation
+			temp = Scatter[i]+Scatter[j];
+			
+			CurrRatio = (double)temp/(double)DistClusters;
+			if(CurrRatio > MaxRatio)
+				MaxRatio = CurrRatio;
+		}
+		SumRatio += MaxRatio;
+	}
+	DBIndex = SumRatio/PartitionCount(pP);	
+	return DBIndex;	
+	
+}
+//end of DBI
+
+// MSE:
+double ValidityMSE(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP)
+{
+	int		   i = 0;
+	int        j = 0;
+	double     sum = 0;
+	double     MSE = 0;
+	double     dist = 0;
+	for( i = 0; i < BookSize(pTS); i++)
+	{
+		j = Map(pP,i);
+		dist = VectorDistance(Vector(pTS, i), Vector(pCB, j), 
+			VectorSize(pTS), MAXLLONG, EUCLIDEANSQ);
+		sum += dist * VectorFreq(pTS, i);	
+	}
+	MSE = sum /(TotalFreq(pTS) * VectorSize(pTS));
+	return MSE;
+}
+//end of MSE
+
+// BIC
+double ValidityBIC(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP)
+{
+	int		   i = 0;
+	int        j = 0;
+	double     variance = 0;
+	double     LogLikelihood = 0;
+	double     BIC = 0;
+	for( i = 0; i < BookSize(pCB); i++)
+	{
+		int   Num_Each = 0;
+		int   Num = 0;
+		int   dim = 0;
+		for(j = 0; j < BookSize(pTS); j++)
+		{
+			// calculate variance of each cluster
+			if(Map(pP,j) == i)
+				variance += VectorDistance(Vector(pTS,j), Vector(pCB,i),
+					VectorSize(pTS), MAXLLONG, EUCLIDEANSQ);
+		}
+		variance /= BookSize(pTS)-BookSize(pCB);	
+		Num_Each = VectorFreq(pCB, i);
+		Num = TotalFreq(pTS);
+		dim = VectorSize(pCB);
+		LogLikelihood += Num_Each*log(Num_Each)-Num_Each*log(Num)-dim*Num_Each*log(2*pi)/2
+			-Num_Each*log(variance)/2-(Num_Each-BookSize(pCB))/2;
+	}
+	BIC = LogLikelihood - BookSize(pCB)*log(TotalFreq(pTS))/2;
+	return BIC;
+}
+// end for BIC
+
+double Xie_Beni(TRAININGSET *pTS, CODEBOOK *pCB, PARTITIONING *pP)
+{
+	int		   i = 0;
+	int        j = 0;
+	double     SE = 0;
+	double     MSE = 0;
+	double     CentroidMSE = 0;
+	double     Xie_Beni_Index = 0;
+	double     temp_dist = 0;
+	double     dist = 0;
+	double     min_dist = 0;
+	VECTORTYPE MeanVector;
+	MSE = ValidityMSE(pTS,pCB,pP);
+	SE = TotalFreq(pTS) * MSE;
+	// mean vector of dataset
+	MeanVector = MeanOfTs(pTS,pCB);		
+	for( i = 0; i < BookSize(pCB); i++)
+	{		
+		// EUCLIDEANSQ (without square)
+		temp_dist = VectorDistance(Vector(pCB, i), MeanVector,
+			VectorSize(pCB), MAXLLONG, EUCLIDEANSQ);
+		CentroidMSE += temp_dist;
+		CentroidMSE /= BookSize(pCB);
+	}
+	// min distance between clusters	
+	min_dist = VectorDistance(MeanVector, Vector(pCB,1),
+						VectorSize(pCB), MAXLLONG, EUCLIDEANSQ);
+	for( i = 0; i < BookSize(pCB); i++)
+	{
+		for(j = i+1; j < BookSize(pCB); j++)
+		{
+			dist = VectorDistance(Vector(pCB, i), Vector(pCB, j),
+					VectorSize(pCB), MAXLLONG, EUCLIDEANSQ);
+			if (dist < min_dist)
+				min_dist = dist;
+		}
+	}
+	// Xie-Beni value
+	Xie_Beni_Index = (VectorSize(pCB)*SE + CentroidMSE) / min_dist;
+	return Xie_Beni_Index;
+}
+// end for Xie-Beni
+
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*---------------------end clustering validity-----------------------*/

@@ -1,0 +1,164 @@
+Making install in files
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files'
+Making install in scripts
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files/scripts'
+make[3]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files/scripts'
+make[3]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/lua/5.1/" || /bin/mkdir -p "/usr/local/lib/lua/5.1/"
+ /usr/bin/install -c -m 644 'tcp_event.lua' '/usr/local/lib/lua/5.1//tcp_event.lua'
+ /usr/bin/install -c -m 644 'oo.lua' '/usr/local/lib/lua/5.1//oo.lua'
+ /usr/bin/install -c -m 644 'ui.lua' '/usr/local/lib/lua/5.1//ui.lua'
+test -z "/usr/local/lib/lua/5.1/gui" || /bin/mkdir -p "/usr/local/lib/lua/5.1/gui"
+ /usr/bin/install -c -m 644 'gui/Anim.lua' '/usr/local/lib/lua/5.1/gui/Anim.lua'
+ /usr/bin/install -c -m 644 'gui/event.lua' '/usr/local/lib/lua/5.1/gui/event.lua'
+ /usr/bin/install -c -m 644 'gui/ImageDraw.lua' '/usr/local/lib/lua/5.1/gui/ImageDraw.lua'
+ /usr/bin/install -c -m 644 'gui/MUVAnim.lua' '/usr/local/lib/lua/5.1/gui/MUVAnim.lua'
+ /usr/bin/install -c -m 644 'gui/TextDraw.lua' '/usr/local/lib/lua/5.1/gui/TextDraw.lua'
+ /usr/bin/install -c -m 644 'gui/Draw.lua' '/usr/local/lib/lua/5.1/gui/Draw.lua'
+ /usr/bin/install -c -m 644 'gui/gui.lua' '/usr/local/lib/lua/5.1/gui/gui.lua'
+ /usr/bin/install -c -m 644 'gui/InputDraw.lua' '/usr/local/lib/lua/5.1/gui/InputDraw.lua'
+ /usr/bin/install -c -m 644 'gui/RectDraw.lua' '/usr/local/lib/lua/5.1/gui/RectDraw.lua'
+ /usr/bin/install -c -m 644 'gui/Timer.lua' '/usr/local/lib/lua/5.1/gui/Timer.lua'
+ /usr/bin/install -c -m 644 'gui/BoxDraw.lua' '/usr/local/lib/lua/5.1/gui/BoxDraw.lua'
+ /usr/bin/install -c -m 644 'gui/BoxTimer.lua' '/usr/local/lib/lua/5.1/gui/BoxTimer.lua'
+ /usr/bin/install -c -m 644 'gui/TextInputDraw.lua' '/usr/local/lib/lua/5.1/gui/TextInputDraw.lua'
+make[3]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files/scripts'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files/scripts'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files'
+make[3]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files'
+make[3]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/etc/ginga/files/img/button/" || /bin/mkdir -p "/usr/local/etc/ginga/files/img/button/"
+ /usr/bin/install -c -m 644 'images/pauseButton.png' '/usr/local/etc/ginga/files/img/button//pauseButton.png'
+ /usr/bin/install -c -m 644 'images/playButton.png' '/usr/local/etc/ginga/files/img/button//playButton.png'
+ /usr/bin/install -c -m 644 'images/stopButton.png' '/usr/local/etc/ginga/files/img/button//stopButton.png'
+test -z "/usr/local/etc/ginga/files/font/" || /bin/mkdir -p "/usr/local/etc/ginga/files/font/"
+ /usr/bin/install -c -m 644 'fonts/decker.ttf' '/usr/local/etc/ginga/files/font//decker.ttf'
+ /usr/bin/install -c -m 644 'fonts/vera.ttf' '/usr/local/etc/ginga/files/font//vera.ttf'
+make[3]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/files'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/player" || /bin/mkdir -p "/usr/local/include/ginga/player"
+ /usr/bin/install -c -m 644 'IApplicationPlayer.h' '/usr/local/include/ginga/player/IApplicationPlayer.h'
+ /usr/bin/install -c -m 644 'IPlayer.h' '/usr/local/include/ginga/player/IPlayer.h'
+ /usr/bin/install -c -m 644 'Player.h' '/usr/local/include/ginga/player/Player.h'
+ /usr/bin/install -c -m 644 'INCLPlayer.h' '/usr/local/include/ginga/player/INCLPlayer.h'
+ /usr/bin/install -c -m 644 'IPlayerListener.h' '/usr/local/include/ginga/player/IPlayerListener.h'
+ /usr/bin/install -c -m 644 'IProgramAV.h' '/usr/local/include/ginga/player/IProgramAV.h'
+ /usr/bin/install -c -m 644 'IShowButton.h' '/usr/local/include/ginga/player/IShowButton.h'
+ /usr/bin/install -c -m 644 'AnimePlayer.h' '/usr/local/include/ginga/player/AnimePlayer.h'
+ /usr/bin/install -c -m 644 'PlayerState.h' '/usr/local/include/ginga/player/PlayerState.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingaccplayer.so' '/usr/local/lib/ginga/libgingaccplayer.so'
+/usr/bin/install -c libgingaccplayer.so /usr/local/lib/ginga/libgingaccplayer.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src'
+Making install in src/image
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/image'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/image'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingaccplaani.so' '/usr/local/lib/ginga/players//libgingaccplaani.so'
+/usr/bin/install -c libgingaccplaani.so /usr/local/lib/ginga/players//libgingaccplaani.so
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingaccplaimg.so' '/usr/local/lib/ginga/players//libgingaccplaimg.so'
+/usr/bin/install -c libgingaccplaimg.so /usr/local/lib/ginga/players//libgingaccplaimg.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/image'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/image'
+Making install in src/application/declarative/xhtml
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/declarative/xhtml'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/declarative/xhtml'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../../../libtool --mode=install /usr/bin/install -c 'libgingaccplalks.so' '/usr/local/lib/ginga/players//libgingaccplalks.so'
+/usr/bin/install -c libgingaccplalks.so /usr/local/lib/ginga/players//libgingaccplalks.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/declarative/xhtml'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/declarative/xhtml'
+Making install in src/application/imperative/lua
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/imperative/lua'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/imperative/lua'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../../../libtool --mode=install /usr/bin/install -c 'libgingaccplalua.so' '/usr/local/lib/ginga/players//libgingaccplalua.so'
+/usr/bin/install -c libgingaccplalua.so /usr/local/lib/ginga/players//libgingaccplalua.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/imperative/lua'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/application/imperative/lua'
+Making install in src/text
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingaccplatxt.so' '/usr/local/lib/ginga/players//libgingaccplatxt.so'
+/usr/bin/install -c libgingaccplatxt.so /usr/local/lib/ginga/players//libgingaccplatxt.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text'
+Making install in src/text/plain
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/plain'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/plain'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../../libtool --mode=install /usr/bin/install -c 'libgingaccplaplt.so' '/usr/local/lib/ginga/players//libgingaccplaplt.so'
+/usr/bin/install -c libgingaccplaplt.so /usr/local/lib/ginga/players//libgingaccplaplt.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/plain'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/plain'
+Making install in src/text/srt
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/srt'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/srt'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../../libtool --mode=install /usr/bin/install -c 'libgingaccplasrt.so' '/usr/local/lib/ginga/players//libgingaccplasrt.so'
+/usr/bin/install -c libgingaccplasrt.so /usr/local/lib/ginga/players//libgingaccplasrt.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/srt'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/text/srt'
+Making install in src/video
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/video'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/video'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingaccplaavp.so' '/usr/local/lib/ginga/players//libgingaccplaavp.so'
+/usr/bin/install -c libgingaccplaavp.so /usr/local/lib/ginga/players//libgingaccplaavp.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/video'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/video'
+Making install in src/tv
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/tv'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/tv'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingaccplacha.so' '/usr/local/lib/ginga/players//libgingaccplacha.so'
+/usr/bin/install -c libgingaccplacha.so /usr/local/lib/ginga/players//libgingaccplacha.so
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingaccplapav.so' '/usr/local/lib/ginga/players//libgingaccplapav.so'
+/usr/bin/install -c libgingaccplapav.so /usr/local/lib/ginga/players//libgingaccplapav.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/tv'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/tv'
+Making install in src/widget
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/widget'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/widget'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga/players/" || /bin/mkdir -p "/usr/local/lib/ginga/players/"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingaccplawdg.so' '/usr/local/lib/ginga/players//libgingaccplawdg.so'
+/usr/bin/install -c libgingaccplawdg.so /usr/local/lib/ginga/players//libgingaccplawdg.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/widget'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/src/widget'
+Making install in test
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/test'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/test'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/test'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player/test'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/gingacc-cpp/gingacc-player'

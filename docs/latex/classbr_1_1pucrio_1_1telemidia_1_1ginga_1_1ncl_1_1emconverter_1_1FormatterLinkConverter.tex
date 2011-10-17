@@ -1,0 +1,74 @@
+\section{FormatterLinkConverter Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter}\index{br::pucrio::telemidia::ginga::ncl::emconverter::FormatterLinkConverter@{br::pucrio::telemidia::ginga::ncl::emconverter::FormatterLinkConverter}}
+Collaboration diagram for FormatterLinkConverter:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterLinkConverter} ({\bf FormatterConverter} $\ast${\bf compiler})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_f5b1c2393b5314012f6be212a9755cb3}
+
+\item 
+FormatterCausalLink $\ast$ \textbf{createCausalLink} (CausalLink $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_5a997bf6ebdc2e69e0f9d1e2c07d2b35}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+LinkAction $\ast$ \textbf{createAction} (Action $\ast$actionExpression, CausalLink $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_63db49c279704468f782e2a9b83de54d}
+
+\item 
+LinkCondition $\ast$ \textbf{createCondition} (ConditionExpression $\ast$ncmExpression, CausalLink $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_da854b17ddd9acc030a0a53d40ce6260}
+
+\item 
+LinkCompoundTriggerCondition $\ast$ \textbf{createCompoundTriggerCondition} (short op, double delay, vector$<$ ConditionExpression $\ast$ $>$ $\ast$ncmChildConditions, CausalLink $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_185f5305cff2da616f6261363806a1ee}
+
+\item 
+LinkCondition $\ast$ \textbf{createCondition} (TriggerExpression $\ast$triggerExpression, CausalLink $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_3c3316a7eafee557b9da46a021267489}
+
+\item 
+LinkAssessmentStatement $\ast$ \textbf{createAssessmentStatement} (AssessmentStatement $\ast$assessmentStatement, Bind $\ast$bind, Link $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_9badcb8fd283c88e817a455f2d01cba0}
+
+\item 
+LinkStatement $\ast$ \textbf{createStatement} (Statement $\ast$statementExpression, Link $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_dbfdc7eeda40396605436a113416d2c3}
+
+\item 
+LinkAttributeAssessment $\ast$ \textbf{createAttributeAssessment} (AttributeAssessment $\ast$attributeAssessment, Bind $\ast$bind, Link $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_9168514d5c101a07ad7bab3a79097caa}
+
+\item 
+LinkSimpleAction $\ast$ \textbf{createSimpleAction} (SimpleAction $\ast$sae, Bind $\ast$bind, Link $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_a54a89c9a4295af2d55091a40a2c0b1d}
+
+\item 
+LinkCompoundAction $\ast$ \textbf{createCompoundAction} (short op, double delay, vector$<$ Action $\ast$ $>$ $\ast$ncmChildActions, CausalLink $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_9247ceebe75c34d2f42247a1e7c99e45}
+
+\item 
+LinkTriggerCondition $\ast$ \textbf{createSimpleCondition} (SimpleCondition $\ast$condition, Bind $\ast$bind, Link $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_6ba6c87d71c2fd0678f206340cd2cb69}
+
+\item 
+FormatterEvent $\ast$ \textbf{createEvent} (Bind $\ast$bind, Link $\ast$ncmLink, CompositeExecutionObject $\ast$parentObject, int depthLevel)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_7dead2bc2218b8ced528d05eacb486b0}
+
+\item 
+double \textbf{getDelayParameter} (Link $\ast$ncmLink, Parameter $\ast$connParam, Bind $\ast$ncmBind)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_58a382238233f95814f7a0d75e1aba2a}
+
+\item 
+string \textbf{getBindKey} (Link $\ast$ncmLink, Bind $\ast$ncmBind)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_aabfbe6013511eeae5bc6ce390e576b0}
+
+\item 
+double \textbf{compileDelay} (Link $\ast$ncmLink, string delayObject, Bind $\ast$bind)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_0c02ee44c0e1b0d49d454b331336519d}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf FormatterConverter} $\ast$ {\bf compiler}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterLinkConverter_dbbd12a69462a88d0c59de7af28af3ee}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 123 of file FormatterLinkConverter.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/emconverter/FormatterLinkConverter.h\end{CompactItemize}

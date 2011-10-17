@@ -1,0 +1,25 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{sqlite3_index_info\n|+ nConstraint\l+ aConstraint\l+ nOrderBy\l+ aOrderBy\l+ aConstraintUsage\l+ idxNum\l+ idxStr\l+ needToFreeIdxStr\l+ orderByConsumed\l+ estimatedCost\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="aOrderBy",arrowtail="open"];
+  Node2 [label="{sqlite3_index_orderby\n|+ iColumn\l+ desc\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structsqlite3__index__info_1_1sqlite3__index__orderby.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="desc",arrowtail="open"];
+  Node3 [label="{unsigned char\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="iColumn",arrowtail="open"];
+  Node4 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="estimatedCost",arrowtail="open"];
+  Node5 [label="{double\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="aConstraintUsage",arrowtail="open"];
+  Node6 [label="{sqlite3_index_constraint_usage\n|+ argvIndex\l+ omit\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structsqlite3__index__info_1_1sqlite3__index__constraint__usage.html"];
+  Node3 -> Node6 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="omit",arrowtail="open"];
+  Node4 -> Node6 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="argvIndex",arrowtail="open"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="orderByConsumed\nneedToFreeIdxStr\nnConstraint\nidxNum\nnOrderBy",arrowtail="open"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="aConstraint",arrowtail="open"];
+  Node7 [label="{sqlite3_index_constraint\n|+ iColumn\l+ op\l+ usable\l+ iTermOffset\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structsqlite3__index__info_1_1sqlite3__index__constraint.html"];
+  Node3 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="op\nusable",arrowtail="open"];
+  Node4 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="iColumn\niTermOffset",arrowtail="open"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idxStr",arrowtail="open"];
+  Node8 [label="{char *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

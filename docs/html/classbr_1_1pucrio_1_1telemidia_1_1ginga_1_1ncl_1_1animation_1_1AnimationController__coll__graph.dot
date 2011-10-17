@@ -1,0 +1,30 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{AnimationController\n|- animation\l- player\l- execObj\l- event\l- initRegion\l- targetRegion\l- propName\l- isExecObjAnim\l- params\l|+ startAnimation()\l- AnimationController()\l- AnimationController()\l- ~AnimationController()\l- run()\l- loadInitValues()\l- loadTargetValues()\l- animeStep()\l- getSinglePropertyTarget()\l- updateTargetRegion()\l- ungroupProperty()\l- isExecutionObjectProperty()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{Thread\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="params",arrowtail="open",fontname="FreeSans.ttf"];
+  Node3 [label="{vector\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node3 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>",fontname="FreeSans.ttf"];
+  Node4 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="targetRegion\ninitRegion",arrowtail="open",fontname="FreeSans.ttf"];
+  Node5 [label="{LayoutRegion *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="player",arrowtail="open",fontname="FreeSans.ttf"];
+  Node6 [label="{FormatterPlayerAdapter *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="event",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 [label="{AttributionEvent *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="execObj",arrowtail="open",fontname="FreeSans.ttf"];
+  Node8 [label="{ExecutionObject *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="isExecObjAnim",arrowtail="open",fontname="FreeSans.ttf"];
+  Node9 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="propName",arrowtail="open",fontname="FreeSans.ttf"];
+  Node10 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node11 -> Node10 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node11 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node11 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>",fontname="FreeSans.ttf"];
+  Node12 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="animation",arrowtail="open",fontname="FreeSans.ttf"];
+  Node13 [label="{Animation *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

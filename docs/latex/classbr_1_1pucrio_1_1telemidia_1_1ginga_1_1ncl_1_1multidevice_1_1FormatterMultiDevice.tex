@@ -1,0 +1,155 @@
+\section{FormatterMultiDevice Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice}\index{br::pucrio::telemidia::ginga::ncl::multidevice::FormatterMultiDevice@{br::pucrio::telemidia::ginga::ncl::multidevice::FormatterMultiDevice}}
+Inheritance diagram for FormatterMultiDevice:Collaboration diagram for FormatterMultiDevice:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterMultiDevice} (IDeviceLayout $\ast${\bf deviceLayout}, int x, int y, int w, int h)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_bbf15d86bc00a37bcddeb8c019ec5e99}
+
+\item 
+void \textbf{setBackgroundImage} (string uri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_795fc8fc43213cc9edc9b8fc6205643d}
+
+\item 
+void $\ast$ \textbf{getMainLayout} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_460d3a42bd078d19e79294aab11c4faf}
+
+\item 
+void $\ast$ \textbf{getFormatterLayout} (int devClass)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_2b22c5d3091c473f7035ce31f23aefb8}
+
+\item 
+string \textbf{getScreenShot} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_c3bbd2029ed65635a16b2bd0c868c7f3}
+
+\item 
+FormatterLayout $\ast$ \textbf{getFormatterLayout} (CascadingDescriptor $\ast$descriptor)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_6f82c59cdc5f61ce5ede0e43df99e29b}
+
+\item 
+void \textbf{prepareFormatterRegion} (ExecutionObject $\ast$executionObject, ISurface $\ast$renderedSurface)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_b439144b5b13b4ea1c4efba5d790c22b}
+
+\item 
+void \textbf{showObject} (ExecutionObject $\ast$executionObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_a5a334db28025d697079f93af3f4fcfe}
+
+\item 
+void \textbf{hideObject} (ExecutionObject $\ast$executionObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_6c9e454ac11fc5e4f4749b7a4768f903}
+
+\item 
+void \textbf{addActiveUris} (string baseUri, vector$<$ string $>$ $\ast$uris)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_020013dc497c0894f0600f4892dedd4d}
+
+\item 
+virtual void \textbf{updatePassiveDevices} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_00675154e453a4ceb9ef7df628d398ca}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+string \textbf{serializeScreen} (int devClass, IWindow $\ast$mapWindow)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_f5e47dbd0c86806c7b1304fa042bfeb0}
+
+\item 
+virtual void \textbf{postMediaContent} (int destDevClass)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_8125c94ad28c93f049b8cacdccc6d3c9}
+
+\item 
+virtual bool \textbf{newDeviceConnected} (int newDevClass, int w, int h)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_fbbd269b1e949d8a04152b1e9106e1d7}
+
+\item 
+virtual void \textbf{connectedToBaseDevice} (unsigned int domainAddr)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_3af5d97a0c56f9da9a45172453022837}
+
+\item 
+virtual bool \textbf{receiveRemoteEvent} (int remoteDevClass, int eventType, string eventContent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_7e36a7d304d1d9230060595a04a6e204}
+
+\item 
+virtual bool {\bf receiveRemoteContent} (int remoteDevClass, char $\ast$stream, int streamSize)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_675bcb780d7b8e368c33df842b44cde5}
+
+\item 
+virtual bool {\bf receiveRemoteContentInfo} (string contentId, string contentUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_c549328e7f2765e9eae9e4078e136b4d}
+
+\item 
+void \textbf{renderFromUri} (IWindow $\ast$win, string uri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_a6b10ebab13e696ada8cbef59ec5f560}
+
+\item 
+void \textbf{tapObject} (int devClass, int x, int y)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_01fae01aec00c48236ef755575b0fa4d}
+
+\item 
+virtual bool {\bf receiveRemoteContent} (int remoteDevClass, string contentUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_87cbdaf726f091ac278ec8d38c8e2237}
+
+\item 
+void \textbf{updateStatus} (short code, string parameter, short type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_bb2780bfc87cd74debbacb3680e03104}
+
+\item 
+virtual bool \textbf{userEventReceived} (IInputEvent $\ast$ev)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_d0a639e2de60efb5c847f194e2f24bdc}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+IDeviceLayout $\ast$ {\bf deviceLayout}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_53f8726780eb8423c7727f8cede98b8a}
+
+\item 
+map$<$ int, FormatterLayout $\ast$ $>$ $\ast$ {\bf layoutManager}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_42346b0a340f1bc2768a2a9b16cefdc0}
+
+\item 
+vector$<$ string $>$ $\ast$ {\bf activeUris}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_b7e7ab426f7d8094007589979dea8ac8}
+
+\item 
+string {\bf activeBaseUri}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_54357e691cf87d41eba764d71491d383}
+
+\item 
+FormatterLayout $\ast$ {\bf mainLayout}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_d1423fc8d9340056736b81171d6a4ac7}
+
+\item 
+IWindow $\ast$ {\bf serialized}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_0a8a6db72b0929c804cf0af87e761b1f}
+
+\item 
+IWindow $\ast$ {\bf printScreen}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_6db68737fb12e7268e63aeb6fb61e708}
+
+\item 
+IWindow $\ast$ {\bf bitMapScreen}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_8fd2aa74ef9a0766a064c1eb1b9a442e}
+
+\item 
+int {\bf xOffset}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_38b670313be423c4fbcaa4b6ff0e5e83}
+
+\item 
+int {\bf yOffset}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_016718268d32fcb95b1190cc1071e270}
+
+\item 
+int {\bf defaultWidth}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_b28500680f98c1342885f2884941e8e1}
+
+\item 
+int {\bf defaultHeight}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_6f1ab9433a9e682244bd74e3f8a6fd9d}
+
+\item 
+int {\bf deviceClass}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_504d195f469c9e19746101fc85a24cd0}
+
+\item 
+bool {\bf hasRemoteDevices}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_105374c45ef9955067e3b9a401c1f969}
+
+\end{CompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{CompactItemize}
+\item 
+static ILocalDeviceManager $\ast$ {\bf dm}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_059153e9dab354e59c386543c6ba63cc}
+
+\item 
+static IInputManager $\ast$ {\bf im}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_1a7a3c6296297c71a86bc018607fdcfe}
+
+\item 
+static pthread\_\-mutex\_\-t {\bf mutex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_4acff8232e4aec9cd5c6dc200ac55ef3}
+
+\item 
+static IRemoteDeviceManager $\ast$ {\bf rdm}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_b8e82a9bb97833fb3314d27b2ba13a89}
+
+\item 
+static const int {\bf DV\_\-QVGA\_\-WIDTH} = 480\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_1d64e3eafa97cc45d2e8a49be7711e77}
+
+\item 
+static const int {\bf DV\_\-QVGA\_\-HEIGHT} = 320\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1FormatterMultiDevice_9df9a317a021753b5c03abd825b20e1d}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 90 of file FormatterMultiDevice.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/multidevice/FormatterMultiDevice.h\end{CompactItemize}

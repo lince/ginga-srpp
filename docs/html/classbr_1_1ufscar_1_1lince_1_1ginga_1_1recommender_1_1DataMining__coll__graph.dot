@@ -1,0 +1,24 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{DataMining\n|+ miningAlgorithm\l- avaibleMiningAlgorithms\l- currentAlgorithm\l- algorithmConstructor\l- algorithmPointer\l- algorithmDestructor\l|+ DataMining()\l+ DataMining()\l+ DataMining()\l+ ~DataMining()\l+ setAlgorithm()\l+ getAlgorithm()\l+ getAlgorithms()\l+ setParams()\l+ prepare()\l+ prepare()\l+ start()\l+ stop()\l+ setOutput()\l+ setOutput()\l+ setOutput()\l- setAvaibleMiningAlgorithms()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="algorithmDestructor",arrowtail="open",fontname="FreeSans.ttf"];
+  Node2 [label="{void(*)(void *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="currentAlgorithm",arrowtail="open",fontname="FreeSans.ttf"];
+  Node3 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node4 -> Node3 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node4 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>",fontname="FreeSans.ttf"];
+  Node5 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="avaibleMiningAlgorithms",arrowtail="open",fontname="FreeSans.ttf"];
+  Node6 [label="{map\< char *, int \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node6 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char *, int \>",fontname="FreeSans.ttf"];
+  Node7 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="algorithmPointer",arrowtail="open",fontname="FreeSans.ttf"];
+  Node8 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="algorithmConstructor",arrowtail="open",fontname="FreeSans.ttf"];
+  Node9 [label="{void *(*)(void)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="miningAlgorithm",arrowtail="open",fontname="FreeSans.ttf"];
+  Node10 [label="{MiningAlgorithm\n||+ setParams()\l+ prepare()\l+ prepare()\l+ start()\l+ stop()\l+ setOutput()\l+ setOutput()\l+ setOutput()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm.html"];
+}

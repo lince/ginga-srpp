@@ -1,0 +1,14 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{Device\n|- prof\l- serialNumber\l- tp\l- idDevice\l|+ Device()\l+ generateSql()\l+ getIdDevice()\l+ getProf()\l+ setProf()\l+ getSerialNumber()\l+ setSerialNumber()\l+ getTp()\l+ setTp()\l+ setIdDevice()\l+ incIdDevice()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="prof\ntp\nserialNumber",arrowtail="open",fontname="FreeSans.ttf"];
+  Node2 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node3 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node3 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>",fontname="FreeSans.ttf"];
+  Node4 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idDevice",arrowtail="open",fontname="FreeSans.ttf"];
+  Node5 [label="{static int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

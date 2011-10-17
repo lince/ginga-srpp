@@ -1,0 +1,104 @@
+\section{FormatterLayout Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout}\index{br::pucrio::telemidia::ginga::ncl::model::presentation::FormatterLayout@{br::pucrio::telemidia::ginga::ncl::model::presentation::FormatterLayout}}
+Collaboration diagram for FormatterLayout:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterLayout} (int x, int y, int w, int h)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_42de6972aad0eb477e7b62b80b4ecc59}
+
+\item 
+void \textbf{addChild} (string objectId, {\bf FormatterLayout} $\ast$child)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_9980fb2c81f4df15e0363d7a7210120e}
+
+\item 
+{\bf FormatterLayout} $\ast$ \textbf{getChild} (string objectId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_7f9f7f7b9b50bc3d40de64c1c8681997}
+
+\item 
+string \textbf{getBitMapRegionId} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_f401516681be58a7b50a5896693420c8}
+
+\item 
+LayoutRegion $\ast$ \textbf{getNcmRegion} (string regionId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_8968a173417b5de80ced45faa7ed8935}
+
+\item 
+bool \textbf{getScreenShot} (IWindow $\ast$region)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_a858bab2fb732dced89945296782ff5a}
+
+\item 
+ExecutionObject $\ast$ \textbf{getObject} (int x, int y)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_4a7cb0f99f58ab5d60b014e5c99cb547}
+
+\item 
+void \textbf{prepareFormatterRegion} (ExecutionObject $\ast$object, ISurface $\ast$renderedSurface)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_26b0242deb15dca84abca9fae33af726}
+
+\item 
+void \textbf{showObject} (ExecutionObject $\ast$object)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_633c6a1d6b767afce9c90f1e557786ad}
+
+\item 
+void \textbf{hideObject} (ExecutionObject $\ast$object)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_e92309574fa337dbe79478ce3d52f941}
+
+\item 
+set$<$ {\bf FormatterRegion} $\ast$ $>$ $\ast$ \textbf{getFormatterRegionsFromNcmRegion} (string regionId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_543eb6f453c70eb41d9f3ba8ab9f0f11}
+
+\item 
+void \textbf{clear} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_c8bb3912a3ce86b15842e79d0b421204}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+set$<$ string $>$ {\bf typeSet}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_145b3afaa194308141d367cc1393d565}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{printRegionMap} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_11189fcd6c214000cbf3c2e0f7ce7ecf}
+
+\item 
+void \textbf{printObjectMap} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_f369cc94f2ed4f19d1220769ac14510e}
+
+\item 
+void \textbf{createDeviceRegion} (int x, int y, int w, int h)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_6259e0237dee61a8e0ff76397e056f73}
+
+\item 
+void \textbf{sortRegion} (string regionId, int zIndex)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_955edb4a342d595b1b3b6aafc95e38c6}
+
+\item 
+void \textbf{lock} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_a81aed607133209dade63a226818224d}
+
+\item 
+void \textbf{unlock} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_9278be8203e1c42e2619179882ae4403}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, {\bf FormatterLayout} $\ast$ $>$ $\ast$ {\bf childs}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_3a79648afedb292370789b3d22973642}
+
+\item 
+LayoutRegion $\ast$ {\bf deviceRegion}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_8acc4f543ede50497a0583a28c6984a8}
+
+\item 
+vector$<$ string $>$ $\ast$ {\bf sortedRegions}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_f2ef98c3adc8c841bd9642ef4f9da26b}
+
+\item 
+map$<$ string, int $>$ $\ast$ {\bf regionZIndex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_def703a972923de794a833f6ee60d944}
+
+\item 
+map$<$ string, set$<$ {\bf FormatterRegion} $\ast$ $>$ $\ast$ $>$ $\ast$ {\bf regionMap}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_5ebd0ef634bdd3545df982111217d01f}
+
+\item 
+map$<$ {\bf FormatterRegion} $\ast$, ExecutionObject $\ast$ $>$ $\ast$ {\bf objectMap}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_56e0e0eb8a5db452a44dc5856a1f6562}
+
+\item 
+pthread\_\-mutex\_\-t {\bf mutex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1presentation_1_1FormatterLayout_4acff8232e4aec9cd5c6dc200ac55ef3}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 78 of file FormatterLayout.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/FormatterLayout.h\end{CompactItemize}

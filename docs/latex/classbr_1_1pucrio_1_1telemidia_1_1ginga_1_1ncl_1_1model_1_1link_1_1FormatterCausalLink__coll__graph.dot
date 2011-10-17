@@ -1,0 +1,41 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterCausalLink\n|- condition\l- action\l|+ FormatterCausalLink()\l+ ~FormatterCausalLink()\l+ getAction()\l+ getTriggerCondition()\l+ conditionSatisfied()\l+ getEvents()\l+ evaluationStarted()\l+ evaluationEnded()\l+ actionProcessed()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{FormatterLink\n|# ncmLink\l# parentObject\l# typeSet\l|+ FormatterLink()\l+ ~FormatterLink()\l+ getNcmLink()\l+ instanceOf()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1FormatterLink.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="ncmLink",arrowtail="open"];
+  Node3 [label="{Link *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open"];
+  Node4 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>"];
+  Node5 [label="{set\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="parentObject",arrowtail="open"];
+  Node6 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node7 [label="{LinkTriggerListener\n|+ CONDITION_SATISFIED\l+ EVALUATION_STARTED\l+ EVALUATION_ENDED\l|+ ~LinkTriggerListener()\l+ conditionSatisfied()\l+ evaluationStarted()\l+ evaluationEnded()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkTriggerListener.html"];
+  Node8 -> Node7 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="EVALUATION_STARTED\nEVALUATION_ENDED\nCONDITION_SATISFIED",arrowtail="open"];
+  Node8 [label="{static const short\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node9 [label="{LinkActionProgressionListener\n||+ ~LinkActionProgressionListener()\l+ actionProcessed()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkActionProgressionListener.html"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="condition",arrowtail="open"];
+  Node10 [label="{LinkTriggerCondition\n|# listener\l# delay\l|+ LinkTriggerCondition()\l+ ~LinkTriggerCondition()\l+ setTriggerListener()\l+ getTriggerListener()\l+ getDelay()\l+ setDelay()\l+ conditionSatisfied()\l+ run()\l+ getEvents()\l# notifyConditionObservers()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkTriggerCondition.html"];
+  Node11 -> Node10 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node11 [label="{LinkCondition\n|# typeSet\l|+ LinkCondition()\l+ ~LinkCondition()\l+ instanceOf()\l+ getEvents()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCondition.html"];
+  Node4 -> Node11 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open"];
+  Node12 -> Node10 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node12 [label="{Thread\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node13 -> Node10 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="delay",arrowtail="open"];
+  Node13 [label="{double\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node10 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="listener",arrowtail="open"];
+  Node14 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="action",arrowtail="open"];
+  Node14 [label="{LinkAction\n|# typeSet\l- delay\l- progressionListeners\l|+ LinkAction()\l+ LinkAction()\l+ ~LinkAction()\l+ instanceOf()\l+ getWaitDelay()\l+ setWaitDelay()\l+ hasDelay()\l+ addActionProgressionListener()\l+ removeActionProgressionListener()\l+ notifyProgressionListeners()\l+ getEvents()\l+ getImplicitRefRoleActions()\l+ run()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkAction.html"];
+  Node12 -> Node14 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node13 -> Node14 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="delay",arrowtail="open"];
+  Node4 -> Node14 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open"];
+  Node15 -> Node14 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="progressionListeners",arrowtail="open"];
+  Node15 [label="{vector\< LinkActionProgressionListener * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node16 -> Node15 [dir=back,color="orange",fontsize=10,style="dashed",label="\< LinkActionProgressionListener * \>"];
+  Node16 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+}

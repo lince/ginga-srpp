@@ -1,0 +1,17 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{Edge\n|+ label\l+ subtrie\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="subtrie",arrowtail="open"];
+  Node2 [label="{Trie\n|- counter\l- edgevector\l- maxpath\l|+ Trie()\l+ is_included()\l+ find_candidate()\l+ delete_infrequent()\l+ show_content_preorder()\l+ ~Trie()\l- add_empty_state()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTrie.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="counter",arrowtail="open"];
+  Node3 [label="{unsigned long\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="edgevector",arrowtail="open"];
+  Node4 [label="{vector\< Edge \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< Edge \>"];
+  Node5 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="maxpath",arrowtail="open"];
+  Node6 [label="{itemtype\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="label",arrowtail="open"];
+}

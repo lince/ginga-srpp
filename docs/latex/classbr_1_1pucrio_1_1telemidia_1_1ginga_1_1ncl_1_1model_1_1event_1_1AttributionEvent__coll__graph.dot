@@ -1,0 +1,44 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{AttributionEvent\n|# anchor\l# valueMaintainer\l# assessments\l- settingNode\l|+ AttributionEvent()\l+ ~AttributionEvent()\l+ getAnchor()\l+ getCurrentValue()\l+ setValue()\l+ setValueMaintainer()\l+ setImplicitRefAssessmentEvent()\l+ getImplicitRefAssessmentEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{FormatterEvent\n|# id\l# currentState\l# occurrences\l# executionObject\l# coreListeners\l# linksListeners\l# objectsListeners\l# typeSet\l# deleting\l# mutex\l- ST_ABORTED\l|+ FormatterEvent()\l+ ~FormatterEvent()\l+ instanceOf()\l+ setId()\l+ addEventListener()\l+ containsEventListener()\l+ abort()\l+ start()\l+ stop()\l+ pause()\l+ resume()\l+ setCurrentState()\l+ clearEventListeners()\l+ getCurrentState()\l+ getExecutionObject()\l+ setExecutionObject()\l+ getId()\l+ getOccurrences()\l+ removeEventListener()\l+ getStateName()\l# getNewState()\l# getTransition()\l# changeState()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{IFormatterEvent\n||+ ~IFormatterEvent()\l+ instanceOf()\l+ setId()\l+ addEventListener()\l+ containsEventListener()\l+ abort()\l+ start()\l+ stop()\l+ pause()\l+ resume()\l+ setCurrentState()\l+ clearEventListeners()\l+ getCurrentState()\l+ getExecutionObject()\l+ setExecutionObject()\l+ getId()\l+ getOccurrences()\l+ removeEventListener()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1IFormatterEvent.html"];
+  Node4 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open"];
+  Node4 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>"];
+  Node5 [label="{set\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="currentState",arrowtail="open"];
+  Node6 [label="{short\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="ST_ABORTED",arrowtail="open"];
+  Node7 [label="{static const short\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="mutex",arrowtail="open"];
+  Node8 [label="{pthread_mutex_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="deleting",arrowtail="open"];
+  Node9 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="id",arrowtail="open"];
+  Node10 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node11 -> Node10 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node11 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node11 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>"];
+  Node12 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node13 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="objectsListeners\nlinksListeners\ncoreListeners",arrowtail="open"];
+  Node13 [label="{set\< IEventListener * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node13 [dir=back,color="orange",fontsize=10,style="dashed",label="\< IEventListener * \>"];
+  Node14 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="occurrences",arrowtail="open"];
+  Node14 [label="{long\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node15 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="executionObject",arrowtail="open"];
+  Node15 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node16 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="anchor",arrowtail="open"];
+  Node16 [label="{PropertyAnchor *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node17 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="valueMaintainer",arrowtail="open"];
+  Node17 [label="{IAttributeValueMaintainer\n||+ ~IAttributeValueMaintainer()\l+ getPropertyValue()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1IAttributeValueMaintainer.html"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="settingNode",arrowtail="open"];
+  Node18 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="assessments",arrowtail="open"];
+  Node18 [label="{map\< string, FormatterEvent * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node19 -> Node18 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, FormatterEvent * \>"];
+  Node19 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+}

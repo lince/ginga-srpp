@@ -1,0 +1,18 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{RuleAdapter\n|- ruleListenMap\l- entityListenMap\l- descListenMap\l|+ RuleAdapter()\l+ ~RuleAdapter()\l+ reset()\l+ adapt()\l+ initializeAttributeRuleRelation()\l+ initializeRuleObjectRelation()\l+ adapt()\l+ adaptDescriptor()\l+ adaptSwitch()\l+ evaluateRule()\l+ update()\l- evaluateCompositeRule()\l- evaluateSimpleRule()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{Observer\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="ruleListenMap",arrowtail="open"];
+  Node3 [label="{map\< string, vector\< Rule * \> * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node3 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, vector\< Rule * \> * \>"];
+  Node4 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="descListenMap",arrowtail="open"];
+  Node5 [label="{map\< Rule *, vector\< DescriptorSwitch * \> * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node5 [dir=back,color="orange",fontsize=10,style="dashed",label="\< Rule *, vector\< DescriptorSwitch * \> * \>"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="entityListenMap",arrowtail="open"];
+  Node6 [label="{map\< Rule *, vector\< ExecutionObjectSwitch * \> * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node6 [dir=back,color="orange",fontsize=10,style="dashed",label="\< Rule *, vector\< ExecutionObjectSwitch * \> * \>"];
+}

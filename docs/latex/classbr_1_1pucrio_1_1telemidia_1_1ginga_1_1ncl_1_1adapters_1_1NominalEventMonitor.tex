@@ -1,0 +1,95 @@
+\section{NominalEventMonitor Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor}\index{br::pucrio::telemidia::ginga::ncl::adapters::NominalEventMonitor@{br::pucrio::telemidia::ginga::ncl::adapters::NominalEventMonitor}}
+Inheritance diagram for NominalEventMonitor:Collaboration diagram for NominalEventMonitor:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{NominalEventMonitor} (ExecutionObject $\ast$obj, {\bf IPlayerAdapter} $\ast$player)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_0b4371e77b66d9c0b01d7218a0f03fed}
+
+\item 
+void \textbf{setTimeBaseProvider} (ITimeBaseProvider $\ast${\bf timeBaseProvider})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_5a671c0102c7b736e7e0e78e50f9922c}
+
+\item 
+void \textbf{updateTimeBaseId} (unsigned char oldContentId, unsigned char newContentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_c5c13786881f1a0751baa0252cb7a691}
+
+\item 
+void \textbf{valueReached} (unsigned char {\bf timeBaseId}, int64\_\-t timeValue)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_29a4e949da2298777d8144e4c93d32b6}
+
+\item 
+void \textbf{loopDetected} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_a0a322e549d5d724be072f5bc3666354}
+
+\item 
+void \textbf{startMonitor} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_1f39b73fee753fc2e3533adeef6b9172}
+
+\item 
+void \textbf{pauseMonitor} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_46d7fb9a2cc5a37df100f19997ca3208}
+
+\item 
+void \textbf{resumeMonitor} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_cb0523bc848b2b32ee192104e0ee4349}
+
+\item 
+void \textbf{stopMonitor} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_cffea442aa4b3d09cf662cd77d14a1cf}
+
+\item 
+virtual void \textbf{run} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_72fcb26a14f6beb1c3fbace9ab3e7dbb}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{prepareNptTransitionsEvents} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_604ee1afa6a21df07cc16600eb321f0c}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+double {\bf sleepTime}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_f44c0d8ffa88a1ce0b2e46571b0c5814}
+
+\item 
+double {\bf expectedSleepTime}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_86817c7c99038d6075554b5127564262}
+
+\item 
+ExecutionObject $\ast$ {\bf executionObject}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_f83de7ef273ad63179e90a1327416093}
+
+\item 
+{\bf IPlayerAdapter} $\ast$ {\bf adapter}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_6c0df6adced6b4821fe70531a2de7400}
+
+\item 
+int {\bf timeBaseId}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_c7f2ade94598885a8860f22e07af1f3b}
+
+\item 
+ITimeBaseProvider $\ast$ {\bf timeBaseProvider}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_a768d0b9325a7db85149852491c20fe1}
+
+\item 
+bool {\bf running}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_36f7b6be7108281af77939ceaec42fd6}
+
+\item 
+bool {\bf deleting}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_73dcd7977c4db81e50a24cbc794320c5}
+
+\item 
+bool {\bf paused}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_1656129c4a4fd8809254194f08f0ac70}
+
+\item 
+bool {\bf stopped}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_4bbd5ff52abed3e07aa5205f1179d9d3}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const double {\bf DEFAULT\_\-SLEEP\_\-TIME} = 5000\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_d9d15ed37db51872b15c44375107df4d}
+
+\item 
+static const double {\bf DEFAULT\_\-ERROR} = 50.0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1NominalEventMonitor_93f57639c79f67b9efde08b419ec3a20}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 89 of file NominalEventMonitor.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/adapters/NominalEventMonitor.h\end{CompactItemize}

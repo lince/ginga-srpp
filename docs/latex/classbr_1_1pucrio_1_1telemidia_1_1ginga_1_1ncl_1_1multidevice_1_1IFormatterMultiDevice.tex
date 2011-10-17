@@ -1,0 +1,59 @@
+\section{IFormatterMultiDevice Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice}\index{br::pucrio::telemidia::ginga::ncl::multidevice::IFormatterMultiDevice@{br::pucrio::telemidia::ginga::ncl::multidevice::IFormatterMultiDevice}}
+Inheritance diagram for IFormatterMultiDevice:Collaboration diagram for IFormatterMultiDevice:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual {\bf $\sim$IFormatterMultiDevice} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_92c954125959ad695d92324807983ff7}
+
+\item 
+virtual void \textbf{setBackgroundImage} (string uri)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_754387c03ca7efd69e5cc1182e5e79ff}
+
+\item 
+virtual void $\ast$ \textbf{getMainLayout} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_ebc95604416e19a25715f890c2c75eba}
+
+\item 
+virtual void $\ast$ \textbf{getFormatterLayout} (int devClass)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_6b2058ae15d0407e015abde3d549b64a}
+
+\item 
+virtual string \textbf{getScreenShot} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_f589cb0cbad90a5a2938587670c4543d}
+
+\item 
+virtual void \textbf{addActiveUris} (string baseUri, vector$<$ string $>$ $\ast$uris)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_e62c87f198c3c40e2f0d0440a9760310}
+
+\item 
+virtual void \textbf{updatePassiveDevices} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_02d5403e3ffc48312c5e66df3addcf16}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+virtual bool \textbf{newDeviceConnected} (int newDevClass, int w, int h)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_c789e0bb7a8b21a6bf392c8e1479cec3}
+
+\item 
+virtual void \textbf{connectedToBaseDevice} (unsigned int domainAddr)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_3af5d97a0c56f9da9a45172453022837}
+
+\item 
+virtual bool \textbf{receiveRemoteEvent} (int remoteDevClass, int eventType, string eventContent)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_d5e961b61bdbaddaae2b0933e46730ee}
+
+\item 
+virtual bool \textbf{receiveRemoteContent} (int remoteDevClass, char $\ast$stream, int streamSize)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_0a2baa43aee236e1a6592f5575c8a4a5}
+
+\item 
+virtual bool \textbf{receiveRemoteContent} (int remoteDevClass, string contentUri)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_a83a783a3e00cdfe2989ae69bed9b747}
+
+\item 
+virtual void \textbf{updateStatus} (short code, string parameter, short type)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1multidevice_1_1IFormatterMultiDevice_055eb9a79c3ce245a4c26e770bf43d50}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 72 of file IFormatterMultiDevice.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/multidevice/IFormatterMultiDevice.h\end{CompactItemize}

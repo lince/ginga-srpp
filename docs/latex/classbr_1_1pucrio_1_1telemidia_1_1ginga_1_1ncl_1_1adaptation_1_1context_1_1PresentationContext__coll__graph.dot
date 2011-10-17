@@ -1,0 +1,31 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{PresentationContext\n|- contextTable\l- contextManager\l- attrMutex\l- aserver\l- stop\l- _instance\l|+ setPropertyValue()\l+ incPropertyValue()\l+ decPropertyValue()\l+ getPropertyNames()\l+ getPropertyValue()\l+ getContextManager()\l+ lock()\l+ unlock()\l+ initializeContext()\l+ stopServer()\l+ save()\l+ instantiated()\l+ getInstance()\l- PresentationContext()\l- ~PresentationContext()\l- initializeUserContext()\l- initializeUserInfo()\l- initializeSystemValues()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{ContextBase\n|+ SYSTEM_LANGUAGE\l+ SYSTEM_CAPTION\l+ SYSTEM_SUBTITLE\l+ SYSTEM_RETURN_BIT_RATE\l+ SYSTEM_SCREEN_SIZE\l+ SYSTEM_SCREEN_GRAPHIC_SIZE\l+ SYSTEM_AUDIO_TYPE\l+ SYSTEM_CPU\l+ SYSTEM_MEMORY\l+ SYSTEM_OPERATING_SYSTEM\l+ SYSTEM_JAVA_CONFIG\l+ SYSTEM_JAVA_PROFILE\l+ SYSTEM_LUA_VERSION\l+ SYSTEM_DEVNUMBER\l+ SYSTEM_CLASSTYPE\l+ SYSTEM_INFO\l+ SYSTEM_CLASS_NUMBER\l+ USER_AGE\l+ USER_LOCATION\l+ USER_GENRE\l+ DEFAULT_FOCUS_BORDER_COLOR\l+ DEFAULT_FOCUS_BORDER_WIDTH\l+ DEFAULT_FOCUS_BORDER_TRANSPARENCY\l+ DEFAULT_SEL_BORDER_COLOR\l|+ ContextBase()\l+ ~ContextBase()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1ContextBase.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="DEFAULT_FOCUS_BORDER_WIDTH\nSYSTEM_SCREEN_SIZE\nSYSTEM_CAPTION\nSYSTEM_LANGUAGE\nSYSTEM_LUA_VERSION\nSYSTEM_SUBTITLE\nSYSTEM_JAVA_CONFIG\nUSER_LOCATION\nUSER_AGE\nSYSTEM_JAVA_PROFILE\nSYSTEM_CLASSTYPE\nSYSTEM_SCREEN_GRAPHIC_SIZE\nDEFAULT_SEL_BORDER_COLOR\nDEFAULT_FOCUS_BORDER_COLOR\nSYSTEM_OPERATING_SYSTEM\nSYSTEM_AUDIO_TYPE\nSYSTEM_CPU\nSYSTEM_RETURN_BIT_RATE\nUSER_GENRE\nSYSTEM_DEVNUMBER\nSYSTEM_MEMORY\nDEFAULT_FOCUS_BORDER_TRANSPARENCY\nSYSTEM_INFO\nSYSTEM_CLASS_NUMBER",arrowtail="open"];
+  Node3 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node4 -> Node3 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node4 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>"];
+  Node5 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node6 [label="{Observable\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node7 [label="{IContextProvider\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="contextTable",arrowtail="open"];
+  Node8 [label="{map\< string, string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node8 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string, string \>"];
+  Node9 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="attrMutex",arrowtail="open"];
+  Node10 [label="{pthread_mutex_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="aserver",arrowtail="open"];
+  Node11 [label="{pthread_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="contextManager",arrowtail="open"];
+  Node12 [label="{IContextManager *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="_instance",arrowtail="open"];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="stop",arrowtail="open"];
+  Node13 [label="{volatile bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

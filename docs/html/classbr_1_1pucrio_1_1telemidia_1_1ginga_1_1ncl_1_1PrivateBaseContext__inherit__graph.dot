@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{PrivateBaseContext\n|- baseDocuments\l- visibleDocuments\l- embeddedDocuments\l- idToLocation\l- layouts\l- layoutsGB\l- privateBase\l|+ PrivateBaseContext()\l+ ~PrivateBaseContext()\l+ createPrivateBase()\l+ addDocument()\l+ embedDocument()\l+ addVisibleDocument()\l+ getDocumentLocation()\l+ getEmbeddedDocumentLocation()\l+ getDocument()\l+ getEmbeddedDocument()\l+ getDocuments()\l+ removeDocument()\l+ removeEmbeddedDocument()\l+ clear()\l+ addRegion()\l+ removeRegion()\l+ addRegionBase()\l+ removeRegionBase()\l+ addRule()\l+ removeRule()\l+ addRuleBase()\l+ removeRuleBase()\l+ addTransition()\l+ removeTransition()\l+ addTransitionBase()\l+ removeTransitionBase()\l+ addConnector()\l+ removeConnector()\l+ addConnectorBase()\l+ removeConnectorBase()\l+ addDescriptor()\l+ removeDescriptor()\l+ addDescriptorBase()\l+ removeDescriptorBase()\l+ addImportBase()\l+ removeImportBase()\l+ addImportedDocumentBase()\l+ removeImportedDocumentBase()\l+ addImportNCL()\l+ removeImportNCL()\l+ addNode()\l+ addInterface()\l+ addLink()\l+ getPrivateBase()\l- compileDocument()\l- getBaseDocument()\l- compileEntity()\l- getBase()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{IPrivateBaseContext\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

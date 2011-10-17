@@ -1,0 +1,170 @@
+\section{LocalAgent Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent}\index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+Inheritance diagram for LocalAgent:Collaboration diagram for LocalAgent:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf LocalAgent} ()
+\item 
+{\bf $\sim$LocalAgent} ()
+\item 
+{\bf Database} $\ast$ {\bf getDatabase} ()
+\item 
+bool {\bf stop} ()
+\item 
+bool {\bf addAgentListener} ({\bf AgentListener} $\ast$listener)
+\item 
+bool {\bf removeAgentListener} ({\bf AgentListener} $\ast$listener)
+\item 
+void \textbf{run} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_13a43e6d814de94978c515cb084873b1}
+
+\item 
+bool \textbf{getEstado} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_b9fc009381d37328e3752c6107ae428c}
+
+\item 
+void \textbf{setEstado} (bool {\bf estado})\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_6750e0c8caaa9662fa968898d991e261}
+
+\item 
+string \textbf{getValue} (string varAmbiente)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_8120baa414781bff906608f6ce842e1d}
+
+\item 
+void \textbf{setPressedKey} (int {\bf pressedKey})\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_0e63ceb3619e36f8d7e2ed7b188254ac}
+
+\item 
+int \textbf{getPressedKey} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_1271cf453c9f06d383a5844a464db159}
+
+\item 
+bool \textbf{addIteraction} ({\bf Iteraction} $\ast$iteraction)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_3857ac3b2704f1dbc37663099f0d5d92}
+
+\item 
+bool \textbf{removeIteraction} ({\bf Iteraction} $\ast$iteraction)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_9b336ba909262058f033cbad11563cc7}
+
+\item 
+string \textbf{getKeyName} (int keyCode)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_f39447a8d1a4a81f97102989fe17df98}
+
+\item 
+void \textbf{setTuner} (ITuner $\ast${\bf tuner})\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_63972c921a250b89b05aa5a882f2f663}
+
+\item 
+void \textbf{setPrimaryKey} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_989b61add81dd854a486a2559863a1b1}
+
+\item 
+void \textbf{setNewUser} (string ID, string userGenre, string locationZip, string age)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_377cef8f9aebdc0758d94ed1c47f4eff}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf LocalAgent} $\ast$ {\bf getInstance} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+vector$<$ {\bf AgentListener} $\ast$ $>$ $\ast$ {\bf listeners}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_9e71bd760a9cf30fa614b8966f730f4a}
+
+\item 
+vector$<$ {\bf Iteraction} $\ast$ $>$ {\bf iters}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_98309634685a2e0a70ee626287653653}
+
+\item 
+{\bf Database} $\ast$ {\bf db}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_beb4b65a273f01a4dee88c9a9dd4c435}
+
+\item 
+ITuner $\ast$ {\bf tuner}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_2a589d75c21600933717549a44cf400d}
+
+\item 
+int {\bf pressedKey}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_1b511ec9042c3545a9590f70370b9e0d}
+
+\item 
+bool {\bf estado}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_72d010866bd83b41432d6286cb26adbd}
+
+\item 
+IComponentManager $\ast$ {\bf cm}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_6d6e10571951a3a8a29be92d7f31a963}
+
+\item 
+IStateManager $\ast$ {\bf stateManager}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_cfe8424ddfaba04b6dbfb85787610788}
+
+\item 
+IPresentationState $\ast$ {\bf ps}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_7f379e13b37851f4624e3c4e51678992}
+
+\item 
+{\bf Document} $\ast$ {\bf document}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_a25c3b1ddc44ed56c59d5c70879ec5f4}
+
+\item 
+{\bf NclStateMachine} $\ast$ {\bf nclStateMachine}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_f8cd107d0aa3923a1c493049f8a4c861}
+
+\item 
+{\bf Context} $\ast$ {\bf context}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_a254a98e2e3d77626823cad539eced2b}
+
+\item 
+{\bf Media} $\ast$ {\bf media}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_d245bb0fd6b84ce568dc1b4de3c0b4a2}
+
+\item 
+{\bf User} $\ast$ {\bf user}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_1fe74be3d2df58afd6bcfbcb78353f83}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf LocalAgent} $\ast$ {\bf \_\-instance}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_b261063de3a8b2240b88e4cff5f62c50}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 68 of file LocalAgent.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}!LocalAgent@{LocalAgent}}
+\index{LocalAgent@{LocalAgent}!br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf LocalAgent} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_8f10a210dbd6453d37b7273aeba5dafc}
+
+
+Construtor vazio \index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}!~LocalAgent@{$\sim$LocalAgent}}
+\index{~LocalAgent@{$\sim$LocalAgent}!br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf LocalAgent} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_63227d4a60fd979ff56db77d1c92ac12}
+
+
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf LocalAgent}$\ast$ getInstance ()\hspace{0.3cm}{\tt  [static]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_7a750a6669f6b5e62eda42b90cd371cb}
+
+
+Retorna a instancia única da classe \index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}!getDatabase@{getDatabase}}
+\index{getDatabase@{getDatabase}!br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Database}$\ast$ getDatabase ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_b0ff8f804880da03c95bdecb4b288c00}
+
+
+Retorna o banco de dados onde são armazendas as informações coletadas. \begin{Desc}
+\item[Returns:]banco de dados onde são armazendas as informações coletadas. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}!stop@{stop}}
+\index{stop@{stop}!br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool stop ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_68a350717fe6bf9012843e7c977d87b2}
+
+
+Pára a execução do \doxyref{LocalAgent}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent}. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}!addAgentListener@{addAgentListener}}
+\index{addAgentListener@{addAgentListener}!br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool addAgentListener ({\bf AgentListener} $\ast$ {\em listener})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_6b974c5625575e50a11f5278be489ea1}
+
+
+Adiciona um \doxyref{AgentListener}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener} ao \doxyref{LocalAgent}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent}. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}!removeAgentListener@{removeAgentListener}}
+\index{removeAgentListener@{removeAgentListener}!br::ufscar::lince::ginga::recommender::LocalAgent@{br::ufscar::lince::ginga::recommender::LocalAgent}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool removeAgentListener ({\bf AgentListener} $\ast$ {\em listener})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent_03275fe9d733c3890bb695fc74b41d8e}
+
+
+Remove um \doxyref{AgentListener}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener} do \doxyref{LocalAgent}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1LocalAgent}. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/LocalAgent/include/LocalAgent.h\end{CompactItemize}

@@ -1,0 +1,145 @@
+\section{ContextManager Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager}\index{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}}
+Inheritance diagram for ContextManager:Collaboration diagram for ContextManager:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{addContextVar} (int userId, string varName, string varValue)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_2c9e459e7bbc8cd0778dba224f6c0e3a}
+
+\item 
+void \textbf{addUser} ({\bf IGingaUser} $\ast$newUser)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_82f0dacb75a366cf360619509a3e8f36}
+
+\item 
+void \textbf{saveUsersAccounts} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_4bec44358bf1ed10ad2fe45e6ac03aa7}
+
+\item 
+void \textbf{saveUsersProfiles} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_a9c765e563dad236d9929530dd9b1a00}
+
+\item 
+void \textbf{setCurrentUserId} (int userId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_4aebcafed24f17c3859f67812d742b38}
+
+\item 
+int \textbf{getCurrentUserId} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_d1a59c06cc7682e9a6486de297eccebd}
+
+\item 
+{\bf IGingaUser} $\ast$ \textbf{getUser} (int userId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_b47548fb7e4998d47361eb5cc228ddc7}
+
+\item 
+map$<$ string, string $>$ $\ast$ \textbf{getUserProfile} (int userId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_06bb069a4a8264d6c6bc67b9d3d0a885}
+
+\item 
+map$<$ string, string $>$ $\ast$ \textbf{getUsersNames} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_67549be16dc7c0d988473b1b55328624}
+
+\item 
+{\bf ISystemInfo} $\ast$ \textbf{getSystemInfo} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_77937ac7e6760ee7cde13f8f059fe6a2}
+
+\item 
+vector$<$ int $>$ $\ast$ {\bf getUserIds} ()
+\item 
+int {\bf addUser} (string name, string passwd, int age, string location, char gender)
+\item 
+bool {\bf removeUser} (int userid)
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf IContextManager} $\ast$ \textbf{getInstance} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_96c2071855d29342965eda1677b29efc}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{initializeUsers} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_a24318b7a8e12f6ed3c081330164f57e}
+
+\item 
+void \textbf{initializeContexts} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_d38c27f388482e182efcf55d32e96ec3}
+
+\item 
+void \textbf{saveProfile} (int fd, int userId, map$<$ string, string $>$ $\ast$profile)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_e0cfe573ee35aee902a00c9252647e04}
+
+\item 
+void {\bf listUsersNicks} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ int, {\bf IGingaUser} $\ast$ $>$ $\ast$ {\bf users}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_632611b7fd684fd4d5aa2715c197e8d7}
+
+\item 
+map$<$ int, map$<$ string, string $>$ $\ast$ $>$ $\ast$ {\bf contexts}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_f5cb0819f73b80888abc7a685e4c904f}
+
+\item 
+string {\bf usersUri}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_81434f28f6171f48b841d739040f8c4c}
+
+\item 
+string {\bf contextsUri}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_310e3146cf0ea722507c9e7e115d629d}
+
+\item 
+int {\bf curUserId}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_40401212d3887d0234089b2c4a4f99bb}
+
+\item 
+{\bf ISystemInfo} $\ast$ {\bf systemInfo}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_e2e20592ee19f96cdecfa227d8c720c2}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf IContextManager} $\ast$ {\bf \_\-instance}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_c05c73f8a508ab1ebb7f5e2c09c15edc}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 62 of file ContextManager.h.
+
+\subsection{Member Function Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}!getUserIds@{getUserIds}}
+\index{getUserIds@{getUserIds}!br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ getUserIds ()\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_4e8835030a9846b501c111cdd9b25024}
+
+
+Give a list of users ids \begin{Desc}
+\item[Returns:]vector$<$int$>$$\ast$ pointer for a feature vector which corresponds to the user ids \end{Desc}
+
+
+Implements {\bf IContextManager} \doxyref{}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager}.\index{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}!addUser@{addUser}}
+\index{addUser@{addUser}!br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int addUser (string {\em name}, string {\em passwd}, int {\em age}, string {\em location}, char {\em gender})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_984cf2a238aba18a214aa17f9c26e206}
+
+
+Add user to context. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em name}]string user name \item[{\em passwd}]string user passwd \item[{\em age}]int user age \item[{\em location}]string user location \item[{\em gender}]char user gender \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int the next ID of user \end{Desc}
+
+
+Implements {\bf IContextManager} \doxyref{}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager}.\index{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}!removeUser@{removeUser}}
+\index{removeUser@{removeUser}!br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool removeUser (int {\em userid})\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_a01fdc206af8f45a68b06543c7208661}
+
+
+Remove user from context \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]int user id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool the user is successfully removed \end{Desc}
+
+
+Implements {\bf IContextManager} \doxyref{}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager}.\index{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}!listUsersNicks@{listUsersNicks}}
+\index{listUsersNicks@{listUsersNicks}!br::pucrio::telemidia::ginga::core::contextmanager::ContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void listUsersNicks ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ContextManager_1760c6677c45407da8400637ec06eb3c}
+
+
+List users names 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingacc-cpp/gingacc-contextmanager/include/ContextManager.h\end{CompactItemize}

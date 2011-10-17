@@ -1,0 +1,18 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{SubtitlePlayerAdapter\n||+ SubtitlePlayerAdapter()\l+ ~SubtitlePlayerAdapter()\l+ instanceOf()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{FormatterPlayerAdapter\n|# manager\l# anchorMonitor\l# typeSet\l# object\l# player\l# playerCompName\l# mrl\l# im\l- circularSituation\l- isLocked\l- objectMutex\l|+ FormatterPlayerAdapter()\l+ ~FormatterPlayerAdapter()\l+ instanceOf()\l+ setNclEditListener()\l+ getObjectDisplay()\l+ hasPrepared()\l+ setKeyHandler()\l+ prepare()\l+ start()\l+ stop()\l+ pause()\l+ resume()\l+ abort()\l+ naturalEnd()\l+ unprepare()\l+ setPropertyValue()\l+ startAttribution()\l+ getPropertyValue()\l+ getObjectExpectedDuration()\l+ updateObjectExpectedDuration()\l+ getMediaTime()\l+ getPlayer()\l+ setTimeBasePlayer()\l+ updateStatus()\l+ userEventReceived()\l+ flip()\l+ timeShift()\l+ getPlayerState()\l# createPlayer()\l# prepare()\l# lockObject()\l# unlockObject()\l- checkRepeat()\l- setVisible()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1FormatterPlayerAdapter.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{IPlayerAdapter\n||+ ~IPlayerAdapter()\l+ getPlayer()\l+ setPropertyValue()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1IPlayerAdapter.html"];
+  Node4 -> Node3 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node4 [label="{IStateProvider\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node5 [label="{IPlayerListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node6 [label="{IAttributeValueMaintainer\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node7 [label="{IInputEventListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

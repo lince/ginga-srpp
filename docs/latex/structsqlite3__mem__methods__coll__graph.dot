@@ -1,0 +1,18 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{sqlite3_mem_methods\n|+ xMalloc\l+ xFree\l+ xRealloc\l+ xSize\l+ xRoundup\l+ xInit\l+ xShutdown\l+ pAppData\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xShutdown\nxFree",arrowtail="open"];
+  Node2 [label="{void(*)(void *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xRoundup",arrowtail="open"];
+  Node3 [label="{int(*)(int)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xMalloc",arrowtail="open"];
+  Node4 [label="{void *(*)(int)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xSize\nxInit",arrowtail="open"];
+  Node5 [label="{int(*)(void *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xRealloc",arrowtail="open"];
+  Node6 [label="{void *(*)(void *, int)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="pAppData",arrowtail="open"];
+  Node7 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

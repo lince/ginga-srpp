@@ -1,0 +1,149 @@
+\section{eit Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit}\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+{\tt \#include $<$EIT.h$>$}
+
+Inheritance diagram for eit:Collaboration diagram for eit:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+char $\ast$ {\bf getDescriptor\_\-conteudo\_\-genero} ()
+\item 
+char $\ast$ {\bf getDescriptor\_\-conteudo\_\-subgenero} ()
+\item 
+char $\ast$ {\bf getDescriptor\_\-event\_\-short\_\-sinopse} ()
+\item 
+char $\ast$ {\bf getEnd\_\-time} ()
+\item 
+char $\ast$ {\bf getStart\_\-time} ()
+\item 
+void {\bf setDescriptor\_\-conteudo\_\-genero} (const char $\ast${\bf descriptor\_\-conteudo\_\-genero})
+\item 
+void {\bf setDescriptor\_\-conteudo\_\-subgenero} (const char $\ast${\bf descriptor\_\-conteudo\_\-subgenero})
+\item 
+void {\bf setDescriptor\_\-event\_\-short\_\-sinopse} (const char $\ast${\bf descriptor\_\-event\_\-short\_\-sinopse})
+\item 
+void {\bf setEnd\_\-time} (const char $\ast${\bf end\_\-time})
+\item 
+void {\bf setStart\_\-time} (const char $\ast${\bf start\_\-time})
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+char {\bf start\_\-time} [24]\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_162d6bf0bd2ed5980e8383fa3e7bc3ae}
+
+\begin{CompactList}\small\item\em inicio do programa - máxmo de 12 bytes \item\end{CompactList}\item 
+char {\bf end\_\-time} [24]\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_6b3d4dbec9451fa4f8452c286c6baa37}
+
+\begin{CompactList}\small\item\em término do programa - máximo de 12 bytes \item\end{CompactList}\item 
+char {\bf descriptor\_\-conteudo\_\-genero} [5]\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_6425408a35ba7fe43f922c52ca7e88a1}
+
+\begin{CompactList}\small\item\em gênero do programa - máximo de 4 bytes \item\end{CompactList}\item 
+char {\bf descriptor\_\-conteudo\_\-subgenero} [5]\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_9965d270160e6f06ecb05c94f2447d59}
+
+\begin{CompactList}\small\item\em sub-gênero do programa - máximo de 4 bytes \item\end{CompactList}\item 
+char {\bf descriptor\_\-event\_\-short\_\-sinopse} [129]\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_53927af17d39baa8daecc72f2f5f521f}
+
+\begin{CompactList}\small\item\em sinopse do programa máximo de 128 bytes \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Fornece uma abstração para a tabela Eit. A tabela Eit é responsável em prover informações sobre os serviços disponibilizados pelos provedores de serviços
+
+\begin{Desc}
+\item[Author:]Paulo Muniz de Ávila \end{Desc}
+
+
+
+
+Definition at line 24 of file EIT.h.
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!getDescriptor_conteudo_genero@{getDescriptor\_\-conteudo\_\-genero}}
+\index{getDescriptor_conteudo_genero@{getDescriptor\_\-conteudo\_\-genero}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ getDescriptor\_\-conteudo\_\-genero ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_b0f42d3823679a4a1f7039480e9bb727}
+
+
+Recuperar a informação com o gênero do serviço Ver Norma NBR 15603-2 para maiores informações \begin{Desc}
+\item[Returns:]um char $\ast$ com o gênero do serviço \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!getDescriptor_conteudo_subgenero@{getDescriptor\_\-conteudo\_\-subgenero}}
+\index{getDescriptor_conteudo_subgenero@{getDescriptor\_\-conteudo\_\-subgenero}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ getDescriptor\_\-conteudo\_\-subgenero ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_fb2a6d488e1e54b7f704d2f6ec5dca5c}
+
+
+Recuperar as informações com o sub-gênero do serviço Ver Norma NBR 15603-2 para maiores informações \begin{Desc}
+\item[Returns:]um char $\ast$ com o sub-gênero do serviço \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!getDescriptor_event_short_sinopse@{getDescriptor\_\-event\_\-short\_\-sinopse}}
+\index{getDescriptor_event_short_sinopse@{getDescriptor\_\-event\_\-short\_\-sinopse}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ getDescriptor\_\-event\_\-short\_\-sinopse ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_86b67b7441c4bd974b25eba6c383edff}
+
+
+Recuperar as informações de sinopse do serviço \begin{Desc}
+\item[Returns:]Um ponteiro de 128 bytes com a sinopse \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!getEnd_time@{getEnd\_\-time}}
+\index{getEnd_time@{getEnd\_\-time}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ getEnd\_\-time ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_948c50a9903f258c142a04868d35663b}
+
+
+Recuperar o horário de término do programa \begin{Desc}
+\item[Returns:]char $\ast$ com o horário informado pelo provedor de serviço \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!getStart_time@{getStart\_\-time}}
+\index{getStart_time@{getStart\_\-time}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ getStart\_\-time ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_277b8dd2b9ceb0fc6cbf6de947ae2e32}
+
+
+Recuperar o horário de início do programa \begin{Desc}
+\item[Returns:]char $\ast$ com o horário informado pelo provedor de serviço \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!setDescriptor_conteudo_genero@{setDescriptor\_\-conteudo\_\-genero}}
+\index{setDescriptor_conteudo_genero@{setDescriptor\_\-conteudo\_\-genero}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setDescriptor\_\-conteudo\_\-genero (const char $\ast$ {\em descriptor\_\-conteudo\_\-genero})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_c4cd228897500dad5873d1a2622d9bf0}
+
+
+Armazenar o gênero no objeto da classe Eit \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em descriptor\_\-conteudo\_\-genero}]char $\ast$ com o código do gênero \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!setDescriptor_conteudo_subgenero@{setDescriptor\_\-conteudo\_\-subgenero}}
+\index{setDescriptor_conteudo_subgenero@{setDescriptor\_\-conteudo\_\-subgenero}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setDescriptor\_\-conteudo\_\-subgenero (const char $\ast$ {\em descriptor\_\-conteudo\_\-subgenero})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_3e3d3c0d1b41e1e4ae2eb4b1d5eeddf3}
+
+
+Armazenar o sub-gênero no objeto da classe Eit \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em descriptor\_\-conteudo\_\-subgenero}]char $\ast$ com o código do gênero \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!setDescriptor_event_short_sinopse@{setDescriptor\_\-event\_\-short\_\-sinopse}}
+\index{setDescriptor_event_short_sinopse@{setDescriptor\_\-event\_\-short\_\-sinopse}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setDescriptor\_\-event\_\-short\_\-sinopse (const char $\ast$ {\em descriptor\_\-event\_\-short\_\-sinopse})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_d3ede0fbd0906585803f04ad91303a71}
+
+
+Armazenar uma sinopse no objeto da classe Eit \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em descriptor\_\-event\_\-short\_\-sinopse}]um char $\ast$ com 128 bytes descrevendo a sinopse \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!setEnd_time@{setEnd\_\-time}}
+\index{setEnd_time@{setEnd\_\-time}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setEnd\_\-time (const char $\ast$ {\em end\_\-time})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_3daf217c6a67cd2b57c00fe2c6e9ad47}
+
+
+Armazenar o horário de término do serviço no objeto da classe Eit \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em end\_\-time}]um char $\ast$ com o término do serviço \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}!setStart_time@{setStart\_\-time}}
+\index{setStart_time@{setStart\_\-time}!br::ufscar::lince::ginga::recommender::eit@{br::ufscar::lince::ginga::recommender::eit}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setStart\_\-time (const char $\ast$ {\em start\_\-time})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit_cc5f5fddad17cb83bb9923c2c96411be}
+
+
+Armazenar o horário de início do serviço no objeto da classe Eit \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em start\_\-time}]um char $\ast$ com o horário de início do programa \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/EIT/include/EIT.h\end{CompactItemize}

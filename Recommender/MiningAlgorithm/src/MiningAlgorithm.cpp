@@ -1,0 +1,2 @@
+#include "../include/MiningAlgorithm.h"
+

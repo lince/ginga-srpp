@@ -1,0 +1,135 @@
+#ifndef _USER_H_
+#define _USER_H_
+
+#include <string>
+
+using namespace std;
+
+namespace br {
+    namespace ufscar {
+        namespace lince {
+            namespace ginga {
+                namespace recommender {
+                    class User {
+                    private:
+						int code;
+						string keyCode;
+						string docId;
+						string filename;
+						string hour;
+						string minute;
+						string second;
+						string day;
+						string month;
+						string year;
+						string dayWeek;
+						double time;
+
+						string country;
+						string startDate;
+						string endDate;
+
+						string locationZip;
+						string locationLatitude;
+						string locationLongitude;
+
+						string userBirth;
+						string userGenre;
+						string socialNetworkName;
+						string socialNetworkId;
+
+						string deviceSN;
+						string deviceType;
+						string deviceProfile;
+						string infoName;
+						string infoValue;
+
+                    public:
+                    	int getCode();
+                    	void setCode(int code);
+
+                    	string getKeyCode();
+                    	void setKeyCode(string keyCode);
+
+                    	string getDocId();
+                    	void setDocId(string docId);
+
+                    	string getFilename();
+                    	void setFilename(string filename);
+
+                    	string getHour();
+                    	void setHour(string hour);
+
+                    	string getMinute();
+                    	void setMinute(string minute);
+
+                    	string getSecond();
+                    	void setSecond(string second);
+
+                    	string getDay();
+                    	void setDay(string day);
+
+                    	string getMonth();
+                    	void setMonth(string month);
+
+                    	string getYear();
+                    	void setYear(string year);
+
+                    	string getDayWeek();
+                    	void setDayWeek(string dayWeek);
+
+                    	double getTime();
+                    	void setTime(double time);
+
+                    	string getCountry();
+                    	void setCountry(string country);
+
+                    	string getStartDate();
+                    	void setStartDate(string startDate);
+
+                    	string getEndDate();
+                    	void setEndDate(string endDate);
+
+                    	string getLocationZip();
+                    	void setLocationZip(string locationZip);
+
+                    	string getLocationLatitude();
+                    	void setLocationLatitude(string locationLatitude);
+
+                    	string getLocationLongitude();
+                    	void setLocationLongitude(string locationLongitude);
+
+                    	string getUserBirth();
+                    	void setUserBirth(string userBirth);
+
+                    	string getUserGenre();
+                    	void setUserGenre(string userGenre);
+
+                    	string getSocialNetworkName();
+                    	void setSocialNetworkName(string socialNetworkName);
+
+                    	string getSocialNetworkId();
+                    	void setSocialNetworkId(string socialNetworkId);
+
+                    	string getDeviceSN();
+                    	void setDevice(string deviceSN);
+
+                    	string getDeviceType();
+                    	void setDeviceType(string deviceType);
+
+                    	string getDeviceProfile();
+                    	void setDeviceProfile(string deviceProfile);
+
+                    	string getInfoName();
+                    	void setInfoName(string infoName);
+
+                    	strin getInfoValue();
+                    	void setInfoValue(string infoValue);
+                    };
+				}
+			}
+		}
+	}
+}				
+
+#endif /*_USER_H_*/

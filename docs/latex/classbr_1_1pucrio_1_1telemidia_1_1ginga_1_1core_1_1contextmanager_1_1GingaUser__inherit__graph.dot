@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{GingaUser\n|- userId\l- userName\l- userPasswd\l- userAge\l- userLocation\l- userGenre\l|+ GingaUser()\l+ ~GingaUser()\l+ getUserId()\l+ getUserName()\l+ getUserAge()\l+ getUserLocation()\l+ getUserGenre()\l+ isValidPassword()\l+ setPassword()\l+ setUserName()\l+ setUserAge()\l+ setUserLocation()\l+ setUserGenre()\l+ saveTo()\l+ saveString()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{IGingaUser\n||+ ~IGingaUser()\l+ getUserId()\l+ getUserName()\l+ getUserAge()\l+ getUserGenre()\l+ getUserLocation()\l+ isValidPassword()\l+ setPassword()\l+ setUserName()\l+ setUserAge()\l+ setUserLocation()\l+ setUserGenre()\l+ saveTo()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IGingaUser.html"];
+}

@@ -1,0 +1,93 @@
+\section{Apriori\_\-Trie Class Reference}
+\label{classApriori__Trie}\index{Apriori_Trie@{Apriori\_\-Trie}}
+{\tt \#include $<$Apriori\_\-Trie.hpp$>$}
+
+Collaboration diagram for Apriori\_\-Trie:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{Apriori\_\-Trie} (const unsigned long counter\_\-of\_\-emptyset)\label{classApriori__Trie_e345dc87a01bd41c84e0dd95fc00cd0c}
+
+\item 
+void {\bf insert\_\-frequent\_\-items} (const vector$<$ unsigned long $>$ \&counters)\label{classApriori__Trie_0892fa94ceddb04749328eb6cc900578}
+
+\begin{CompactList}\small\item\em Insere os itens mais frequentes. \item\end{CompactList}\item 
+void {\bf candidate\_\-generation} (const itemtype \&frequent\_\-size)\label{classApriori__Trie_b22bc185a85d35c15700efc818f79117}
+
+\begin{CompactList}\small\item\em Gera os canditados a regras. \item\end{CompactList}\item 
+void {\bf find\_\-candidate} (const vector$<$ itemtype $>$ \&basket, const itemtype candidate\_\-size, const unsigned long counter=1)\label{classApriori__Trie_b57dc71cd3b27b4ee8694482d99db545}
+
+\begin{CompactList}\small\item\em Incrementa o contador dos canditados. \item\end{CompactList}\item 
+void {\bf delete\_\-infrequent} (const double min\_\-occurrence, const itemtype candidate\_\-size)\label{classApriori__Trie_2a8947de0c562223eecbc6130f9f02ca}
+
+\begin{CompactList}\small\item\em Deleta os itemsets menos frequentes. \item\end{CompactList}\item 
+void {\bf association} (const double min\_\-conf, {\bf Input\_\-Output\_\-Manager} \&input\_\-output\_\-manager) const\label{classApriori__Trie_5eec439b4491f2a96ccc316269896c67}
+
+\begin{CompactList}\small\item\em Gera as regras de associação. \item\end{CompactList}\item 
+itemtype {\bf longest\_\-path} () const\label{classApriori__Trie_7356ed1f5e5d4a1222e53459a61ab88f}
+
+\begin{CompactList}\small\item\em Retorna o tamanho do maior caminho até o nó folha da arvore (trie.hpp). \item\end{CompactList}\item 
+void {\bf write\_\-content\_\-to\_\-file} ({\bf Input\_\-Output\_\-Manager} \&input\_\-output\_\-manager) const\label{classApriori__Trie_41c923c0b5dd6d2482b4cb3cdfb7afa0}
+
+\begin{CompactList}\small\item\em Escreve os itens mais frequentes no arquivo. \item\end{CompactList}\item 
+void {\bf show\_\-content\_\-preorder} () const\label{classApriori__Trie_9b6487026b7a776c542c80002d14ae7d}
+
+\begin{CompactList}\small\item\em apresenta o conteúdo da árvore gerada em pré-ordem \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+bool {\bf is\_\-all\_\-subset\_\-frequent} (const set$<$ itemtype $>$ \&maybe\_\-candidate) const\label{classApriori__Trie_6cbdc3b3b76e8f88de5d4644ee13791a}
+
+\begin{CompactList}\small\item\em Decide se todos os nós na arvore são frequentes. \item\end{CompactList}\item 
+void {\bf candidate\_\-generation\_\-two} ()\label{classApriori__Trie_9b3abedc3dcc82f0f887012847323727}
+
+\begin{CompactList}\small\item\em Gera os candidatos com tamanho 2. Ex: Quem assiste A assiste B. \item\end{CompactList}\item 
+void {\bf candidate\_\-generation\_\-assist} ({\bf Trie} $\ast${\bf Trie}, const itemtype distance\_\-from\_\-generator, set$<$ itemtype $>$ \&maybe\_\-candidate)\label{classApriori__Trie_eb5c6ca09296343d1368557c51a5b381}
+
+\begin{CompactList}\small\item\em Gera os candidatos com 2 ou mais. Ex: Quem assiste A assiste B,C,D. \item\end{CompactList}\item 
+void {\bf find\_\-candidate\_\-two} (const vector$<$ itemtype $>$ \&basket, const unsigned long counter=1)\label{classApriori__Trie_444d8e0c5ccdcb22d1a90d2e2a3f7f77}
+
+\begin{CompactList}\small\item\em Incrementa o contador dos candidatos encontrados. \item\end{CompactList}\item 
+void {\bf delete\_\-infrequent\_\-two} (const double min\_\-occurrence)\label{classApriori__Trie_dd79af5784bd87a70f5c0c4250c56b98}
+
+\begin{CompactList}\small\item\em Deleta os itens menos frequentes de tamanho 2. \item\end{CompactList}\item 
+void {\bf assoc\_\-rule\_\-find} (const double min\_\-conf, set$<$ itemtype $>$ \&condition\_\-part, set$<$ itemtype $>$ \&consequence\_\-part, const unsigned long union\_\-support, {\bf Input\_\-Output\_\-Manager} \&input\_\-output\_\-manager) const\label{classApriori__Trie_878228051920560aea5d7242193141dc}
+
+\begin{CompactList}\small\item\em Encontra regras de associação. \item\end{CompactList}\item 
+void {\bf assoc\_\-rule\_\-assist} (const double min\_\-conf, const {\bf Trie} $\ast${\bf Trie}, set$<$ itemtype $>$ \&consequence\_\-part, {\bf Input\_\-Output\_\-Manager} \&input\_\-output\_\-manager) const \label{classApriori__Trie_888ed4145ca2bc5df3a6c0ac91dc4175}
+
+\begin{CompactList}\small\item\em Geração parcial das regras de associação. \item\end{CompactList}\item 
+void {\bf write\_\-content\_\-to\_\-file\_\-assist} ({\bf Input\_\-Output\_\-Manager} \&input\_\-output\_\-manager, const {\bf Trie} $\ast$actual\_\-state, const itemtype distance\_\-from\_\-frequent, set$<$ itemtype $>$ \&frequent\_\-itemset) const \label{classApriori__Trie_d0bb05a015f36ac7c2292e787ea127e1}
+
+\begin{CompactList}\small\item\em Escreve as regras de associação encontradas no disco. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+{\bf Trie} {\bf main\_\-trie}\label{classApriori__Trie_cb9f0c86e16a0bb42862197369d54c2e}
+
+\begin{CompactList}\small\item\em \doxyref{Trie}{p.}{classTrie} armazena os candidatos e os itens mais frequentes. \item\end{CompactList}\item 
+vector$<$ vector$<$ unsigned long $>$ $>$ {\bf temp\_\-counter\_\-array}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{Apriori\_\-Trie}{p.}{classApriori__Trie}
+
+\doxyref{Apriori\_\-Trie}{p.}{classApriori__Trie} cria a estrutura de uma árvore concebida para fornecer métodos eficientes para o algoritmo apriori. 
+
+
+
+Definition at line 85 of file Apriori\_\-Trie.hpp.
+
+\subsection{Member Data Documentation}
+\index{Apriori_Trie@{Apriori\_\-Trie}!temp_counter_array@{temp\_\-counter\_\-array}}
+\index{temp_counter_array@{temp\_\-counter\_\-array}!Apriori_Trie@{Apriori\_\-Trie}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<$unsigned long$>$ $>$ {\bf temp\_\-counter\_\-array}\hspace{0.3cm}{\tt  [protected]}}\label{classApriori__Trie_e8679320894f27388135ec201c0f2c39}
+
+
+temp\_\-counter\_\-array stores armazena as ocorrência de pares 
+
+Definition at line 172 of file Apriori\_\-Trie.hpp.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/MiningAlgorithm/include/apriori23/Apriori\_\-Trie.hpp\end{CompactItemize}

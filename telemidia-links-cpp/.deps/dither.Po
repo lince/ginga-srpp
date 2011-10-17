@@ -1,0 +1,5 @@
+dither.o dither.o: dither.c cfg.h config.h
+
+cfg.h:
+
+config.h:

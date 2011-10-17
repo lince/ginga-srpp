@@ -1,0 +1,442 @@
+\section{ImplicitContextManager Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager}\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+{\tt \#include $<$ImplicitContextManager.h$>$}
+
+Collaboration diagram for ImplicitContextManager:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf ImplicitContextManager} ()
+\item 
+{\bf $\sim$ImplicitContextManager} ()
+\item 
+int {\bf getCurrentUserId} ()
+\item 
+int {\bf getCurrentImplicitUserId} ()
+\item 
+int {\bf getCurrentProfileId} (int userid)
+\item 
+bool {\bf setCurrentUserId} (int userid)
+\item 
+bool {\bf setCurrentImplicitUserId} (int userid)
+\item 
+bool {\bf setCurrentProfileId} (int userid, int profid)
+\item 
+vector$<$ int $>$ $\ast$ {\bf getProfile} (int userid, int profid)
+\item 
+void {\bf createProfile} (int uid)
+\item 
+void {\bf guessImplicitUser} ()
+\item 
+bool {\bf remove} (int userid)
+\item 
+void {\bf checkRecommenderModule} ()
+\item 
+pthread\_\-t {\bf getThread} ()
+\item 
+bool {\bf should\_\-stop} (void)
+\item 
+void {\bf stop} (void)
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static bool {\bf canInstantiate} ()
+\item 
+static {\bf ImplicitContextManager} $\ast$ {\bf getInstance} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+float {\bf cosine} (vector$<$ float $>$ $\ast$v1, vector$<$ float $>$ $\ast$v2)
+\item 
+void {\bf gatherStats} ({\bf TVData} $\ast$si)
+\item 
+void {\bf compareProfiles} (int \&bestc, pair$<$ int, int $>$ \&bestp, float \&sim)
+\item 
+void {\bf updateBestProfile} (int bestc, pair$<$ int, int $>$ bestp)
+\item 
+int {\bf selectNewProfile} (void)
+\item 
+string \textbf{showv} (vector$<$ float $>$ $\ast$v)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_921bc7fff78b7ff9dfd7f8b92f381833}
+
+\item 
+string \textbf{showv} (vector$<$ int $>$ $\ast$v)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_f37c73bfaec5ec65cadac46c37f086d8}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf PresentationContext} $\ast$ {\bf pctx}
+\item 
+{\bf DataInterface} $\ast$ {\bf sii}
+\item 
+{\bf ImplicitProfiles} $\ast$ {\bf iprofiles}
+\item 
+int {\bf curImplicitUser}
+\item 
+string {\bf prevData}
+\item 
+vector$<$ pair$<$ vector$<$ int $>$, int $>$ $>$ {\bf candidates}
+\item 
+string {\bf prevSubGenre}
+\item 
+int {\bf prevTimeStamp}
+\item 
+int {\bf prevUserId}
+\item 
+bool {\bf newData}
+\item 
+pthread\_\-t {\bf recomenda}
+\item 
+volatile bool {\bf stopflag}
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf ImplicitContextManager} $\ast$ {\bf \_\-instance}
+\item 
+static const float {\bf MIN\_\-ACCEPTABLE\_\-SIMILARITY} = 0.3
+\item 
+static const float {\bf HIGH\_\-LEVEL\_\-OF\_\-CERTAINTY} = 0.95
+\item 
+static const int {\bf DEFAULT\_\-USER\_\-ID} = 0
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper for context manager that provides an interface for implicit users \begin{Desc}
+\item[Author:]Marco Cristo \& Angelo Bittar \end{Desc}
+
+
+
+
+Definition at line 109 of file ImplicitContextManager.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!ImplicitContextManager@{ImplicitContextManager}}
+\index{ImplicitContextManager@{ImplicitContextManager}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf ImplicitContextManager} ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_58f4481c985d5b19429d1bd6420483ef}
+
+
+Get instance of (explicit) presentation context and corresponding context manager. Load users and profiles Set current implicit user profile. Clean up profile base Starts class \doxyref{DataInterface}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface} which simulates TV metadata broadcast (test purpose only -- actual \doxyref{DataInterface}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface} should only provide access to TV metadata). \index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!~ImplicitContextManager@{$\sim$ImplicitContextManager}}
+\index{~ImplicitContextManager@{$\sim$ImplicitContextManager}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf ImplicitContextManager} ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_edd329489f743f411eeabb8711282686}
+
+
+Destructor for implicit context manager 
+
+\subsection{Member Function Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!cosine@{cosine}}
+\index{cosine@{cosine}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}float cosine (vector$<$ float $>$ $\ast$ {\em v1}, vector$<$ float $>$ $\ast$ {\em v2})\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_6cd46fbafc875215dcb3dec642a1fe08}
+
+
+Returns value of cosine between two vectors \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v1}]first vector. \item[{\em v2}]second vector. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]float value of cossine. \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!gatherStats@{gatherStats}}
+\index{gatherStats@{gatherStats}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void gatherStats ({\bf TVData} $\ast$ {\em si})\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_f509f05f95badbda797bdc25795e8737}
+
+
+Gather stats. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em si}]pointer to TV metadata. \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!compareProfiles@{compareProfiles}}
+\index{compareProfiles@{compareProfiles}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void compareProfiles (int \& {\em bestc}, pair$<$ int, int $>$ \& {\em bestp}, float \& {\em sim})\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_358924b12db073120bae0c482a2c934d}
+
+
+Compare base profiles with candidates. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bestc}]reference of best candidate. \item[{\em bestp}]reference of best user and implicituser. \item[{\em sim}]similarity value for best candidate. \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!updateBestProfile@{updateBestProfile}}
+\index{updateBestProfile@{updateBestProfile}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void updateBestProfile (int {\em bestc}, pair$<$ int, int $>$ {\em bestp})\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_eb1dfa6df9600f2cc12d41b9f8ceb98d}
+
+
+Update best profile. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bestc}]the best candidate. \item[{\em bestp}]the best implicitUser. \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!selectNewProfile@{selectNewProfile}}
+\index{selectNewProfile@{selectNewProfile}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int selectNewProfile (void)\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_98e53dcf3161a69b82c42691a5b2dca1}
+
+
+Select new profile. \begin{Desc}
+\item[Returns:]int the selected profile. \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!canInstantiate@{canInstantiate}}
+\index{canInstantiate@{canInstantiate}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static bool canInstantiate ()\hspace{0.3cm}{\tt  [static]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_3c282ecaff3e9b6d63121dd198074d94}
+
+
+Check if PresentationContext is already instantiated \begin{Desc}
+\item[Returns:]static bool value indicating if context instance has already been created. \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf ImplicitContextManager}$\ast$ getInstance ()\hspace{0.3cm}{\tt  [static]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_e205ad494685838b3454855d6297f306}
+
+
+Returns instance of implicit context manager \begin{Desc}
+\item[Returns:]static ImplicitContextManager$\ast$ pointer to object implicit context manager \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!getCurrentUserId@{getCurrentUserId}}
+\index{getCurrentUserId@{getCurrentUserId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getCurrentUserId ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_d1a59c06cc7682e9a6486de297eccebd}
+
+
+Returns current user id \begin{Desc}
+\item[Returns:]int current user id \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!getCurrentImplicitUserId@{getCurrentImplicitUserId}}
+\index{getCurrentImplicitUserId@{getCurrentImplicitUserId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getCurrentImplicitUserId ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_160ec8d791c28a9e2f7bedc850a3f8e9}
+
+
+Returns current implicit user id \begin{Desc}
+\item[Returns:]int current implicit user id \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!getCurrentProfileId@{getCurrentProfileId}}
+\index{getCurrentProfileId@{getCurrentProfileId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getCurrentProfileId (int {\em userid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_f34474d89f7da6b70d3e1e7b952fa33a}
+
+
+Returns current profile id for giver user id \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int current profile id \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!setCurrentUserId@{setCurrentUserId}}
+\index{setCurrentUserId@{setCurrentUserId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setCurrentUserId (int {\em userid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_1ad6ad0a0263266440fc88bc40b353d1}
+
+
+Returns true if current user id was set \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!setCurrentImplicitUserId@{setCurrentImplicitUserId}}
+\index{setCurrentImplicitUserId@{setCurrentImplicitUserId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setCurrentImplicitUserId (int {\em userid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_f8282268ae3e39c031b2119f3cdfd7a5}
+
+
+Returns true if current implicit user id was set \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!setCurrentProfileId@{setCurrentProfileId}}
+\index{setCurrentProfileId@{setCurrentProfileId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setCurrentProfileId (int {\em userid}, int {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_9eaa68fe30220103ca1f8e059582a05b}
+
+
+Returns true if current profile id was set \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id. \item[{\em profileid}]profile id. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!getProfile@{getProfile}}
+\index{getProfile@{getProfile}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ getProfile (int {\em userid}, int {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_afd1ca7077e570e19235256e129c5011}
+
+
+Returns a profile vector of a user \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \item[{\em profid}]profile id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]vector$<$int$>$$\ast$ pointer for a feature vector which corresponds to the user profile \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!createProfile@{createProfile}}
+\index{createProfile@{createProfile}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void createProfile (int {\em uid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_818bb124a924868d3609af9aca55f2a8}
+
+
+Create a new implicit profile \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em uid}]user id \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!guessImplicitUser@{guessImplicitUser}}
+\index{guessImplicitUser@{guessImplicitUser}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void guessImplicitUser ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_3d3e325da1b9cbdc2f8dd8391e7dd219}
+
+
+Guess implicit user based on its profiles and additional evidence \index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!remove@{remove}}
+\index{remove@{remove}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool remove (int {\em userid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_ab10aed8114e07aa47265abf506c77a1}
+
+
+Returns true if profile profid of user userid was deleted \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!checkRecommenderModule@{checkRecommenderModule}}
+\index{checkRecommenderModule@{checkRecommenderModule}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void checkRecommenderModule ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_419dc907a180372a65da53a6d5d9fdc6}
+
+
+Create a thread named recomenda \index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!getThread@{getThread}}
+\index{getThread@{getThread}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}pthread\_\-t getThread ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_221f207c1679351da90afc1d38b14a36}
+
+
+Get the thread that was create in chekRecommenderModule  pthread\_\-t thread recommenda \index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!should_stop@{should\_\-stop}}
+\index{should_stop@{should\_\-stop}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool should\_\-stop (void)\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_58e2166c53c6a4cafffe017cf698dfbc}
+
+
+Flag used to stop the thread  bool false if you want stop the thread 
+
+Definition at line 359 of file ImplicitContextManager.h.
+
+References ImplicitContextManager::stopflag.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!stop@{stop}}
+\index{stop@{stop}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void stop (void)\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_acf6bf8e121fea8b0a92d7197b73fe27}
+
+
+Change the status of stopflag to true 
+
+Definition at line 365 of file ImplicitContextManager.h.
+
+References ImplicitContextManager::stopflag.
+
+\subsection{Member Data Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!pctx@{pctx}}
+\index{pctx@{pctx}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf PresentationContext}$\ast$ {\bf pctx}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_f7b4b50fbbf7df8416480bc884dd2909}
+
+
+! Pointer to presentation context. 
+
+Definition at line 115 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!sii@{sii}}
+\index{sii@{sii}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf DataInterface}$\ast$ {\bf sii}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_c66d53e9f2f826a52debcb48c2683ae8}
+
+
+! Pointer to access interface to TV metadata 
+
+Definition at line 118 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!iprofiles@{iprofiles}}
+\index{iprofiles@{iprofiles}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf ImplicitProfiles}$\ast$ {\bf iprofiles}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_93bdaf7a37eec397a379a52625eb996e}
+
+
+! Pointer to implicit user profiles 
+
+Definition at line 121 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!curImplicitUser@{curImplicitUser}}
+\index{curImplicitUser@{curImplicitUser}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf curImplicitUser}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_d73e66792be083069b5c22d745f2a32d}
+
+
+! Current user id 
+
+Definition at line 124 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!prevData@{prevData}}
+\index{prevData@{prevData}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf prevData}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_1149b782534eeeee8bac2f27f6767793}
+
+
+! Previous data observed by \doxyref{guessImplicitUser()}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_3d3e325da1b9cbdc2f8dd8391e7dd219}. Corresponds to service name information. 
+
+Definition at line 127 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!candidates@{candidates}}
+\index{candidates@{candidates}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$pair$<$vector$<$int$>$ , int$>$ $>$ {\bf candidates}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_8bd97df879da10d8d8b0bce3c779da8c}
+
+
+! List of profile candidates 
+
+Definition at line 131 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!prevSubGenre@{prevSubGenre}}
+\index{prevSubGenre@{prevSubGenre}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf prevSubGenre}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_9169614022be77bcb83e5f0f7e54bd27}
+
+
+! Previous subgenre observed by \doxyref{guessImplicitUser()}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_3d3e325da1b9cbdc2f8dd8391e7dd219}. 
+
+Definition at line 134 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!prevTimeStamp@{prevTimeStamp}}
+\index{prevTimeStamp@{prevTimeStamp}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf prevTimeStamp}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_b1637a972c2bffd72fa765045284e86d}
+
+
+! Previous timestamp observed by \doxyref{guessImplicitUser()}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_3d3e325da1b9cbdc2f8dd8391e7dd219}. 
+
+Definition at line 137 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!prevUserId@{prevUserId}}
+\index{prevUserId@{prevUserId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf prevUserId}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_0847a152cf772973aef30a7dadfa10b2}
+
+
+! Previous user id observed by \doxyref{guessImplicitUser()}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_3d3e325da1b9cbdc2f8dd8391e7dd219}. 
+
+Definition at line 140 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!_instance@{\_\-instance}}
+\index{_instance@{\_\-instance}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf ImplicitContextManager}$\ast$ {\bf \_\-instance}\hspace{0.3cm}{\tt  [static, private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_6a422bcd532819bb9d21edf2080aa96e}
+
+
+! Address of \doxyref{ImplicitContextManager}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager} instance. 
+
+Definition at line 143 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!MIN_ACCEPTABLE_SIMILARITY@{MIN\_\-ACCEPTABLE\_\-SIMILARITY}}
+\index{MIN_ACCEPTABLE_SIMILARITY@{MIN\_\-ACCEPTABLE\_\-SIMILARITY}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const float {\bf MIN\_\-ACCEPTABLE\_\-SIMILARITY} = 0.3\hspace{0.3cm}{\tt  [static, private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_8de17516a8070704be47bc5c60cbc114}
+
+
+! Minimum probability to profile being considered similar to another profile. 
+
+Definition at line 146 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!HIGH_LEVEL_OF_CERTAINTY@{HIGH\_\-LEVEL\_\-OF\_\-CERTAINTY}}
+\index{HIGH_LEVEL_OF_CERTAINTY@{HIGH\_\-LEVEL\_\-OF\_\-CERTAINTY}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const float {\bf HIGH\_\-LEVEL\_\-OF\_\-CERTAINTY} = 0.95\hspace{0.3cm}{\tt  [static, private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_091a882f95a17058d59a6f6dabdbcb16}
+
+
+! Minimum level of certainty to profile being considered new. 
+
+Definition at line 149 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!DEFAULT_USER_ID@{DEFAULT\_\-USER\_\-ID}}
+\index{DEFAULT_USER_ID@{DEFAULT\_\-USER\_\-ID}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int {\bf DEFAULT\_\-USER\_\-ID} = 0\hspace{0.3cm}{\tt  [static, private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_1050689ac9213ebac866c74296d6cf49}
+
+
+! User id of default Ginga user 
+
+Definition at line 152 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!newData@{newData}}
+\index{newData@{newData}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool {\bf newData}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_e5ff420b2a4921d8b63ea214e9e84347}
+
+
+! Control when information changes - Debug purpose. 
+
+Definition at line 207 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!recomenda@{recomenda}}
+\index{recomenda@{recomenda}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}pthread\_\-t {\bf recomenda}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_93bf20931a1f35d268b7e681b1268ee2}
+
+
+! Thread responsible for the calculation of User 
+
+Definition at line 210 of file ImplicitContextManager.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}!stopflag@{stopflag}}
+\index{stopflag@{stopflag}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitContextManager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}volatile bool {\bf stopflag}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitContextManager_7f45ae7206b2e1c36566b1d45c80cbf6}
+
+
+! Flag responsible to stop de thread function 
+
+Definition at line 213 of file ImplicitContextManager.h.
+
+Referenced by ImplicitContextManager::should\_\-stop(), and ImplicitContextManager::stop().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingacc-cpp/gingacc-contextmanager/include/ImplicitContextManager.h\end{CompactItemize}

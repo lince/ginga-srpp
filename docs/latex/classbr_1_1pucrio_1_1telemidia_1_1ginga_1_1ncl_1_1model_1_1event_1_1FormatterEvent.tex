@@ -1,0 +1,128 @@
+\section{FormatterEvent Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent}\index{br::pucrio::telemidia::ginga::ncl::model::event::FormatterEvent@{br::pucrio::telemidia::ginga::ncl::model::event::FormatterEvent}}
+Inheritance diagram for FormatterEvent:Collaboration diagram for FormatterEvent:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterEvent} (string {\bf id}, void $\ast${\bf executionObject})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_eecea63eb7f461691c4f3832d7f8429c}
+
+\item 
+bool \textbf{instanceOf} (string s)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_4081cb1ebb5adebc1d0858ff6f69af0d}
+
+\item 
+void \textbf{setId} (string {\bf id})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_09363425ca175437f0ec328d404ab88a}
+
+\item 
+void \textbf{addEventListener} ({\bf IEventListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_ff069276e25b26bec6601c7a603229ef}
+
+\item 
+bool \textbf{containsEventListener} ({\bf IEventListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_9644852763f674732ef20efeba97509d}
+
+\item 
+bool \textbf{abort} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_e75017b64297bc5a74260a768fb86cf1}
+
+\item 
+virtual bool \textbf{start} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_2a1dbe283ac44900c920f3f79339f9f6}
+
+\item 
+virtual bool \textbf{stop} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_3d0f1501fa4ccfb9e3f868ab4a185856}
+
+\item 
+bool \textbf{pause} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_2853250ac5b9806e29d41f6f37b3b7f0}
+
+\item 
+bool \textbf{resume} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_28614c8a58170f93be7e0eab1c70a2bd}
+
+\item 
+void \textbf{setCurrentState} (short newState)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_acac031e17c24686578c00a857a9f329}
+
+\item 
+void \textbf{clearEventListeners} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_80cfa040459ff53594adbd6a51ec8f43}
+
+\item 
+short \textbf{getCurrentState} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_64651fcbe7469e14605b484ca5fe7230}
+
+\item 
+void $\ast$ \textbf{getExecutionObject} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_e98f1f023bad6b2e0c4a643ac236fdec}
+
+\item 
+void \textbf{setExecutionObject} (void $\ast$object)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_9f60a2b12ecb7749a92ba3553000d9ee}
+
+\item 
+string \textbf{getId} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_bba5652b12c4d6161f860eb44d5789d8}
+
+\item 
+long \textbf{getOccurrences} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_ba990eae7dbdec7b25dc895299691e57}
+
+\item 
+bool \textbf{removeEventListener} ({\bf IEventListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_1b93d568478575ca518947832ae96386}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static string \textbf{getStateName} (short state)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_f410e4d1b6ae23bbf6d8632557271cbb}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+short \textbf{getNewState} (short transition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_295514b80c6851848db3e469d32bc29e}
+
+\item 
+short \textbf{getTransition} (short newState)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_2d3b1dc4eef70fdd29b934898b20fb4f}
+
+\item 
+bool \textbf{changeState} (short newState, short transition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_07ee42ab36f4f678dfaf9f5f9d971ac5}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+string {\bf id}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_d97b05b88ce9080f35b157cfacc8eb69}
+
+\item 
+short {\bf currentState}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_42ff113cf66b333309bc3188b6c3e984}
+
+\item 
+long {\bf occurrences}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_79eb42d64d47a73e95ce70b984d9cfcb}
+
+\item 
+void $\ast$ {\bf executionObject}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_5e3b78af1d846baadf8c5441a23d66eb}
+
+\item 
+set$<$ {\bf IEventListener} $\ast$ $>$ $\ast$ {\bf coreListeners}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_ba5524d8644e67aab7f8dc03cf9acc21}
+
+\item 
+set$<$ {\bf IEventListener} $\ast$ $>$ $\ast$ {\bf linksListeners}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_d799e99fe899bafb45a51cb3bf778ee4}
+
+\item 
+set$<$ {\bf IEventListener} $\ast$ $>$ $\ast$ {\bf objectsListeners}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_83ea53d3b07fa821fabcd78f5f881a41}
+
+\item 
+set$<$ string $>$ {\bf typeSet}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_145b3afaa194308141d367cc1393d565}
+
+\item 
+bool {\bf deleting}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_73dcd7977c4db81e50a24cbc794320c5}
+
+\item 
+pthread\_\-mutex\_\-t {\bf mutex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_4acff8232e4aec9cd5c6dc200ac55ef3}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const short {\bf ST\_\-ABORTED} = 50\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1FormatterEvent_de3b553f86b215ea7e289d9309d4b2f2}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 70 of file FormatterEvent.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/FormatterEvent.h\end{CompactItemize}

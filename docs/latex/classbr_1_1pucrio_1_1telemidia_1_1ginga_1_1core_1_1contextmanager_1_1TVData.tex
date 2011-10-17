@@ -1,0 +1,164 @@
+\section{TVData Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData}\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+{\tt \#include $<$DataInterface.h$>$}
+
+Collaboration diagram for TVData:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf TVData} (int sec, string pn, string sn, string g, string sg)
+\item 
+int {\bf getTimeStamp} ()
+\item 
+string {\bf getSProviderName} ()
+\item 
+string {\bf getServiceName} ()
+\item 
+string {\bf getGenre} ()
+\item 
+string {\bf getSubGenre} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf seconds}
+\item 
+string {\bf providerName}
+\item 
+string {\bf serviceName}
+\item 
+string {\bf genre}
+\item 
+string {\bf subgenre}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides the data to be used in simulation of SI data broadcast. The data to be \char`\"{}broadcasted\char`\"{} comprise the service provider name, service name (from SDT table), genre, and subgenre (from EIT table) \begin{Desc}
+\item[Author:]Marco Cristo \& Angelo Bittar \end{Desc}
+
+
+
+
+Definition at line 87 of file DataInterface.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!TVData@{TVData}}
+\index{TVData@{TVData}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TVData} (int {\em sec}, string {\em pn}, string {\em sn}, string {\em g}, string {\em sg})\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_695dffa5fc62c0d65186ea9214103463}
+
+
+Starts \doxyref{TVData}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData} object state 
+
+Definition at line 109 of file DataInterface.h.
+
+References TVData::genre, TVData::providerName, TVData::seconds, TVData::serviceName, and TVData::subgenre.
+
+\subsection{Member Function Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!getTimeStamp@{getTimeStamp}}
+\index{getTimeStamp@{getTimeStamp}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getTimeStamp ()\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_f5219177f93b7c236857503068efac3f}
+
+
+Returns program start time (in seconds, counting from the start of the simulation) \begin{Desc}
+\item[Returns:]int program start time (in seconds, counting from the start of the simulation) \end{Desc}
+
+
+Definition at line 122 of file DataInterface.h.
+
+References TVData::seconds.\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!getSProviderName@{getSProviderName}}
+\index{getSProviderName@{getSProviderName}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string getSProviderName ()\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_dbb53cb9e884f812a5b62023df2d0852}
+
+
+Returns provider name \begin{Desc}
+\item[Returns:]string provider name \end{Desc}
+
+
+Definition at line 131 of file DataInterface.h.
+
+References TVData::providerName.\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!getServiceName@{getServiceName}}
+\index{getServiceName@{getServiceName}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string getServiceName ()\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_69b29f8fe8283b7e7fe179fe35c41c3e}
+
+
+Returns service name \begin{Desc}
+\item[Returns:]string service name \end{Desc}
+
+
+Definition at line 140 of file DataInterface.h.
+
+References TVData::serviceName.\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!getGenre@{getGenre}}
+\index{getGenre@{getGenre}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string getGenre ()\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_40c0b5b739cb61b28a061be09b94ff19}
+
+
+Returns service genre \begin{Desc}
+\item[Returns:]string service genre \end{Desc}
+
+
+Definition at line 149 of file DataInterface.h.
+
+References TVData::genre.\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!getSubGenre@{getSubGenre}}
+\index{getSubGenre@{getSubGenre}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string getSubGenre ()\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_e5ed7b8bdcca6a49ea72f90c23ffcecd}
+
+
+Returns service subgenre \begin{Desc}
+\item[Returns:]string service subgenre \end{Desc}
+
+
+Definition at line 158 of file DataInterface.h.
+
+References TVData::subgenre.
+
+\subsection{Member Data Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!seconds@{seconds}}
+\index{seconds@{seconds}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf seconds}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_77bd4f876bdc3afed5acdd936f775d34}
+
+
+! Time in seconds since the begining of the simulation. 
+
+Definition at line 91 of file DataInterface.h.
+
+Referenced by TVData::getTimeStamp(), and TVData::TVData().\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!providerName@{providerName}}
+\index{providerName@{providerName}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf providerName}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_edb9dd5d6485fd159251d6698ecb0ef6}
+
+
+! Name of the service proveder. 
+
+Definition at line 94 of file DataInterface.h.
+
+Referenced by TVData::getSProviderName(), and TVData::TVData().\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!serviceName@{serviceName}}
+\index{serviceName@{serviceName}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf serviceName}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_5be28a53dbaf39a705be278bc16ac7d3}
+
+
+! Name of the service. 
+
+Definition at line 97 of file DataInterface.h.
+
+Referenced by TVData::getServiceName(), and TVData::TVData().\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!genre@{genre}}
+\index{genre@{genre}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf genre}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_779540a092c0987ae4ad7076eec46f69}
+
+
+! Service genre. 
+
+Definition at line 100 of file DataInterface.h.
+
+Referenced by TVData::getGenre(), and TVData::TVData().\index{br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}!subgenre@{subgenre}}
+\index{subgenre@{subgenre}!br::pucrio::telemidia::ginga::core::contextmanager::TVData@{br::pucrio::telemidia::ginga::core::contextmanager::TVData}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}string {\bf subgenre}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1TVData_d7c036dfa64deac982c3e2253ef0ebc2}
+
+
+! Service sub-genre. 
+
+Definition at line 103 of file DataInterface.h.
+
+Referenced by TVData::getSubGenre(), and TVData::TVData().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingacc-cpp/gingacc-contextmanager/include/DataInterface.h\end{CompactItemize}

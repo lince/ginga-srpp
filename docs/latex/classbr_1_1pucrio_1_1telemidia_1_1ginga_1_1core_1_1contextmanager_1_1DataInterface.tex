@@ -1,0 +1,62 @@
+\section{DataInterface Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface}\index{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface@{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface}}
+{\tt \#include $<$DataInterface.h$>$}
+
+Collaboration diagram for DataInterface:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf DataInterface} ()
+\item 
+{\bf $\sim$DataInterface} ()
+\item 
+{\bf TVData} $\ast$ {\bf getData} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+vector$<$ {\bf TVData} $>$ $\ast$ {\bf DataItens}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface_0dd2660f3d71c7b663ae3d9e2a27079d}
+
+\item 
+time\_\-t {\bf starttime}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface_2a6c54dcdbeb16bb2e1676a4abf4a4d8}
+
+\item 
+int {\bf startpoint}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface_9f8d36745d88152ee64b334fd33127cc}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class \doxyref{DataInterface}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface} This class provides simulates the broadcast of TV meta-data to be used to infer implicit profiles. In particular, this class simulates the broadcast of some data from SI tables. The actual class should provide access to the SI data through the TS decoding services provided by Ginga or by the Recommender API Note that it also could provided data related to user interactions with the set-top-box, gathered by the recommender \begin{Desc}
+\item[Author:]Marco Cristo \& Angelo Bittar \end{Desc}
+
+
+
+
+Definition at line 173 of file DataInterface.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface@{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface}!DataInterface@{DataInterface}}
+\index{DataInterface@{DataInterface}!br::pucrio::telemidia::ginga::core::contextmanager::DataInterface@{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf DataInterface} ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface_3d6876334662deea897be0dc39ae6098}
+
+
+Load data schedule from a file where each line has the format: data1,data2,data3,... Each line represents a service. data1 is the offset time (in seconds) for the start of the service. Eg: 7,globo,corujao,filme,filme. Globo service \char`\"{}corujao\char`\"{} (genre: filme, subgenre: filme) will start 7 seconds after the beginning of the simulation. \index{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface@{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface}!~DataInterface@{$\sim$DataInterface}}
+\index{~DataInterface@{$\sim$DataInterface}!br::pucrio::telemidia::ginga::core::contextmanager::DataInterface@{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf DataInterface} ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface_5cc61a4beeed6c21a51962b6ce4c80de}
+
+
+Destroys data schedule from memory 
+
+\subsection{Member Function Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface@{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface}!getData@{getData}}
+\index{getData@{getData}!br::pucrio::telemidia::ginga::core::contextmanager::DataInterface@{br::pucrio::telemidia::ginga::core::contextmanager::DataInterface}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TVData}$\ast$ getData ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1DataInterface_5b85739ecf82d21937cd606541cf0fae}
+
+
+Returns object with data of interest, according with request time (current time) and data schedule (loaded previously) \begin{Desc}
+\item[Returns:]TVData$\ast$ pointer to object with data of interest \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingacc-cpp/gingacc-contextmanager/include/DataInterface.h\end{CompactItemize}

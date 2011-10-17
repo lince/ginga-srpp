@@ -1,0 +1,5 @@
+svgalib.o svgalib.o: svgalib.c cfg.h config.h
+
+cfg.h:
+
+config.h:

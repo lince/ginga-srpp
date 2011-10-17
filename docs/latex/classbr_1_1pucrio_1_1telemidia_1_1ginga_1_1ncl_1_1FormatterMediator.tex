@@ -1,0 +1,428 @@
+\section{FormatterMediator Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator}\index{br::pucrio::telemidia::ginga::ncl::FormatterMediator@{br::pucrio::telemidia::ginga::ncl::FormatterMediator}}
+Inheritance diagram for FormatterMediator:Collaboration diagram for FormatterMediator:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterMediator} (NclPlayerData $\ast${\bf data})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_cdb29b4aa6c52399ed9fb27433437f55}
+
+\item 
+void \textbf{printData} (NclPlayerData $\ast${\bf data})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_5c0cb98256ed3d719c540faac12806b8}
+
+\item 
+void \textbf{setStandByState} (bool standBy)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ec91d5450ec8c5bd48870cb2e1f5596f}
+
+\item 
+void \textbf{setTimeBaseProvider} (ITimeBaseProvider $\ast${\bf timeBaseProvider})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_5a671c0102c7b736e7e0e78e50f9922c}
+
+\item 
+void \textbf{setBackgroundImage} (string uri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_795fc8fc43213cc9edc9b8fc6205643d}
+
+\item 
+void \textbf{setParentLayout} (void $\ast$parentLayout)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_74c670802f7db3f51ac0a3649643540d}
+
+\item 
+string \textbf{getScreenShot} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_c3bbd2029ed65635a16b2bd0c868c7f3}
+
+\item 
+vector$<$ string $>$ $\ast$ \textbf{getCompileErrors} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_acb3e68db4bd7dbd9fe7984614a70743}
+
+\item 
+void $\ast$ \textbf{setCurrentDocument} (string fName)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_07fb349814c8b84ef6fb7009939b8e3a}
+
+\item 
+void \textbf{setDepthLevel} (int level)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_6cc1df8863810a31889fd61256f04076}
+
+\item 
+int \textbf{getDepthLevel} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ac5a7abaf1bd5e762c9b23ebd5b562ed}
+
+\item 
+bool \textbf{nclEdit} (string nclEditApi)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_04c7b492f2acb320dbebc13826e2e381}
+
+\item 
+bool \textbf{editingCommand} (string commandTag, string privateDataPayload)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_b49a1cfe9ef8b4e0dbf4bd1343ff3a98}
+
+\item 
+void {\bf setNotifyContentUpdate} (bool notify)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ca00facc9165918bf92568a3396e4680}
+
+\item 
+void \textbf{addListener} (IPlayerListener $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_63a662b680a51cc10d016e3c0fe0a818}
+
+\item 
+void \textbf{removeListener} (IPlayerListener $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_3bf91c9c826b2cc663dfb3c6fb928bb3}
+
+\item 
+void \textbf{notifyListeners} (short code, string paremeter, short type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_8e6dd31d99639b4c0cf80e9b7bdad206}
+
+\item 
+void \textbf{setSurface} (io::ISurface $\ast$surface)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_9aa3a8ba07aa4805e9e9e88123e394ed}
+
+\item 
+io::ISurface $\ast$ \textbf{getSurface} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_29605d317089ca197065ef56994f5d4c}
+
+\item 
+void \textbf{flip} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_126cb0362ae2e7935520fb27343bad31}
+
+\item 
+double \textbf{getMediaTime} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_7824aad20f39c7c1878549d56addc656}
+
+\item 
+void \textbf{setMediaTime} (double newTime)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_78560e3e568205d1b7a40fc43db78f24}
+
+\item 
+bool \textbf{setKeyHandler} (bool isHandler)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_0e3bb20e5956653c0c0b112fb3b66a54}
+
+\item 
+void \textbf{setScope} (string scope, short type, double begin=-1, double end=-1)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_1950ca2b773826a9a8dc820e18faa92e}
+
+\item 
+void \textbf{play} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_6d58098c6cf63c241ed03bc797256bb1}
+
+\item 
+void \textbf{stop} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_8c528baf37154d347366083f0f816846}
+
+\item 
+void \textbf{abort} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_c54f53dc342019e8db34f4aa581a5792}
+
+\item 
+void \textbf{pause} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_7167f5c196fc5e167bfabde1a730e81d}
+
+\item 
+void \textbf{resume} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_41de8150eff044a237990c271d57ea27}
+
+\item 
+string \textbf{getPropertyValue} (string name)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_1d37ab97e0424d39fd0fc9e7a1913485}
+
+\item 
+void \textbf{setPropertyValue} (string name, string value, double duration=-1, double by=-1)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_c427e6845f7801bb2384ed0acc9d0987}
+
+\item 
+void \textbf{setReferenceTimePlayer} (IPlayer $\ast$player)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_8ec8dbf3f66ae2602bba4d8c4530f428}
+
+\item 
+void \textbf{addTimeReferPlayer} (IPlayer $\ast$referPlayer)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_f80f231a29c2d3dd5ee3133aa0c45b53}
+
+\item 
+void \textbf{removeTimeReferPlayer} (IPlayer $\ast$referPlayer)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_76983c48a3038df4c8ecac18cabcbb62}
+
+\item 
+void \textbf{notifyReferPlayers} (int transition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_00037986eb1ec8fe41cb7ae08c320356}
+
+\item 
+void \textbf{timebaseObjectTransitionCallback} (int transition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_b785f5d683466e3449f0341d8d88e421}
+
+\item 
+void \textbf{setTimeBasePlayer} (IPlayer $\ast$timeBasePlayer)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_545c8a2b486383581f0f0ae6b8005d06}
+
+\item 
+bool \textbf{hasPresented} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_8f879283fa69a56be7e1d3b0fb013936}
+
+\item 
+void \textbf{setPresented} (bool presented)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_b37fc0ba6e5e9a3cc12e5d14fe2fbbb1}
+
+\item 
+bool \textbf{isVisible} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_adc2f7e6c414e3e7016fb654293daa7f}
+
+\item 
+void \textbf{setVisible} (bool visible)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_18e44e30b31525a243960ca3928125aa}
+
+\item 
+bool \textbf{immediatelyStart} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_7917e95acd599bf7fee86b238a51fae7}
+
+\item 
+void \textbf{setImmediatelyStart} (bool immediatelyStartVal)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_4c4dc3e37c8c5d01c40664f07ea69f02}
+
+\item 
+void \textbf{forceNaturalEnd} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_d83cefb419838cb8be6cc40109d45f68}
+
+\item 
+bool \textbf{isForcedNaturalEnd} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_2571def1663245ef08fce9616e369f4b}
+
+\item 
+bool \textbf{setOutWindow} (io::IWindow $\ast$w)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_e70356cfb2fbcf98264b8c7a60d6f1bd}
+
+\item 
+IPlayer $\ast$ {\bf getSelectedPlayer} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_1768d946739b56778d099e36b3d80dbb}
+
+\item 
+void {\bf setPlayerMap} (map$<$ string, IPlayer $\ast$ $>$ $\ast$objs)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_d3b726e0e72999d6de4be877f0b0087c}
+
+\item 
+map$<$ string, IPlayer $\ast$ $>$ $\ast$ {\bf getPlayerMap} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_623ad836859032416d542e1f261d0848}
+
+\item 
+IPlayer $\ast$ {\bf getPlayer} (string objectId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_2d5ec5b3d86f05e9a22ac93e3aabbf88}
+
+\item 
+void {\bf select} (IPlayer $\ast$selObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_f4092baaf98a4b73dfda1ea7bf3d561c}
+
+\item 
+void \textbf{setCurrentScope} (string scopeId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_e93ade91c50e4c8ea19db767c126933c}
+
+\item 
+string \textbf{getActiveUris} (vector$<$ string $>$ $\ast$uris)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_b0154112a5ecc256eff34441deba988f}
+
+\item 
+string \textbf{getDepUris} (vector$<$ string $>$ $\ast$uris, int targetDev=0)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_78550d00d95702459c823315567bb166}
+
+\item 
+void \textbf{timeShift} (string direction)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_4c957efac0cbe36537ad4b97184298dc}
+
+\item 
+PlayerState $\ast$ \textbf{getPlayerState} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_d1125f5626717f8bebbdf3f644fd9deb}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \textbf{release} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_9e5d3fad9e601bb8c8c37183aaa737d2}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void $\ast$ \textbf{addDocument} (string fName)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_2f817ec6e0a0958c0344120170f44683}
+
+\item 
+bool \textbf{removeDocument} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_1555ee32add0ef9ec5f9ef4c50ad1197}
+
+\item 
+ContextNode $\ast$ \textbf{getDocumentContext} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_300d50e443e5258b1da02904011b5a1c}
+
+\item 
+vector$<$ FormatterEvent $\ast$ $>$ $\ast$ \textbf{processDocument} (string documentId, string interfaceId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_a839dcc1deb97f7a13cc131e9218b5b4}
+
+\item 
+vector$<$ FormatterEvent $\ast$ $>$ $\ast$ \textbf{getDocumentEntryEvent} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_3eae681b81104f163aa989bdd741234c}
+
+\item 
+bool \textbf{compileDocument} (string documentId, string interfaceId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_344af6e6eb07b2040f34f8d30651e055}
+
+\item 
+bool \textbf{prepareDocument} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_d2d67bcf3f41d0e95dec6cdf21478060}
+
+\item 
+void \textbf{solveRemoteDescriptorsUris} (string docLocation, vector$<$ GenericDescriptor $\ast$ $>$ $\ast$descs, bool isRemoteDoc)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_facd4e379ab68514abd90256649b9413}
+
+\item 
+void \textbf{solveRemoteNodesUris} (string docLocation, vector$<$ Node $\ast$ $>$ $\ast$nodes, bool isRemoteDoc)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_c9c4a0ac656e8619d9ba42a5416c8943}
+
+\item 
+void \textbf{solveRemoteNclDeps} (string docLocation, bool isRemoteDoc)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_48ee6c218f69381e4e8b7d4be0247d3d}
+
+\item 
+void \textbf{solveRemoteLuaDeps} (string docLocation, string src, bool isRemoteDoc)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_0553bba30bb25f263208a785a56a9e85}
+
+\item 
+string \textbf{solveRemoteSourceUri} (string docLocation, string src)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_e35a020be5dcf286bd78d2b0f23d5092}
+
+\item 
+bool \textbf{startDocument} (string documentId, string interfaceId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_76a626c336998d3df4777074d082ff4f}
+
+\item 
+bool \textbf{stopDocument} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_069bb6948f8ba2a14488e23c6d808772}
+
+\item 
+bool \textbf{pauseDocument} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_02c4e86ced2b5d1e370f15d163af93ec}
+
+\item 
+bool \textbf{resumeDocument} (string documentId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_b9f55a5fbf515eb17a0bc677448c04ee}
+
+\item 
+void \textbf{presentationCompleted} (IFormatterEvent $\ast$documentEvent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_f187f853b10c1acebd99ad0ab862ab42}
+
+\item 
+LayoutRegion $\ast$ \textbf{addRegion} (string documentId, string regionBaseId, string regionId, string xmlRegion)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_45200d403e40ab0e38040063ce76cfc8}
+
+\item 
+LayoutRegion $\ast$ \textbf{removeRegion} (string documentId, string regionBaseId, string regionId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_961c5e8fd2a9d9109d8042a5f0c96c5d}
+
+\item 
+RegionBase $\ast$ \textbf{addRegionBase} (string documentId, string xmlRegionBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_933903847ac6104c8c9f3d0593702e09}
+
+\item 
+RegionBase $\ast$ \textbf{removeRegionBase} (string documentId, string regionBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_40009c2361c7b8102bd01717e2237f2a}
+
+\item 
+Rule $\ast$ \textbf{addRule} (string documentId, string xmlRule)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_0053a0bc9270d05c905d60f9f7541102}
+
+\item 
+Rule $\ast$ \textbf{removeRule} (string documentId, string ruleId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ec789db0e3bd130c406bcdccff22b00d}
+
+\item 
+RuleBase $\ast$ \textbf{addRuleBase} (string documentId, string xmlRuleBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_c65fd8bb92c284f5502069387e098ea6}
+
+\item 
+RuleBase $\ast$ \textbf{removeRuleBase} (string documentId, string ruleBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_9cf642a62b77554fd598b148c747da00}
+
+\item 
+Transition $\ast$ \textbf{addTransition} (string documentId, string xmlTransition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_cf4331acb3a571be6153c6fe08e7d310}
+
+\item 
+Transition $\ast$ \textbf{removeTransition} (string documentId, string transitionId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_7a85c7c0baab0711707c7e02d2f66cf5}
+
+\item 
+TransitionBase $\ast$ \textbf{addTransitionBase} (string documentId, string xmlTransitionBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_604b12ac877a8a71b5ff36b62af708aa}
+
+\item 
+TransitionBase $\ast$ \textbf{removeTransitionBase} (string documentId, string transitionBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_3bde27cae28f25bba665051caf477ab9}
+
+\item 
+Connector $\ast$ \textbf{addConnector} (string documentId, string xmlConnector)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_0129d574f8a1cfd4d2763ecb02daa0d7}
+
+\item 
+Connector $\ast$ \textbf{removeConnector} (string documentId, string connectorId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_1af2765cc40affc56a032cb8ee3013bf}
+
+\item 
+ConnectorBase $\ast$ \textbf{addConnectorBase} (string documentId, string xmlConnectorBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ae24f2e152451189e758150de62fa12a}
+
+\item 
+ConnectorBase $\ast$ \textbf{removeConnectorBase} (string documentId, string connectorBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_eadc9d5e322e934e9ab7db1b9f7c0436}
+
+\item 
+GenericDescriptor $\ast$ \textbf{addDescriptor} (string documentId, string xmlDescriptor)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ce5a78d3e81f33420cb2ba391ec99948}
+
+\item 
+GenericDescriptor $\ast$ \textbf{removeDescriptor} (string documentId, string descriptorId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_338c6b6118d0127b2d0c3baf65853a94}
+
+\item 
+DescriptorBase $\ast$ \textbf{addDescriptorBase} (string documentId, string xmlDescriptorBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_c0f903fe477853764170bcd07eb8103d}
+
+\item 
+DescriptorBase $\ast$ \textbf{removeDescriptorBase} (string documentId, string descriptorBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_1c5809c5f42f888e39696182aa4d5c02}
+
+\item 
+Base $\ast$ \textbf{addImportBase} (string documentId, string docBaseId, string xmlImportBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_5f390e05f5e0746ff24b3cc4277b3a02}
+
+\item 
+Base $\ast$ \textbf{removeImportBase} (string documentId, string docBaseId, string documentURI)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_24ac4045fc9659ea929263a8dae63fd6}
+
+\item 
+NclDocument $\ast$ \textbf{addImportedDocumentBase} (string documentId, string xmlImportedDocumentBase)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_67bc061d4662a6ea0cb0e7f04fca2b8e}
+
+\item 
+NclDocument $\ast$ \textbf{removeImportedDocumentBase} (string documentId, string importedDocumentBaseId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_dcaca18dc569f437b7cf8cc08d9c1b75}
+
+\item 
+NclDocument $\ast$ \textbf{addImportNCL} (string documentId, string xmlImportNCL)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_f01972b80689e1e15035431c74cdc589}
+
+\item 
+NclDocument $\ast$ \textbf{removeImportNCL} (string documentId, string documentURI)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ec83344e580ce947b94398ad67ffc445}
+
+\item 
+void \textbf{processInsertedReferNode} (ReferNode $\ast$referNode)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_e5ffde77f73ff3b0d56b170e91c5079b}
+
+\item 
+void \textbf{processInsertedComposition} (CompositeNode $\ast$composition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_234bb303cf45910308068706d578a43b}
+
+\item 
+Node $\ast$ \textbf{addNode} (string documentId, string compositeId, string xmlNode)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_eeb7118e73f86f9e196d4335fd21e6db}
+
+\item 
+Node $\ast$ \textbf{removeNode} (string documentId, string compositeId, string nodeId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_be5b17c80f64868f98404e048b493e40}
+
+\item 
+InterfacePoint $\ast$ \textbf{addInterface} (string documentId, string nodeId, string xmlInterface)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_9712c1fafd77b7c5ee0a29dac44c677d}
+
+\item 
+void \textbf{removeInterfaceMappings} (Node $\ast$node, InterfacePoint $\ast$interfacePoint, CompositeNode $\ast$composition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_5cec90a30527fe413f2fd649b9c5912d}
+
+\item 
+void \textbf{removeInterfaceLinks} (Node $\ast$node, InterfacePoint $\ast$interfacePoint, LinkComposition $\ast$composition)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_76d0a97972503bcd8809af2078a12bd3}
+
+\item 
+void \textbf{removeInterface} (Node $\ast$node, InterfacePoint $\ast$interfacePoint)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_79eedbd370d48b15bdaab84b8b33c551}
+
+\item 
+InterfacePoint $\ast$ \textbf{removeInterface} (string documentId, string nodeId, string interfaceId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_36124c5efea2c25f900cc96cac5ef83a}
+
+\item 
+Link $\ast$ \textbf{addLink} (string documentId, string compositeId, string xmlLink)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_a12a5aaa41a65dbf50538494f18a8de9}
+
+\item 
+void \textbf{removeLink} (LinkComposition $\ast$composition, Link $\ast$link)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_0544ce0b06dd7a4b89bdb16b692f521e}
+
+\item 
+Link $\ast$ \textbf{removeLink} (string documentId, string compositeId, string linkId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_3987f88a732beac398d9647fb249a539}
+
+\item 
+bool \textbf{setPropertyValue} (string documentId, string nodeId, string propertyId, string value)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_97550d78c917de706089c863135d0c4d}
+
+\item 
+void \textbf{pushEPGEventToEPGFactory} (map$<$ string, string $>$ t)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_03f0f1e577dc80fc2e776c470579b17c}
+
+\item 
+string \textbf{getDepUrisFromNodes} (vector$<$ string $>$ $\ast$uris, vector$<$ Node $\ast$ $>$ $\ast$nodes, int targetDev=0)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_ad4f22815550601a963b012128abf88b}
+
+\item 
+string \textbf{getDepUriFromNode} (vector$<$ string $>$ $\ast$uris, Node $\ast$node, int targetDev=0)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_f36daf78c087f6bf94a77a6079fd26a9}
+
+\item 
+string \textbf{getBaseUri} (string baseA, string baseB)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_72e4482c24aa18c147ede519c6f60a8f}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+NclPlayerData $\ast$ {\bf data}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_a87c99c0bd5db8838b2e32bd1eb10dbd}
+
+\item 
+string {\bf currentFile}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_75a030c1ac7bfa856d51cf4bfaedecb6}
+
+\item 
+NclDocument $\ast$ {\bf currentDocument}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_6c46c7875160408fa4f30b85f2868cc4}
+
+\item 
+map$<$ string, FormatterEvent $\ast$ $>$ $\ast$ {\bf documentEvents}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_44639629eeeaa51f8ceea8447362c34e}
+
+\item 
+map$<$ string, vector$<$ FormatterEvent $\ast$ $>$ $\ast$ $>$ $\ast$ {\bf documentEntryEvents}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_4831a7f353a88e52a24618e3d3b79666}
+
+\item 
+{\bf FormatterScheduler} $\ast$ {\bf scheduler}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_fb7aae6c31924e21d6df13d25c5f2aad}
+
+\item 
+RuleAdapter $\ast$ {\bf ruleAdapter}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_50d33e558d7649f9855c50bfdafee9ff}
+
+\item 
+FormatterConverter $\ast$ {\bf compiler}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_dbbd12a69462a88d0c59de7af28af3ee}
+
+\item 
+PlayerAdapterManager $\ast$ {\bf playerManager}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_4df40f950b752188368d90063891852c}
+
+\item 
+ITimeBaseProvider $\ast$ {\bf timeBaseProvider}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_a768d0b9325a7db85149852491c20fe1}
+
+\item 
+vector$<$ string $>$ $\ast$ {\bf compileErrors}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_6b3013a608fddf6ea152aa4244036f14}
+
+\item 
+IDeviceLayout $\ast$ {\bf deviceLayout}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_53f8726780eb8423c7727f8cede98b8a}
+
+\item 
+IFormatterMultiDevice $\ast$ {\bf multiDevice}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_5887431c9649d5e32ce5c1dd04455959}
+
+\item 
+bool {\bf isEmbedded}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_af068bc171c04211fcec595154926e03}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf PrivateBaseManager} $\ast$ {\bf privateBaseManager}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_59311334d07971d9cb8600a94ea26e40}
+
+\item 
+static IPrefetchManager $\ast$ {\bf pm}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1FormatterMediator_474182c10e86f50e85e747e8ee0843ad}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 157 of file FormatterMediator.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/FormatterMediator.h\end{CompactItemize}

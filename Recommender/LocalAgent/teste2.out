@@ -1,0 +1,180 @@
+argv = '/misc/ncl30/Cliente/exemplo.ncl' nclFile = '/misc/ncl30/Cliente/exemplo.ncl'
+ginga main() NCLFILE = /misc/ncl30/Cliente/exemplo.ncl
+InputManager::initializeInputIntervalTime imperative = '0' declarative = '200'
+ginga main() NCLFILE = /misc/ncl30/Cliente/exemplo.ncl
+PresentationEngineManager::openNclFile document process time: 0
+FormatterMediator::printData(0x8089938) baseId: -1 playerId: /misc/ncl30/Cliente/exemplo.ncl devClass: 0 x: 0 y: 0 w: 640 h: 480 enableGfx: 1 parentDocId:  docId: 
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+BroadcastSocketService::discoverBroadcastAddress interfaceName: 'eth0
+PresentationContext::initializeSystemValues 
+FormatterFocusManager::setKeyHandler(0x832b4f0) isHandler '1' this->isHandler '0' parentManager '0'
+FormatterMediator::FormatterMediator(0x8089938) isEmbedded = '0'
+TimeStamp: 0.409
+ComponentManager::releaseComponentFromObject 'NclDocumentConverter'
+PrivateBaseContext::addDocument id='exemplo1' url='/misc/ncl30/Cliente/exemplo.ncl' all done
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+FormatterMediator::getDepUriFromNode checking descriptor 'dLua'
+FormatterMultiDevice::addActiveUris activeBaseUri=/misc/ncl30/Cliente/
+FormatterScheduler::runAction acquiring player for '-1/exemplo1/lua/dLua' TimeStamp: 0.883
+FormatterPlayerAdapter::createPlayer for '/misc/ncl30/Cliente/exemplo.lua'
+<?xml version="1.0"?>
+<soap:Envelope 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+ xmlns:ns1="http://WSFA/" 
+>
+  <soap:Body>
+    <ns1:retornaXML>
+  <parameter>10-60-63-120-109-108-32-118-101-114-115-105-111-110-61-34-49-46-48-34-32-101-110-99-111-100-105-110-103-61-34-85-84-70-45-56-34-32-115-116-97-110-100-97-108-111-110-101-61-34-110-111-34-32-63-62-60-119-97-116-99-104-84-86-32-99-111-117-110-116-114-121-61-34-66-114-97-122-105-108-34-32-101-110-100-68-97-116-101-61-34-50-48-49-48-47-48-56-47-48-50-84-49-54-58-50-53-58-53-57-34-32-115-116-97-114-116-68-97-116-101-61-34-50-48-49-48-47-48-56-47-48-50-84-49-54-58-50-52-58-53-56-34-62-60-104-101-97-100-62-60-108-111-99-97-116-105-111-110-32-108-97-116-61-34-45-50-49-46-52-53-53-49-48-48-34-32-108-111-110-103-61-34-45-52-51-46-50-49-48-49-48-48-34-32-122-105-112-61-34-51-54-48-51-53-51-51-48-34-47-62-60-117-115-101-114-32-98-105-114-116-104-61-34-34-32-103-101-110-114-101-61-34-34-62-60-115-111-99-105-97-108-78-101-116-119-111-114-107-32-105-100-101-110-116-105-102-105-99-97-116-105-111-110-61-34-34-32-110-97-109-101-61-34-111-114-107-117-116-34-47-62-60-115-111-99-105-97-108-78-101-116-119-111-114-107-32-105-100-101-110-116-105-102-105-99-97-116-105-111-110-61-34-34-32-110-97-109-101-61-34-102-97-99-101-98-111-111-107-34-47-62-60-47-117-115-101-114-62-60-100-101-118-105-99-101-32-112-114-111-102-105-108-101-61-34-102-117-108-108-115-101-103-34-32-115-101-114-105-97-108-78-117-109-98-101-114-61-34-50-48-48-50-48-50-57-51-120-115-34-32-116-121-112-101-61-34-115-101-116-45-116-111-112-45-98-111-120-34-62-60-114-101-115-111-117-114-99-101-115-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-110-101-116-119-111-114-107-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-118-101-108-111-120-34-32-118-97-108-117-101-61-34-53-49-50-77-98-112-115-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-109-111-100-101-108-34-32-118-97-108-117-101-61-34-82-101-97-108-116-101-107-95-82-84-76-56-49-51-57-47-56-49-48-120-95-70-97-109-105-108-121-95-70-97-115-116-69-116-104-101-114-110-101-116-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-115-116-111-114-97-103-101-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-116-111-116-97-108-34-32-118-97-108-117-101-61-34-50-48-48-71-66-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-102-114-101-101-34-32-118-97-108-117-101-61-34-49-48-48-71-66-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-99-112-117-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-109-111-100-101-108-34-32-118-97-108-117-101-61-34-73-110-116-101-108-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-99-108-111-99-107-34-32-118-97-108-117-101-61-34-50-46-50-71-72-122-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-99-111-114-101-115-34-32-118-97-108-117-101-61-34-52-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-97-114-99-104-34-32-118-97-108-117-101-61-34-54-52-98-105-116-115-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-104-105-100-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-109-111-100-101-108-34-32-118-97-108-117-101-61-34-72-112-95-84-111-117-99-104-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-116-121-112-101-34-32-118-97-108-117-101-61-34-116-97-98-108-101-116-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-47-114-101-115-111-117-114-99-101-115-62-60-97-116-116-97-99-104-101-100-68-101-118-105-99-101-115-62-60-100-101-118-105-99-101-32-116-121-112-101-61-34-105-110-116-101-114-97-99-116-105-111-110-34-47-62-60-100-101-118-105-99-101-32-116-121-112-101-61-34-115-116-111-114-97-103-101-34-47-62-60-47-97-116-116-97-99-104-101-100-68-101-118-105-99-101-115-62-60-47-100-101-118-105-99-101-62-60-47-104-101-97-100-62-60-105-110-116-101-114-97-99-116-105-111-110-32-116-105-109-101-61-34-50-48-49-48-47-48-56-47-48-50-84-49-54-58-50-52-58-53-56-34-32-116-121-112-101-61-34-105-110-116-101-114-97-99-116-105-111-110-34-62-60-107-101-121-32-97-99-116-105-111-110-61-34-71-82-69-69-78-34-32-99-111-100-101-61-34-54-49-54-57-56-34-47-62-60-99-104-97-110-110-101-108-32-99-111-100-101-61-34-48-34-32-110-97-109-101-61-34-78-67-76-95-76-79-67-65-76-34-62-60-112-114-111-103-114-97-109-32-97-103-101-61-34-48-34-32-99-97-116-101-103-111-114-121-61-34-45-45-45-34-32-99-111-100-101-61-34-48-34-32-110-97-109-101-61-34-45-45-45-34-47-62-60-47-99-104-97-110-110-101-108-62-60-118-111-108-117-109-101-32-108-101-118-101-108-61-34-48-34-32-109-117-116-101-61-34-48-34-47-62-60-110-99-108-83-116-97-116-101-77-97-99-104-105-110-101-62-60-100-111-99-117-109-101-110-116-32-105-100-61-34-115-111-99-99-101-114-34-62-60-109-101-100-105-97-32-105-100-61-34-101-113-117-105-112-49-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-50-54-34-47-62-60-109-101-100-105-97-32-105-100-61-34-101-113-117-105-112-50-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-50-54-34-47-62-60-109-101-100-105-97-32-105-100-61-34-108-111-103-111-84-105-112-111-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-50-34-47-62-60-109-101-100-105-97-32-105-100-61-34-112-108-97-99-97-114-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-54-55-34-47-62-60-109-101-100-105-97-32-105-100-61-34-118-105-100-101-111-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-53-52-52-46-57-52-52-34-47-62-60-109-101-100-105-97-32-105-100-61-34-122-101-114-111-49-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-55-34-47-62-60-109-101-100-105-97-32-105-100-61-34-122-101-114-111-50-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-54-56-34-47-62-60-47-100-111-99-117-109-101-110-116-62-60-47-110-99-108-83-116-97-116-101-77-97-99-104-105-110-101-62-60-47-105-110-116-101-114-97-99-116-105-111-110-62-60-47-119-97-116-99-104-84-86-62-</parameter>
+    </ns1:retornaXML>
+  </soap:Body>
+</soap:Envelope>
+
+--------------------------Iniciar co-rotina (resume)
+
+--------------------------Saiu da body function
+
+--------------------------Terminou resume
+
+--------------------------Co-rotina suspensa (yield)
+---------------------------Chamou ncluasoap.call aff
+FormatterScheduler::runAction takes '240' ms to start '-1/exemplo1/lua/dLua'
+Conectado a 200.131.219.56 pela porta 8080
+
+--------------------Request: 
+
+POST http://200.131.219.56:8080/WSFAnew/WSFA HTTP/1.0
+User-Agent: ncluasoap/0.5.6.4
+Content-Type: text/xml; charset=utf-8
+SOAPAction: "http://WSFA/retornaXML"
+Host: 200.131.219.56
+Content-Length: 6616
+
+<?xml version="1.0"?>
+<soap:Envelope 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" 
+ xmlns:ns1="http://WSFA/" 
+>
+  <soap:Body>
+    <ns1:retornaXML>
+  <parameter>10-60-63-120-109-108-32-118-101-114-115-105-111-110-61-34-49-46-48-34-32-101-110-99-111-100-105-110-103-61-34-85-84-70-45-56-34-32-115-116-97-110-100-97-108-111-110-101-61-34-110-111-34-32-63-62-60-119-97-116-99-104-84-86-32-99-111-117-110-116-114-121-61-34-66-114-97-122-105-108-34-32-101-110-100-68-97-116-101-61-34-50-48-49-48-47-48-56-47-48-50-84-49-54-58-50-53-58-53-57-34-32-115-116-97-114-116-68-97-116-101-61-34-50-48-49-48-47-48-56-47-48-50-84-49-54-58-50-52-58-53-56-34-62-60-104-101-97-100-62-60-108-111-99-97-116-105-111-110-32-108-97-116-61-34-45-50-49-46-52-53-53-49-48-48-34-32-108-111-110-103-61-34-45-52-51-46-50-49-48-49-48-48-34-32-122-105-112-61-34-51-54-48-51-53-51-51-48-34-47-62-60-117-115-101-114-32-98-105-114-116-104-61-34-34-32-103-101-110-114-101-61-34-34-62-60-115-111-99-105-97-108-78-101-116-119-111-114-107-32-105-100-101-110-116-105-102-105-99-97-116-105-111-110-61-34-34-32-110-97-109-101-61-34-111-114-107-117-116-34-47-62-60-115-111-99-105-97-108-78-101-116-119-111-114-107-32-105-100-101-110-116-105-102-105-99-97-116-105-111-110-61-34-34-32-110-97-109-101-61-34-102-97-99-101-98-111-111-107-34-47-62-60-47-117-115-101-114-62-60-100-101-118-105-99-101-32-112-114-111-102-105-108-101-61-34-102-117-108-108-115-101-103-34-32-115-101-114-105-97-108-78-117-109-98-101-114-61-34-50-48-48-50-48-50-57-51-120-115-34-32-116-121-112-101-61-34-115-101-116-45-116-111-112-45-98-111-120-34-62-60-114-101-115-111-117-114-99-101-115-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-110-101-116-119-111-114-107-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-118-101-108-111-120-34-32-118-97-108-117-101-61-34-53-49-50-77-98-112-115-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-109-111-100-101-108-34-32-118-97-108-117-101-61-34-82-101-97-108-116-101-107-95-82-84-76-56-49-51-57-47-56-49-48-120-95-70-97-109-105-108-121-95-70-97-115-116-69-116-104-101-114-110-101-116-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-115-116-111-114-97-103-101-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-116-111-116-97-108-34-32-118-97-108-117-101-61-34-50-48-48-71-66-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-102-114-101-101-34-32-118-97-108-117-101-61-34-49-48-48-71-66-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-99-112-117-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-109-111-100-101-108-34-32-118-97-108-117-101-61-34-73-110-116-101-108-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-99-108-111-99-107-34-32-118-97-108-117-101-61-34-50-46-50-71-72-122-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-99-111-114-101-115-34-32-118-97-108-117-101-61-34-52-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-97-114-99-104-34-32-118-97-108-117-101-61-34-54-52-98-105-116-115-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-114-101-115-111-117-114-99-101-32-116-121-112-101-61-34-104-105-100-34-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-109-111-100-101-108-34-32-118-97-108-117-101-61-34-72-112-95-84-111-117-99-104-34-47-62-60-105-110-102-111-114-109-97-116-105-111-110-32-110-97-109-101-61-34-116-121-112-101-34-32-118-97-108-117-101-61-34-116-97-98-108-101-116-34-47-62-60-47-114-101-115-111-117-114-99-101-62-60-47-114-101-115-111-117-114-99-101-115-62-60-97-116-116-97-99-104-101-100-68-101-118-105-99-101-115-62-60-100-101-118-105-99-101-32-116-121-112-101-61-34-105-110-116-101-114-97-99-116-105-111-110-34-47-62-60-100-101-118-105-99-101-32-116-121-112-101-61-34-115-116-111-114-97-103-101-34-47-62-60-47-97-116-116-97-99-104-101-100-68-101-118-105-99-101-115-62-60-47-100-101-118-105-99-101-62-60-47-104-101-97-100-62-60-105-110-116-101-114-97-99-116-105-111-110-32-116-105-109-101-61-34-50-48-49-48-47-48-56-47-48-50-84-49-54-58-50-52-58-53-56-34-32-116-121-112-101-61-34-105-110-116-101-114-97-99-116-105-111-110-34-62-60-107-101-121-32-97-99-116-105-111-110-61-34-71-82-69-69-78-34-32-99-111-100-101-61-34-54-49-54-57-56-34-47-62-60-99-104-97-110-110-101-108-32-99-111-100-101-61-34-48-34-32-110-97-109-101-61-34-78-67-76-95-76-79-67-65-76-34-62-60-112-114-111-103-114-97-109-32-97-103-101-61-34-48-34-32-99-97-116-101-103-111-114-121-61-34-45-45-45-34-32-99-111-100-101-61-34-48-34-32-110-97-109-101-61-34-45-45-45-34-47-62-60-47-99-104-97-110-110-101-108-62-60-118-111-108-117-109-101-32-108-101-118-101-108-61-34-48-34-32-109-117-116-101-61-34-48-34-47-62-60-110-99-108-83-116-97-116-101-77-97-99-104-105-110-101-62-60-100-111-99-117-109-101-110-116-32-105-100-61-34-115-111-99-99-101-114-34-62-60-109-101-100-105-97-32-105-100-61-34-101-113-117-105-112-49-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-50-54-34-47-62-60-109-101-100-105-97-32-105-100-61-34-101-113-117-105-112-50-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-50-54-34-47-62-60-109-101-100-105-97-32-105-100-61-34-108-111-103-111-84-105-112-111-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-50-34-47-62-60-109-101-100-105-97-32-105-100-61-34-112-108-97-99-97-114-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-54-55-34-47-62-60-109-101-100-105-97-32-105-100-61-34-118-105-100-101-111-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-53-52-52-46-57-52-52-34-47-62-60-109-101-100-105-97-32-105-100-61-34-122-101-114-111-49-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-55-34-47-62-60-109-101-100-105-97-32-105-100-61-34-122-101-114-111-50-34-32-115-116-97-116-117-115-61-34-111-99-99-111-114-105-110-103-34-32-116-105-109-101-61-34-54-46-53-54-56-34-47-62-60-47-100-111-99-117-109-101-110-116-62-60-47-110-99-108-83-116-97-116-101-77-97-99-104-105-110-101-62-60-47-105-110-116-101-114-97-99-116-105-111-110-62-60-47-119-97-116-99-104-84-86-62-</parameter>
+    </ns1:retornaXML>
+  </soap:Body>
+</soap:Envelope>
+
+
+BANCO DE DADOS: ITERACTION.db
+
+
+----------------------------Resposta da requisição obtida
+
+
+
+--------------------------Desconectou
+
+--------------------------Co-rotina finalizada (terminou yield)
+Dados da conexao TCP recebidos
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/xml;charset=utf-8
+Content-Length: 248
+Date: Mon, 02 Aug 2010 19:23:46 GMT
+Connection: close
+
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:retornaXMLResponse xmlns:ns2="http://WSFA/"><return>falha&#xD;
+java.lang.NullPointerException</return></ns2:retornaXMLResponse></S:Body></S:Envelope>
+
+
+Response nsPrefix = S:
+
+
+
+
+******************************* Saida da Aplicacao *******************************************
+
+resultado: 	falha
+java.lang.NullPointerException
+
+******************************** Saida da Aplicacao *******************************************
+
+
+FormatterMediator::presentationCompleted for '/misc/ncl30/Cliente/exemplo.ncl'
+PresentationEngineManager::presentationCompleted for '/misc/ncl30/Cliente/exemplo.ncl'
+ShowButton::run STOP
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+TimeStamp: 3.647
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 3.647
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+InputManager::release
+DFBEventBuffer::~DFBEventBuffer()
+TimeStamp: 3.65
+ComponentManager::releaseComponentFromObject 'PresentationEngineManager'
+MAIN ALL DONE!

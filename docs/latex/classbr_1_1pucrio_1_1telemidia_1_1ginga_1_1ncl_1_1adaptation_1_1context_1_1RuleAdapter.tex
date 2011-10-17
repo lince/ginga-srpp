@@ -1,0 +1,65 @@
+\section{RuleAdapter Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter}\index{br::pucrio::telemidia::ginga::ncl::adaptation::context::RuleAdapter@{br::pucrio::telemidia::ginga::ncl::adaptation::context::RuleAdapter}}
+Inheritance diagram for RuleAdapter:Collaboration diagram for RuleAdapter:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{reset} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_d20897c5c8bd47f5d4005989bead0e55}
+
+\item 
+void \textbf{adapt} (CompositeExecutionObject $\ast$compositeObject, bool force)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_b1402b880b32540f95fa60ca4487852e}
+
+\item 
+void \textbf{initializeAttributeRuleRelation} (Rule $\ast$topRule, Rule $\ast$rule)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_c565cac0f6a763127f1c0c626307c77d}
+
+\item 
+void \textbf{initializeRuleObjectRelation} (ExecutionObjectSwitch $\ast$object)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_af45e711537a24e31543803b078741e4}
+
+\item 
+void \textbf{adapt} (ExecutionObjectSwitch $\ast$objectAlternatives, bool force)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_e0280f6ca3290e0e77765acee6664b37}
+
+\item 
+bool \textbf{adaptDescriptor} (ExecutionObject $\ast$executionObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_33616b5d0b1b61db421115f580889e9f}
+
+\item 
+Node $\ast$ \textbf{adaptSwitch} (SwitchNode $\ast$switchNode)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_079658cba021c764bf13e0dd931e21e9}
+
+\item 
+bool \textbf{evaluateRule} (Rule $\ast$rule)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_241f3819b4193567d6c250b7e13288c6}
+
+\item 
+virtual void \textbf{update} (void $\ast$arg0, void $\ast$arg1)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_6be8f6ebf7d9b3820dbc68336558859d}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+bool \textbf{evaluateCompositeRule} (CompositeRule $\ast$rule)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_5774312968950514f3509efa59575996}
+
+\item 
+bool \textbf{evaluateSimpleRule} (SimpleRule $\ast$rule)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_27d402a05fd4ede9d81adcb419aa1fcf}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, vector$<$ Rule $\ast$ $>$ $\ast$ $>$ $\ast$ {\bf ruleListenMap}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_929107d92dde356d2e9bf62d5aeb59b9}
+
+\item 
+map$<$ Rule $\ast$, vector$<$ ExecutionObjectSwitch $\ast$ $>$ $\ast$ $>$ $\ast$ {\bf entityListenMap}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_3b516ce608afcb799b276884f4019f4c}
+
+\item 
+map$<$ Rule $\ast$, vector$<$ DescriptorSwitch $\ast$ $>$ $\ast$ $>$ $\ast$ {\bf descListenMap}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1RuleAdapter_07b1639233b4a247a28d1f7619b4f57b}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 96 of file RuleAdapter.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/adaptation/context/RuleAdapter.h\end{CompactItemize}

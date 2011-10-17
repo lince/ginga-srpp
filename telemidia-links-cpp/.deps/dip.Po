@@ -1,0 +1,5 @@
+dip.o dip.o: dip.c cfg.h config.h
+
+cfg.h:
+
+config.h:

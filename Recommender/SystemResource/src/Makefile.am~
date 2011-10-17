@@ -1,0 +1,22 @@
+
+# set the include path found by configure
+INCLUDES = $(all_includes)
+
+LIBS =
+
+libgingarecommendersystemresourcedir = /usr/local/lib/ginga
+
+libgingarecommendersystemresource_so_LDADD = -lgingarecommenderutil
+
+libgingarecommendersystemresource_so_LDFLAGS = -Wl,-soname,libgingarecommendersystemresource.so \
+    --shared -ldl -I/usr/local/include/ginga/ -D_GNU_SOURCE -L/usr/local/lib/ginga
+
+libgingarecommendersystemresource_PROGRAMS = libgingarecommendersystemresource.so
+libgingarecommendersystemresource_so_SOURCES = SystemResource.cpp
+
+
+make[2]: Entering directory `/home/rnptvd/Codigos/homeI/Recommender/SystemResource/src'
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommendersystemresource.so --shared -ldl -I/usr/local/include/ginga/ -D_GNU_SOURCE 
+-L/usr/local/lib/ -L/usr/lib/  -o libgingarecommendersystemresource.so SystemResource.o -lgingarecommenderutil
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommendersystemresource.so --shared -I/usr/local/include/ginga/ -D_GNU_SOURCE -o libgingarecommendersystemresource.so SystemResource.o  -ldl -L/usr/local/lib/ -L/usr/lib/ -lgingarecommenderutil
+/usr/bin/ld: cannot find -lgingarecommenderutil

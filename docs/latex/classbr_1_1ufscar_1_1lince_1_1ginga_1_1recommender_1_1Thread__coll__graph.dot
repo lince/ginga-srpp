@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{Thread\n|# threadMutex\l# isSleeping\l# threadFlagMutex\l# threadFlagConditionVariable\l# isWaiting\l# threadFlagMutexLockUntilSignal\l# threadFlagCVLockUntilSignal\l# tattr\l- threadId_\l|+ Thread()\l+ ~Thread()\l+ start()\l+ sleep()\l+ usleep()\l+ wakeUp()\l+ lock()\l+ unlock()\l+ waitForUnlockCondition()\l+ unlockConditionSatisfied()\l# run()\l- function()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="threadFlagMutex\nthreadMutex\nthreadFlagMutexLockUntilSignal",arrowtail="open"];
+  Node2 [label="{pthread_mutex_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="threadId_",arrowtail="open"];
+  Node3 [label="{pthread_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="isWaiting\nisSleeping",arrowtail="open"];
+  Node4 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="threadFlagConditionVariable\nthreadFlagCVLockUntilSignal",arrowtail="open"];
+  Node5 [label="{pthread_cond_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="tattr",arrowtail="open"];
+  Node6 [label="{pthread_attr_t\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

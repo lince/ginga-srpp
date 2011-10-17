@@ -1,0 +1,30 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{sqlite3_module\n|+ iVersion\l+ xCreate\l+ xConnect\l+ xBestIndex\l+ xDisconnect\l+ xDestroy\l+ xOpen\l+ xClose\l+ xFilter\l+ xNext\l+ xEof\l+ xColumn\l+ xRowid\l+ xUpdate\l+ xBegin\l+ xSync\l+ xCommit\l+ xRollback\l+ xFindFunction\l+ xRename\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xUpdate",arrowtail="open"];
+  Node2 [label="{int(*)(sqlite3_vtab *, int, sqlite3_value **, sqlite3_int64 *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xBestIndex",arrowtail="open"];
+  Node3 [label="{int(*)(sqlite3_vtab *pVTab, sqlite3_index_info *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xRename",arrowtail="open"];
+  Node4 [label="{int(*)(sqlite3_vtab *pVtab, const char *zNew)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xFindFunction",arrowtail="open"];
+  Node5 [label="{int(*)(sqlite3_vtab *pVtab, int nArg, const char *zName, void(**pxFunc)(sqlite3_context *, int, sqlite3_value **), void **ppArg)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xRowid",arrowtail="open"];
+  Node6 [label="{int(*)(sqlite3_vtab_cursor *, sqlite3_int64 *pRowid)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xNext\nxClose\nxEof",arrowtail="open"];
+  Node7 [label="{int(*)(sqlite3_vtab_cursor *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xOpen",arrowtail="open"];
+  Node8 [label="{int(*)(sqlite3_vtab *pVTab, sqlite3_vtab_cursor **ppCursor)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xBegin\nxCommit\nxRollback\nxSync\nxDestroy\nxDisconnect",arrowtail="open"];
+  Node9 [label="{int(*)(sqlite3_vtab *pVTab)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xFilter",arrowtail="open"];
+  Node10 [label="{int(*)(sqlite3_vtab_cursor *, int idxNum, const char *idxStr, int argc, sqlite3_value **argv)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xConnect\nxCreate",arrowtail="open"];
+  Node11 [label="{int(*)(sqlite3 *, void *pAux, int argc, const char *const *argv, sqlite3_vtab **ppVTab, char **)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xColumn",arrowtail="open"];
+  Node12 [label="{int(*)(sqlite3_vtab_cursor *, sqlite3_context *, int)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="iVersion",arrowtail="open"];
+  Node13 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

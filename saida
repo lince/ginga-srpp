@@ -1,0 +1,1309 @@
+argv = '/root/Desktop/Prop29-10/Propagandas.ncl' nclFile = '/root/Desktop/Prop29-10/Propagandas.ncl'
+ginga main() NCLFILE = /root/Desktop/Prop29-10/Propagandas.ncl
+%%%%%%%%%%%Nome do arquivo xml: /usr/local/etc/ginga/files/componentDescription.xml
+commandline read: ginga
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.4.1 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (c) 2001-2009  The world wide DirectFB Open Source Community
+        (c) 2000-2004  Convergence (integrated media) GmbH
+      ----------------------------------------------------------------
+
+(*) DirectFB/Core: Single Application Core. (2009-12-23 07:32) 
+(*) Direct/Thread: Started 'VT Switcher' (25684) [CRITICAL OTHER/OTHER 0/0] <10485760>...
+(*) Direct/Thread: Started 'VT Flusher' (25685) [DEFAULT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/FBDev: Found 'VESA VGA' (ID 0) with frame buffer at 0xf0000000, 1200k (MMIO 0x00000000, 0k)
+(*) Direct/Thread: Started 'Keyboard Input' (25686) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: Keyboard 0.9 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (25687) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: Macintosh mouse button emulatio (1) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (25688) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: AT Translated Set 2 keyboard (2) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (25689) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: ImPS/2 Generic Wheel Mouse (3) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (25690) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: PC Speaker (4) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'Linux Input' (25691) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: Power Button (FF) (5) 0.1 (directfb.org)
+(*) Direct/Thread: Started 'PS/2 Input' (25692) [INPUT OTHER/OTHER 0/0] <10485760>...
+(*) DirectFB/Input: IMPS/2 Mouse 1.0 (directfb.org)
+(*) DirectFB/Genefx: MMX detected and enabled
+(*) DirectFB/Graphics: MMX Software Rasterizer 0.6 (directfb.org)
+(*) DirectFB/Core/WM: Default 0.3 (directfb.org)
+(#) DirectFBError [gingacc-systemio DFBDeviceScreen TestConfig error: ]: Not supported!
+InputManager::initializeInputIntervalTime imperative = '0' declarative = '200'
+WITHOUT CAC == ginga main() NCLFILE = /root/Desktop/Prop29-10/Propagandas.ncl
+PresentationEngineManager::openNclFile document process time: 0
+FormatterMediator::printData(0x92a1738) baseId: -1 playerId: /root/Desktop/Prop29-10/Propagandas.ncl devClass: 0 x: 0 y: 0 w: 640 h: 480 enableGfx: 1 parentDocId:  docId: 
+(!) Direct/Interface: Unable to dlopen `/usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_pnm.so'!
+    --> /usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_pnm.so: undefined symbol: direct_config
+(!) Direct/Interface: Unable to dlopen `/usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_bmp.so'!
+    --> /usr/local/lib/directfb-1.4-0/interfaces/IDirectFBImageProvider/libidirectfbimageprovider_bmp.so: undefined symbol: direct_config
+(*) Direct/Interface: Loaded 'PNG' implementation of 'IDirectFBImageProvider'.
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+BroadcastSocketService::discoverBroadcastAddress interfaceName: 'eth0
+-----------------before readConfigFiles
+-----------------before have_wac
+*********************StateManager: Initialized
+-----------------after have_wac
+PresentationContext::initializeSystemValues 
+AuthenticationServer::start(): socket created
+AuthenticationServer::start(): binding Socket
+FormatterFocusManager::setKeyHandler(0x9545160) isHandler '1' this->isHandler '0' parentManager '0'
+FormatterMediator::FormatterMediator(0x92a1738) isEmbedded = '0'
+TimeStamp: 0.357
+ComponentManager::releaseComponentFromObject 'NclDocumentConverter'
+PrivateBaseContext::addDocument id='simulador_tv' url='/root/Desktop/Prop29-10/Propagandas.ncl' all done
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+FormatterMediator::getDepUriFromNode checking descriptor 'dVideo1'
+FormatterMediator::getDepUriFromNode checking descriptor 'dluaSocket'
+FormatterMediator::getDepUriFromNode checking descriptor 'dluaAD'
+FormatterMediator::getDepUriFromNode checking descriptor 'dluaAD'
+FormatterMediator::getDepUriFromNode checking descriptor 'dluaAD'
+FormatterMediator::getDepUriFromNode checking descriptor 'dluaSocket'
+FormatterMediator::getDepUriFromNode checking descriptor 'dlua'
+FormatterMultiDevice::addActiveUris activeBaseUri=/root/Desktop/Prop29-10/
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/video1/dVideo1' TimeStamp: 0.44
+(*) Direct/Interface: Loaded 'Xine' implementation of 'IDirectFBVideoProvider'.
+audio_alsa_out : supported modes are 8bit 16bit 24bit mono stereo (4-channel not enabled in xine config) (4.1-channel not enabled in xine config) (5-channel not enabled in xine config) (5.1-channel not enabled in xine config) (a/52 and DTS pass-through not enabled in xine config)
+xine: found input plugin  : file input plugin
+failed to read 8 bytes at pos 43300426
+xine: found demuxer plugin: AVI/RIFF demux plugin
+ffmpeg_video_dec: direct rendering enabled
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop29-10/media/video1.avi'
+void AVPlayer::play(/root/Desktop/Prop29-10/media/video1.avi)
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua/dluaSocket' TimeStamp: 0.928
+FormatterScheduler::runAction takes '490' ms to start '-1/simulador_tv/video1/dVideo1'
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop29-10/media/PropSocket.lua'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+fixing sound card drift by -1438 pts
+FormatterScheduler::runAction takes '2016' ms to start '-1/simulador_tv/lua/dluaSocket'
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luamenu/dluaSocket' TimeStamp: 2.943
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop29-10/media/Menu.lua'
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+FormatterScheduler::runAction takes '106' ms to start '-1/simulador_tv/luamenu/dluaSocket'
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua1/dluaAD' TimeStamp: 3.049
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop29-10/media/AdSynchronizer.lua'
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luamenu/dluaSocket' TimeStamp: 3.057
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [5]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+(*) Direct/Interface: Loaded 'FT2' implementation of 'IDirectFBFont'.
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+FormatterScheduler::runAction takes '35' ms to start '-1/simulador_tv/lua1/dluaAD'
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua2/dluaAD' TimeStamp: 3.084
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop29-10/media/AdSchedulerReceiver.lua'
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+FormatterScheduler::runAction takes '9' ms to start '-1/simulador_tv/lua2/dluaAD'
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua3/dluaAD' TimeStamp: 3.093
+FormatterPlayerAdapter::createPlayer for '/root/Desktop/Prop29-10/media/UserInfo.lua'
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+DataInterface::DataInterface(): open file at dir /root/Desktop/Prop29-10/media
+Loading 0 Cine Pipoca Dirty Dancing (1987) Filme Musical
+Loading 59 Cine Pipoca Pretty Woman (1990) Filme Romance
+Loading 117 Cine Acao Rocky (1976) Filme Acao
+Loading 182 Cine Acao Liar Liar (1997) Filme Comedia
+Loading 240 Cine Pipoca Grease (1978) Filme Musical
+close file...
+AuthenticationServer::showVar: default.curiprof = 5:0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 5:0
+User information (current iprof = 5:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 5:0 iProf0: 1289687478,0,12,0,180,0,136,0,0,0,64,0
+FormatterScheduler::runAction takes '14' ms to start '-1/simulador_tv/lua3/dluaAD'
+fixing sound card drift by -1305 pts
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luamenu/dluaSocket' TimeStamp: 11.071
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [5]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+LocalAdvertisingModule::AdSynchronizer: [1] Connection error
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 5:0
+User information (current iprof = 5:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 5:0 iProf0: 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [5]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [5]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [5]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 5:0
+User information (current iprof = 5:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 5:0 iProf0: 1289687478,0,12,0,180,0,136,0,0,0,64,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 5:0
+User information (current iprof = 5:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 5:0 iProf0: 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: [1] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 5:0
+User information (current iprof = 5:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 5:0 iProf0: 1289687478,0,12,0,180,0,136,0,0,0,64,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 5:0
+User information (current iprof = 5:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687478,0,12,0,180,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 5:0 iProf0: 1289687478,0,12,0,180,0,136,0,0,0,64,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 5:0
+User information (current iprof = 5:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687537,0,12,0,186,0,136,0,0,0,64,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 5:0 iProf0: 1289687537,0,12,0,186,0,136,0,0,0,64,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;]
+cadastro----------- A ID EH -1 -----------
+--------------naaaaaooooooooooo existeeeeeeeeeee------------
+add;asd;123;11;123;F
+add;asd;123;11;123;F
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (20 bytes): [add;asd;123;11;123;F]
+AuthenticationServer::addUser: 0x9e0a228
+++++lock
++++ curUserid = 6 1
+ContextManager::getUserProfile Warning! can't find profile of user '6'
+PresentationContext::initializeSystemValues 
+----unlock
+AuthenticationServer::addUser: add user (userid 6, password 123, name asd, age 11, location 123, gender F)
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [6]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luamenu/dluaSocket' TimeStamp: 67.774
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687541,0,0,0,0,0,0,0,0,0,0,0
+propnova.lua
+propmedia/Prop4.png
+propmedia/sais.png
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687541,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [3] started
+LocalAdvertisingModule::AdSynchronizer: [3] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] Prop sended
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 81.129
+FormatterPlayerAdapter::createPlayer for '/tmp/luaprop.lua'
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+video_out: throwing away image with pts 7277755 because it's too old (diff : 4175).
+video_out: throwing away image with pts 7289005 because it's too old (diff : 4789).
+video_out: throwing away image with pts 7304005 because it's too old (diff : 4878).
+video_out: throwing away image with pts 7319005 because it's too old (diff : 4603).
+FormatterScheduler::runAction takes '754' ms to start '-1/simulador_tv/luaexibe/dlua'
+video_out: throwing away image with pts 7352755 because it's too old (diff : 4121).
+video_out: throwing away image with pts 7397755 because it's too old (diff : 3796).
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687541,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687541,0,0,0,0,0,0,0,0,0,0,0
+200 frames delivered, 0 frames skipped, 6 frames discarded
+video_out: throwing away image with pts 7521505 because it's too old (diff : 4467).
+video_out: throwing away image with pts 7596505 because it's too old (diff : 4121).
+video_out: throwing away image with pts 7735255 because it's too old (diff : 3915).
+video_out: throwing away image with pts 7765254 because it's too old (diff : 4486).
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 87.132
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+TimeStamp: 88.137
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 88.137
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+200 frames delivered, 0 frames skipped, 4 frames discarded
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687541,0,0,0,0,0,0,0,0,0,0,0
+propnova.lua
+propmedia/cafe.png
+propmedia/Prop4.png
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687541,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [1] Prop sended
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 96.231
+FormatterPlayerAdapter::createPlayer for '/tmp/luaprop.lua'
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+video_out: throwing away image with pts 8635246 because it's too old (diff : 4633).
+video_out: throwing away image with pts 8646493 because it's too old (diff : 5425).
+video_out: throwing away image with pts 8657743 because it's too old (diff : 5065).
+video_out: throwing away image with pts 8668993 because it's too old (diff : 5684).
+FormatterScheduler::runAction takes '636' ms to start '-1/simulador_tv/luaexibe/dlua'
+video_out: throwing away image with pts 8695243 because it's too old (diff : 4816).
+video_out: throwing away image with pts 8758993 because it's too old (diff : 3753).
+video_out: throwing away image with pts 8785243 because it's too old (diff : 4044).
+video_out: throwing away image with pts 8833993 because it's too old (diff : 4147).
+video_out: throwing away image with pts 8867743 because it's too old (diff : 4143).
+video_out: throwing away image with pts 8897743 because it's too old (diff : 3761).
+video_out: throwing away image with pts 8942743 because it's too old (diff : 3949).
+video_out: throwing away image with pts 8980243 because it's too old (diff : 3777).
+200 frames delivered, 0 frames skipped, 12 frames discarded
+video_out: throwing away image with pts 9047743 because it's too old (diff : 3810).
+video_out: throwing away image with pts 9130243 because it's too old (diff : 4195).
+video_out: throwing away image with pts 9171493 because it's too old (diff : 5459).
+video_out: throwing away image with pts 9190243 because it's too old (diff : 3961).
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687541,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687541,0,0,0,0,0,0,0,0,0,0,0
+video_out: throwing away image with pts 9291493 because it's too old (diff : 3948).
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 104.233
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+video_out: throwing away image with pts 9336493 because it's too old (diff : 4195).
+TimeStamp: 105.255
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 105.255
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+200 frames delivered, 0 frames skipped, 6 frames discarded
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687541,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687541,0,0,0,0,0,0,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687595,0,0,0,0,0,6,0,0,0,0,0
+propnova.lua
+propmedia/Prop1.png
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687595,0,0,0,0,0,6,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [1] Prop sended
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 123.334
+FormatterPlayerAdapter::createPlayer for '/tmp/luaprop.lua'
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+PresentationContext::getPropertyValue prop 'service.currentFocus' has a NULL value
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+video_out: throwing away image with pts 11065231 because it's too old (diff : 4546).
+video_out: throwing away image with pts 11076481 because it's too old (diff : 4147).
+video_out: throwing away image with pts 11091481 because it's too old (diff : 5927).
+video_out: throwing away image with pts 11098981 because it's too old (diff : 4087).
+FormatterScheduler::runAction takes '518' ms to start '-1/simulador_tv/luaexibe/dlua'
+video_out: throwing away image with pts 11136475 because it's too old (diff : 3817).
+video_out: throwing away image with pts 11207725 because it's too old (diff : 3888).
+200 frames delivered, 0 frames skipped, 6 frames discarded
+video_out: throwing away image with pts 11286475 because it's too old (diff : 3833).
+video_out: throwing away image with pts 11323975 because it's too old (diff : 4212).
+video_out: throwing away image with pts 11361475 because it's too old (diff : 3754).
+video_out: throwing away image with pts 11451475 because it's too old (diff : 3995).
+video_out: throwing away image with pts 11496475 because it's too old (diff : 6013).
+video_out: throwing away image with pts 11552725 because it's too old (diff : 4286).
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luamenu/dluaSocket' TimeStamp: 129.108
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 129.11
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [6]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+TimeStamp: 130.137
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 130.137
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [6]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [6]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [6]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687595,0,0,0,0,0,6,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687595,0,0,0,0,0,6,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [6]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+200 frames delivered, 0 frames skipped, 6 frames discarded
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [6]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+fixing sound card drift by -1319 pts
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687595,0,0,0,0,0,6,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687595,0,0,0,0,0,6,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687595,0,0,0,0,0,6,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687595,0,0,0,0,0,6,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [1] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 6:0
+User information (current iprof = 6:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687595,0,0,0,0,0,6,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 6:0 iProf0: 1289687595,0,0,0,0,0,6,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;]
+cadastro----------- A ID EH -1 -----------
+--------------naaaaaooooooooooo existeeeeeeeeeee------------
+add;zxc;123;13;234;F
+add;zxc;123;13;234;F
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (20 bytes): [add;zxc;123;13;234;F]
+AuthenticationServer::addUser: 0x9e0a228
+++++lock
++++ curUserid = 7 1
+ContextManager::getUserProfile Warning! can't find profile of user '7'
+PresentationContext::initializeSystemValues 
+----unlock
+AuthenticationServer::addUser: add user (userid 7, password 123, name zxc, age 13, location 234, gender F)
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [7]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 7:0
+User information (current iprof = 7:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687647,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 7:0 iProf0: 1289687647,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [3] started
+LocalAdvertisingModule::AdSynchronizer: [3] Connection error
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 7:0
+User information (current iprof = 7:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687647,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 7:0 iProf0: 1289687647,0,0,0,0,0,0,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 7:0
+User information (current iprof = 7:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687660,0,0,0,0,0,0,0,0,0,6,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 7:0 iProf0: 1289687660,0,0,0,0,0,0,0,0,0,6,0
+fixing sound card drift by 1416 pts
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;]
+cadastro----------- A ID EH -1 -----------
+--------------naaaaaooooooooooo existeeeeeeeeeee------------
+add;qaz;123;23;234;M
+add;qaz;123;23;234;M
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (20 bytes): [add;qaz;123;23;234;M]
+AuthenticationServer::addUser: 0x9e0a228
+++++lock
++++ curUserid = 8 1
+ContextManager::getUserProfile Warning! can't find profile of user '8'
+PresentationContext::initializeSystemValues 
+----unlock
+AuthenticationServer::addUser: add user (userid 8, password 123, name qaz, age 23, location 234, gender M)
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [8]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;]
+LocalAdvertisingModule::AdSynchronizer: [1] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 8:0
+User information (current iprof = 8:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687673,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 8:0 iProf0: 1289687673,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [3] started
+LocalAdvertisingModule::AdSynchronizer: [3] Connection error
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 8:0
+User information (current iprof = 8:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687673,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 8:0 iProf0: 1289687673,0,0,0,0,0,0,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;]
+cadastro----------- A ID EH -1 -----------
+--------------naaaaaooooooooooo existeeeeeeeeeee------------
+add;wsx;123;12;123;M
+add;wsx;123;12;123;M
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (20 bytes): [add;wsx;123;12;123;M]
+AuthenticationServer::addUser: 0x9e0a228
+++++lock
++++ curUserid = 9 1
+ContextManager::getUserProfile Warning! can't find profile of user '9'
+PresentationContext::initializeSystemValues 
+----unlock
+AuthenticationServer::addUser: add user (userid 9, password 123, name wsx, age 12, location 123, gender M)
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [9]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 9:0
+User information (current iprof = 9:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687694,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 9:0 iProf0: 1289687694,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [3] started
+LocalAdvertisingModule::AdSynchronizer: [3] Connection error
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 9:0
+User information (current iprof = 9:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687694,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 9:0 iProf0: 1289687694,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [1] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 9:0
+User information (current iprof = 9:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687718,0,6,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 9:0 iProf0: 1289687718,0,6,0,0,0,0,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [9]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 9:0
+User information (current iprof = 9:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687718,0,6,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 9:0 iProf0: 1289687718,0,6,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [1] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] finished
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 9:0
+User information (current iprof = 9:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687718,0,6,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 9:0 iProf0: 1289687718,0,6,0,0,0,0,0,0,0,0,0
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;]
+cadastro----------- A ID EH -1 -----------
+--------------naaaaaooooooooooo existeeeeeeeeeee------------
+add;edc;123;21;213;F
+add;edc;123;21;213;F
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (20 bytes): [add;edc;123;21;213;F]
+AuthenticationServer::addUser: 0x9e0a228
+++++lock
++++ curUserid = a 1
+ContextManager::getUserProfile Warning! can't find profile of user 'a'
+PresentationContext::initializeSystemValues 
+----unlock
+AuthenticationServer::addUser: add user (userid a, password 123, name edc, age 21, location 213, gender F)
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [10]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;10:edc;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;10:edc;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;10:edc;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (7 bytes): [current]
+AuthenticationServer::getCurrentUserId: sending [10]
+error code = [NOERR]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;10:edc;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (5 bytes): [users]
+AuthenticationServer::listUsers: sending [0:default;1:gabriel;2:raiza;3:angelo;4:bruna;5:qwe;6:asd;7:zxc;8:qaz;9:wsx;10:edc;]
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 10:0
+User information (current iprof = 10:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687746,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 10:0 iProf0: 1289687746,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [3] started
+LocalAdvertisingModule::AdSynchronizer: [3] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] Connection error
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 10:0
+User information (current iprof = 10:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687746,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 10:0 iProf0: 1289687746,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+demux_avi: video and audio streams are ended
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (30 bytes): [shvar;0;12345;default.curiprof]
+AuthenticationServer::showVar: default.curiprof = 10:0
+User information (current iprof = 10:0) 
+AuthenticationServer::start(): client 127.0.0.1 connected
+Message received (28 bytes): [shvar;0;12345;default.iprof0]
+AuthenticationServer::showVar: default.iprof0 = 1289687746,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: curiProf: 10:0 iProf0: 1289687746,0,0,0,0,0,0,0,0,0,0,0
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+LocalAdvertisingModule::AdSynchronizer: [1] started
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua/dluaSocket' TimeStamp: 298.037
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua1/dluaAD' TimeStamp: 298.04
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua2/dluaAD' TimeStamp: 298.044
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua1/dluaAD' TimeStamp: 298.046
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua2/dluaAD' TimeStamp: 298.046
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua3/dluaAD' TimeStamp: 298.046
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 298.048
+ApplicationPlayerAdapter::stop() Warning! Should never reaches here!
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luamenu/dluaSocket' TimeStamp: 298.049
+ApplicationPlayerAdapter::unprepare currentEvent is NULL
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/programSettings/' TimeStamp: 298.049
+Player = NULL for -1/simulador_tv/programSettings/
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/lua3/dluaAD' TimeStamp: 298.049
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luaexibe/dlua' TimeStamp: 298.049
+ApplicationPlayerAdapter::stop() Warning! Should never reaches here!
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/luamenu/dluaSocket' TimeStamp: 298.049
+FormatterScheduler::runAction acquiring player for '-1/simulador_tv/video1/dVideo1' TimeStamp: 298.049
+FormatterMediator::presentationCompleted for '/root/Desktop/Prop29-10/Propagandas.ncl'
+--- delete service.currentKeyMaster
+--- delete user.age
+--- delete user.genre
+--- delete user.location
+saving... 0=0x95420a0
+saving... 1=0x9542128
+saving... 2=0x95421b8
+saving... 3=0x9542248
+saving... 4=0x95422d8
+saving... 5=0x9542360
+saving... 6=0x9dc0628
+saving... 7=0xa1a2310
+saving... 8=0x9c119b0
+saving... 9=0xa276880
+saving... a=0xa2af4d0
+saving... default.curiprof=0:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=0
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1280603445,30,200,0,240,550,30,150,60,0,330,150
+saving... default.iprof1=1280622004,420,130,180,70,120,230,60,350,440,260,420
+saving... default.iprof2=1280603697,200,150,330,20,140,30,200,300,50,150,20
+saving... default.iprof3=1280618052,330,0,350,180,20,130,570,460,60,260,340
+saving... default.selBorderColor=green
+saving... default.startSession=2010/11/13T17:31:16
+saving... service.currentKeyMaster=luamenu
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=17
+saving... user.genre=m
+saving... user.location=0
+saving... default.curiprof=1:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1280618065,10,0,10,110,390,130,50,100,0,220,90
+saving... default.selBorderColor=green
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=8
+saving... user.genre=m
+saving... user.location=69000000
+saving... default.curiprof=2:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289685678,210,523,90,288,0,155,390,410,180,538,510
+saving... default.selBorderColor=green
+saving... system.CPU=2799.02
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=17
+saving... user.genre=f
+saving... user.location=69000000
+saving... default.curiprof=3:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289684643,90,110,380,190,0,630,100,370,490,42,290
+saving... default.selBorderColor=green
+saving... system.CPU=2799.02
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=48
+saving... user.genre=m
+saving... user.location=69000000
+saving... default.curiprof=4:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289684701,280,186,190,736,10,187,510,410,90,348,310
+saving... default.selBorderColor=green
+saving... system.CPU=2799.02
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... default.curiprof=5:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289687537,0,12,0,186,0,136,0,0,0,64,0
+saving... default.selBorderColor=green
+saving... service.currentKeyMaster=luamenu
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=11
+saving... user.genre=f
+saving... user.location=123
+saving... default.curiprof=6:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289687595,0,0,0,0,0,6,0,0,0,0,0
+saving... default.selBorderColor=green
+saving... service.currentKeyMaster=luamenu
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=11
+saving... user.genre=f
+saving... user.location=123
+saving... default.curiprof=7:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289687660,0,0,0,0,0,0,0,0,0,6,0
+saving... default.selBorderColor=green
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=13
+saving... user.genre=f
+saving... user.location=234
+saving... default.curiprof=8:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289687673,0,0,0,0,0,0,0,0,0,0,0
+saving... default.selBorderColor=green
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=23
+saving... user.genre=f
+saving... user.location=234
+saving... default.curiprof=9:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289687718,0,6,0,0,0,0,0,0,0,0,0
+saving... default.selBorderColor=green
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+saving... user.age=12
+saving... user.genre=f
+saving... user.location=123
+saving... default.curiprof=10:0
+saving... default.focusBorderColor=blue
+saving... default.focusBorderTransparency=255
+saving... default.focusBorderWidth=3
+saving... default.iprof0=1289687746,0,0,0,0,0,0,0,0,0,0,0
+saving... default.selBorderColor=green
+saving... system.CPU=2672.48
+saving... system.audioType=stereo
+saving... system.background-color=000000
+saving... system.caption=por
+saving... system.classNumber=3
+saving... system.classType(0)=base
+saving... system.classType(1)=passive
+saving... system.classType(2)=active
+saving... system.devNumber(0)=0
+saving... system.devNumber(1)=0
+saving... system.devNumber(2)=0
+saving... system.info(0)=0
+saving... system.info(1)=1
+saving... system.info(2)=2
+saving... system.language=por
+saving... system.memory=5.27593e+08
+saving... system.operatingSystem=Linux
+saving... system.returnBitRate=0
+saving... system.screenGraphicSize=640,480
+saving... system.screenSize=640,480
+saving... system.subtitle=por
+CompositeExecutionObject::linkEvaluationFinished(-1/simulador_tv/) ALL DONE STOPS!
+PresentationEngineManager::presentationCompleted for '/root/Desktop/Prop29-10/Propagandas.ncl'
+ShowButton::run STOP
+ComponentManager::releaseComponentFromObject 'ImageProvider'
+TimeStamp: 299.039
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 299.039
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+TimeStamp: 299.039
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 299.039
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+TimeStamp: 299.04
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 299.04
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+TimeStamp: 299.041
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 299.041
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+TimeStamp: 299.045
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'LuaPlayer'
+ComponentManager::releaseComponentFromObject 'LuaPlayer'
+TimeStamp: 299.045
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+InputManager::release
+DFBEventBuffer::~DFBEventBuffer()
+FormatterMediator::~FormatterMediator '/root/Desktop/Prop29-10/Propagandas.ncl'
+TimeStamp: 299.061
+ComponentManager::releaseComponentFromObject 'LuaPlayerAdapter'
+AVPlayer::~AVPlayer(/root/Desktop/Prop29-10/media/video1.avi)
+ComponentManager::releaseComponentFromObject 'VideoProvider'
+TimeStamp: 299.372
+FormatterPlayerAdapter::~FormatterPlayerAdapter release 'AVPlayer'
+ComponentManager::releaseComponentFromObject 'AVPlayer'
+TimeStamp: 299.372
+ComponentManager::releaseComponentFromObject 'AVPlayerAdapter'
+TimeStamp: 299.372
+ComponentManager::releaseComponentFromObject 'PresentationEngineManager'
+MAIN ALL DONE!
+ (!!!)  *** WARNING [Application exited without deinitialization of DirectFB!] *** [core.c:859 in dfb_core_deinit_check()]
+ (!!!)  *** WARNING [still objects in 'Window Pool'] *** [object.c:241 in fusion_object_pool_destroy()]
+ (!!!)  *** WARNING [still objects in 'Layer Region Pool'] *** [object.c:241 in fusion_object_pool_destroy()]
+ (!!!)  *** WARNING [still objects in 'Layer Context Pool'] *** [object.c:241 in fusion_object_pool_destroy()]
+ (!!!)  *** WARNING [still objects in 'Surface Pool'] *** [object.c:241 in fusion_object_pool_destroy()]

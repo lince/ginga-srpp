@@ -1,0 +1,5 @@
+regexp.o regexp.o: regexp.c cfg.h config.h
+
+cfg.h:
+
+config.h:

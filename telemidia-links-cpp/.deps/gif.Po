@@ -1,0 +1,5 @@
+gif.o gif.o: gif.c cfg.h config.h
+
+cfg.h:
+
+config.h:

@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{Scheduler\n|+ timeTomin\l- temp\l- stopflag\l- _instance\l|+ Scheduler()\l+ ~Scheduler()\l+ schedule()\l+ load()\l+ store()\l+ should_stop()\l+ stop()\l+ getInstance()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="timeTomin",arrowtail="open"];
+  Node2 [label="{double\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="_instance",arrowtail="open"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="temp",arrowtail="open"];
+  Node3 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="stopflag",arrowtail="open"];
+  Node4 [label="{volatile bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterScheduler\n|- ruleAdapter\l- playerManager\l- layoutManager\l- focusManager\l- compiler\l- schedulerListeners\l- documentEvents\l- documentStatus\l- typeSet\l|+ FormatterScheduler()\l+ ~FormatterScheduler()\l+ stopListening()\l+ setKeyHandler()\l+ setStandByState()\l+ getFocusManager()\l+ getFormatterLayout()\l+ runAction()\l+ startEvent()\l+ stopEvent()\l+ pauseEvent()\l+ resumeEvent()\l+ startDocument()\l+ stopDocument()\l+ pauseDocument()\l+ resumeDocument()\l+ stopAllDocuments()\l+ pauseAllDocuments()\l+ resumeAllDocuments()\l+ eventStateChanged()\l+ getPriorityType()\l+ addSchedulerListener()\l+ removeSchedulerListener()\l- isDocumentRunning()\l- setTimeBaseObject()\l- runAction()\l- runActionOverProperty()\l- runActionOverApplicationObject()\l- runActionOverComposition()\l- runActionOverSwitch()\l- runSwitchEvent()\l- solveImplicitRefAssessment()\l- initializeDefaultSettings()\l- initializeDocumentSettings()\l- removeDocument()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{LinkActionListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{IEventListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

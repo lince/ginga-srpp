@@ -1,0 +1,38 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterPlayerAdapter\n|# manager\l# anchorMonitor\l# typeSet\l# object\l# player\l# playerCompName\l# mrl\l# im\l- circularSituation\l- isLocked\l- objectMutex\l|+ FormatterPlayerAdapter()\l+ ~FormatterPlayerAdapter()\l+ instanceOf()\l+ setNclEditListener()\l+ getObjectDisplay()\l+ hasPrepared()\l+ setKeyHandler()\l+ prepare()\l+ start()\l+ stop()\l+ pause()\l+ resume()\l+ abort()\l+ naturalEnd()\l+ unprepare()\l+ setPropertyValue()\l+ startAttribution()\l+ getPropertyValue()\l+ getObjectExpectedDuration()\l+ updateObjectExpectedDuration()\l+ getMediaTime()\l+ getPlayer()\l+ setTimeBasePlayer()\l+ updateStatus()\l+ userEventReceived()\l+ flip()\l+ timeShift()\l+ getPlayerState()\l# createPlayer()\l# prepare()\l# lockObject()\l# unlockObject()\l- checkRepeat()\l- setVisible()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{IPlayerAdapter\n||+ ~IPlayerAdapter()\l+ getPlayer()\l+ setPropertyValue()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1IPlayerAdapter.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{IStateProvider\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node4 [label="{IPlayerListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node5 [label="{IAttributeValueMaintainer\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node6 [label="{IInputEventListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node7 [label="{ApplicationPlayerAdapter\n|# preparedEvents\l# currentEvent\l- editingCommandListener\l- eventMutex\l|+ ApplicationPlayerAdapter()\l+ ~ApplicationPlayerAdapter()\l+ setNclEditListener()\l+ hasPrepared()\l+ prepare()\l+ start()\l+ stop()\l+ pause()\l+ resume()\l+ abort()\l+ unprepare()\l+ naturalEnd()\l+ updateStatus()\l+ setCurrentEvent()\l+ flip()\l# prepare()\l# startEvent()\l# stopEvent()\l# abortEvent()\l# pauseEvent()\l# resumeEvent()\l# lockEvent()\l# unlockEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter.html"];
+  Node7 -> Node8 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node8 [label="{LuaPlayerAdapter\n||+ LuaPlayerAdapter()\l+ ~LuaPlayerAdapter()\l+ setCurrentEvent()\l+ pushEPGEvent()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1lua_1_1LuaPlayerAdapter.html"];
+  Node7 -> Node9 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node9 [label="{NCLPlayerAdapter\n||+ NCLPlayerAdapter()\l+ ~NCLPlayerAdapter()\l+ setCurrentEvent()\l+ flip()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ncl_1_1NCLPlayerAdapter.html"];
+  Node1 -> Node10 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node10 [label="{LinksPlayerAdapter\n||+ LinksPlayerAdapter()\l+ ~LinksPlayerAdapter()\l+ createPlayer()\l+ setPropertyValue()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1xhtml_1_1LinksPlayerAdapter.html"];
+  Node1 -> Node11 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node11 [label="{AVPlayerAdapter\n|- hasVisual\l|+ AVPlayerAdapter()\l+ ~AVPlayerAdapter()\l+ instanceOf()\l+ getHasVisual()\l# createPlayer()\l# setPropertyValue()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1av_1_1AVPlayerAdapter.html"];
+  Node1 -> Node12 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node12 [label="{ChannelPlayerAdapter\n|- hasVisual\l|+ ChannelPlayerAdapter()\l+ ~ChannelPlayerAdapter()\l+ getHasVisual()\l# createPlayer()\l# setPropertyValue()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1av_1_1ChannelPlayerAdapter.html"];
+  Node1 -> Node13 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node13 [label="{ProgramAVPlayerAdapter\n|- pav\l|+ ProgramAVPlayerAdapter()\l+ ~ProgramAVPlayerAdapter()\l+ hasPrepared()\l+ stop()\l+ resume()\l# createPlayer()\l# setPropertyValue()\l- updateAVBounds()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1av_1_1tv_1_1ProgramAVPlayerAdapter.html"];
+  Node1 -> Node14 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node14 [label="{ImagePlayerAdapter\n||+ ImagePlayerAdapter()\l+ ~ImagePlayerAdapter()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1image_1_1ImagePlayerAdapter.html"];
+  Node1 -> Node15 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node15 [label="{RemotePlayerAdapter\n|# preparedEvents\l# currentEvent\l- editingCommandListener\l- eventMutex\l|+ RemotePlayerAdapter()\l+ ~RemotePlayerAdapter()\l+ setNclEditListener()\l+ hasPrepared()\l+ prepare()\l+ start()\l+ stop()\l+ pause()\l+ resume()\l+ abort()\l+ unprepare()\l+ naturalEnd()\l+ updateStatus()\l+ setCurrentEvent()\l# prepare()\l# startEvent()\l# stopEvent()\l# abortEvent()\l# pauseEvent()\l# resumeEvent()\l# lockEvent()\l# unlockEvent()\l# getEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1remote_1_1RemotePlayerAdapter.html"];
+  Node1 -> Node16 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node16 [label="{PlainTxtPlayerAdapter\n||+ PlainTxtPlayerAdapter()\l+ ~PlainTxtPlayerAdapter()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1text_1_1PlainTxtPlayerAdapter.html"];
+  Node1 -> Node17 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node17 [label="{SubtitlePlayerAdapter\n||+ SubtitlePlayerAdapter()\l+ ~SubtitlePlayerAdapter()\l+ instanceOf()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1text_1_1SubtitlePlayerAdapter.html"];
+}

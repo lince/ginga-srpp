@@ -1,0 +1,194 @@
+\section{IterativeKMeans Class Reference}
+\label{classIterativeKMeans}\index{IterativeKMeans@{IterativeKMeans}}
+{\tt \#include $<$ikmeans.h$>$}
+
+Collaboration diagram for IterativeKMeans:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf IterativeKMeans} (vector$<$ vector$<$ int $>$ $>$ {\bf points})
+\item 
+vector$<$ int $>$ \& {\bf getClusterIds} ()
+\item 
+vector$<$ vector$<$ int $>$ $>$ \& {\bf getCentroids} ()
+\item 
+bool {\bf cluster} (int k)
+\item 
+bool {\bf cluster} (int Minclus, int Maxclus)
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf matrix2CB} (int $\ast$$\ast$mat, int vecCount, int vecLen, {\bf CODEBOOK} $\ast$CB)
+\item 
+double {\bf RMSE} (double $\ast$x, double $\ast$y, int start, int end, double a, double b)
+\item 
+void {\bf getFunction} (double $\ast$x, double $\ast$y, int start, int end, double $\ast$a, double $\ast$b)
+\item 
+int {\bf LMethod} (double $\ast$x, double $\ast$y, int N)
+\item 
+int {\bf predictedNumberClusters} (double $\ast$bicValues, int Minclus, int Maxclus)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+vector$<$ vector$<$ int $>$ $>$ {\bf points}\label{classIterativeKMeans_853e96ad0ab7d4b27ff114465b3f27a5}
+
+\item 
+vector$<$ int $>$ {\bf clusterid}
+\item 
+vector$<$ vector$<$ int $>$ $>$ {\bf centroids}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Iterative Clustering with prediction of number of clusters. Cluster method is k-means. Prediction of number of clusters uses L-Method and BIC. For a description of L-Method, see \char`\"{}Determining the Number of Clusters/Segments in Hierarchical Clustering/ Segmentation Algorithms\char`\"{}, by Stan Salvador and Philip Chan. \begin{Desc}
+\item[Author:]Marco Cristo and Angelo Filipe. K-means code and some auxiliary code by Marco Tuononen (available at {\tt http://cs.joensuu.fi/$\sim$mtuonon/}). BIC code by Qinpei Zhao (available at {\tt http://cs.joensuu.fi/$\sim$zhao/Software/}). \end{Desc}
+
+
+
+
+Definition at line 28 of file ikmeans.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{IterativeKMeans@{IterativeKMeans}!IterativeKMeans@{IterativeKMeans}}
+\index{IterativeKMeans@{IterativeKMeans}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf IterativeKMeans} (vector$<$ vector$<$ int $>$ $>$ {\em points})\hspace{0.3cm}{\tt  [inline]}}\label{classIterativeKMeans_fa7e74e26882ca65cd2bae4e2ab382e2}
+
+
+Constructor for \doxyref{IterativeKMeans}{p.}{classIterativeKMeans}. 
+
+Definition at line 98 of file ikmeans.h.
+
+References points.
+
+\subsection{Member Function Documentation}
+\index{IterativeKMeans@{IterativeKMeans}!matrix2CB@{matrix2CB}}
+\index{matrix2CB@{matrix2CB}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void matrix2CB (int $\ast$$\ast$ {\em mat}, int {\em vecCount}, int {\em vecLen}, {\bf CODEBOOK} $\ast$ {\em CB})\hspace{0.3cm}{\tt  [private]}}\label{classIterativeKMeans_3e750fadbbabc5fd15bead0c8a258512}
+
+
+Convert integer matrix to internal KMeans Format. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mat}]Pre-alocated integer matrix (int $\ast$$\ast$m) \item[{\em vecCount}]Number of lines in m (number of vectors) \item[{\em vecLen}]Number of columns in m (vector dimension) \end{description}
+\end{Desc}
+\index{IterativeKMeans@{IterativeKMeans}!RMSE@{RMSE}}
+\index{RMSE@{RMSE}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double RMSE (double $\ast$ {\em x}, double $\ast$ {\em y}, int {\em start}, int {\em end}, double {\em a}, double {\em b})\hspace{0.3cm}{\tt  [private]}}\label{classIterativeKMeans_589582d0d0225e95a41c551a292dd424}
+
+
+Returns root mean squared error between function ax + b and set of points (x,y) in interval [start,end). \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em x}]Vector of x coordinates. \item[{\em y}]Vector of y coordinates. \item[{\em start}]Interval start. \item[{\em end}]Interval end. \item[{\em a}]Function slope. \item[{\em b}]Function intercept. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Root mean squared error. \end{Desc}
+\index{IterativeKMeans@{IterativeKMeans}!getFunction@{getFunction}}
+\index{getFunction@{getFunction}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void getFunction (double $\ast$ {\em x}, double $\ast$ {\em y}, int {\em start}, int {\em end}, double $\ast$ {\em a}, double $\ast$ {\em b})\hspace{0.3cm}{\tt  [private]}}\label{classIterativeKMeans_16426c4ce048fab6c21811e87a4e245b}
+
+
+Finds slope a and intercept b of best fit function of a set of points (x,y) in interval [start,end). \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em x}]Vector of x coordinates. \item[{\em y}]Vector of y coordinates. \item[{\em start}]Interval start. \item[{\em end}]Interval end. \item[{\em a}]Function slope. \item[{\em b}]Function intercept. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Point which corresponds to line \char`\"{}knee\char`\"{}. \end{Desc}
+\index{IterativeKMeans@{IterativeKMeans}!LMethod@{LMethod}}
+\index{LMethod@{LMethod}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int LMethod (double $\ast$ {\em x}, double $\ast$ {\em y}, int {\em N})\hspace{0.3cm}{\tt  [private]}}\label{classIterativeKMeans_8814152ce1c4fa34746338d8a9c5b638}
+
+
+Finds \char`\"{}knee\char`\"{} of a line (given by its points [x,y]) using L-method. For a description of L-Method, see \char`\"{}Determining the Number of Clusters/Segments in Hierarchical Clustering/ Segmentation Algorithms\char`\"{}, by Stan Salvador and Philip Chan. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em x}]Vector of x coordinates. \item[{\em y}]Vector of y coordinates. \item[{\em N}]Number of points. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Point which corresponds to line \char`\"{}knee\char`\"{}. \end{Desc}
+\index{IterativeKMeans@{IterativeKMeans}!predictedNumberClusters@{predictedNumberClusters}}
+\index{predictedNumberClusters@{predictedNumberClusters}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int predictedNumberClusters (double $\ast$ {\em bicValues}, int {\em Minclus}, int {\em Maxclus})\hspace{0.3cm}{\tt  [private]}}\label{classIterativeKMeans_5d6ed84980d598063b09676c472a7a85}
+
+
+Predicts the number of clusters considering the BIC values associated with several different partitions. The bicValues correspond to partitions from Minclus to Maxclus clusters. This method can only be applied to a set with at least 4 partitions (4 points in the line function). \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bicValues}]Vector of BIC values. \item[{\em Minclus}]Minimum number of clusters. \item[{\em Maxclus}]Maximum number of clusters. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Number of clusters. \end{Desc}
+\index{IterativeKMeans@{IterativeKMeans}!getClusterIds@{getClusterIds}}
+\index{getClusterIds@{getClusterIds}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$\& getClusterIds ()\hspace{0.3cm}{\tt  [inline]}}\label{classIterativeKMeans_9a9cabf56c24e31041a64b2c9cdc18a7}
+
+
+Returns cluster ids found after last clustering. \begin{Desc}
+\item[Returns:]Vector of cluster ids. \end{Desc}
+
+
+Definition at line 107 of file ikmeans.h.
+
+References clusterid.\index{IterativeKMeans@{IterativeKMeans}!getCentroids@{getCentroids}}
+\index{getCentroids@{getCentroids}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$\& getCentroids ()\hspace{0.3cm}{\tt  [inline]}}\label{classIterativeKMeans_469cb603a67d9942ff661f6e37ad69ab}
+
+
+Returns centroids found after last clustering. \begin{Desc}
+\item[Returns:]Vector of centroids. \end{Desc}
+
+
+Definition at line 115 of file ikmeans.h.
+
+References centroids.\index{IterativeKMeans@{IterativeKMeans}!cluster@{cluster}}
+\index{cluster@{cluster}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool cluster (int {\em k})}\label{classIterativeKMeans_6eda24e89175954112eb3482a6df8edc}
+
+
+Cluster the vectors in points into k clusters. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em k}]Number of clusters. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True, if clustering succeded. \end{Desc}
+\index{IterativeKMeans@{IterativeKMeans}!cluster@{cluster}}
+\index{cluster@{cluster}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool cluster (int {\em Minclus}, int {\em Maxclus})}\label{classIterativeKMeans_779451e9e689f50578f536bf4a0c4ef6}
+
+
+Perform clustering on vectors in points, choosing the best partition from Minclus to Maxclus clusters. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em Minclus}]Minimum number of clusters. \item[{\em Maxclus}]Maximum number of clusters. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True, if clustering succeded. \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{IterativeKMeans@{IterativeKMeans}!clusterid@{clusterid}}
+\index{clusterid@{clusterid}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ {\bf clusterid}\hspace{0.3cm}{\tt  [private]}}\label{classIterativeKMeans_f842fcee4e13cf8516379ed25ba363cc}
+
+
+Points (vectors) to be clustered 
+
+Definition at line 32 of file ikmeans.h.
+
+Referenced by getClusterIds().\index{IterativeKMeans@{IterativeKMeans}!centroids@{centroids}}
+\index{centroids@{centroids}!IterativeKMeans@{IterativeKMeans}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$int$>$ $>$ {\bf centroids}\hspace{0.3cm}{\tt  [private]}}\label{classIterativeKMeans_b42aafa792eefc3441e12abcf94bc4e9}
+
+
+Cluster ids assigned to each point 
+
+Definition at line 33 of file ikmeans.h.
+
+Referenced by getCentroids().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/MiningAlgorithm/include/ikmeans/ikmeans.h\end{CompactItemize}

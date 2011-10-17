@@ -1,0 +1,26 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{NominalEventMonitor\n|- sleepTime\l- expectedSleepTime\l- executionObject\l- adapter\l- timeBaseId\l- timeBaseProvider\l- running\l- deleting\l- paused\l- stopped\l- DEFAULT_SLEEP_TIME\l- DEFAULT_ERROR\l|+ NominalEventMonitor()\l+ ~NominalEventMonitor()\l+ setTimeBaseProvider()\l+ updateTimeBaseId()\l+ valueReached()\l+ loopDetected()\l+ startMonitor()\l+ pauseMonitor()\l+ resumeMonitor()\l+ stopMonitor()\l+ run()\l- prepareNptTransitionsEvents()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{Thread\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{ITimeBaseListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="expectedSleepTime\nsleepTime",arrowtail="open"];
+  Node4 [label="{double\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="adapter",arrowtail="open"];
+  Node5 [label="{IPlayerAdapter\n||+ ~IPlayerAdapter()\l+ getPlayer()\l+ setPropertyValue()\l# createPlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1IPlayerAdapter.html"];
+  Node6 -> Node5 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node6 [label="{IStateProvider\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="timeBaseId",arrowtail="open"];
+  Node7 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="executionObject",arrowtail="open"];
+  Node8 [label="{ExecutionObject *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="running\nstopped\ndeleting\npaused",arrowtail="open"];
+  Node9 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="DEFAULT_ERROR\nDEFAULT_SLEEP_TIME",arrowtail="open"];
+  Node10 [label="{static const double\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="timeBaseProvider",arrowtail="open"];
+  Node11 [label="{ITimeBaseProvider *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

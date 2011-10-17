@@ -1,0 +1,26 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{ContextManager\n|- users\l- contexts\l- usersUri\l- contextsUri\l- curUserId\l- systemInfo\l- _instance\l|+ ~ContextManager()\l+ addContextVar()\l+ addUser()\l+ saveUsersAccounts()\l+ saveUsersProfiles()\l+ setCurrentUserId()\l+ getCurrentUserId()\l+ getUser()\l+ getUserProfile()\l+ getUsersNames()\l+ getSystemInfo()\l+ getUserIds()\l+ addUser()\l+ removeUser()\l+ getInstance()\l- ContextManager()\l- initializeUsers()\l- initializeContexts()\l- saveProfile()\l- listUsersNicks()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{IContextManager\n||+ ~IContextManager()\l+ addContextVar()\l+ addUser()\l+ saveUsersAccounts()\l+ saveUsersProfiles()\l+ setCurrentUserId()\l+ getCurrentUserId()\l+ getUser()\l+ getUserProfile()\l+ getUsersNames()\l+ getSystemInfo()\l+ getUserIds()\l+ addUser()\l+ removeUser()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager.html"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="_instance",arrowtail="open",fontname="FreeSans.ttf"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="contexts",arrowtail="open",fontname="FreeSans.ttf"];
+  Node3 [label="{map\< int, map\< string, string \> * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node3 [dir=back,color="orange",fontsize=10,style="dashed",label="\< int, map\< string, string \> * \>",fontname="FreeSans.ttf"];
+  Node4 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="curUserId",arrowtail="open",fontname="FreeSans.ttf"];
+  Node5 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="systemInfo",arrowtail="open",fontname="FreeSans.ttf"];
+  Node6 [label="{ISystemInfo\n||+ ~ISystemInfo()\l+ setSystemTable()\l+ getSystemLanguage()\l+ getCaptionLanguage()\l+ getSubtitleLanguage()\l+ getReturnBitRate()\l+ getScreenSize()\l+ getScreenGraphicSize()\l+ getAudioType()\l+ getCPUClock()\l+ getMemorySize()\l+ getOperatingSystem()\l+ getJavaConfiguration()\l+ getJavaProfile()\l+ getLuaVersion()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ISystemInfo.html"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="contextsUri\nusersUri",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node8 -> Node7 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node8 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node8 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>",fontname="FreeSans.ttf"];
+  Node9 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="users",arrowtail="open",fontname="FreeSans.ttf"];
+  Node10 [label="{map\< int, IGingaUser * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node10 [dir=back,color="orange",fontsize=10,style="dashed",label="\< int, IGingaUser * \>",fontname="FreeSans.ttf"];
+}

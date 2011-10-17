@@ -1,0 +1,26 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{sqlite3_io_methods\n|+ iVersion\l+ xClose\l+ xRead\l+ xWrite\l+ xTruncate\l+ xSync\l+ xFileSize\l+ xLock\l+ xUnlock\l+ xCheckReservedLock\l+ xFileControl\l+ xSectorSize\l+ xDeviceCharacteristics\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xTruncate",arrowtail="open"];
+  Node2 [label="{int(*)(sqlite3_file *, sqlite3_int64 size)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xRead",arrowtail="open"];
+  Node3 [label="{int(*)(sqlite3_file *, void *, int iAmt, sqlite3_int64 iOfst)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xFileControl",arrowtail="open"];
+  Node4 [label="{int(*)(sqlite3_file *, int op, void *pArg)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xSync",arrowtail="open"];
+  Node5 [label="{int(*)(sqlite3_file *, int flags)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xWrite",arrowtail="open"];
+  Node6 [label="{int(*)(sqlite3_file *, const void *, int iAmt, sqlite3_int64 iOfst)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xCheckReservedLock",arrowtail="open"];
+  Node7 [label="{int(*)(sqlite3_file *, int *pResOut)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xUnlock\nxLock",arrowtail="open"];
+  Node8 [label="{int(*)(sqlite3_file *, int)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="iVersion",arrowtail="open"];
+  Node9 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xFileSize",arrowtail="open"];
+  Node10 [label="{int(*)(sqlite3_file *, sqlite3_int64 *pSize)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xClose\nxDeviceCharacteristics\nxSectorSize",arrowtail="open"];
+  Node11 [label="{int(*)(sqlite3_file *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

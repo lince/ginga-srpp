@@ -1,0 +1,104 @@
+\section{AuthenticationServer Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer}\index{br::pucrio::telemidia::ginga::ncl::adaptation::context::AuthenticationServer@{br::pucrio::telemidia::ginga::ncl::adaptation::context::AuthenticationServer}}
+Collaboration diagram for AuthenticationServer:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{AuthenticationServer} ({\bf PresentationContext} $\ast${\bf pctx})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_8e97f065418144d80e0528340a6a3298}
+
+\item 
+void \textbf{start} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_60de64d75454385b23995437f1d72669}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf tokenize} (const std::string \&str, std::vector$<$ std::string $>$ \&tokens, const std::string \&delimiters=\char`\"{} \char`\"{})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_5362ae4f674bd00596e2dec26d474384}
+
+\item 
+IGingaUser $\ast$ \textbf{getGingaUser} (string login, string passw)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_e4787c5656ccf464dbbaf275e385f67c}
+
+\item 
+bool \textbf{setUserProperty} (IGingaUser $\ast$u, string passwd, string p, string v)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_d7a3ec803f407ca9371a75611655ce21}
+
+\item 
+bool \textbf{getUserProperty} (IGingaUser $\ast$u, string passwd, string p, string \&v)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_9b5014642a3cd00a7c8cd9e792820ee5}
+
+\item 
+void \textbf{processClient} (int new\_\-socket)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_dedf7e05eedaaee65ce269bf96661d2d}
+
+\item 
+const char $\ast$ \textbf{addUser} (int csocket, string passwd, string name, string age, string location, string gender)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_d3b5dee15f3d7cd45bf3ef89ae69e3ff}
+
+\item 
+const char $\ast$ \textbf{removeUser} (int csocket, string userid, string passwd)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_ce2ff089ba24fb08cd806580a3a25251}
+
+\item 
+const char $\ast$ \textbf{updateUser} (int csocket, string userid, string passwd, string property, string value)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_3d07fbcdd2a0ed72b42e0c1aef556c25}
+
+\item 
+const char $\ast$ \textbf{queryUser} (int csocket, string userid, string passwd, string property)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_aa6e7de012af9540ee2e614da2c316c8}
+
+\item 
+const char $\ast$ \textbf{login} (int csocket, string userid, string passwd)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_8be2ada34c275124f58a7575e7b60d6f}
+
+\item 
+const char $\ast$ \textbf{logout} (int csocket, string userid, string passwd)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_6ca55fdb77792789cd15833e6da791bd}
+
+\item 
+const char $\ast$ \textbf{getCurrentUser} (int csocket)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_79ec333648a5f32889dd269d266b270f}
+
+\item 
+const char $\ast$ \textbf{listUsers} (int csocket)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_e5789d872618edb672f255d8844377f5}
+
+\item 
+const char $\ast$ \textbf{showVar} (int csocket, string userid, string passwd, string property)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_d43c7803614eacda2288c0db36444817}
+
+\item 
+const char $\ast$ \textbf{updateVar} (int csocket, string userid, string passwd, string property, string value)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_45390e5e74d3c68106619561242e812d}
+
+\item 
+void \textbf{saveUser} (int uid)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_3a046d2878ed7a0efe884e5edb6e2c4d}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+set$<$ string $>$ {\bf userfields}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_325be17958696612d64ef151fc50854e}
+
+\item 
+{\bf PresentationContext} $\ast$ {\bf pctx}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_f7b4b50fbbf7df8416480bc884dd2909}
+
+\item 
+IContextManager $\ast$ {\bf ctxm}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_d0c763f78bf175b580deda10b6a9814b}
+
+\item 
+ImplicitContextManager $\ast$ {\bf ictxm}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_d504f9183d80b49c6631db333df57e72}
+
+\item 
+LocalAgent $\ast$ {\bf lagt}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_513c00acef820b0a7072a370953f3da4}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const int {\bf BufferSize} = 1024\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_08004bc62105711b520423240e06a5eb}
+
+\item 
+static const int {\bf ResultSize} = 6\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_be5eccd6d4716a0b6629af3a4351446f}
+
+\item 
+static const int {\bf ASPort} = 8183\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adaptation_1_1context_1_1AuthenticationServer_8a5b9b91da4dfb3aa543c7ac34af1372}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 88 of file AuthenticationServer.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/adaptation/context/AuthenticationServer.h\end{CompactItemize}

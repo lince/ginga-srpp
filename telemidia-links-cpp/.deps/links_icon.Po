@@ -1,0 +1,5 @@
+links_icon.o links_icon.o: links_icon.c cfg.h config.h
+
+cfg.h:
+
+config.h:

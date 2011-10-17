@@ -1,0 +1,4 @@
+FFmpegAudioProvider.o FFmpegAudioProvider.o: FFmpegAudioProvider.cpp \
+  ../../../../../config.h
+
+../../../../../config.h:

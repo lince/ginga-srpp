@@ -1,0 +1,59 @@
+\section{IContextManager Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager}\index{br::pucrio::telemidia::ginga::core::contextmanager::IContextManager@{br::pucrio::telemidia::ginga::core::contextmanager::IContextManager}}
+Inheritance diagram for IContextManager:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual {\bf $\sim$IContextManager} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_451f7786b12528d17551670b270e47ad}
+
+\item 
+virtual void \textbf{addContextVar} (int userId, string varName, string varValue)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_23e4be22e2b5eb38eab013b319cbdf43}
+
+\item 
+virtual void \textbf{addUser} ({\bf IGingaUser} $\ast$newUser)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_16cd81861162e876101d6d650500bbdc}
+
+\item 
+virtual void \textbf{saveUsersAccounts} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_6d670ff5bc0eb21e77dc0eabaa2512a7}
+
+\item 
+virtual void \textbf{saveUsersProfiles} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_454696c6af26a2abc6d74a9d23aa6074}
+
+\item 
+virtual void \textbf{setCurrentUserId} (int userId)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_610ad65710d7d47babdd4a1a06074d44}
+
+\item 
+virtual int \textbf{getCurrentUserId} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_b27b5a0294f88873b6a1f7763e454347}
+
+\item 
+virtual {\bf IGingaUser} $\ast$ \textbf{getUser} (int userId)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_a7efd3215870a4cc5ae3d16da558278d}
+
+\item 
+virtual map$<$ string, string $>$ $\ast$ \textbf{getUserProfile} (int userId)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_170dd167eeca5409419cbff7ef978dd5}
+
+\item 
+virtual map$<$ string, string $>$ $\ast$ \textbf{getUsersNames} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_768e2263103d054eb2288876941d258c}
+
+\item 
+virtual {\bf ISystemInfo} $\ast$ \textbf{getSystemInfo} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_b082edea53454ab101f6be7e3914adef}
+
+\item 
+virtual vector$<$ int $>$ $\ast$ \textbf{getUserIds} ()=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_4c097e2f964f6776362c014857124cd6}
+
+\item 
+virtual int \textbf{addUser} (string name, string passwd, int age, string location, char gender)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_68afcf7c03e9831500bbe4c811a33d63}
+
+\item 
+virtual bool \textbf{removeUser} (int userid)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1IContextManager_ce475df4a38c169241b728988598820b}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 66 of file IContextManager.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingacc-cpp/gingacc-contextmanager/include/IContextManager.h\end{CompactItemize}

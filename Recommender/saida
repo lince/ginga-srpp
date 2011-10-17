@@ -1,0 +1,2000 @@
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Utils
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/utils" || /bin/mkdir -p "/usr/local/include/ginga/recommender/utils"
+ /usr/bin/install -c -m 644 'Utils.h' '/usr/local/include/ginga/recommender/utils/Utils.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderutil.so' '/usr/local/lib/ginga/libgingarecommenderutil.so'
+/usr/bin/install -c libgingarecommenderutil.so /usr/local/lib/ginga/libgingarecommenderutil.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Utils'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender System Resource
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/src'
+Making all in test
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/test'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/test'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/systemresource" || /bin/mkdir -p "/usr/local/include/ginga/recommender/systemresource"
+ /usr/bin/install -c -m 644 'SystemResource.h' '/usr/local/include/ginga/recommender/systemresource/SystemResource.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommendersystemresource.so' '/usr/local/lib/ginga/libgingarecommendersystemresource.so'
+/usr/bin/install -c libgingarecommendersystemresource.so /usr/local/lib/ginga/libgingarecommendersystemresource.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/src'
+Making install in test
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/test'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/test'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/test'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource/test'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SystemResource'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Database
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/src'
+Making all in test
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/test'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/test'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/database" || /bin/mkdir -p "/usr/local/include/ginga/recommender/database"
+ /usr/bin/install -c -m 644 'Database.h' '/usr/local/include/ginga/recommender/database/Database.h'
+ /usr/bin/install -c -m 644 'sqlite3.h' '/usr/local/include/ginga/recommender/database/sqlite3.h'
+ /usr/bin/install -c -m 644 'sqlite3ext.h' '/usr/local/include/ginga/recommender/database/sqlite3ext.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderdatabase.so' '/usr/local/lib/ginga/libgingarecommenderdatabase.so'
+/usr/bin/install -c libgingarecommenderdatabase.so /usr/local/lib/ginga/libgingarecommenderdatabase.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/src'
+Making install in test
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/test'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database/test'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/test'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database/test'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Database'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender EIT
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/eit" || /bin/mkdir -p "/usr/local/include/ginga/recommender/eit"
+ /usr/bin/install -c -m 644 'EIT.h' '/usr/local/include/ginga/recommender/eit/EIT.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommendereit.so' '/usr/local/lib/ginga/libgingarecommendereit.so'
+/usr/bin/install -c libgingarecommendereit.so /usr/local/lib/ginga/libgingarecommendereit.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/EIT'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender SDT
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/sdt" || /bin/mkdir -p "/usr/local/include/ginga/recommender/sdt"
+ /usr/bin/install -c -m 644 'SDT.h' '/usr/local/include/ginga/recommender/sdt/SDT.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommendersdt.so' '/usr/local/lib/ginga/libgingarecommendersdt.so'
+/usr/bin/install -c libgingarecommendersdt.so /usr/local/lib/ginga/libgingarecommendersdt.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SDT'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Agent Listener
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/agentlistener" || /bin/mkdir -p "/usr/local/include/ginga/recommender/agentlistener"
+ /usr/bin/install -c -m 644 'AgentListener.h' '/usr/local/include/ginga/recommender/agentlistener/AgentListener.h'
+ /usr/bin/install -c -m 644 'IAgentListener.h' '/usr/local/include/ginga/recommender/agentlistener/IAgentListener.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderagentlistener.so' '/usr/local/lib/ginga/libgingarecommenderagentlistener.so'
+/usr/bin/install -c libgingarecommenderagentlistener.so /usr/local/lib/ginga/libgingarecommenderagentlistener.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/AgentListener'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating files/Makefile
+config.status: creating include/thread/Makefile
+config.status: creating src/thread/Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Local Agent
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+Making all in files
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/files'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/files'
+Making all in include/thread
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include/thread'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include/thread'
+Making all in src/thread
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src/thread'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src/thread'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT LocalAgent.o -MD -MP -MF .deps/LocalAgent.Tpo -c -o LocalAgent.o LocalAgent.cpp
+mv -f .deps/LocalAgent.Tpo .deps/LocalAgent.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT IteractionBase.o -MD -MP -MF .deps/IteractionBase.Tpo -c -o IteractionBase.o IteractionBase.cpp
+mv -f .deps/IteractionBase.Tpo .deps/IteractionBase.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Iteraction.o -MD -MP -MF .deps/Iteraction.Tpo -c -o Iteraction.o Iteraction.cpp
+mv -f .deps/Iteraction.Tpo .deps/Iteraction.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Program.o -MD -MP -MF .deps/Program.Tpo -c -o Program.o Program.cpp
+mv -f .deps/Program.Tpo .deps/Program.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Channel.o -MD -MP -MF .deps/Channel.Tpo -c -o Channel.o Channel.cpp
+mv -f .deps/Channel.Tpo .deps/Channel.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Meta.o -MD -MP -MF .deps/Meta.Tpo -c -o Meta.o Meta.cpp
+mv -f .deps/Meta.Tpo .deps/Meta.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Volume.o -MD -MP -MF .deps/Volume.Tpo -c -o Volume.o Volume.cpp
+mv -f .deps/Volume.Tpo .deps/Volume.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Key.o -MD -MP -MF .deps/Key.Tpo -c -o Key.o Key.cpp
+mv -f .deps/Key.Tpo .deps/Key.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT NclStateMachine.o -MD -MP -MF .deps/NclStateMachine.Tpo -c -o NclStateMachine.o NclStateMachine.cpp
+mv -f .deps/NclStateMachine.Tpo .deps/NclStateMachine.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Document.o -MD -MP -MF .deps/Document.Tpo -c -o Document.o Document.cpp
+mv -f .deps/Document.Tpo .deps/Document.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Context.o -MD -MP -MF .deps/Context.Tpo -c -o Context.o Context.cpp
+mv -f .deps/Context.Tpo .deps/Context.Po
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Media.o -MD -MP -MF .deps/Media.Tpo -c -o Media.o Media.cpp
+mv -f .deps/Media.Tpo .deps/Media.Po
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderlocalagent.so --shared -ldl -I/usr/local/include/ginga/ -L./thread -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderlocalagent.so LocalAgent.o User.o IteractionBase.o Iteraction.o Program.o Channel.o Meta.o Volume.o Key.o NclStateMachine.o Document.o Context.o Media.o -lgingarecommenderdatabase -lgingarecommenderagentlistener -lgingarecommenderthread -lgingaccplayer 
+g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderlocalagent.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderlocalagent.so LocalAgent.o User.o IteractionBase.o Iteraction.o Program.o Channel.o Meta.o Volume.o Key.o NclStateMachine.o Document.o Context.o Media.o  -ldl -L/usr/src/gingaUFSCAR/Recommender/LocalAgent/src/thread -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lgingarecommenderdatabase -lgingarecommenderagentlistener -lgingarecommenderthread -lgingaccplayer  
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+Making install in files
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/files'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/files'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/etc/ginga/files/recommender/" || /bin/mkdir -p "/usr/local/etc/ginga/files/recommender/"
+ /usr/bin/install -c -m 644 'iteraction.db' '/usr/local/etc/ginga/files/recommender//iteraction.db'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/files'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/files'
+Making install in include/thread
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include/thread'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include/thread'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/localagent/thread" || /bin/mkdir -p "/usr/local/include/ginga/recommender/localagent/thread"
+ /usr/bin/install -c -m 644 'Thread.h' '/usr/local/include/ginga/recommender/localagent/thread/Thread.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include/thread'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include/thread'
+Making install in src/thread
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src/thread'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src/thread'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../../libtool --mode=install /usr/bin/install -c 'libgingarecommenderthread.so' '/usr/local/lib/ginga/libgingarecommenderthread.so'
+/usr/bin/install -c libgingarecommenderthread.so /usr/local/lib/ginga/libgingarecommenderthread.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src/thread'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src/thread'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/localagent" || /bin/mkdir -p "/usr/local/include/ginga/recommender/localagent"
+ /usr/bin/install -c -m 644 'LocalAgent.h' '/usr/local/include/ginga/recommender/localagent/LocalAgent.h'
+ /usr/bin/install -c -m 644 'User.h' '/usr/local/include/ginga/recommender/localagent/User.h'
+ /usr/bin/install -c -m 644 'IteractionBase.h' '/usr/local/include/ginga/recommender/localagent/IteractionBase.h'
+ /usr/bin/install -c -m 644 'Iteraction.h' '/usr/local/include/ginga/recommender/localagent/Iteraction.h'
+ /usr/bin/install -c -m 644 'Program.h' '/usr/local/include/ginga/recommender/localagent/Program.h'
+ /usr/bin/install -c -m 644 'Channel.h' '/usr/local/include/ginga/recommender/localagent/Channel.h'
+ /usr/bin/install -c -m 644 'Meta.h' '/usr/local/include/ginga/recommender/localagent/Meta.h'
+ /usr/bin/install -c -m 644 'Volume.h' '/usr/local/include/ginga/recommender/localagent/Volume.h'
+ /usr/bin/install -c -m 644 'Key.h' '/usr/local/include/ginga/recommender/localagent/Key.h'
+ /usr/bin/install -c -m 644 'NclStateMachine.h' '/usr/local/include/ginga/recommender/localagent/NclStateMachine.h'
+ /usr/bin/install -c -m 644 'Document.h' '/usr/local/include/ginga/recommender/localagent/Document.h'
+ /usr/bin/install -c -m 644 'Context.h' '/usr/local/include/ginga/recommender/localagent/Context.h'
+ /usr/bin/install -c -m 644 'Media.h' '/usr/local/include/ginga/recommender/localagent/Media.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderlocalagent.so' '/usr/local/lib/ginga/libgingarecommenderlocalagent.so'
+/usr/bin/install -c libgingarecommenderlocalagent.so /usr/local/lib/ginga/libgingarecommenderlocalagent.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/LocalAgent'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Mining Algorithm
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/miningalgorithm" || /bin/mkdir -p "/usr/local/include/ginga/recommender/miningalgorithm"
+ /usr/bin/install -c -m 644 'MiningAlgorithm.h' '/usr/local/include/ginga/recommender/miningalgorithm/MiningAlgorithm.h'
+ /usr/bin/install -c -m 644 'SI.h' '/usr/local/include/ginga/recommender/miningalgorithm/SI.h'
+ /usr/bin/install -c -m 644 'User.h' '/usr/local/include/ginga/recommender/miningalgorithm/User.h'
+ /usr/bin/install -c -m 644 'IMiningAlgorithmApriori.h' '/usr/local/include/ginga/recommender/miningalgorithm/IMiningAlgorithmApriori.h'
+ /usr/bin/install -c -m 644 'apriori23/Apriori.hpp' '/usr/local/include/ginga/recommender/miningalgorithm/Apriori.hpp'
+ /usr/bin/install -c -m 644 'apriori23/Apriori_Trie.hpp' '/usr/local/include/ginga/recommender/miningalgorithm/Apriori_Trie.hpp'
+ /usr/bin/install -c -m 644 'apriori23/common.hpp' '/usr/local/include/ginga/recommender/miningalgorithm/common.hpp'
+ /usr/bin/install -c -m 644 'apriori23/Input_Output_Manager.hpp' '/usr/local/include/ginga/recommender/miningalgorithm/Input_Output_Manager.hpp'
+ /usr/bin/install -c -m 644 'apriori23/Trie.hpp' '/usr/local/include/ginga/recommender/miningalgorithm/Trie.hpp'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderminingalgorithm.so' '/usr/local/lib/ginga/libgingarecommenderminingalgorithm.so'
+/usr/bin/install -c libgingarecommenderminingalgorithm.so /usr/local/lib/ginga/libgingarecommenderminingalgorithm.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/MiningAlgorithm'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Data Mining
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT DataMining.o -MD -MP -MF .deps/DataMining.Tpo -c -o DataMining.o DataMining.cpp
+mv -f .deps/DataMining.Tpo .deps/DataMining.Po
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderdatamining.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderdatamining.so DataMining.o -lpthread -lgingarecommenderminingalgorithm -lgingarecommenderdatabase 
+g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderdatamining.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderdatamining.so DataMining.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lpthread -lgingarecommenderminingalgorithm -lgingarecommenderdatabase  
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/src'
+Making all in test
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/test'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.cpp
+mv -f .deps/main.Tpo .deps/main.Po
+/bin/sh ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -L/usr/local/lib/ginga -L../include/ -L../src/ -L/usr/local/lib -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o test main.o -lgingarecommenderdatabase -lpthread -lgingarecommenderminingalgorithm -lgingarecommenderdatamining 
+g++ -fPIC -g -O2 -o test main.o  -L/usr/local/lib/ginga -L/usr/src/gingaUFSCAR/Recommender/DataMining/include -L/usr/src/gingaUFSCAR/Recommender/DataMining/src -L/usr/local/lib -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lgingarecommenderdatabase -lpthread -lgingarecommenderminingalgorithm -lgingarecommenderdatamining  
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/test'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/datamining" || /bin/mkdir -p "/usr/local/include/ginga/recommender/datamining"
+ /usr/bin/install -c -m 644 'DataMining.h' '/usr/local/include/ginga/recommender/datamining/DataMining.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderdatamining.so' '/usr/local/lib/ginga/libgingarecommenderdatamining.so'
+/usr/bin/install -c libgingarecommenderdatamining.so /usr/local/lib/ginga/libgingarecommenderdatamining.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/src'
+Making install in test
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/test'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/test'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/test'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining/test'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/DataMining'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Scheduler Item
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/scheduleritem" || /bin/mkdir -p "/usr/local/include/ginga/recommender/scheduleritem"
+ /usr/bin/install -c -m 644 'SchedulerItem.h' '/usr/local/include/ginga/recommender/scheduleritem/SchedulerItem.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderscheduleritem.so' '/usr/local/lib/ginga/libgingarecommenderscheduleritem.so'
+/usr/bin/install -c libgingarecommenderscheduleritem.so /usr/local/lib/ginga/libgingarecommenderscheduleritem.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/SchedulerItem'
+
+I am testing that you have the required versions of libtool, autoconf,
+and automake.
+
+checking for libtool >= 1.3.4 ... yes (version 1.5.22)
+checking for autoconf >= 2.13 ... yes (version 2.61)
+checking for automake >= 1.4 ... yes (version 1.10)
+
+I am going to run ./configure with no arguments - if you wish 
+to pass any to it, please specify them on the ./autogen.sh command line.
+
+
+
+Running aclocal ...
+Running libtoolize ...
+Running autoconf ...
+Running autoheader...
+Running automake ...
+Running configure ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for g++... g++
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking build system type... i686-pc-linux-gnu
+checking host system type... i686-pc-linux-gnu
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for g77... no
+checking for xlf... no
+checking for f77... no
+checking for frt... no
+checking for pgf77... no
+checking for cf77... no
+checking for fort77... no
+checking for fl32... no
+checking for af77... no
+checking for xlf90... no
+checking for f90... no
+checking for pgf90... no
+checking for pghpf... no
+checking for epcf90... no
+checking for gfortran... no
+checking for g95... no
+checking for xlf95... no
+checking for f95... no
+checking for fort... no
+checking for ifort... no
+checking for ifc... no
+checking for efc... no
+checking for pgf95... no
+checking for lf95... no
+checking for ftn... no
+checking whether we are using the GNU Fortran 77 compiler... no
+checking whether  accepts -g... no
+checking the maximum length of command line arguments... 32768
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC
+checking if gcc PIC flag -fPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+configure: creating libtool
+appending configuration tag "CXX" to libtool
+checking for ld used by g++... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC
+checking if g++ PIC flag -fPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+appending configuration tag "F77" to libtool
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+Ginga Recommender Scheduler
+Copyleft 2010 UFSCar/LABORATORIO LINCE, Some Rights Reserved.
+Now type 'make' to compile the project.
+make  all-recursive
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'
+Making all in include
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/include'
+Making all in src
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/src'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'
+Making install in include
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/include'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/scheduler" || /bin/mkdir -p "/usr/local/include/ginga/recommender/scheduler"
+ /usr/bin/install -c -m 644 'Scheduler.h' '/usr/local/include/ginga/recommender/scheduler/Scheduler.h'
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/include'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/include'
+Making install in src
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/src'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/sh ../libtool --mode=install /usr/bin/install -c 'libgingarecommenderscheduler.so' '/usr/local/lib/ginga/libgingarecommenderscheduler.so'
+/usr/bin/install -c libgingarecommenderscheduler.so /usr/local/lib/ginga/libgingarecommenderscheduler.so
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/src'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler/src'
+make[1]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'
+make[2]: Entrando no diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'
+make[1]: Saindo do diretório `/usr/src/gingaUFSCAR/Recommender/Scheduler'

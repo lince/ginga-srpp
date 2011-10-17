@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{eit\n|- start_time\l- end_time\l- descriptor_conteudo_genero\l- descriptor_conteudo_subgenero\l- descriptor_event_short_sinopse\l|+ getDescriptor_conteudo_genero()\l+ getDescriptor_conteudo_subgenero()\l+ getDescriptor_event_short_sinopse()\l+ getEnd_time()\l+ getStart_time()\l+ setDescriptor_conteudo_genero()\l+ setDescriptor_conteudo_subgenero()\l+ setDescriptor_event_short_sinopse()\l+ setEnd_time()\l+ setStart_time()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{si\n||+ si()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1si.html"];
+}

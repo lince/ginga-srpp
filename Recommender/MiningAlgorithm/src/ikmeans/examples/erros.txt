@@ -1,0 +1,29 @@
+g++ -O3 -Wall -I. -Imodules/ -c cbkm.c -o cbkm.o
+In file included from cbkm.c:23:
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+modules/parametr.c:90: warning: deprecated conversion from string constant to ‘char*’
+cbkm.c: In function ‘void PrintInfo()’:
+cbkm.c:44: warning: deprecated conversion from string constant to ‘char*’
+cbkm.c:46: warning: deprecated conversion from string constant to ‘char*’
+cbkm.c: In function ‘void matrix2CB(int**, int, int, CODEBOOK*)’:
+cbkm.c:65: error: ‘AllocateMemoryForBook’ was not declared in this scope
+cbkm.c: In function ‘int main(int, char**)’:
+cbkm.c:230: warning: deprecated conversion from string constant to ‘char*’
+cbkm.c:239: warning: deprecated conversion from string constant to ‘char*’
+cbkm.c:243: warning: deprecated conversion from string constant to ‘char*’
+make: ** [cbkm.o] Erro 1

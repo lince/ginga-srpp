@@ -1,0 +1,15 @@
+#include "AgentListener.h"
+
+namespace br {
+    namespace ufscar {
+        namespace lince {
+            namespace ginga {
+                namespace recommender {
+                	class IAgentListener : public AgentListener {
+                		
+                	}
+                }
+			}
+		}
+	}
+}

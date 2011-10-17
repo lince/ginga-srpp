@@ -1,0 +1,27 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{LinkCompoundTriggerCondition\n|# conditions\l|+ LinkCompoundTriggerCondition()\l+ ~LinkCompoundTriggerCondition()\l+ addCondition()\l+ conditionSatisfied()\l+ getConditions()\l+ getEvents()\l+ evaluationStarted()\l+ evaluationEnded()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{LinkTriggerCondition\n|# listener\l# delay\l|+ LinkTriggerCondition()\l+ ~LinkTriggerCondition()\l+ setTriggerListener()\l+ getTriggerListener()\l+ getDelay()\l+ setDelay()\l+ conditionSatisfied()\l+ run()\l+ getEvents()\l# notifyConditionObservers()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkTriggerCondition.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node3 [label="{LinkCondition\n|# typeSet\l|+ LinkCondition()\l+ ~LinkCondition()\l+ instanceOf()\l+ getEvents()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkCondition.html"];
+  Node4 -> Node3 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open",fontname="FreeSans.ttf"];
+  Node4 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node4 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>",fontname="FreeSans.ttf"];
+  Node5 [label="{set\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node6 [label="{Thread\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="delay",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 [label="{double\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="listener",arrowtail="open",fontname="FreeSans.ttf"];
+  Node8 [label="{LinkTriggerListener\n|+ CONDITION_SATISFIED\l+ EVALUATION_STARTED\l+ EVALUATION_ENDED\l|+ ~LinkTriggerListener()\l+ conditionSatisfied()\l+ evaluationStarted()\l+ evaluationEnded()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1link_1_1LinkTriggerListener.html"];
+  Node9 -> Node8 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="EVALUATION_STARTED\nEVALUATION_ENDED\nCONDITION_SATISFIED",arrowtail="open",fontname="FreeSans.ttf"];
+  Node9 [label="{static const short\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="conditions",arrowtail="open",fontname="FreeSans.ttf"];
+  Node10 [label="{vector\< LinkCondition * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node10 [dir=back,color="orange",fontsize=10,style="dashed",label="\< LinkCondition * \>",fontname="FreeSans.ttf"];
+  Node11 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+}

@@ -1,0 +1,77 @@
+\section{sqlite3\_\-module Struct Reference}
+\label{structsqlite3__module}\index{sqlite3_module@{sqlite3\_\-module}}
+Collaboration diagram for sqlite3\_\-module:\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf iVersion}\label{structsqlite3__module_1138620d71393e6105389670719d9685}
+
+\item 
+int($\ast$ \textbf{xCreate} )(sqlite3 $\ast$, void $\ast$pAux, int argc, const char $\ast$const $\ast$argv, {\bf sqlite3\_\-vtab} $\ast$$\ast$ppVTab, char $\ast$$\ast$)\label{structsqlite3__module_93a4064c04057781ac266ed5974ceb81}
+
+\item 
+int($\ast$ \textbf{xConnect} )(sqlite3 $\ast$, void $\ast$pAux, int argc, const char $\ast$const $\ast$argv, {\bf sqlite3\_\-vtab} $\ast$$\ast$ppVTab, char $\ast$$\ast$)\label{structsqlite3__module_19f7accc13ac8ca9bdf5d3924b7eaf2b}
+
+\item 
+int($\ast$ \textbf{xBestIndex} )({\bf sqlite3\_\-vtab} $\ast$pVTab, {\bf sqlite3\_\-index\_\-info} $\ast$)\label{structsqlite3__module_f634165424ffccb1ef5dab5ff650eb99}
+
+\item 
+int($\ast$ \textbf{xDisconnect} )({\bf sqlite3\_\-vtab} $\ast$pVTab)\label{structsqlite3__module_75840c001112dc870e9e9db39c0d4ed0}
+
+\item 
+int($\ast$ \textbf{xDestroy} )({\bf sqlite3\_\-vtab} $\ast$pVTab)\label{structsqlite3__module_f1b772670043b91e5e45a1a6becf9a41}
+
+\item 
+int($\ast$ \textbf{xOpen} )({\bf sqlite3\_\-vtab} $\ast$pVTab, {\bf sqlite3\_\-vtab\_\-cursor} $\ast$$\ast$ppCursor)\label{structsqlite3__module_251c7aaab19d614717895337570c4ab1}
+
+\item 
+int($\ast$ \textbf{xClose} )({\bf sqlite3\_\-vtab\_\-cursor} $\ast$)\label{structsqlite3__module_23c31c84107f2703d3d5103f14c76ed8}
+
+\item 
+int($\ast$ \textbf{xFilter} )({\bf sqlite3\_\-vtab\_\-cursor} $\ast$, int idxNum, const char $\ast$idxStr, int argc, sqlite3\_\-value $\ast$$\ast$argv)\label{structsqlite3__module_699a0a4ea742b78c6f2e8303619c72c2}
+
+\item 
+int($\ast$ \textbf{xNext} )({\bf sqlite3\_\-vtab\_\-cursor} $\ast$)\label{structsqlite3__module_1c8236d4a9cf4b4b4d9ba827cee89dae}
+
+\item 
+int($\ast$ \textbf{xEof} )({\bf sqlite3\_\-vtab\_\-cursor} $\ast$)\label{structsqlite3__module_2cf433018879d601c54d0cf95f5e686c}
+
+\item 
+int($\ast$ \textbf{xColumn} )({\bf sqlite3\_\-vtab\_\-cursor} $\ast$, sqlite3\_\-context $\ast$, int)\label{structsqlite3__module_68814ced7e2d7eb49c141d82ac2367a1}
+
+\item 
+int($\ast$ \textbf{xRowid} )({\bf sqlite3\_\-vtab\_\-cursor} $\ast$, sqlite3\_\-int64 $\ast$pRowid)\label{structsqlite3__module_73d33a68f6567fd14c90145a4b2a8cb3}
+
+\item 
+int($\ast$ \textbf{xUpdate} )({\bf sqlite3\_\-vtab} $\ast$, int, sqlite3\_\-value $\ast$$\ast$, sqlite3\_\-int64 $\ast$)\label{structsqlite3__module_8ce76e9030b77e5c57f1c056462bfe53}
+
+\item 
+int($\ast$ \textbf{xBegin} )({\bf sqlite3\_\-vtab} $\ast$pVTab)\label{structsqlite3__module_1e8e1468248bf37543219b075df90db2}
+
+\item 
+int($\ast$ \textbf{xSync} )({\bf sqlite3\_\-vtab} $\ast$pVTab)\label{structsqlite3__module_f9a8f4d899e9398f60338ba6bb4c1388}
+
+\item 
+int($\ast$ \textbf{xCommit} )({\bf sqlite3\_\-vtab} $\ast$pVTab)\label{structsqlite3__module_f5082ff14fbea2a1a9f076ce5cbda3ea}
+
+\item 
+int($\ast$ \textbf{xRollback} )({\bf sqlite3\_\-vtab} $\ast$pVTab)\label{structsqlite3__module_d10fa2ae90ffde704368535d381319c7}
+
+\item 
+int($\ast$ \textbf{xFindFunction} )({\bf sqlite3\_\-vtab} $\ast$pVtab, int nArg, const char $\ast$zName, void($\ast$$\ast$pxFunc)(sqlite3\_\-context $\ast$, int, sqlite3\_\-value $\ast$$\ast$), void $\ast$$\ast$ppArg)\label{structsqlite3__module_4cfd59ef1eee6fc5e31954e04acdc9f9}
+
+\item 
+int($\ast$ \textbf{xRename} )({\bf sqlite3\_\-vtab} $\ast$pVtab, const char $\ast$zNew)\label{structsqlite3__module_0e5483244b80bf1a818c40d2317f313b}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 4162 of file sqlite3.h.
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/Database/include/sqlite3.h\end{CompactItemize}

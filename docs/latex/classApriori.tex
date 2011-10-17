@@ -1,0 +1,60 @@
+\section{Apriori Class Reference}
+\label{classApriori}\index{Apriori@{Apriori}}
+{\tt \#include $<$Apriori.hpp$>$}
+
+Collaboration diagram for Apriori:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Apriori} (ifstream \&basket\_\-file, const char $\ast$output\_\-file\_\-name, const bool {\bf store\_\-input})
+\item 
+void {\bf APRIORI\_\-alg} (const double min\_\-supp, const double min\_\-conf, const bool quiet, const unsigned long size\_\-threshold)\label{classApriori_8bdc0f5aeae28bfda7dd98d3ea682be7}
+
+\begin{CompactList}\small\item\em Esse método implementa o algoritmo \doxyref{Apriori}{p.}{classApriori}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{support} (const itemtype \&candidate\_\-size)\label{classApriori_c667245035d9b8acae69c9c13d09f0de}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf Apriori\_\-Trie} $\ast$ {\bf apriori\_\-trie}\label{classApriori_1130f4fb0f61db99a3d8d5953e3744db}
+
+\begin{CompactList}\small\item\em Abstração de uma árvore recursiva que armazena os item mais frequentes e portanto candidatos. \item\end{CompactList}\item 
+{\bf Input\_\-Output\_\-Manager} {\bf input\_\-output\_\-manager}\label{classApriori_1cdc9000c55d385e0ac015f7d6c194fe}
+
+\begin{CompactList}\small\item\em Input\_\-output\_\-manager é responsável por gerenciar as operações de leitura e escrita. \item\end{CompactList}\item 
+map$<$ vector$<$ itemtype $>$, unsigned long $>$ {\bf reduced\_\-baskets}\label{classApriori_5792b7684ec081f4dbc038897e08cb4c}
+
+\begin{CompactList}\small\item\em Armazenar as informações do banco de dados em memória, se o parâmetro store\_\-input=true;. \item\end{CompactList}\item 
+bool {\bf store\_\-input}\label{classApriori_9525c128ca9e2e57c1f36672d800c077}
+
+\begin{CompactList}\small\item\em se store\_\-input = true, então as informações provinientes do arquivo de entrada serão armazenadas na memória \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Essa classe implementa o algoritmo APRIORI.
+
+O objetivo do algoritmo apriori é encontrar os conjuntos de dados frequentes L no banco de dados. Itens com pouca frequencia devem ser deletados permanecendo apenas aqueles que ocorrem mais vezes. 
+
+
+
+Definition at line 81 of file Apriori.hpp.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Apriori@{Apriori}!Apriori@{Apriori}}
+\index{Apriori@{Apriori}!Apriori@{Apriori}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Apriori} (ifstream \& {\em basket\_\-file}, const char $\ast$ {\em output\_\-file\_\-name}, const bool {\em store\_\-input})}\label{classApriori_a21fa53309a521996f8134d8d3a01ced}
+
+
+Construtor. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em basket\_\-file}]arquivo com o conjunto de dados para mineração \item[{\em output\_\-file\_\-name}]arquivo de saída com as regras de associação \item[{\em store\_\-input}]{\bf  true } indica para ler todo arquivo e armazenar as informações em memória \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/MiningAlgorithm/include/apriori23/Apriori.hpp\end{CompactItemize}

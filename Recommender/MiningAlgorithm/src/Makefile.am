@@ -1,0 +1,15 @@
+
+# set the include path found by configure
+INCLUDES = $(all_includes)
+
+LIBS =
+
+libgingarecommenderminingalgorithmdir = /usr/local/lib/ginga
+
+libgingarecommenderminingalgorithm_so_LDADD = -lgingarecommenderdatabase -lgingarecommenderutil -lgingarecommendersdt -lgingarecommendereit
+
+libgingarecommenderminingalgorithm_so_LDFLAGS = -Wl,-soname,libgingarecommenderminingalgorithm.so \
+    --shared -ldl -I/usr/local/include/ginga/
+
+libgingarecommenderminingalgorithm_PROGRAMS = libgingarecommenderminingalgorithm.so
+libgingarecommenderminingalgorithm_so_SOURCES = MiningAlgorithm.cpp SI.cpp User.cpp IMiningAlgorithmApriori.cpp apriori23/Apriori.cpp apriori23/Apriori_Trie.cpp apriori23/Input_Output_Manager.cpp apriori23/Trie.cpp ikmeans/cb.cpp ikmeans/file.cpp ikmeans/ikmeans.cpp ikmeans/interfc.cpp ikmeans/kmeans.cpp ikmeans/memctrl.cpp ikmeans/random.cpp ikmeans/reporting.cpp

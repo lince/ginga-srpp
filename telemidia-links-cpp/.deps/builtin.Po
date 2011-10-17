@@ -1,0 +1,5 @@
+builtin.o builtin.o: builtin.c cfg.h config.h
+
+cfg.h:
+
+config.h:

@@ -1,0 +1,5 @@
+img.o img.o: img.c cfg.h config.h
+
+cfg.h:
+
+config.h:

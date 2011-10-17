@@ -1,0 +1,133 @@
+\section{AnimationController Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController}\index{br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}}
+Inheritance diagram for AnimationController:Collaboration diagram for AnimationController:\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \textbf{startAnimation} (ExecutionObject $\ast${\bf execObj}, FormatterPlayerAdapter $\ast${\bf player}, AttributionEvent $\ast${\bf event}, string value, Animation $\ast$anim)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_13cb168e187a7e0c402549aa4b21327c}
+
+\end{CompactItemize}
+\subsection*{Properties}
+\begin{CompactItemize}
+\item 
+vector$<$ string $>$ {\bf SingleNames}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_8f5f5c03fd3e82606c9f112095e657e9}
+
+\item 
+vector$<$ double $>$ {\bf initValues}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_5807d45037948e1707b93c79b13e2c0b}
+
+\item 
+vector$<$ string $>$ $\ast$ {\bf strTargetValues}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_5eb1875debd639741249813d7741a74d}
+
+\item 
+vector$<$ double $>$ $\ast$ {\bf targetValues}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_d09871e894a3283bc3e91ccc7bf0ac5b}
+
+\item 
+double {\bf initTime}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_cec48a0b949b3b10e47a23cefee5b19b}
+
+\item 
+double {\bf duration}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_b9f68ef753113e9b47b3363a00156209}
+
+\item 
+int {\bf stepSize}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_dfe857b14dacc3123d5c36a0fa44f0b0}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{AnimationController} (ExecutionObject $\ast${\bf execObj}, FormatterPlayerAdapter $\ast${\bf player}, AttributionEvent $\ast${\bf event}, string value, Animation $\ast$anim)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_dba7e9e13ec228c0011d54cd4207e831}
+
+\item 
+void {\bf run} ()
+\item 
+bool {\bf loadInitValues} ()
+\item 
+bool {\bf loadTargetValues} ()
+\item 
+bool \textbf{animeStep} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_79d726a4c7e5da66d82decf8ed16e837}
+
+\item 
+double {\bf getSinglePropertyTarget} (int i)
+\item 
+bool {\bf updateTargetRegion} ()
+\item 
+bool {\bf ungroupProperty} ()
+\item 
+bool \textbf{isExecutionObjectProperty} (string)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_4078b28b1842836f8eb7fcd9d0d65010}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+Animation $\ast$ {\bf animation}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_d970a0de1401aa016688839c1b3243be}
+
+\item 
+FormatterPlayerAdapter $\ast$ {\bf player}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_abb9cca5d9a27c7206cae1eb15faf145}
+
+\item 
+ExecutionObject $\ast$ {\bf execObj}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_cc96a470a0bc030beb122ed6703a2a2a}
+
+\item 
+AttributionEvent $\ast$ {\bf event}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_18a2a244120dc57dafca994e5a8eaf59}
+
+\item 
+LayoutRegion $\ast$ {\bf initRegion}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_66be25ba71f63b60c6110901d484598d}
+
+\item 
+LayoutRegion $\ast$ {\bf targetRegion}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_1442c509290a59e13647dd2197b616b4}
+
+\item 
+string {\bf propName}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_388de354a5b077bb4b23285bf380caae}
+
+\item 
+bool {\bf isExecObjAnim}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_2bf717286e3bbba193782faf0aa1689b}
+
+\item 
+vector$<$ string $>$ $\ast$ {\bf params}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_d08228b0a388e3f2f7a1719f5624c9a5}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 76 of file AnimationController.h.
+
+\subsection{Member Function Documentation}
+\index{br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}!run@{run}}
+\index{run@{run}!br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void run ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_13a43e6d814de94978c515cb084873b1}
+
+
+This method will execute the \doxyref{animation}{p.}{namespacebr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation}.
+
+WARNING: this method calls \char`\"{}delete this\char`\"{} when the \doxyref{animation}{p.}{namespacebr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation} is done. So, the user of this class should never call delete to the pointer that creates the \doxyref{animation}{p.}{namespacebr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation}. Additionally, this object always has to be instantiate as a pointer, never as a variable (when the destructor is called automatically when the scope finishes). \index{br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}!loadInitValues@{loadInitValues}}
+\index{loadInitValues@{loadInitValues}!br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool loadInitValues ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_c11dd64402306f70b25edc19ae0352a4}
+
+
+Load the current values from the properties will be animated in the object to the initValues vector. \index{br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}!loadTargetValues@{loadTargetValues}}
+\index{loadTargetValues@{loadTargetValues}!br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool loadTargetValues ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_3bc99bafd95d3926ffc348fb9b9529c2}
+
+
+Based on initValues and the parameters passed by the author this function calculate and load the target values with the final value for each property that must be changed \index{br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}!getSinglePropertyTarget@{getSinglePropertyTarget}}
+\index{getSinglePropertyTarget@{getSinglePropertyTarget}!br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}double getSinglePropertyTarget (int {\em i})\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_f9ab57af49c6c2ef7322e54284eb0e4c}
+
+
+Return the value of the the target from a single property \index{br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}!updateTargetRegion@{updateTargetRegion}}
+\index{updateTargetRegion@{updateTargetRegion}!br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool updateTargetRegion ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_082f6fbaf67b8718d29816535be25067}
+
+
+The targetRegion variable is used to calculate the value of dimension and position the region will be when the \doxyref{animation}{p.}{namespacebr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation} ends. First of all, this targetRegion will be a copy of the initial region, so this function is responsible to, based on initial region and the values in targetValues vector, update the targetRegion to have the final parameters. \index{br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}!ungroupProperty@{ungroupProperty}}
+\index{ungroupProperty@{ungroupProperty}!br::pucrio::telemidia::ginga::ncl::animation::AnimationController@{br::pucrio::telemidia::ginga::ncl::animation::AnimationController}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool ungroupProperty ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1animation_1_1AnimationController_cf750449da1f03ce5cbbc5565bc47450}
+
+
+The property can be a single name that groups a lot of single properties like location, size, bound, etc. So, this function is responsible to separate this property name and the parameters passed by the user in single property names loading the vectors: propertySingleNames and strTargetValues 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/animation/AnimationController.h\end{CompactItemize}

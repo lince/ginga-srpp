@@ -1,0 +1,5 @@
+tiff.o tiff.o: tiff.c cfg.h config.h
+
+cfg.h:
+
+config.h:

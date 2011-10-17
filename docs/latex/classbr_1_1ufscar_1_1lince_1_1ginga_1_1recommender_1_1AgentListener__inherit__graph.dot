@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{AgentListener\n||+ volUp()\l+ volDown()\l+ channelUp()\l+ channelDown()\l+ channelChange()\l+ nclChange()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{IAgentListener\n||+ volUp()\l+ volDown()\l+ channelUp()\l+ channelDown()\l+ channelChange()\l+ nclChange()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener.html"];
+}

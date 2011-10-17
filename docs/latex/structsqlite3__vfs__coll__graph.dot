@@ -1,0 +1,37 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{sqlite3_vfs\n|+ iVersion\l+ szOsFile\l+ mxPathname\l+ pNext\l+ zName\l+ pAppData\l+ xOpen\l+ xDelete\l+ xAccess\l+ xFullPathname\l+ xDlOpen\l+ xDlError\l+ xDlSym\l+ xDlClose\l+ xRandomness\l+ xSleep\l+ xCurrentTime\l+ xGetLastError\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xAccess",arrowtail="open"];
+  Node2 [label="{int(*)(sqlite3_vfs *, const char *zName, int flags, int *pResOut)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xDelete",arrowtail="open"];
+  Node3 [label="{int(*)(sqlite3_vfs *, const char *zName, int syncDir)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xRandomness",arrowtail="open"];
+  Node4 [label="{int(*)(sqlite3_vfs *, int nByte, char *zOut)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xDlError",arrowtail="open"];
+  Node5 [label="{void(*)(sqlite3_vfs *, int nByte, char *zErrMsg)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xCurrentTime",arrowtail="open"];
+  Node6 [label="{int(*)(sqlite3_vfs *, double *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xOpen",arrowtail="open"];
+  Node7 [label="{int(*)(sqlite3_vfs *, const char *zName, sqlite3_file *, int flags, int *pOutFlags)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xFullPathname",arrowtail="open"];
+  Node8 [label="{int(*)(sqlite3_vfs *, const char *zName, int nOut, char *zOut)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="pNext",arrowtail="open"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xDlOpen",arrowtail="open"];
+  Node9 [label="{void *(*)(sqlite3_vfs *, const char *zFilename)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="mxPathname\nszOsFile\niVersion",arrowtail="open"];
+  Node10 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xDlSym",arrowtail="open"];
+  Node11 [label="{void(*(*)(sqlite3_vfs *, void *, const char *zSymbol))(void)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xSleep",arrowtail="open"];
+  Node12 [label="{int(*)(sqlite3_vfs *, int microseconds)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="zName",arrowtail="open"];
+  Node13 [label="{const char *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node14 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xDlClose",arrowtail="open"];
+  Node14 [label="{void(*)(sqlite3_vfs *, void *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node15 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="pAppData",arrowtail="open"];
+  Node15 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node16 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xGetLastError",arrowtail="open"];
+  Node16 [label="{int(*)(sqlite3_vfs *, int, char *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

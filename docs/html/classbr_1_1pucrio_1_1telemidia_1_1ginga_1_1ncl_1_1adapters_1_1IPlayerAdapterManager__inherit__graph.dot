@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{IPlayerAdapterManager\n||+ ~IPlayerAdapterManager()\l+ setStandByState()\l+ getNclPlayerData()\l+ getTimeBaseProvider()\l+ removePlayer()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{PlayerAdapterManager\n|- objectPlayers\l- deletePlayers\l- playerNames\l- mimeDefaultTable\l- playerTable\l- editingCommandListener\l- epgFactoryAdapter\l- running\l- timeBaseProvider\l- nclPlayerData\l- mutexPlayer\l|+ PlayerAdapterManager()\l+ ~PlayerAdapterManager()\l+ getNclPlayerData()\l+ setTimeBaseProvider()\l+ getTimeBaseProvider()\l+ setVisible()\l+ removePlayer()\l+ setNclEditListener()\l+ getPlayer()\l+ setStandByState()\l+ pushEPGEventToEPGFactory()\l+ timeShift()\l+ isEmbeddedApp()\l# clearDeletePlayers()\l# run()\l- getPlayerClass()\l- removePlayer()\l- clear()\l- readConfigFiles()\l- initializePlayer()\l- isEmbeddedAppMediaType()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager.html"];
+}

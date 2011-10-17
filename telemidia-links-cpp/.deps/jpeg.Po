@@ -1,0 +1,5 @@
+jpeg.o jpeg.o: jpeg.c cfg.h config.h
+
+cfg.h:
+
+config.h:

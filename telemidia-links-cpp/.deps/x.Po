@@ -1,0 +1,5 @@
+x.o x.o: x.c cfg.h config.h
+
+cfg.h:
+
+config.h:

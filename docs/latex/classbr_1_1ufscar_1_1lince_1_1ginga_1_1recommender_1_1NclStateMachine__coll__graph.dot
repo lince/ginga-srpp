@@ -1,0 +1,48 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{NclStateMachine\n|- iteraction\l- idNclStateMachine\l|+ NclStateMachine()\l+ generateSql()\l+ getIdNclStateMachine()\l+ getIteraction()\l+ setIteraction()\l+ setIdNclStateMachine()\l+ incIdNclStateMachine()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="iteraction",arrowtail="open"];
+  Node2 [label="{Iteraction\n|- program\l- volume\l- key\l- device\l- user\l- time\l- type\l- idIteraction\l|+ Iteraction()\l+ generateSql()\l+ getIdIteraction()\l+ getProgram()\l+ setProgram()\l+ getVolume()\l+ setVolume()\l+ getKey()\l+ setKey()\l+ getDevice()\l+ setDevice()\l+ getUser()\l+ setUser()\l+ getTime()\l+ setTime()\l+ getType()\l+ setType()\l+ setIdIteraction()\l+ incIdIteraction()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Iteraction.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{IteractionBase\n||+ IteractionBase()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IteractionBase.html"];
+  Node4 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="program",arrowtail="open"];
+  Node4 [label="{Program\n|- age\l- code\l- channel\l- name\l- genre\l- subGenre\l- idProgram\l|+ Program()\l+ generateSql()\l+ getIdProgram()\l+ getAge()\l+ setAge()\l+ getCode()\l+ setCode()\l+ getChannel()\l+ setChannel()\l+ getName()\l+ setName()\l+ getGenre()\l+ setGenre()\l+ getSubGenre()\l+ setSubGenre()\l+ setIdProgram()\l+ incIdProgram()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Program.html"];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node5 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="age\ncode",arrowtail="open"];
+  Node5 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="subGenre\nname\ngenre",arrowtail="open"];
+  Node6 [label="{string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node7 -> Node6 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node7 [label="{basic_string\< char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node7 [dir=back,color="orange",fontsize=10,style="dashed",label="\< char \>"];
+  Node8 [label="{basic_string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node9 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="channel",arrowtail="open"];
+  Node9 [label="{Channel\n|- code\l- name\l- idChannel\l|+ Channel()\l+ generateSql()\l+ getIdChannel()\l+ getCode()\l+ setCode()\l+ getName()\l+ setName()\l+ setIdChannel()\l+ incIdChannel()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Channel.html"];
+  Node3 -> Node9 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node5 -> Node9 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="code",arrowtail="open"];
+  Node6 -> Node9 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="name",arrowtail="open"];
+  Node10 -> Node9 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idChannel",arrowtail="open"];
+  Node10 [label="{static int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idProgram",arrowtail="open"];
+  Node11 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="key",arrowtail="open"];
+  Node11 [label="{Key\n|- code\l- action\l- idKey\l|+ Key()\l+ generateSql()\l+ getIdKey()\l+ getCode()\l+ setCode()\l+ getAction()\l+ setAction()\l+ getType()\l+ setIdKey()\l+ incIdKey()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Key.html"];
+  Node3 -> Node11 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node6 -> Node11 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="action\ncode",arrowtail="open"];
+  Node10 -> Node11 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idKey",arrowtail="open"];
+  Node6 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="type\nuser\ntime",arrowtail="open"];
+  Node12 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="volume",arrowtail="open"];
+  Node12 [label="{Volume\n|- level\l- mute\l- idVolume\l|+ Volume()\l+ generateSql()\l+ getIdVolume()\l+ getLevel()\l+ setLevel()\l+ getMute()\l+ setMute()\l+ setIdVolume()\l+ incIdVolume()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Volume.html"];
+  Node3 -> Node12 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node5 -> Node12 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="level",arrowtail="open"];
+  Node13 -> Node12 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="mute",arrowtail="open"];
+  Node13 [label="{bool\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node12 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idVolume",arrowtail="open"];
+  Node14 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="device",arrowtail="open"];
+  Node14 [label="{Device\n|- prof\l- serialNumber\l- tp\l- idDevice\l|+ Device()\l+ generateSql()\l+ getIdDevice()\l+ getProf()\l+ setProf()\l+ getSerialNumber()\l+ setSerialNumber()\l+ getTp()\l+ setTp()\l+ setIdDevice()\l+ incIdDevice()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Device.html"];
+  Node6 -> Node14 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="prof\ntp\nserialNumber",arrowtail="open"];
+  Node10 -> Node14 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idDevice",arrowtail="open"];
+  Node10 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idIteraction",arrowtail="open"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="idNclStateMachine",arrowtail="open"];
+}

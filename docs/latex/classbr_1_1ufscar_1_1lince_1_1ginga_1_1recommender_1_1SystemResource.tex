@@ -1,0 +1,172 @@
+\section{SystemResource Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource}\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+Collaboration diagram for SystemResource:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+long {\bf getCPUClock} ()
+\item 
+int {\bf getCPUCount} ()
+\item 
+long {\bf getMemorySize} ()
+\item 
+long {\bf getMemoryFree} ()
+\item 
+off\_\-t {\bf getDiskSize} ()
+\item 
+off\_\-t {\bf getDiskFree} ()
+\item 
+int {\bf reserve} (const char $\ast$applicationId, int resource, long count)
+\item 
+bool {\bf freeReserve} (const char $\ast$applicationId, int reserveId)
+\item 
+bool {\bf allocate} (const char $\ast$applicationId, int reserveId)
+\item 
+bool {\bf freeAllocation} (const char $\ast$applicationId, int reserveId)
+\item 
+{\bf SystemResource} ()
+\item 
+{\bf $\sim$SystemResource} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf initDataMembers} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+utsname {\bf sn}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_9b402aad1b8c08bb3a3421b128c63cf8}
+
+\item 
+sysinfo {\bf info}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_1c6b3fa2f7897150767f8544aebb40a9}
+
+\item 
+float {\bf CPUClock}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_7599990061c2e531c7ee1b2851c293d8}
+
+\item 
+int {\bf CPUCount}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_fc2b2eac726745e2f2e515138b4d5c6c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 40 of file SystemResource.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!SystemResource@{SystemResource}}
+\index{SystemResource@{SystemResource}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf SystemResource} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_08e49876c23d2b87c1743b43ee9f18fb}
+
+
+Construtor. \index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!~SystemResource@{$\sim$SystemResource}}
+\index{~SystemResource@{$\sim$SystemResource}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf SystemResource} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_3f05b51f6922a7cd6ec482a4339ec0ea}
+
+
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!getCPUClock@{getCPUClock}}
+\index{getCPUClock@{getCPUClock}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long getCPUClock ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_fae5a7639f4b0178e772f1c9891c5016}
+
+
+Retorna a frequência da CPU. \begin{Desc}
+\item[Returns:]frequência da CPU em Hz. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!getCPUCount@{getCPUCount}}
+\index{getCPUCount@{getCPUCount}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getCPUCount ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_8d61af22fa7fc82fb463e6a16a8e8ae8}
+
+
+Retorna quantidade de CPUs da máquina. \begin{Desc}
+\item[Returns:]quantidade de CPUs da máquina. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!getMemorySize@{getMemorySize}}
+\index{getMemorySize@{getMemorySize}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long getMemorySize ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_69fe5ad9e0c2d9409d7be72751e43db7}
+
+
+Retorna a quantidade total de memória da máquina. \begin{Desc}
+\item[Returns:]total de memória em bytes. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!getMemoryFree@{getMemoryFree}}
+\index{getMemoryFree@{getMemoryFree}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long getMemoryFree ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_7c4de9d5a170fe98ddb6082cc2cb9af9}
+
+
+Retorna a quantidade de memória livre na máquina. \begin{Desc}
+\item[Returns:]total de memória livre (em bytes). \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!getDiskSize@{getDiskSize}}
+\index{getDiskSize@{getDiskSize}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}off\_\-t getDiskSize ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_efbcc09c1f87512fb13c7f85c4c2e0ba}
+
+
+Retorna a quantidade total de espaço de armazenamento da máquina. \begin{Desc}
+\item[Returns:]total de espaço de armazenamento da máquina (em bytes). \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!getDiskFree@{getDiskFree}}
+\index{getDiskFree@{getDiskFree}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}off\_\-t getDiskFree ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_18ea0665acb4e7aafa84cb99a38cd83f}
+
+
+Retorna a quantidade de espaço de armazenamento livre da máquina. \begin{Desc}
+\item[Returns:]espaço de armazenamento livre da máquina (em bytes). \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!reserve@{reserve}}
+\index{reserve@{reserve}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int reserve (const char $\ast$ {\em applicationId}, int {\em resource}, long {\em count})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_0ce299de4b24d1c3ce4634e618420129}
+
+
+Reserva um recurso do sistema para uma aplicação. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em applicationId}]identificação da aplicação que solicita o recurso. \item[{\em resource}]identificação do recurso solicitado: 1 - CPU; 2 - Memória; 3 - Disco. \item[{\em count}]quantidade do recurso solicitada. O retorno deste método devolve um identificador para que o recurso seja liberado mais tarde. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]maior que 0, se a operação foi executada com sucesso, ou -1, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!freeReserve@{freeReserve}}
+\index{freeReserve@{freeReserve}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool freeReserve (const char $\ast$ {\em applicationId}, int {\em reserveId})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_daffced4501a80d539f9ae02918b9a17}
+
+
+Desfaz uma reserva de recurso do sistema. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em applicationId}]identificação da aplicação que solicitou o recurso. \item[{\em reserveId}]identificador do recurso que será liberado. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, se a operação foi executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!allocate@{allocate}}
+\index{allocate@{allocate}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool allocate (const char $\ast$ {\em applicationId}, int {\em reserveId})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_e51ad60fe4eecf555a5c528bada11183}
+
+
+Faz uso de um recurso do sistema reservado anteriormente. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em applicationId}]identificação da aplicação que solicitou o recurso. \item[{\em reserveId}]identificador do recurso reservado. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, se a operação foi executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!freeAllocation@{freeAllocation}}
+\index{freeAllocation@{freeAllocation}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool freeAllocation (const char $\ast$ {\em applicationId}, int {\em reserveId})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_2e6480a59fce41bd5ca4095a1a3b44c8}
+
+
+Libera o uso de um recurso do sistema. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em applicationId}]identificação da aplicação que solicitou o recurso. \item[{\em reserveId}]identificador do recurso reservado. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, se a operação foi executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}!initDataMembers@{initDataMembers}}
+\index{initDataMembers@{initDataMembers}!br::ufscar::lince::ginga::recommender::SystemResource@{br::ufscar::lince::ginga::recommender::SystemResource}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void initDataMembers ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SystemResource_d9a3235fc736298adcf13c6b9a793f8f}
+
+
+Obtém os valores dos atributos da classe relativos à CPU. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/SystemResource/include/SystemResource.h\end{CompactItemize}

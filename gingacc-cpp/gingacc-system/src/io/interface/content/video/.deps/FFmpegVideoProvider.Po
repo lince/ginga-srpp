@@ -1,0 +1,4 @@
+FFmpegVideoProvider.o FFmpegVideoProvider.o: FFmpegVideoProvider.cpp \
+  ../../../../../config.h
+
+../../../../../config.h:

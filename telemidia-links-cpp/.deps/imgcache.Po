@@ -1,0 +1,5 @@
+imgcache.o imgcache.o: imgcache.c cfg.h config.h
+
+cfg.h:
+
+config.h:

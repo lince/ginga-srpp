@@ -1,0 +1,5 @@
+view_gr.o view_gr.o: view_gr.c cfg.h config.h
+
+cfg.h:
+
+config.h:

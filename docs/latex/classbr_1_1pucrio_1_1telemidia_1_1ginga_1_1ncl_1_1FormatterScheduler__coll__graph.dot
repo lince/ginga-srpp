@@ -1,0 +1,35 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterScheduler\n|- ruleAdapter\l- playerManager\l- layoutManager\l- focusManager\l- compiler\l- schedulerListeners\l- documentEvents\l- documentStatus\l- typeSet\l|+ FormatterScheduler()\l+ ~FormatterScheduler()\l+ stopListening()\l+ setKeyHandler()\l+ setStandByState()\l+ getFocusManager()\l+ getFormatterLayout()\l+ runAction()\l+ startEvent()\l+ stopEvent()\l+ pauseEvent()\l+ resumeEvent()\l+ startDocument()\l+ stopDocument()\l+ pauseDocument()\l+ resumeDocument()\l+ stopAllDocuments()\l+ pauseAllDocuments()\l+ resumeAllDocuments()\l+ eventStateChanged()\l+ getPriorityType()\l+ addSchedulerListener()\l+ removeSchedulerListener()\l- isDocumentRunning()\l- setTimeBaseObject()\l- runAction()\l- runActionOverProperty()\l- runActionOverApplicationObject()\l- runActionOverComposition()\l- runActionOverSwitch()\l- runSwitchEvent()\l- solveImplicitRefAssessment()\l- initializeDefaultSettings()\l- initializeDocumentSettings()\l- removeDocument()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{LinkActionListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node3 [label="{IEventListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="playerManager",arrowtail="open"];
+  Node4 [label="{PlayerAdapterManager *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="schedulerListeners",arrowtail="open"];
+  Node5 [label="{vector\< IFormatterSchedulerListener * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node5 [dir=back,color="orange",fontsize=10,style="dashed",label="\< IFormatterSchedulerListener * \>"];
+  Node6 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="focusManager",arrowtail="open"];
+  Node7 [label="{FormatterFocusManager *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="documentEvents",arrowtail="open"];
+  Node8 [label="{vector\< FormatterEvent * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node8 [dir=back,color="orange",fontsize=10,style="dashed",label="\< FormatterEvent * \>"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="typeSet",arrowtail="open"];
+  Node9 [label="{set\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node9 [dir=back,color="orange",fontsize=10,style="dashed",label="\< string \>"];
+  Node10 [label="{set\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="documentStatus",arrowtail="open"];
+  Node11 [label="{map\< FormatterEvent *, bool \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node11 [dir=back,color="orange",fontsize=10,style="dashed",label="\< FormatterEvent *, bool \>"];
+  Node12 [label="{map\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node13 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="ruleAdapter",arrowtail="open"];
+  Node13 [label="{RuleAdapter *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node14 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="compiler",arrowtail="open"];
+  Node14 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node15 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="layoutManager",arrowtail="open"];
+  Node15 [label="{IFormatterMultiDevice *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

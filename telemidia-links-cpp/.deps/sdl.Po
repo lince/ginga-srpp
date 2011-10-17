@@ -1,0 +1,5 @@
+sdl.o sdl.o: sdl.c cfg.h config.h
+
+cfg.h:
+
+config.h:

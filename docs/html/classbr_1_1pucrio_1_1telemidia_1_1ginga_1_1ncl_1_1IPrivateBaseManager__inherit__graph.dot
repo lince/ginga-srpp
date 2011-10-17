@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{IPrivateBaseManager\n||+ getDocumentLocation()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{PrivateBaseManager\n|- privateBases\l- mutexTable\l- _instance\l|+ createPrivateBase()\l+ release()\l+ addDocument()\l+ embedDocument()\l+ addVisibleDocument()\l+ getDocumentLocation()\l+ getEmbeddedDocumentLocation()\l+ getDocument()\l+ getEmbeddedDocument()\l+ getDocuments()\l+ removeDocument()\l+ removeEmbeddedDocument()\l+ clear()\l+ addRegion()\l+ removeRegion()\l+ addRegionBase()\l+ removeRegionBase()\l+ addRule()\l+ removeRule()\l+ addRuleBase()\l+ removeRuleBase()\l+ addTransition()\l+ removeTransition()\l+ addTransitionBase()\l+ removeTransitionBase()\l+ addConnector()\l+ removeConnector()\l+ addConnectorBase()\l+ removeConnectorBase()\l+ addDescriptor()\l+ removeDescriptor()\l+ addDescriptorBase()\l+ removeDescriptorBase()\l+ addImportBase()\l+ removeImportBase()\l+ addImportedDocumentBase()\l+ removeImportedDocumentBase()\l+ addImportNCL()\l+ removeImportNCL()\l+ addNode()\l+ addInterface()\l+ addLink()\l+ getPrivateBase()\l+ getInstance()\l- PrivateBaseManager()\l- ~PrivateBaseManager()\l- getPrivateBaseContext()\l- lockTable()\l- unlockTable()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1PrivateBaseManager.html"];
+}

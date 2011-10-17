@@ -1,0 +1,86 @@
+\section{Thread Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread}\index{br::ufscar::lince::ginga::recommender::Thread@{br::ufscar::lince::ginga::recommender::Thread}}
+Inheritance diagram for Thread:Collaboration diagram for Thread:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \textbf{start} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_62b63bddf378b0e13a4affa3e8e1bedf}
+
+\item 
+bool \textbf{sleep} (long int seconds)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_64ab85597670968882be4168ad15dba0}
+
+\item 
+bool \textbf{usleep} (long int milliseconds)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_17fec2aaebe4558a2fbe9d0b7019ca8c}
+
+\item 
+void \textbf{wakeUp} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_079d49a5302222debfe4dc54cf7a5c7a}
+
+\item 
+void \textbf{lock} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_a81aed607133209dade63a226818224d}
+
+\item 
+void \textbf{unlock} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_9278be8203e1c42e2619179882ae4403}
+
+\item 
+void \textbf{waitForUnlockCondition} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_11d95b5a2785d3e39044764c3c57da0c}
+
+\item 
+bool \textbf{unlockConditionSatisfied} ()\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_082a67ba63d4a3d34236820b1629ea56}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \textbf{run} ()=0\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_18954417d3124a8095783ea13dc6d00b}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+pthread\_\-mutex\_\-t {\bf threadMutex}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_fe8c0761626a30d702b31cc59c8e1c96}
+
+\item 
+bool {\bf isSleeping}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_0107cad432bc7adb4365aae01585ec08}
+
+\item 
+pthread\_\-mutex\_\-t {\bf threadFlagMutex}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_ded3d05f46100aaaefa06fc178086281}
+
+\item 
+pthread\_\-cond\_\-t {\bf threadFlagConditionVariable}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_71bcc220ba83ec08e8cfff08788d370a}
+
+\item 
+bool {\bf isWaiting}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_1e2abb81a8e1b0347d38032e9679e6e9}
+
+\item 
+pthread\_\-mutex\_\-t {\bf threadFlagMutexLockUntilSignal}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_2909d85ccca146820233357665a683eb}
+
+\item 
+pthread\_\-cond\_\-t {\bf threadFlagCVLockUntilSignal}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_9a89a8e60fae40a53795056e7cf06c87}
+
+\item 
+pthread\_\-attr\_\-t {\bf tattr}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_6019d18ded9352b09e572c4c90634848}
+
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static void $\ast$ \textbf{function} (void $\ast$ptr)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_0fde000990b5486b709f151eb5024dc5}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+pthread\_\-t {\bf threadId\_\-}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Thread_4747430d8eda8cf31837d6a7529da957}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 62 of file Thread.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/LocalAgent/include/thread/Thread.h\end{CompactItemize}

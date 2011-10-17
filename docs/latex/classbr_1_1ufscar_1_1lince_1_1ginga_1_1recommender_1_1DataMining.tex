@@ -1,0 +1,247 @@
+\section{DataMining Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining}\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+Collaboration diagram for DataMining:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf DataMining} ()
+\item 
+{\bf DataMining} (const char $\ast$algorithm)
+\item 
+{\bf DataMining} (const char $\ast$lib, const char $\ast$constructor, const char $\ast$destructor)
+\item 
+virtual {\bf $\sim$DataMining} ()
+\item 
+bool {\bf setAlgorithm} (const char $\ast$algorithm)
+\item 
+const char $\ast$ {\bf getAlgorithm} ()
+\item 
+vector$<$ char $\ast$ $>$ $\ast$ {\bf getAlgorithms} ()
+\item 
+bool {\bf setParams} (vector$<$ char $\ast$ $>$ params)
+\item 
+bool {\bf prepare} (const char $\ast$data, const char $\ast$delimiter)
+\item 
+bool {\bf prepare} ({\bf Database} $\ast$db, const char $\ast$table)
+\item 
+bool {\bf start} ()
+\item 
+bool {\bf stop} ()
+\item 
+void {\bf setOutput} (char $\ast$data, long size, const char $\ast$delimiter)
+\item 
+void {\bf setOutput} ({\bf Database} $\ast$db, const char $\ast$table)
+\item 
+void {\bf setOutput} (const char $\ast$file)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+{\bf MiningAlgorithm} $\ast$ {\bf miningAlgorithm}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_f04a567114babc786e03fc3d87ddbfc1}
+
+\end{CompactItemize}
+\subsection*{Private Types}
+\begin{CompactItemize}
+\item 
+enum {\bf MiningAlgoritmKeys} \{ {\bf Apriori} =  1
+ \}
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf setAvaibleMiningAlgorithms} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ char $\ast$, int $>$ {\bf avaibleMiningAlgorithms}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_c087985700994c9d86797f8e6f437e07}
+
+\item 
+string {\bf currentAlgorithm}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_2ef795574bbd8e0683fa3730cb631eda}
+
+\item 
+void $\ast$($\ast$ \textbf{algorithmConstructor} )(void)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_4fa7ea07a1d8826958eba5a351c325a6}
+
+\item 
+void $\ast$ {\bf algorithmPointer}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_ffd2777811b2467751a0dbb96cae27e8}
+
+\item 
+void($\ast$ \textbf{algorithmDestructor} )(void $\ast$)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_cfb41e47b0394f289ed4dfa3ae8cbe77}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 26 of file DataMining.h.
+
+\subsection{Member Enumeration Documentation}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!MiningAlgoritmKeys@{MiningAlgoritmKeys}}
+\index{MiningAlgoritmKeys@{MiningAlgoritmKeys}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}enum {\bf MiningAlgoritmKeys}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_67b6e8245850a4dc334ab3ef70558360}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{Apriori@{Apriori}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!Apriori@{Apriori}}\item[{\em 
+Apriori\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_67b6e8245850a4dc334ab3ef70558360134989f18f56aafb858e609f84f23a58}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 137 of file DataMining.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!DataMining@{DataMining}}
+\index{DataMining@{DataMining}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf DataMining} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_16fc1642a041ae85b58923a1a4ef9547}
+
+
+Construtor. Devolve uma instância de \doxyref{DataMining}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining}. \index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!DataMining@{DataMining}}
+\index{DataMining@{DataMining}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf DataMining} (const char $\ast$ {\em algorithm})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_0ecaeb7de0d0cf753232e173771d4869}
+
+
+Construtor. Devolve uma instância de \doxyref{DataMining}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining}. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em algorithm}]algoritmo que será usado para o processamento dos dados. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!DataMining@{DataMining}}
+\index{DataMining@{DataMining}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf DataMining} (const char $\ast$ {\em lib}, const char $\ast$ {\em constructor}, const char $\ast$ {\em destructor})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_42a7f13c25fb9eec558db58b8d5ace8f}
+
+
+Construtor. Devolve uma instância de \doxyref{DataMining}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining}. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em lib}]nome da biblioteca que contém o algoritmo a ser executado. \item[{\em constructor}]construtor do algoritmo que devolve uma instância para a interface \doxyref{MiningAlgorithm}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1MiningAlgorithm}. \item[{\em destructor}]destrutor do algoritmo. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!~DataMining@{$\sim$DataMining}}
+\index{~DataMining@{$\sim$DataMining}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual $\sim${\bf DataMining} ()\hspace{0.3cm}{\tt  [virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_2177f413b8522b41c58148eab51716c1}
+
+
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!setAlgorithm@{setAlgorithm}}
+\index{setAlgorithm@{setAlgorithm}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setAlgorithm (const char $\ast$ {\em algorithm})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_4575876d104d82f82597fc580380ddd1}
+
+
+Define o algoritmo que será usado para o processamento dos dados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em algorithm}]algoritmo que será usado para o processamento dos dados. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!getAlgorithm@{getAlgorithm}}
+\index{getAlgorithm@{getAlgorithm}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ getAlgorithm ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_b20ca3b83451f859b72c0dbf6e9cf6a4}
+
+
+Retorna o algoritmo que será usado para o processamento dos dados. \begin{Desc}
+\item[Returns:]algoritmo que será usado para o processamento dos dados. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!getAlgorithms@{getAlgorithms}}
+\index{getAlgorithms@{getAlgorithms}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$char$\ast$$>$$\ast$ getAlgorithms ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_bc55c41a2be4095cee8c70bbfe1e8d93}
+
+
+Retorna todos os algoritmos disponíveis para processamento dos dados. \begin{Desc}
+\item[Returns:]todos os algoritmos disponíveis para processamento dos dados. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!setParams@{setParams}}
+\index{setParams@{setParams}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setParams (vector$<$ char $\ast$ $>$ {\em params})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_7d8c377abf51c61dfd58e25546e607db}
+
+
+Inicializa o algoritmo com os parâmetros especificados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em params}]parâmetros para o algoritmo. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!prepare@{prepare}}
+\index{prepare@{prepare}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool prepare (const char $\ast$ {\em data}, const char $\ast$ {\em delimiter})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_00b52dfcbf3e0378bc09aa2f768fbdf2}
+
+
+Prepara os dados para serem processados pelo algoritmo. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]dados a serem pre-processados. \item[{\em delimiter}]delimitador dos dados. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!prepare@{prepare}}
+\index{prepare@{prepare}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool prepare ({\bf Database} $\ast$ {\em db}, const char $\ast$ {\em table})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_874aca17926543fbd79505e83928650a}
+
+
+Prepara os dados para serem processados pelo algoritmo. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em db}]banco de dados que contém a tabela a ser pre-processada. \item[{\em table}]tabela com os dados a serem pre-processados. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!start@{start}}
+\index{start@{start}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool start ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_ad5997aaaa2d622f0ca57f8b24a51a7b}
+
+
+Executa o algoritmo. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!stop@{stop}}
+\index{stop@{stop}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool stop ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_68a350717fe6bf9012843e7c977d87b2}
+
+
+Pára a execução do algoritmo. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setOutput (char $\ast$ {\em data}, long {\em size}, const char $\ast$ {\em delimiter})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_0acdaf7783d1cd652a07f4605d643150}
+
+
+Define a saída dos dados processados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em data}]variável para armazenamento dos dados processados. \item[{\em size}]tamanho (em bytes) da variável para armazenamento dos dados. \item[{\em delimiter}]delimitador dos dados. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setOutput ({\bf Database} $\ast$ {\em db}, const char $\ast$ {\em table})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_5c8f92559e65d2619ff3af74efaa31af}
+
+
+Define a saída dos dados processados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em db}]banco de dados que contém a tabela onde serão armazenados os dados processados. \item[{\em table}]tabela onde serão armazenados os dados processados. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setOutput (const char $\ast$ {\em file})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_51cb88effc40497a670e824c93241d42}
+
+
+Define a saída dos dados processados. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em file}]caminho do arquivo para armazenamento dos dados processados. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}!setAvaibleMiningAlgorithms@{setAvaibleMiningAlgorithms}}
+\index{setAvaibleMiningAlgorithms@{setAvaibleMiningAlgorithms}!br::ufscar::lince::ginga::recommender::DataMining@{br::ufscar::lince::ginga::recommender::DataMining}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setAvaibleMiningAlgorithms ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1DataMining_188f1189da4f91327f77a5d19a18503e}
+
+
+Inicializa o mapa com os nomes dos algoritmos de mineração de dados disponíveis. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/DataMining/include/DataMining.h\end{CompactItemize}

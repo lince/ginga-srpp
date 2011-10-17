@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{si\n||+ si()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{eit\n|- start_time\l- end_time\l- descriptor_conteudo_genero\l- descriptor_conteudo_subgenero\l- descriptor_event_short_sinopse\l|+ getDescriptor_conteudo_genero()\l+ getDescriptor_conteudo_subgenero()\l+ getDescriptor_event_short_sinopse()\l+ getEnd_time()\l+ getStart_time()\l+ setDescriptor_conteudo_genero()\l+ setDescriptor_conteudo_subgenero()\l+ setDescriptor_event_short_sinopse()\l+ setEnd_time()\l+ setStart_time()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1eit.html"];
+  Node3 -> Node2 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="start_time\ndescriptor_conteudo_genero\nend_time\ndescriptor_event_short_sinopse\ndescriptor_conteudo_subgenero",arrowtail="open"];
+  Node3 [label="{char\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node4 [label="{sdt\n|- serviceProviderName\l- serviceName\l|+ getServiceName()\l+ getServiceProviderName()\l+ setServiceName()\l+ setServiceProviderName()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1sdt.html"];
+  Node3 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="serviceProviderName\nserviceName",arrowtail="open"];
+}

@@ -1,0 +1,77 @@
+\section{EventTransitionManager Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager}\index{br::pucrio::telemidia::ginga::ncl::model::event::transition::EventTransitionManager@{br::pucrio::telemidia::ginga::ncl::model::event::transition::EventTransitionManager}}
+Collaboration diagram for EventTransitionManager:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{addPresentationEvent} ({\bf PresentationEvent} $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_25867e0300ec8a2b4c60b2b6ee816620}
+
+\item 
+void \textbf{removeEventTransition} ({\bf PresentationEvent} $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_232c9548270782f1ccc8f6f7d3c514f1}
+
+\item 
+void \textbf{resetTimeIndex} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_f43463e115c91f9048d2123f6a1c2bdf}
+
+\item 
+void \textbf{resetTimeIndexByType} (short int type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_07c5fd478cfd093185f1a11f7d9963f0}
+
+\item 
+void \textbf{prepare} (bool wholeContent, double startTime, short int type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_043256c41bb3b88f7f3408a325f0d4a1}
+
+\item 
+void \textbf{start} (double offsetTime)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_0c460d632cf29392f9ea6074c65bccdf}
+
+\item 
+void \textbf{stop} (double endTime)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_0ef9f1d29765b6e5809c27f8021e27a7}
+
+\item 
+void \textbf{abort} (double endTime)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_6ef30b2e34885612cc2731402b1cf61b}
+
+\item 
+void \textbf{updateTransitionTable} (double timeValue, IPlayer $\ast$player, {\bf FormatterEvent} $\ast$mainEvent, short int transType)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_02ed7666c4c1b61e716563d09467e2f7}
+
+\item 
+set$<$ double $>$ $\ast$ \textbf{getTransitionsValues} (short int transType)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_b95e66d70023507acc899a8737fb6629}
+
+\item 
+{\bf EventTransition} $\ast$ \textbf{getNextTransition} ({\bf FormatterEvent} $\ast$mainEvent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_d99d1444cbbc209e9500edbd73ce53b2}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+short int \textbf{getType} ({\bf PresentationEvent} $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_9773ff1adb4fce308031642739f3f1e6}
+
+\item 
+vector$<$ {\bf EventTransition} $\ast$ $>$ $\ast$ \textbf{getTransitionEvents} (short int type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_c9744c4c863bdd133c3dbefb4efc1890}
+
+\item 
+void \textbf{addEventTransition} ({\bf EventTransition} $\ast$transition, short int type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_15f94f94425650ea657b8a666d7e458a}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ short int, int $>$ $\ast$ {\bf currentTransitionIndex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_676cacf80488c6548378e7016fdcd8cf}
+
+\item 
+map$<$ short int, int $>$ $\ast$ {\bf startTransitionIndex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_f1017d1c97debd4d8a8f21a468987634}
+
+\item 
+map$<$ short int, vector$<$ {\bf EventTransition} $\ast$ $>$ $\ast$ $>$ $\ast$ {\bf transTable}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_1de8d9abe3dcfd2a1a9749acbe459477}
+
+\item 
+pthread\_\-mutex\_\-t {\bf transMutex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1model_1_1event_1_1transition_1_1EventTransitionManager_ad14dbd000e5203d281b88cbbfca9580}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 81 of file EventTransitionManager.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/model/EventTransitionManager.h\end{CompactItemize}

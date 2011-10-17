@@ -1,0 +1,1630 @@
+NclPresentationSpecConverter.o NclPresentationSpecConverter.o:  \
+ NclPresentationSpecConverter.cpp \
+  ../../../include/ncl/NclPresentationSpecConverter.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++config.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-32.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/cpu_defines.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h \
+  /usr/include/string.h /usr/include/xlocale.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/limits.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/syslimits.h \
+  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib \
+  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/sys/types.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/time.h /usr/include/sys/select.h \
+  /usr/include/bits/select.h /usr/include/bits/sigset.h \
+  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++locale.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio \
+  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+  /usr/include/wchar.h /usr/include/bits/wchar.h /usr/include/gconv.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdarg.h \
+  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale \
+  /usr/include/locale.h /usr/include/bits/locale.h \
+  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/iconv.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++io.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+  /usr/include/signal.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h /usr/include/getopt.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime \
+  /usr/include/stdint.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++allocator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/atomic_word.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_base.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_inline.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/time_members.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/messages_members.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/basic_file.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc \
+  /usr/include/sys/timeb.h /usr/include/sys/time.h /usr/include/math.h \
+  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+  /usr/include/sys/resource.h /usr/include/bits/resource.h \
+  /usr/local/include/ginga/util/IColor.h \
+  /usr/local/include/ginga/ncl/Parameter.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/set \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tree.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_set.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multiset.h \
+  /usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/descriptor/../Entity.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/descriptor/Descriptor.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/descriptor/../Parameter.h \
+  /usr/local/include/ginga/ncl/descriptor/../layout/LayoutRegion.h \
+  /usr/local/include/ginga/ncl/descriptor/../layout/../Entity.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/map \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_map.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multimap.h \
+  /usr/local/include/ginga/ncl/descriptor/../navigation/FocusDecoration.h \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/descriptor/../navigation/KeyNavigation.h \
+  /usr/local/include/ginga/ncl/descriptor/../transition/Transition.h \
+  /usr/local/include/ginga/util/Color.h \
+  /usr/local/include/ginga/ncl/descriptor/../transition/../Entity.h \
+  /usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/descriptor/DescriptorBase.h \
+  /usr/local/include/ginga/ncl/descriptor/../Base.h \
+  /usr/local/include/ginga/ncl/descriptor/../IllegalBaseTypeException.h \
+  /usr/local/include/ginga/ncl/switches/Rule.h \
+  /usr/local/include/ginga/ncl/switches/../Entity.h \
+  /usr/local/include/ginga/ncl/switches/RuleBase.h \
+  /usr/local/include/ginga/ncl/switches/../Base.h \
+  /usr/local/include/ginga/ncl/switches/Rule.h \
+  /usr/local/include/ginga/ncl/layout/LayoutRegion.h \
+  /usr/local/include/ginga/ncl/layout/RegionBase.h \
+  /usr/local/include/ginga/ncl/layout/../Base.h \
+  /usr/local/include/ginga/ncl/layout/LayoutRegion.h \
+  /usr/local/include/ginga/ncl/layout/DeviceLayout.h \
+  /usr/local/include/ginga/ncl/layout/IDeviceLayout.h \
+  /usr/local/include/ginga/ncl/NclDocument.h \
+  /usr/local/include/ginga/ncl/switches/Rule.h \
+  /usr/local/include/ginga/ncl/switches/RuleBase.h \
+  /usr/local/include/ginga/ncl/components/ContextNode.h \
+  /usr/local/include/ginga/ncl/components/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/components/../link/Link.h \
+  /usr/local/include/ginga/ncl/components/../link/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../link/../Parameter.h \
+  /usr/local/include/ginga/ncl/components/../link/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Anchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/LambdaAnchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/IntervalAnchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/ContentAnchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Anchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/RelativeTimeIntervalAnchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../reuse/ReferNode.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../reuse/../components/Node.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../reuse/../components/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../reuse/../components/../interfaces/Anchor.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../reuse/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/Node.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/Content.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/Connector.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/../Entity.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/../Parameter.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/Role.h \
+  /usr/local/include/ginga/ncl/components/../link/../connectors/Role.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/SwitchPort.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/../components/Node.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/../components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/../link/Bind.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/CompositeNode.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Port.h \
+  /usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h \
+  /usr/local/include/ginga/ncl/components/../link/LinkComposition.h \
+  /usr/local/include/ginga/ncl/components/../link/Link.h \
+  /usr/local/include/ginga/ncl/components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/IllegalNodeTypeException.h \
+  /usr/local/include/ginga/ncl/components/CompositeNode.h \
+  /usr/local/include/ginga/ncl/components/Node.h \
+  /usr/local/include/ginga/ncl/components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/connectors/Connector.h \
+  /usr/local/include/ginga/ncl/connectors/ConnectorBase.h \
+  /usr/local/include/ginga/ncl/connectors/../Base.h \
+  /usr/local/include/ginga/ncl/connectors/Connector.h \
+  /usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/descriptor/DescriptorBase.h \
+  /usr/local/include/ginga/ncl/layout/LayoutRegion.h \
+  /usr/local/include/ginga/ncl/layout/RegionBase.h \
+  /usr/local/include/ginga/ncl/transition/Transition.h \
+  /usr/local/include/ginga/ncl/transition/TransitionBase.h \
+  /usr/local/include/ginga/ncl/transition/../Base.h \
+  /usr/local/include/ginga/ncl/transition/../IllegalBaseTypeException.h \
+  /usr/local/include/ginga/ncl/transition/Transition.h \
+  /usr/local/include/ginga/ncl/metainformation/Meta.h \
+  /usr/local/include/ginga/ncl/metainformation/Metadata.h \
+  /usr/local/include/ginga/ncl/Base.h \
+  /usr/local/include/ginga/ncl/navigation/FocusDecoration.h \
+  /usr/local/include/ginga/ncl/navigation/KeyNavigation.h \
+  /usr/local/include/ginga/ncl/transition/Transition.h \
+  /usr/local/include/ginga/ncl/transition/TransitionBase.h \
+  ../../../include/ncl/../framework/DocumentParser.h \
+  /usr/include/xercesc/dom/DOM.hpp /usr/include/xercesc/dom/DOMAttr.hpp \
+  /usr/include/xercesc/util/XercesDefs.hpp \
+  /usr/include/xercesc/util/XercesVersion.hpp \
+  /usr/include/xercesc/util/AutoSense.hpp \
+  /usr/include/xercesc/util/Platforms/Linux/LinuxDefs.hpp \
+  /usr/include/xercesc/util/Compilers/GCCDefs.hpp \
+  /usr/include/xercesc/dom/DOMNode.hpp \
+  /usr/include/xercesc/dom/DOMCDATASection.hpp \
+  /usr/include/xercesc/dom/DOMText.hpp \
+  /usr/include/xercesc/dom/DOMCharacterData.hpp \
+  /usr/include/xercesc/dom/DOMComment.hpp \
+  /usr/include/xercesc/dom/DOMDocument.hpp \
+  /usr/include/xercesc/dom/DOMDocumentRange.hpp \
+  /usr/include/xercesc/dom/DOMDocumentTraversal.hpp \
+  /usr/include/xercesc/dom/DOMXPathEvaluator.hpp \
+  /usr/include/xercesc/dom/DOMDocumentFragment.hpp \
+  /usr/include/xercesc/dom/DOMDocumentType.hpp \
+  /usr/include/xercesc/dom/DOMElement.hpp \
+  /usr/include/xercesc/dom/DOMEntity.hpp \
+  /usr/include/xercesc/dom/DOMEntityReference.hpp \
+  /usr/include/xercesc/dom/DOMException.hpp \
+  /usr/include/xercesc/util/PlatformUtils.hpp \
+  /usr/include/xercesc/util/XMLException.hpp \
+  /usr/include/xercesc/util/XMemory.hpp \
+  /usr/include/xercesc/util/XMLExceptMsgs.hpp \
+  /usr/include/xercesc/dom/DOMError.hpp \
+  /usr/include/xercesc/util/XMLUni.hpp \
+  /usr/include/xercesc/framework/XMLErrorReporter.hpp \
+  /usr/include/xercesc/util/PanicHandler.hpp \
+  /usr/include/xercesc/dom/DOMImplementation.hpp \
+  /usr/include/xercesc/dom/DOMImplementationLS.hpp \
+  /usr/include/xercesc/dom/DOMRangeException.hpp \
+  /usr/include/xercesc/dom/DOMNamedNodeMap.hpp \
+  /usr/include/xercesc/dom/DOMNodeList.hpp \
+  /usr/include/xercesc/dom/DOMNotation.hpp \
+  /usr/include/xercesc/dom/DOMProcessingInstruction.hpp \
+  /usr/include/xercesc/dom/DOMNodeFilter.hpp \
+  /usr/include/xercesc/dom/DOMNodeIterator.hpp \
+  /usr/include/xercesc/dom/DOMRange.hpp \
+  /usr/include/xercesc/dom/DOMTreeWalker.hpp \
+  /usr/include/xercesc/dom/DOMBuilder.hpp \
+  /usr/include/xercesc/dom/DOMConfiguration.hpp \
+  /usr/include/xercesc/util/XMLString.hpp \
+  /usr/include/xercesc/util/BaseRefVectorOf.hpp \
+  /usr/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp \
+  /usr/include/xercesc/util/XMLEnumerator.hpp \
+  /usr/include/xercesc/framework/MemoryManager.hpp \
+  /usr/include/xercesc/util/BaseRefVectorOf.c \
+  /usr/include/xercesc/framework/XMLBuffer.hpp /usr/include/assert.h \
+  /usr/include/xercesc/dom/DOMEntityResolver.hpp \
+  /usr/include/xercesc/dom/DOMErrorHandler.hpp \
+  /usr/include/xercesc/dom/DOMImplementationRegistry.hpp \
+  /usr/include/xercesc/dom/DOMImplementationSource.hpp \
+  /usr/include/xercesc/dom/DOMInputSource.hpp \
+  /usr/include/xercesc/dom/DOMLocator.hpp \
+  /usr/include/xercesc/dom/DOMTypeInfo.hpp \
+  /usr/include/xercesc/dom/DOMUserDataHandler.hpp \
+  /usr/include/xercesc/dom/DOMWriter.hpp \
+  /usr/include/xercesc/dom/DOMWriterFilter.hpp \
+  /usr/include/xercesc/framework/XMLFormatter.hpp \
+  /usr/include/xercesc/dom/DOMXPathNSResolver.hpp \
+  /usr/include/xercesc/dom/DOMXPathException.hpp \
+  /usr/include/xercesc/dom/DOMXPathExpression.hpp \
+  /usr/include/xercesc/dom/DOMXPathResult.hpp \
+  /usr/include/xercesc/dom/DOMXPathNamespace.hpp \
+  /usr/local/include/ginga/util/functions.h \
+  ../../../include/ncl/../framework/XMLParsing.h \
+  /usr/include/xercesc/parsers/XercesDOMParser.hpp \
+  /usr/include/xercesc/parsers/AbstractDOMParser.hpp \
+  /usr/include/xercesc/framework/XMLDocumentHandler.hpp \
+  /usr/include/xercesc/util/RefVectorOf.hpp \
+  /usr/include/xercesc/util/RefVectorOf.c \
+  /usr/include/xercesc/framework/XMLAttr.hpp \
+  /usr/include/xercesc/util/QName.hpp \
+  /usr/include/xercesc/util/XMLUniDefs.hpp \
+  /usr/include/xercesc/internal/XSerializable.hpp \
+  /usr/include/xercesc/internal/XSerializeEngine.hpp \
+  /usr/include/xercesc/util/RefHashTableOf.hpp \
+  /usr/include/xercesc/util/HashBase.hpp \
+  /usr/include/xercesc/util/IllegalArgumentException.hpp \
+  /usr/include/xercesc/util/NoSuchElementException.hpp \
+  /usr/include/xercesc/util/RuntimeException.hpp \
+  /usr/include/xercesc/util/HashXMLCh.hpp \
+  /usr/include/xercesc/util/RefHashTableOf.c \
+  /usr/include/xercesc/util/Janitor.hpp \
+  /usr/include/xercesc/util/Janitor.c \
+  /usr/include/xercesc/util/NullPointerException.hpp \
+  /usr/include/xercesc/util/ValueVectorOf.hpp \
+  /usr/include/xercesc/util/ValueVectorOf.c \
+  /usr/include/xercesc/internal/XSerializationException.hpp \
+  /usr/include/xercesc/internal/XProtoType.hpp \
+  /usr/include/xercesc/framework/XMLAttDef.hpp \
+  /usr/include/xercesc/validators/datatype/DatatypeValidator.hpp \
+  /usr/include/xercesc/util/KVStringPair.hpp \
+  /usr/include/xercesc/util/regx/RegularExpression.hpp \
+  /usr/include/xercesc/util/RefArrayVectorOf.hpp \
+  /usr/include/xercesc/util/RefArrayVectorOf.c \
+  /usr/include/xercesc/util/regx/Op.hpp \
+  /usr/include/xercesc/util/regx/TokenFactory.hpp \
+  /usr/include/xercesc/util/regx/Token.hpp \
+  /usr/include/xercesc/util/Mutexes.hpp \
+  /usr/include/xercesc/util/regx/BMPattern.hpp \
+  /usr/include/xercesc/util/regx/ModifierToken.hpp \
+  /usr/include/xercesc/util/regx/ConditionToken.hpp \
+  /usr/include/xercesc/util/regx/OpFactory.hpp \
+  /usr/include/xercesc/util/regx/RegxUtil.hpp \
+  /usr/include/xercesc/validators/schema/SchemaSymbols.hpp \
+  /usr/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp \
+  /usr/include/xercesc/framework/psvi/XSTypeDefinition.hpp \
+  /usr/include/xercesc/framework/psvi/XSObject.hpp \
+  /usr/include/xercesc/framework/psvi/XSConstants.hpp \
+  /usr/include/xercesc/framework/ValidationContext.hpp \
+  /usr/include/xercesc/util/NameIdPool.hpp \
+  /usr/include/xercesc/util/NameIdPool.c \
+  /usr/include/xercesc/framework/XMLEntityHandler.hpp \
+  /usr/include/xercesc/util/SecurityManager.hpp \
+  /usr/include/xercesc/util/ValueStackOf.hpp \
+  /usr/include/xercesc/util/EmptyStackException.hpp \
+  /usr/include/xercesc/util/ValueStackOf.c \
+  /usr/include/xercesc/validators/DTD/DocTypeHandler.hpp \
+  /usr/include/xercesc/framework/XMLNotationDecl.hpp \
+  /usr/include/xercesc/validators/DTD/DTDAttDef.hpp \
+  /usr/include/xercesc/validators/DTD/DTDElementDecl.hpp \
+  /usr/include/xercesc/framework/XMLElementDecl.hpp \
+  /usr/include/xercesc/framework/XMLAttDefList.hpp \
+  /usr/include/xercesc/framework/XMLContentModel.hpp \
+  /usr/include/xercesc/validators/DTD/DTDEntityDecl.hpp \
+  /usr/include/xercesc/framework/XMLEntityDecl.hpp \
+  /usr/include/xercesc/framework/XMLBufferMgr.hpp \
+  /usr/include/xercesc/framework/psvi/PSVIHandler.hpp \
+  /usr/include/xercesc/framework/psvi/PSVIElement.hpp \
+  /usr/include/xercesc/framework/psvi/PSVIItem.hpp \
+  /usr/include/xercesc/framework/psvi/PSVIAttributeList.hpp \
+  /usr/include/xercesc/framework/psvi/PSVIAttribute.hpp \
+  /usr/include/xercesc/framework/LocalFileInputSource.hpp \
+  /usr/include/xercesc/sax/InputSource.hpp \
+  /usr/include/xercesc/framework/MemBufInputSource.hpp \
+  /usr/include/xercesc/sax/SAXException.hpp \
+  ../../../include/ncl/../framework/DOMTreeErrorReporter.h \
+  /usr/include/xercesc/sax/ErrorHandler.hpp \
+  ../../../include/ncl/../framework/ModuleParser.h \
+  ../../../include/ncl/../framework/DocumentParser.h \
+  ../../../include/ncl/../framework/ncl/NclPresentationSpecificationParser.h \
+  ../../../include/ncl/../framework/ncl/../ModuleParser.h \
+  ../../../include/ncl/../framework/ncl/../DocumentParser.h \
+  ../../../include/ncl/../framework/ncl/NclImportParser.h \
+  ../../../include/ncl/NclImportConverter.h \
+  ../../../include/ncl/../framework/ncl/NclImportParser.h \
+  ../../../include/ncl/NclDocumentConverter.h \
+  /usr/local/include/ginga/ncl/components/Node.h \
+  ../../../include/ncl/../framework/ncl/NclDocumentParser.h \
+  ../../../include/ncl/../framework/ncl/NclConnectorsParser.h \
+  ../../../include/ncl/../framework/ncl/NclTransitionParser.h \
+  ../../../include/ncl/../framework/ncl/NclPresentationControlParser.h \
+  ../../../include/ncl/../framework/ncl/NclPresentationSpecificationParser.h \
+  ../../../include/ncl/../framework/ncl/NclInterfacesParser.h \
+  ../../../include/ncl/../framework/ncl/NclComponentsParser.h \
+  ../../../include/ncl/../framework/ncl/NclLinkingParser.h \
+  ../../../include/ncl/../framework/ncl/NclStructureParser.h \
+  ../../../include/ncl/../framework/ncl/NclLayoutParser.h \
+  ../../../include/ncl/../framework/ncl/NclMetainformationParser.h \
+  ../../../include/ncl/../framework/ncl/../../smil/SMILNCMDocumentConverter.h \
+  ../../../include/ncl/../framework/ncl/../../smil/../framework/DocumentParser.h \
+  /usr/local/include/ginga/ncl/connectors/CausalConnector.h \
+  /usr/local/include/ginga/ncl/connectors/Action.h \
+  /usr/local/include/ginga/ncl/connectors/Role.h \
+  /usr/local/include/ginga/ncl/connectors/AssessmentStatement.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/connectors/Assessment.h \
+  /usr/local/include/ginga/ncl/connectors/AttributeAssessment.h \
+  /usr/local/include/ginga/ncl/connectors/EventUtil.h \
+  /usr/local/include/ginga/ncl/connectors/Statement.h \
+  /usr/local/include/ginga/ncl/connectors/ConditionExpression.h \
+  /usr/local/include/ginga/ncl/connectors/CausalConnector.h \
+  /usr/local/include/ginga/ncl/connectors/CompoundAction.h \
+  /usr/local/include/ginga/ncl/connectors/SimpleAction.h \
+  /usr/local/include/ginga/ncl/connectors/../animation/Animation.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/connectors/CompoundStatement.h \
+  /usr/local/include/ginga/ncl/connectors/CompoundCondition.h \
+  /usr/local/include/ginga/ncl/connectors/TriggerExpression.h \
+  /usr/local/include/ginga/ncl/connectors/SimpleCondition.h \
+  /usr/local/include/ginga/ncl/connectors/ConnectorBase.h \
+  /usr/local/include/ginga/ncl/NclDocument.h \
+  /usr/local/include/ginga/ncl/layout/RegionBase.h \
+  /usr/local/include/ginga/ncl/components/ContentNode.h \
+  /usr/local/include/ginga/ncl/components/Content.h \
+  /usr/local/include/ginga/ncl/components/ContextNode.h \
+  /usr/local/include/ginga/ncl/components/AbsoluteReferenceContent.h \
+  /usr/local/include/ginga/ncl/components/ReferenceContent.h \
+  /usr/local/include/ginga/ncl/components/ContentTypeManager.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/descriptor/DescriptorBase.h \
+  /usr/local/include/ginga/ncl/descriptor/Descriptor.h \
+  /usr/local/include/ginga/ncl/link/CausalLink.h \
+  /usr/local/include/ginga/ncl/link/../components/Node.h \
+  /usr/local/include/ginga/ncl/link/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/link/../connectors/Connector.h \
+  /usr/local/include/ginga/ncl/link/../connectors/AttributeAssessment.h \
+  /usr/local/include/ginga/ncl/link/../connectors/SimpleAction.h \
+  /usr/local/include/ginga/ncl/link/../connectors/SimpleCondition.h \
+  /usr/local/include/ginga/ncl/link/Bind.h \
+  /usr/local/include/ginga/ncl/link/Link.h \
+  /usr/local/include/ginga/ncl/IPrivateBaseContext.h \
+  /usr/local/include/ginga/ncl/layout/IDeviceLayout.h \
+  ../../../include/ncl/../IDocumentConverter.h \
+  /usr/local/include/ginga/ncl/NclDocument.h \
+  /usr/local/include/ginga/ncl/IPrivateBaseContext.h \
+  ../../../include/ncl/NclPresentationControlConverter.h \
+  /usr/local/include/ginga/ncl/reuse/ReferNode.h \
+  /usr/local/include/ginga/ncl/reuse/ReferredNode.h \
+  /usr/local/include/ginga/ncl/reuse/../Entity.h \
+  /usr/local/include/ginga/ncl/switches/DescriptorSwitch.h \
+  /usr/local/include/ginga/ncl/switches/../descriptor/GenericDescriptor.h \
+  /usr/local/include/ginga/ncl/switches/SwitchNode.h \
+  /usr/local/include/ginga/util/functions.h \
+  /usr/local/include/ginga/ncl/switches/../components/ContextNode.h \
+  /usr/local/include/ginga/ncl/switches/../components/CompositeNode.h \
+  /usr/local/include/ginga/ncl/switches/../components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/switches/../components/IllegalNodeTypeException.h \
+  /usr/local/include/ginga/ncl/switches/../interfaces/Port.h \
+  /usr/local/include/ginga/ncl/switches/../interfaces/InterfacePoint.h \
+  /usr/local/include/ginga/ncl/switches/../interfaces/SwitchPort.h \
+  /usr/local/include/ginga/ncl/switches/DescriptorSwitch.h \
+  /usr/local/include/ginga/ncl/switches/SwitchContent.h \
+  /usr/local/include/ginga/ncl/switches/../components/Content.h \
+  /usr/local/include/ginga/ncl/switches/CompositeRule.h \
+  /usr/local/include/ginga/ncl/switches/SimpleRule.h \
+  /usr/local/include/ginga/ncl/interfaces/Port.h \
+  /usr/local/include/ginga/ncl/util/Comparator.h \
+  ../../../include/ncl/../framework/ncl/NclPresentationControlParser.h \
+  ../../../include/ncl/NclPresentationSpecConverter.h \
+  ../../../include/ncl/NclComponentsConverter.h \
+  /usr/local/include/ginga/ncl/interfaces/Anchor.h \
+  /usr/local/include/ginga/ncl/components/NodeEntity.h \
+  /usr/local/include/ginga/ncl/components/ContextNode.h \
+  /usr/local/include/ginga/ncl/components/ContentNode.h \
+  /usr/local/include/ginga/ncl/components/AbsoluteReferenceContent.h \
+  /usr/local/include/ginga/ncl/link/Link.h \
+  /usr/local/include/ginga/ncl/connectors/Role.h \
+  ../../../include/ncl/../framework/ncl/NclComponentsParser.h \
+  ../../../include/ncl/NclLinkingConverter.h \
+  /usr/local/include/ginga/ncl/connectors/CausalConnector.h \
+  /usr/local/include/ginga/ncl/connectors/Connector.h \
+  /usr/local/include/ginga/ncl/components/CompositeNode.h \
+  /usr/local/include/ginga/ncl/link/CausalLink.h \
+  /usr/local/include/ginga/ncl/link/Bind.h \
+  ../../../include/ncl/../framework/ncl/NclLinkingParser.h \
+  ../../../include/ncl/NclConnectorsConverter.h \
+  /usr/local/include/ginga/ncl/animation/Animation.h \
+  /usr/local/include/ginga/ncl/connectors/EventUtil.h \
+  /usr/local/include/ginga/ncl/connectors/ValueAssessment.h \
+  /usr/local/include/ginga/ncl/connectors/CompoundAction.h \
+  /usr/local/include/ginga/ncl/connectors/CompoundCondition.h \
+  /usr/local/include/ginga/ncl/connectors/CompoundStatement.h \
+  /usr/local/include/ginga/ncl/connectors/AttributeAssessment.h \
+  /usr/local/include/ginga/ncl/connectors/AssessmentStatement.h \
+  /usr/local/include/ginga/ncl/connectors/SimpleAction.h \
+  /usr/local/include/ginga/ncl/connectors/SimpleCondition.h \
+  /usr/local/include/ginga/ncl/connectors/ConnectorBase.h \
+  /usr/local/include/ginga/util/functions.h \
+  ../../../include/ncl/../framework/ncl/NclConnectorsParser.h \
+  ../../../include/ncl/NclInterfacesConverter.h \
+  /usr/local/include/ginga/ncl/interfaces/PropertyAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/../Entity.h \
+  /usr/local/include/ginga/ncl/interfaces/Anchor.h \
+  /usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/LabeledAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/RectangleSpatialAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/SpatialAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/ContentAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/RelativeTimeIntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/SampleIntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/SpatialAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/TextAnchor.h \
+  /usr/local/include/ginga/ncl/interfaces/SwitchPort.h \
+  ../../../include/ncl/../framework/ncl/NclInterfacesParser.h \
+  ../../../include/ncl/NclImportConverter.h \
+  ../../../include/ncl/NclPresentationControlConverter.h
+
+../../../include/ncl/NclPresentationSpecConverter.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/vector:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/functexcept.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception_defines.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algobase.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++config.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/cpu_defines.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstring:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstddef:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/climits:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/limits.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iosfwd:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++locale.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cstdio:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/gconv.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdarg.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/langinfo.h:
+
+/usr/include/nl_types.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libintl.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++io.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/signal.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cctype:
+
+/usr/include/ctype.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stringfwd.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/postypes.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwchar:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ctime:
+
+/usr/include/stdint.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_pair.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/concept_check.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_iterator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/debug/debug.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/allocator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/c++allocator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ext/new_allocator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/new:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/exception:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_construct.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_vector.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_bvector.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/vector.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/string:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/char_traits.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/memory:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_raw_storage_iter.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/limits:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_function.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/atomicity.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/atomic_word.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/algorithm:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_algo.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_heap.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tempbuf.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_string.tcc:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/fstream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/istream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ios:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/localefwd.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ios_base.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_classes.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/streambuf:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/streambuf_iterator.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_base.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/ctype_inline.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/codecvt.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/time_members.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/messages_members.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/basic_ios.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/istream.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/locale:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/locale_facets.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/typeinfo:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/ostream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/ostream.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/i386-redhat-linux/bits/basic_file.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/fstream.tcc:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/iostream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/sstream:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/sstream.tcc:
+
+/usr/include/sys/timeb.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/bits/resource.h:
+
+/usr/local/include/ginga/util/IColor.h:
+
+/usr/local/include/ginga/ncl/Parameter.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/set:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_tree.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_set.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multiset.h:
+
+/usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/descriptor/../Entity.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/descriptor/Descriptor.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/descriptor/../Parameter.h:
+
+/usr/local/include/ginga/ncl/descriptor/../layout/LayoutRegion.h:
+
+/usr/local/include/ginga/ncl/descriptor/../layout/../Entity.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/map:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_map.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/../../../../include/c++/4.1.2/bits/stl_multimap.h:
+
+/usr/local/include/ginga/ncl/descriptor/../navigation/FocusDecoration.h:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/descriptor/../navigation/KeyNavigation.h:
+
+/usr/local/include/ginga/ncl/descriptor/../transition/Transition.h:
+
+/usr/local/include/ginga/util/Color.h:
+
+/usr/local/include/ginga/ncl/descriptor/../transition/../Entity.h:
+
+/usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/descriptor/DescriptorBase.h:
+
+/usr/local/include/ginga/ncl/descriptor/../Base.h:
+
+/usr/local/include/ginga/ncl/descriptor/../IllegalBaseTypeException.h:
+
+/usr/local/include/ginga/ncl/switches/Rule.h:
+
+/usr/local/include/ginga/ncl/switches/../Entity.h:
+
+/usr/local/include/ginga/ncl/switches/RuleBase.h:
+
+/usr/local/include/ginga/ncl/switches/../Base.h:
+
+/usr/local/include/ginga/ncl/switches/Rule.h:
+
+/usr/local/include/ginga/ncl/layout/LayoutRegion.h:
+
+/usr/local/include/ginga/ncl/layout/RegionBase.h:
+
+/usr/local/include/ginga/ncl/layout/../Base.h:
+
+/usr/local/include/ginga/ncl/layout/LayoutRegion.h:
+
+/usr/local/include/ginga/ncl/layout/DeviceLayout.h:
+
+/usr/local/include/ginga/ncl/layout/IDeviceLayout.h:
+
+/usr/local/include/ginga/ncl/NclDocument.h:
+
+/usr/local/include/ginga/ncl/switches/Rule.h:
+
+/usr/local/include/ginga/ncl/switches/RuleBase.h:
+
+/usr/local/include/ginga/ncl/components/ContextNode.h:
+
+/usr/local/include/ginga/ncl/components/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/components/../link/Link.h:
+
+/usr/local/include/ginga/ncl/components/../link/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../Parameter.h:
+
+/usr/local/include/ginga/ncl/components/../link/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Anchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/LambdaAnchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/IntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/ContentAnchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Anchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/RelativeTimeIntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../reuse/ReferNode.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../reuse/../components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../reuse/../components/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../reuse/../components/../interfaces/Anchor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../reuse/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/Content.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/Connector.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/../Entity.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/../Parameter.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/Role.h:
+
+/usr/local/include/ginga/ncl/components/../link/../connectors/Role.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/SwitchPort.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/../components/Node.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/../components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/../link/Bind.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/CompositeNode.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/components/../link/../components/../interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/components/../link/../interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/components/../link/LinkComposition.h:
+
+/usr/local/include/ginga/ncl/components/../link/Link.h:
+
+/usr/local/include/ginga/ncl/components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/IllegalNodeTypeException.h:
+
+/usr/local/include/ginga/ncl/components/CompositeNode.h:
+
+/usr/local/include/ginga/ncl/components/Node.h:
+
+/usr/local/include/ginga/ncl/components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/connectors/Connector.h:
+
+/usr/local/include/ginga/ncl/connectors/ConnectorBase.h:
+
+/usr/local/include/ginga/ncl/connectors/../Base.h:
+
+/usr/local/include/ginga/ncl/connectors/Connector.h:
+
+/usr/local/include/ginga/ncl/descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/descriptor/DescriptorBase.h:
+
+/usr/local/include/ginga/ncl/layout/LayoutRegion.h:
+
+/usr/local/include/ginga/ncl/layout/RegionBase.h:
+
+/usr/local/include/ginga/ncl/transition/Transition.h:
+
+/usr/local/include/ginga/ncl/transition/TransitionBase.h:
+
+/usr/local/include/ginga/ncl/transition/../Base.h:
+
+/usr/local/include/ginga/ncl/transition/../IllegalBaseTypeException.h:
+
+/usr/local/include/ginga/ncl/transition/Transition.h:
+
+/usr/local/include/ginga/ncl/metainformation/Meta.h:
+
+/usr/local/include/ginga/ncl/metainformation/Metadata.h:
+
+/usr/local/include/ginga/ncl/Base.h:
+
+/usr/local/include/ginga/ncl/navigation/FocusDecoration.h:
+
+/usr/local/include/ginga/ncl/navigation/KeyNavigation.h:
+
+/usr/local/include/ginga/ncl/transition/Transition.h:
+
+/usr/local/include/ginga/ncl/transition/TransitionBase.h:
+
+../../../include/ncl/../framework/DocumentParser.h:
+
+/usr/include/xercesc/dom/DOM.hpp:
+
+/usr/include/xercesc/dom/DOMAttr.hpp:
+
+/usr/include/xercesc/util/XercesDefs.hpp:
+
+/usr/include/xercesc/util/XercesVersion.hpp:
+
+/usr/include/xercesc/util/AutoSense.hpp:
+
+/usr/include/xercesc/util/Platforms/Linux/LinuxDefs.hpp:
+
+/usr/include/xercesc/util/Compilers/GCCDefs.hpp:
+
+/usr/include/xercesc/dom/DOMNode.hpp:
+
+/usr/include/xercesc/dom/DOMCDATASection.hpp:
+
+/usr/include/xercesc/dom/DOMText.hpp:
+
+/usr/include/xercesc/dom/DOMCharacterData.hpp:
+
+/usr/include/xercesc/dom/DOMComment.hpp:
+
+/usr/include/xercesc/dom/DOMDocument.hpp:
+
+/usr/include/xercesc/dom/DOMDocumentRange.hpp:
+
+/usr/include/xercesc/dom/DOMDocumentTraversal.hpp:
+
+/usr/include/xercesc/dom/DOMXPathEvaluator.hpp:
+
+/usr/include/xercesc/dom/DOMDocumentFragment.hpp:
+
+/usr/include/xercesc/dom/DOMDocumentType.hpp:
+
+/usr/include/xercesc/dom/DOMElement.hpp:
+
+/usr/include/xercesc/dom/DOMEntity.hpp:
+
+/usr/include/xercesc/dom/DOMEntityReference.hpp:
+
+/usr/include/xercesc/dom/DOMException.hpp:
+
+/usr/include/xercesc/util/PlatformUtils.hpp:
+
+/usr/include/xercesc/util/XMLException.hpp:
+
+/usr/include/xercesc/util/XMemory.hpp:
+
+/usr/include/xercesc/util/XMLExceptMsgs.hpp:
+
+/usr/include/xercesc/dom/DOMError.hpp:
+
+/usr/include/xercesc/util/XMLUni.hpp:
+
+/usr/include/xercesc/framework/XMLErrorReporter.hpp:
+
+/usr/include/xercesc/util/PanicHandler.hpp:
+
+/usr/include/xercesc/dom/DOMImplementation.hpp:
+
+/usr/include/xercesc/dom/DOMImplementationLS.hpp:
+
+/usr/include/xercesc/dom/DOMRangeException.hpp:
+
+/usr/include/xercesc/dom/DOMNamedNodeMap.hpp:
+
+/usr/include/xercesc/dom/DOMNodeList.hpp:
+
+/usr/include/xercesc/dom/DOMNotation.hpp:
+
+/usr/include/xercesc/dom/DOMProcessingInstruction.hpp:
+
+/usr/include/xercesc/dom/DOMNodeFilter.hpp:
+
+/usr/include/xercesc/dom/DOMNodeIterator.hpp:
+
+/usr/include/xercesc/dom/DOMRange.hpp:
+
+/usr/include/xercesc/dom/DOMTreeWalker.hpp:
+
+/usr/include/xercesc/dom/DOMBuilder.hpp:
+
+/usr/include/xercesc/dom/DOMConfiguration.hpp:
+
+/usr/include/xercesc/util/XMLString.hpp:
+
+/usr/include/xercesc/util/BaseRefVectorOf.hpp:
+
+/usr/include/xercesc/util/ArrayIndexOutOfBoundsException.hpp:
+
+/usr/include/xercesc/util/XMLEnumerator.hpp:
+
+/usr/include/xercesc/framework/MemoryManager.hpp:
+
+/usr/include/xercesc/util/BaseRefVectorOf.c:
+
+/usr/include/xercesc/framework/XMLBuffer.hpp:
+
+/usr/include/assert.h:
+
+/usr/include/xercesc/dom/DOMEntityResolver.hpp:
+
+/usr/include/xercesc/dom/DOMErrorHandler.hpp:
+
+/usr/include/xercesc/dom/DOMImplementationRegistry.hpp:
+
+/usr/include/xercesc/dom/DOMImplementationSource.hpp:
+
+/usr/include/xercesc/dom/DOMInputSource.hpp:
+
+/usr/include/xercesc/dom/DOMLocator.hpp:
+
+/usr/include/xercesc/dom/DOMTypeInfo.hpp:
+
+/usr/include/xercesc/dom/DOMUserDataHandler.hpp:
+
+/usr/include/xercesc/dom/DOMWriter.hpp:
+
+/usr/include/xercesc/dom/DOMWriterFilter.hpp:
+
+/usr/include/xercesc/framework/XMLFormatter.hpp:
+
+/usr/include/xercesc/dom/DOMXPathNSResolver.hpp:
+
+/usr/include/xercesc/dom/DOMXPathException.hpp:
+
+/usr/include/xercesc/dom/DOMXPathExpression.hpp:
+
+/usr/include/xercesc/dom/DOMXPathResult.hpp:
+
+/usr/include/xercesc/dom/DOMXPathNamespace.hpp:
+
+/usr/local/include/ginga/util/functions.h:
+
+../../../include/ncl/../framework/XMLParsing.h:
+
+/usr/include/xercesc/parsers/XercesDOMParser.hpp:
+
+/usr/include/xercesc/parsers/AbstractDOMParser.hpp:
+
+/usr/include/xercesc/framework/XMLDocumentHandler.hpp:
+
+/usr/include/xercesc/util/RefVectorOf.hpp:
+
+/usr/include/xercesc/util/RefVectorOf.c:
+
+/usr/include/xercesc/framework/XMLAttr.hpp:
+
+/usr/include/xercesc/util/QName.hpp:
+
+/usr/include/xercesc/util/XMLUniDefs.hpp:
+
+/usr/include/xercesc/internal/XSerializable.hpp:
+
+/usr/include/xercesc/internal/XSerializeEngine.hpp:
+
+/usr/include/xercesc/util/RefHashTableOf.hpp:
+
+/usr/include/xercesc/util/HashBase.hpp:
+
+/usr/include/xercesc/util/IllegalArgumentException.hpp:
+
+/usr/include/xercesc/util/NoSuchElementException.hpp:
+
+/usr/include/xercesc/util/RuntimeException.hpp:
+
+/usr/include/xercesc/util/HashXMLCh.hpp:
+
+/usr/include/xercesc/util/RefHashTableOf.c:
+
+/usr/include/xercesc/util/Janitor.hpp:
+
+/usr/include/xercesc/util/Janitor.c:
+
+/usr/include/xercesc/util/NullPointerException.hpp:
+
+/usr/include/xercesc/util/ValueVectorOf.hpp:
+
+/usr/include/xercesc/util/ValueVectorOf.c:
+
+/usr/include/xercesc/internal/XSerializationException.hpp:
+
+/usr/include/xercesc/internal/XProtoType.hpp:
+
+/usr/include/xercesc/framework/XMLAttDef.hpp:
+
+/usr/include/xercesc/validators/datatype/DatatypeValidator.hpp:
+
+/usr/include/xercesc/util/KVStringPair.hpp:
+
+/usr/include/xercesc/util/regx/RegularExpression.hpp:
+
+/usr/include/xercesc/util/RefArrayVectorOf.hpp:
+
+/usr/include/xercesc/util/RefArrayVectorOf.c:
+
+/usr/include/xercesc/util/regx/Op.hpp:
+
+/usr/include/xercesc/util/regx/TokenFactory.hpp:
+
+/usr/include/xercesc/util/regx/Token.hpp:
+
+/usr/include/xercesc/util/Mutexes.hpp:
+
+/usr/include/xercesc/util/regx/BMPattern.hpp:
+
+/usr/include/xercesc/util/regx/ModifierToken.hpp:
+
+/usr/include/xercesc/util/regx/ConditionToken.hpp:
+
+/usr/include/xercesc/util/regx/OpFactory.hpp:
+
+/usr/include/xercesc/util/regx/RegxUtil.hpp:
+
+/usr/include/xercesc/validators/schema/SchemaSymbols.hpp:
+
+/usr/include/xercesc/framework/psvi/XSSimpleTypeDefinition.hpp:
+
+/usr/include/xercesc/framework/psvi/XSTypeDefinition.hpp:
+
+/usr/include/xercesc/framework/psvi/XSObject.hpp:
+
+/usr/include/xercesc/framework/psvi/XSConstants.hpp:
+
+/usr/include/xercesc/framework/ValidationContext.hpp:
+
+/usr/include/xercesc/util/NameIdPool.hpp:
+
+/usr/include/xercesc/util/NameIdPool.c:
+
+/usr/include/xercesc/framework/XMLEntityHandler.hpp:
+
+/usr/include/xercesc/util/SecurityManager.hpp:
+
+/usr/include/xercesc/util/ValueStackOf.hpp:
+
+/usr/include/xercesc/util/EmptyStackException.hpp:
+
+/usr/include/xercesc/util/ValueStackOf.c:
+
+/usr/include/xercesc/validators/DTD/DocTypeHandler.hpp:
+
+/usr/include/xercesc/framework/XMLNotationDecl.hpp:
+
+/usr/include/xercesc/validators/DTD/DTDAttDef.hpp:
+
+/usr/include/xercesc/validators/DTD/DTDElementDecl.hpp:
+
+/usr/include/xercesc/framework/XMLElementDecl.hpp:
+
+/usr/include/xercesc/framework/XMLAttDefList.hpp:
+
+/usr/include/xercesc/framework/XMLContentModel.hpp:
+
+/usr/include/xercesc/validators/DTD/DTDEntityDecl.hpp:
+
+/usr/include/xercesc/framework/XMLEntityDecl.hpp:
+
+/usr/include/xercesc/framework/XMLBufferMgr.hpp:
+
+/usr/include/xercesc/framework/psvi/PSVIHandler.hpp:
+
+/usr/include/xercesc/framework/psvi/PSVIElement.hpp:
+
+/usr/include/xercesc/framework/psvi/PSVIItem.hpp:
+
+/usr/include/xercesc/framework/psvi/PSVIAttributeList.hpp:
+
+/usr/include/xercesc/framework/psvi/PSVIAttribute.hpp:
+
+/usr/include/xercesc/framework/LocalFileInputSource.hpp:
+
+/usr/include/xercesc/sax/InputSource.hpp:
+
+/usr/include/xercesc/framework/MemBufInputSource.hpp:
+
+/usr/include/xercesc/sax/SAXException.hpp:
+
+../../../include/ncl/../framework/DOMTreeErrorReporter.h:
+
+/usr/include/xercesc/sax/ErrorHandler.hpp:
+
+../../../include/ncl/../framework/ModuleParser.h:
+
+../../../include/ncl/../framework/DocumentParser.h:
+
+../../../include/ncl/../framework/ncl/NclPresentationSpecificationParser.h:
+
+../../../include/ncl/../framework/ncl/../ModuleParser.h:
+
+../../../include/ncl/../framework/ncl/../DocumentParser.h:
+
+../../../include/ncl/../framework/ncl/NclImportParser.h:
+
+../../../include/ncl/NclImportConverter.h:
+
+../../../include/ncl/../framework/ncl/NclImportParser.h:
+
+../../../include/ncl/NclDocumentConverter.h:
+
+/usr/local/include/ginga/ncl/components/Node.h:
+
+../../../include/ncl/../framework/ncl/NclDocumentParser.h:
+
+../../../include/ncl/../framework/ncl/NclConnectorsParser.h:
+
+../../../include/ncl/../framework/ncl/NclTransitionParser.h:
+
+../../../include/ncl/../framework/ncl/NclPresentationControlParser.h:
+
+../../../include/ncl/../framework/ncl/NclPresentationSpecificationParser.h:
+
+../../../include/ncl/../framework/ncl/NclInterfacesParser.h:
+
+../../../include/ncl/../framework/ncl/NclComponentsParser.h:
+
+../../../include/ncl/../framework/ncl/NclLinkingParser.h:
+
+../../../include/ncl/../framework/ncl/NclStructureParser.h:
+
+../../../include/ncl/../framework/ncl/NclLayoutParser.h:
+
+../../../include/ncl/../framework/ncl/NclMetainformationParser.h:
+
+../../../include/ncl/../framework/ncl/../../smil/SMILNCMDocumentConverter.h:
+
+../../../include/ncl/../framework/ncl/../../smil/../framework/DocumentParser.h:
+
+/usr/local/include/ginga/ncl/connectors/CausalConnector.h:
+
+/usr/local/include/ginga/ncl/connectors/Action.h:
+
+/usr/local/include/ginga/ncl/connectors/Role.h:
+
+/usr/local/include/ginga/ncl/connectors/AssessmentStatement.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/connectors/Assessment.h:
+
+/usr/local/include/ginga/ncl/connectors/AttributeAssessment.h:
+
+/usr/local/include/ginga/ncl/connectors/EventUtil.h:
+
+/usr/local/include/ginga/ncl/connectors/Statement.h:
+
+/usr/local/include/ginga/ncl/connectors/ConditionExpression.h:
+
+/usr/local/include/ginga/ncl/connectors/CausalConnector.h:
+
+/usr/local/include/ginga/ncl/connectors/CompoundAction.h:
+
+/usr/local/include/ginga/ncl/connectors/SimpleAction.h:
+
+/usr/local/include/ginga/ncl/connectors/../animation/Animation.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/connectors/CompoundStatement.h:
+
+/usr/local/include/ginga/ncl/connectors/CompoundCondition.h:
+
+/usr/local/include/ginga/ncl/connectors/TriggerExpression.h:
+
+/usr/local/include/ginga/ncl/connectors/SimpleCondition.h:
+
+/usr/local/include/ginga/ncl/connectors/ConnectorBase.h:
+
+/usr/local/include/ginga/ncl/NclDocument.h:
+
+/usr/local/include/ginga/ncl/layout/RegionBase.h:
+
+/usr/local/include/ginga/ncl/components/ContentNode.h:
+
+/usr/local/include/ginga/ncl/components/Content.h:
+
+/usr/local/include/ginga/ncl/components/ContextNode.h:
+
+/usr/local/include/ginga/ncl/components/AbsoluteReferenceContent.h:
+
+/usr/local/include/ginga/ncl/components/ReferenceContent.h:
+
+/usr/local/include/ginga/ncl/components/ContentTypeManager.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/descriptor/DescriptorBase.h:
+
+/usr/local/include/ginga/ncl/descriptor/Descriptor.h:
+
+/usr/local/include/ginga/ncl/link/CausalLink.h:
+
+/usr/local/include/ginga/ncl/link/../components/Node.h:
+
+/usr/local/include/ginga/ncl/link/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/link/../connectors/Connector.h:
+
+/usr/local/include/ginga/ncl/link/../connectors/AttributeAssessment.h:
+
+/usr/local/include/ginga/ncl/link/../connectors/SimpleAction.h:
+
+/usr/local/include/ginga/ncl/link/../connectors/SimpleCondition.h:
+
+/usr/local/include/ginga/ncl/link/Bind.h:
+
+/usr/local/include/ginga/ncl/link/Link.h:
+
+/usr/local/include/ginga/ncl/IPrivateBaseContext.h:
+
+/usr/local/include/ginga/ncl/layout/IDeviceLayout.h:
+
+../../../include/ncl/../IDocumentConverter.h:
+
+/usr/local/include/ginga/ncl/NclDocument.h:
+
+/usr/local/include/ginga/ncl/IPrivateBaseContext.h:
+
+../../../include/ncl/NclPresentationControlConverter.h:
+
+/usr/local/include/ginga/ncl/reuse/ReferNode.h:
+
+/usr/local/include/ginga/ncl/reuse/ReferredNode.h:
+
+/usr/local/include/ginga/ncl/reuse/../Entity.h:
+
+/usr/local/include/ginga/ncl/switches/DescriptorSwitch.h:
+
+/usr/local/include/ginga/ncl/switches/../descriptor/GenericDescriptor.h:
+
+/usr/local/include/ginga/ncl/switches/SwitchNode.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+/usr/local/include/ginga/ncl/switches/../components/ContextNode.h:
+
+/usr/local/include/ginga/ncl/switches/../components/CompositeNode.h:
+
+/usr/local/include/ginga/ncl/switches/../components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/switches/../components/IllegalNodeTypeException.h:
+
+/usr/local/include/ginga/ncl/switches/../interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/switches/../interfaces/InterfacePoint.h:
+
+/usr/local/include/ginga/ncl/switches/../interfaces/SwitchPort.h:
+
+/usr/local/include/ginga/ncl/switches/DescriptorSwitch.h:
+
+/usr/local/include/ginga/ncl/switches/SwitchContent.h:
+
+/usr/local/include/ginga/ncl/switches/../components/Content.h:
+
+/usr/local/include/ginga/ncl/switches/CompositeRule.h:
+
+/usr/local/include/ginga/ncl/switches/SimpleRule.h:
+
+/usr/local/include/ginga/ncl/interfaces/Port.h:
+
+/usr/local/include/ginga/ncl/util/Comparator.h:
+
+../../../include/ncl/../framework/ncl/NclPresentationControlParser.h:
+
+../../../include/ncl/NclPresentationSpecConverter.h:
+
+../../../include/ncl/NclComponentsConverter.h:
+
+/usr/local/include/ginga/ncl/interfaces/Anchor.h:
+
+/usr/local/include/ginga/ncl/components/NodeEntity.h:
+
+/usr/local/include/ginga/ncl/components/ContextNode.h:
+
+/usr/local/include/ginga/ncl/components/ContentNode.h:
+
+/usr/local/include/ginga/ncl/components/AbsoluteReferenceContent.h:
+
+/usr/local/include/ginga/ncl/link/Link.h:
+
+/usr/local/include/ginga/ncl/connectors/Role.h:
+
+../../../include/ncl/../framework/ncl/NclComponentsParser.h:
+
+../../../include/ncl/NclLinkingConverter.h:
+
+/usr/local/include/ginga/ncl/connectors/CausalConnector.h:
+
+/usr/local/include/ginga/ncl/connectors/Connector.h:
+
+/usr/local/include/ginga/ncl/components/CompositeNode.h:
+
+/usr/local/include/ginga/ncl/link/CausalLink.h:
+
+/usr/local/include/ginga/ncl/link/Bind.h:
+
+../../../include/ncl/../framework/ncl/NclLinkingParser.h:
+
+../../../include/ncl/NclConnectorsConverter.h:
+
+/usr/local/include/ginga/ncl/animation/Animation.h:
+
+/usr/local/include/ginga/ncl/connectors/EventUtil.h:
+
+/usr/local/include/ginga/ncl/connectors/ValueAssessment.h:
+
+/usr/local/include/ginga/ncl/connectors/CompoundAction.h:
+
+/usr/local/include/ginga/ncl/connectors/CompoundCondition.h:
+
+/usr/local/include/ginga/ncl/connectors/CompoundStatement.h:
+
+/usr/local/include/ginga/ncl/connectors/AttributeAssessment.h:
+
+/usr/local/include/ginga/ncl/connectors/AssessmentStatement.h:
+
+/usr/local/include/ginga/ncl/connectors/SimpleAction.h:
+
+/usr/local/include/ginga/ncl/connectors/SimpleCondition.h:
+
+/usr/local/include/ginga/ncl/connectors/ConnectorBase.h:
+
+/usr/local/include/ginga/util/functions.h:
+
+../../../include/ncl/../framework/ncl/NclConnectorsParser.h:
+
+../../../include/ncl/NclInterfacesConverter.h:
+
+/usr/local/include/ginga/ncl/interfaces/PropertyAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/../Entity.h:
+
+/usr/local/include/ginga/ncl/interfaces/Anchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/LabeledAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/RectangleSpatialAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/SpatialAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/ContentAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/RelativeTimeIntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/SampleIntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/IntervalAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/SpatialAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/TextAnchor.h:
+
+/usr/local/include/ginga/ncl/interfaces/SwitchPort.h:
+
+../../../include/ncl/../framework/ncl/NclInterfacesParser.h:
+
+../../../include/ncl/NclImportConverter.h:
+
+../../../include/ncl/NclPresentationControlConverter.h:

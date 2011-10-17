@@ -1,0 +1,127 @@
+\section{Scheduler Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler}\index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+Collaboration diagram for Scheduler:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Scheduler} ()
+\item 
+{\bf $\sim$Scheduler} ()
+\item 
+bool {\bf schedule} (const char $\ast$lib, const char $\ast$constructor, const char $\ast$destructor, vector$<$ char $\ast$ $>$ $\ast$params, const char $\ast$begin, const char $\ast$end, int period)
+\item 
+bool {\bf load} (const char $\ast$file)
+\item 
+bool {\bf store} (const char $\ast$file)
+\item 
+bool {\bf should\_\-stop} (void)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_58e2166c53c6a4cafffe017cf698dfbc}
+
+\item 
+void {\bf stop} (void)\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_acf6bf8e121fea8b0a92d7197b73fe27}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf Scheduler} $\ast$ {\bf getInstance} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+double {\bf timeTomin}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_021f198514458babfdcd7ff542927c4f}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+void $\ast$ {\bf temp}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_c28d2b2f2383721cdfeabc122f31c2ab}
+
+\item 
+volatile bool {\bf stopflag}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_7f45ae7206b2e1c36566b1d45c80cbf6}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf Scheduler} $\ast$ {\bf \_\-instance}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 50 of file Scheduler.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Scheduler} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_edc30c04ff101a4b565502a378aacb9e}
+
+
+Construtor. Devolve uma instância de \doxyref{Scheduler}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler}. \index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}!~Scheduler@{$\sim$Scheduler}}
+\index{~Scheduler@{$\sim$Scheduler}!br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Scheduler} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_654bb0d18bdcb1655997dbb6e1d8af2b}
+
+
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}static {\bf Scheduler}$\ast$ getInstance ()\hspace{0.3cm}{\tt  [static]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_92a076d0d31d6c7de9d594d891322180}
+
+
+Retorna uma instância da classe Agendadora \begin{Desc}
+\item[Returns:]Um objeto do tipo da classe \doxyref{Scheduler}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler} \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}!schedule@{schedule}}
+\index{schedule@{schedule}!br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool schedule (const char $\ast$ {\em lib}, const char $\ast$ {\em constructor}, const char $\ast$ {\em destructor}, vector$<$ char $\ast$ $>$ $\ast$ {\em params}, const char $\ast$ {\em begin}, const char $\ast$ {\em end}, int {\em period})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_dabcd58e927776328cc98b9ab40a8149}
+
+
+Agenda a execução de uma aplicação. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em lib}]nome da biblioteca que contém a aplicação a ser executada. \item[{\em constructor}]construtor da aplicação que devolve uma instância para a interface \doxyref{SchedulerItem}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1SchedulerItem}. \item[{\em destructor}]destrutor da aplicação. \item[{\em params}]parâmetros para a aplicação. \item[{\em begin}]data e horário para iniciar a execução da aplicação (formato: dd/MM/aaaa-hh:mm:ss). \item[{\em end}]data e horário para o fim da execução da aplicação (formato: dd/MM/aaaa-hh:mm:ss). \item[{\em period}]periodicidade do agendamento: 1 - uma única vez; 2 - uma vez por dia; 3 - indefinidamente; 4 - uma vez por semana; 5 - uma vez por mês. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}!load@{load}}
+\index{load@{load}!br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool load (const char $\ast$ {\em file})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_02cd768b7b6056b42ceb735e73de3f66}
+
+
+Carrega para a memória as informações de agendamentos armazenadas em arquivo. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em file}]arquivo XML com informações de agendamentos. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}!store@{store}}
+\index{store@{store}!br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool store (const char $\ast$ {\em file})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_7c9ad3151c136bbc850861e6519f5435}
+
+
+Salva em arquivo as informações de agendamentos em memória. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em file}]arquivo XML para destino das informações de agendamentos. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\index{br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}!_instance@{\_\-instance}}
+\index{_instance@{\_\-instance}!br::ufscar::lince::ginga::recommender::Scheduler@{br::ufscar::lince::ginga::recommender::Scheduler}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Scheduler}$\ast$ {\bf \_\-instance}\hspace{0.3cm}{\tt  [static, private]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Scheduler_6737cfd943573e33a468a3ee88162636}
+
+
+singleton 
+
+Definition at line 125 of file Scheduler.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/Scheduler/include/Scheduler.h\end{CompactItemize}

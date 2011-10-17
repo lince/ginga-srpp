@@ -1,0 +1,84 @@
+84,91d83
+< #include <ginga/linceutil/LoggerUtil.h>
+< using namespace br::ufscar::lince::util;
+< 
+< #include <cgc/ProgramRecorder.h>
+< using namespace br::ufscar::lince::ginga::core::cgc;
+< 
+< #include <recommender/exportxml/createXML.h>
+< 
+93a86,92
+> 	
+> //start recommender//
+> #if HAVE_RECOMMENDER
+> #include "recommender/Scheduler.h"
+> using namespace br::ufscar::lince::ginga::recommender::scheduler;
+> #endif
+> 
+158,160d156
+< 	//HLoggerPtr logger = LoggerUtil::getLogger("br.ufscar.lince");
+< 	//LoggerUtil::configure();
+< 
+179,182d174
+< 	bool enableCac       = false;
+< 	bool enableCgc       = false;
+< 	bool enableXml		 = false;
+< 	string name;
+202,214d193
+< 		} else if ((strcmp(argv[i], "--cac") == 0) && ((i + 1) < argc)) {
+< 			nclFile.assign(argv[i+1], strlen(argv[i+1]));
+< 			cout << "argv = '" << argv[i+1] << "' nclFile = '";
+< 			cout << nclFile << "'" << endl;
+< 			enableCac = true;
+< 
+< 		} else if (strcmp(argv[i], "--cgc") == 0) {
+< 			enableCgc = true;
+< 
+< 		} else if (strcmp(argv[i], "--xml") == 0) {
+< 			name = argv[i+1];
+< 			enableXml = true;
+< 
+426,439c405,406
+< 			if(enableXml) {
+< 				exportXML("/usr/local/etc/ginga/files/recommender/" + name);
+< 			}
+< 			else {
+< 				ccm->setOCDelay(ocDelay);
+< 				ccm->startPresentation();
+< 			}
+< 			if(enableCgc)
+< 			{
+< 				if(ProgramRecorder::getInstance()->getTuner() == NULL)
+< 					cout << "tá nulo" << endl;
+< 				else
+< 					cout << "nao tá nulo" << endl;
+< 			}
+---
+> 			ccm->setOCDelay(ocDelay);
+> 			ccm->startPresentation();
+441c408
+< 		} else if (!enableCac && (fileExists(nclFile) || isRemoteDoc)) {
+---
+> 		} else if (fileExists(nclFile) || isRemoteDoc) {
+445a413,419
+> #if HAVE_RECOMMENDER
+> 	        		Scheduler* agenda = Scheduler::getInstance();
+> 	        		if(agenda != NULL){
+> 	           			agenda->numberOfRecommendationToShow(8.0);
+> 	           			agenda->checkRecommenderModule();
+> 	        		}
+> #endif
+446a421,428
+> 
+> #if HAVE_RECOMMENDER
+> 				(Scheduler::getInstance())->stop();
+> 				pthread_join(Scheduler::getInstance()->getThread(), NULL);
+> 				// pthread_exit((void *)Scheduler::getInstance()->getThread());
+> 				system("rm *.tmp");
+> 				system("rm *.out");
+>  #endif
+448,451d429
+< 		} else if (enableCac && fileExists(nclFile)) {
+< 			cout << "ginga main() NCLFILE = " << nclFile.c_str() << endl;
+< 			pem->setIsLocalNcl(forceQuit, NULL);
+< 			ProgramRecorder::getInstance()->showNcl(nclFile);

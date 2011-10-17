@@ -1,0 +1,6 @@
+TODO File for NCL30 super-project
+
+TODO List:
+- Create autogen.sh (and configure.in, etc) to allow the compilation of
+  the whole super project. For now, users must compile and install each
+  subproject (NCL30 and NCL30-Converter).

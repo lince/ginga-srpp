@@ -1,0 +1,755 @@
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+ rm -f libgingarecommenderutil.so libgingarecommenderutil.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+ rm -f '/usr/local/include/ginga/recommender/utils/Utils.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderutil.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Utils.o -MD -MP -MF .deps/Utils.Tpo -c -o Utils.o Utils.cpp
+mv -f .deps/Utils.Tpo .deps/Utils.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderutil.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderutil.so Utils.o  
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderutil.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderutil.so Utils.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/utils" || /bin/mkdir -p "/usr/local/include/ginga/recommender/utils"
+ /usr/bin/install -c -m 644 'Utils.h' '/usr/local/include/ginga/recommender/utils/Utils.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommenderutil.so' '/usr/local/lib/ginga/libgingarecommenderutil.so'
+libtool: install: /usr/bin/install -c libgingarecommenderutil.so /usr/local/lib/ginga/libgingarecommenderutil.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Utils'
+Making clean in test
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+rm -rf .libs _libs
+ rm -f test test
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+ rm -f libgingarecommendersystemresource.so libgingarecommendersystemresource.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+ rm -f '/usr/local/include/ginga/recommender/systemresource/SystemResource.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommendersystemresource.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+Making uninstall in test
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+make[1]: Nada a ser feito para `uninstall'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT SystemResource.o -MD -MP -MF .deps/SystemResource.Tpo -c -o SystemResource.o SystemResource.cpp
+mv -f .deps/SystemResource.Tpo .deps/SystemResource.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommendersystemresource.so --shared -ldl -I/usr/local/include/ginga/ -D_GNU_SOURCE -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommendersystemresource.so SystemResource.o -lgingarecommenderutil 
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommendersystemresource.so --shared -I/usr/local/include/ginga/ -D_GNU_SOURCE -o libgingarecommendersystemresource.so SystemResource.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lgingarecommenderutil
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+Making all in test
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.cpp
+mv -f .deps/main.Tpo .deps/main.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -L/usr/local/lib/ginga -L../include/ -L../src/ -L/usr/local/lib -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o test main.o -lgingarecommendersystemresource -lgingarecommenderutil 
+libtool: link: g++ -fPIC -g -O2 -o test main.o  -L/usr/local/lib/ginga -L/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include -L/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src -L/usr/local/lib -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lgingarecommendersystemresource -lgingarecommenderutil
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/systemresource" || /bin/mkdir -p "/usr/local/include/ginga/recommender/systemresource"
+ /usr/bin/install -c -m 644 'SystemResource.h' '/usr/local/include/ginga/recommender/systemresource/SystemResource.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommendersystemresource.so' '/usr/local/lib/ginga/libgingarecommendersystemresource.so'
+libtool: install: /usr/bin/install -c libgingarecommendersystemresource.so /usr/local/lib/ginga/libgingarecommendersystemresource.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/src'
+Making install in test
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource/test'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SystemResource'
+Making clean in test
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+rm -rf .libs _libs
+ rm -f test test
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+ rm -f libgingarecommenderdatabase.so libgingarecommenderdatabase.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+ rm -f '/usr/local/include/ginga/recommender/database/Database.h'
+ rm -f '/usr/local/include/ginga/recommender/database/sqlite3.h'
+ rm -f '/usr/local/include/ginga/recommender/database/sqlite3ext.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderdatabase.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+Making uninstall in test
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+make[1]: Nada a ser feito para `uninstall'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Database.o -MD -MP -MF .deps/Database.Tpo -c -o Database.o Database.cpp
+mv -f .deps/Database.Tpo .deps/Database.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT sqlite3.o -MD -MP -MF .deps/sqlite3.Tpo -c -o sqlite3.o sqlite3.c
+mv -f .deps/sqlite3.Tpo .deps/sqlite3.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderdatabase.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderdatabase.so Database.o sqlite3.o -lgingarecommenderutil -lgingarecommendersystemresource -lpthread 
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderdatabase.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderdatabase.so Database.o sqlite3.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lgingarecommenderutil -lgingarecommendersystemresource -lpthread
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+Making all in test
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.cpp
+mv -f .deps/main.Tpo .deps/main.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -L/usr/local/lib/ginga -L../include/ -L../src/ -L/usr/local/lib -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o test main.o -lgingarecommenderdatabase -lpthread 
+libtool: link: g++ -fPIC -g -O2 -o test main.o  -L/usr/local/lib/ginga -L/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include -L/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src -L/usr/local/lib -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lgingarecommenderdatabase -lpthread
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/database" || /bin/mkdir -p "/usr/local/include/ginga/recommender/database"
+ /usr/bin/install -c -m 644 'Database.h' '/usr/local/include/ginga/recommender/database/Database.h'
+ /usr/bin/install -c -m 644 'sqlite3.h' '/usr/local/include/ginga/recommender/database/sqlite3.h'
+ /usr/bin/install -c -m 644 'sqlite3ext.h' '/usr/local/include/ginga/recommender/database/sqlite3ext.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommenderdatabase.so' '/usr/local/lib/ginga/libgingarecommenderdatabase.so'
+libtool: install: /usr/bin/install -c libgingarecommenderdatabase.so /usr/local/lib/ginga/libgingarecommenderdatabase.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/src'
+Making install in test
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database/test'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Database'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+ rm -f libgingarecommendereit.so libgingarecommendereit.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+ rm -f '/usr/local/include/ginga/recommender/eit/EIT.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommendereit.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT EIT.o -MD -MP -MF .deps/EIT.Tpo -c -o EIT.o EIT.cpp
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/eit" || /bin/mkdir -p "/usr/local/include/ginga/recommender/eit"
+ /usr/bin/install -c -m 644 'EIT.h' '/usr/local/include/ginga/recommender/eit/EIT.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT EIT.o -MD -MP -MF .deps/EIT.Tpo -c -o EIT.o EIT.cpp
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/EIT/src'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+ rm -f libgingarecommendersdt.so libgingarecommendersdt.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+ rm -f '/usr/local/include/ginga/recommender/sdt/SDT.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommendersdt.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT SDT.o -MD -MP -MF .deps/SDT.Tpo -c -o SDT.o SDT.cpp
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/sdt" || /bin/mkdir -p "/usr/local/include/ginga/recommender/sdt"
+ /usr/bin/install -c -m 644 'SDT.h' '/usr/local/include/ginga/recommender/sdt/SDT.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT SDT.o -MD -MP -MF .deps/SDT.Tpo -c -o SDT.o SDT.cpp
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SDT/src'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+ rm -f libgingarecommenderagentlistener.so libgingarecommenderagentlistener.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+ rm -f '/usr/local/include/ginga/recommender/agentlistener/AgentListener.h'
+ rm -f '/usr/local/include/ginga/recommender/agentlistener/IAgentListener.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderagentlistener.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT AgentListener.o -MD -MP -MF .deps/AgentListener.Tpo -c -o AgentListener.o AgentListener.cpp
+mv -f .deps/AgentListener.Tpo .deps/AgentListener.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderagentlistener.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderagentlistener.so AgentListener.o  
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderagentlistener.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderagentlistener.so AgentListener.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/agentlistener" || /bin/mkdir -p "/usr/local/include/ginga/recommender/agentlistener"
+ /usr/bin/install -c -m 644 'AgentListener.h' '/usr/local/include/ginga/recommender/agentlistener/AgentListener.h'
+ /usr/bin/install -c -m 644 'IAgentListener.h' '/usr/local/include/ginga/recommender/agentlistener/IAgentListener.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommenderagentlistener.so' '/usr/local/lib/ginga/libgingarecommenderagentlistener.so'
+libtool: install: /usr/bin/install -c libgingarecommenderagentlistener.so /usr/local/lib/ginga/libgingarecommenderagentlistener.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/AgentListener'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+ rm -f libgingarecommenderlocalagent.so libgingarecommenderlocalagent.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+ rm -f '/usr/local/include/ginga/recommender/localagent/LocalAgent.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderlocalagent.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT LocalAgent.o -MD -MP -MF .deps/LocalAgent.Tpo -c -o LocalAgent.o LocalAgent.cpp
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/localagent" || /bin/mkdir -p "/usr/local/include/ginga/recommender/localagent"
+ /usr/bin/install -c -m 644 'LocalAgent.h' '/usr/local/include/ginga/recommender/localagent/LocalAgent.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT LocalAgent.o -MD -MP -MF .deps/LocalAgent.Tpo -c -o LocalAgent.o LocalAgent.cpp
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/LocalAgent/src'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+ rm -f libgingarecommenderminingalgorithm.so libgingarecommenderminingalgorithm.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+ rm -f '/usr/local/include/ginga/recommender/miningalgorithm/MiningAlgorithm.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderminingalgorithm.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT MiningAlgorithm.o -MD -MP -MF .deps/MiningAlgorithm.Tpo -c -o MiningAlgorithm.o MiningAlgorithm.cpp
+mv -f .deps/MiningAlgorithm.Tpo .deps/MiningAlgorithm.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderminingalgorithm.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderminingalgorithm.so MiningAlgorithm.o -lgingarecommenderdatabase 
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderminingalgorithm.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderminingalgorithm.so MiningAlgorithm.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lgingarecommenderdatabase
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/miningalgorithm" || /bin/mkdir -p "/usr/local/include/ginga/recommender/miningalgorithm"
+ /usr/bin/install -c -m 644 'MiningAlgorithm.h' '/usr/local/include/ginga/recommender/miningalgorithm/MiningAlgorithm.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommenderminingalgorithm.so' '/usr/local/lib/ginga/libgingarecommenderminingalgorithm.so'
+libtool: install: /usr/bin/install -c libgingarecommenderminingalgorithm.so /usr/local/lib/ginga/libgingarecommenderminingalgorithm.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/MiningAlgorithm'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+ rm -f libgingarecommenderdatamining.so libgingarecommenderdatamining.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+ rm -f '/usr/local/include/ginga/recommender/datamining/DataMining.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderdatamining.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT DataMining.o -MD -MP -MF .deps/DataMining.Tpo -c -o DataMining.o DataMining.cpp
+mv -f .deps/DataMining.Tpo .deps/DataMining.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderdatamining.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderdatamining.so DataMining.o -lpthread -lgingarecommenderminingalgorithm -lgingarecommenderdatabase 
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderdatamining.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderdatamining.so DataMining.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/ -lpthread -lgingarecommenderminingalgorithm -lgingarecommenderdatabase
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/datamining" || /bin/mkdir -p "/usr/local/include/ginga/recommender/datamining"
+ /usr/bin/install -c -m 644 'DataMining.h' '/usr/local/include/ginga/recommender/datamining/DataMining.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommenderdatamining.so' '/usr/local/lib/ginga/libgingarecommenderdatamining.so'
+libtool: install: /usr/bin/install -c libgingarecommenderdatamining.so /usr/local/lib/ginga/libgingarecommenderdatamining.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/DataMining'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+ rm -f libgingarecommenderscheduleritem.so libgingarecommenderscheduleritem.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+ rm -f '/usr/local/include/ginga/recommender/scheduleritem/SchedulerItem.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderscheduleritem.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT SchedulerItem.o -MD -MP -MF .deps/SchedulerItem.Tpo -c -o SchedulerItem.o SchedulerItem.cpp
+mv -f .deps/SchedulerItem.Tpo .deps/SchedulerItem.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderscheduleritem.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderscheduleritem.so SchedulerItem.o  
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderscheduleritem.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderscheduleritem.so SchedulerItem.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/scheduleritem" || /bin/mkdir -p "/usr/local/include/ginga/recommender/scheduleritem"
+ /usr/bin/install -c -m 644 'SchedulerItem.h' '/usr/local/include/ginga/recommender/scheduleritem/SchedulerItem.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommenderscheduleritem.so' '/usr/local/lib/ginga/libgingarecommenderscheduleritem.so'
+libtool: install: /usr/bin/install -c libgingarecommenderscheduleritem.so /usr/local/lib/ginga/libgingarecommenderscheduleritem.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/SchedulerItem'
+Making clean in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+ rm -f libgingarecommenderscheduler.so libgingarecommenderscheduler.so
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+Making clean in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+Making clean in .
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+rm -rf .libs _libs
+rm -f *.lo
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+Making uninstall in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+ rm -f '/usr/local/include/ginga/recommender/scheduler/Scheduler.h'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+Making uninstall in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+ rm -f '/usr/local/lib/ginga/libgingarecommenderscheduler.so'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+make[1]: Nada a ser feito para `uninstall-am'.
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+make  all-recursive
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+Making all in include
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+make[2]: Nada a ser feito para `all'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+Making all in src
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+g++ -DHAVE_CONFIG_H -I. -I..   -I/usr/local/include/ginga/ -I/usr/local/include/ -I/usr/include/   -fPIC -g -O2 -MT Scheduler.o -MD -MP -MF .deps/Scheduler.Tpo -c -o Scheduler.o Scheduler.cpp
+mv -f .deps/Scheduler.Tpo .deps/Scheduler.Po
+/bin/bash ../libtool --tag=CXX   --mode=link g++  -fPIC -g -O2 -Wl,-soname,libgingarecommenderscheduler.so --shared -ldl -I/usr/local/include/ginga/ -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/  -o libgingarecommenderscheduler.so Scheduler.o  
+libtool: link: g++ -fPIC -g -O2 -Wl,-soname -Wl,libgingarecommenderscheduler.so --shared -I/usr/local/include/ginga/ -o libgingarecommenderscheduler.so Scheduler.o  -ldl -L/usr/local/lib/ginga/iocontents -L/usr/local/lib/ginga/ -L/usr/local/lib/ -L/usr/lib/
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+make[2]: Nada a ser feito para `all-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+Making install in include
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/include/ginga/recommender/scheduler" || /bin/mkdir -p "/usr/local/include/ginga/recommender/scheduler"
+ /usr/bin/install -c -m 644 'Scheduler.h' '/usr/local/include/ginga/recommender/scheduler/Scheduler.h'
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/include'
+Making install in src
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+make[2]: Nada a ser feito para `install-exec-am'.
+test -z "/usr/local/lib/ginga" || /bin/mkdir -p "/usr/local/lib/ginga"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c 'libgingarecommenderscheduler.so' '/usr/local/lib/ginga/libgingarecommenderscheduler.so'
+libtool: install: /usr/bin/install -c libgingarecommenderscheduler.so /usr/local/lib/ginga/libgingarecommenderscheduler.so
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler/src'
+make[1]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+make[2]: Entrando no diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+make[2]: Nada a ser feito para `install-exec-am'.
+make[2]: Nada a ser feito para `install-data-am'.
+make[2]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'
+make[1]: Saindo do diretório `/home/tiago/Desktop/Recommender/NovaArquitetura/Recommender/Scheduler'

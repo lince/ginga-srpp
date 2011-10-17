@@ -1,0 +1,36 @@
+AC_INIT(configure.in)
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(telemidiautil, 0.11.2)
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX([g++])
+AM_PROG_LIBTOOL
+
+CXXFLAGS="-fPIC $CXXFLAGS"
+CFLAGS="-fPIC $CFLAGS"
+
+############################################
+# Offering a non-componentized alternative #
+############################################
+components=yes
+AC_ARG_ENABLE(components,
+  [  --enable-components build project using components [[default=yes]]],
+  enable_components="$enableval", enable_components=yes)
+
+if test x$enable_components = xno; then
+   COMPONENTS_LIBS='-L/usr/local/lib/ -L/usr/local/lib/ginga/'
+   AC_DEFINE(HAVE_COMPSUPPORT, 0, [Def to 0 if you don't have Component support.])
+   AC_MSG_WARN([*** Component support will not be built.])
+
+else
+   COMPONENTS_LIBS='-ldl -L/usr/local/lib/ -L/usr/local/lib/ginga/'
+   AC_DEFINE(HAVE_COMPSUPPORT, 1, [Def to 1 if you have Component support.])
+   AC_MSG_RESULT([*** Component support will be built.])
+fi
+
+AM_CONDITIONAL(COMPONENTS, test "$enable_components" = "no")
+AC_SUBST(COMPONENTS_LIBS)
+
+
+AC_OUTPUT(Makefile include/Makefile src/Makefile test/Makefile)

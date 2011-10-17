@@ -1,0 +1,125 @@
+\section{PlayerAdapterManager Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager}\index{br::pucrio::telemidia::ginga::ncl::adapters::PlayerAdapterManager@{br::pucrio::telemidia::ginga::ncl::adapters::PlayerAdapterManager}}
+Inheritance diagram for PlayerAdapterManager:Collaboration diagram for PlayerAdapterManager:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{PlayerAdapterManager} (NclPlayerData $\ast${\bf nclPlayerData})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_7e8288306cf0bf8d2cd1cec810c3d904}
+
+\item 
+NclPlayerData $\ast$ \textbf{getNclPlayerData} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_288d51b5ae86eaba07d52ec0b6f7a594}
+
+\item 
+void \textbf{setTimeBaseProvider} (ITimeBaseProvider $\ast${\bf timeBaseProvider})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_5a671c0102c7b736e7e0e78e50f9922c}
+
+\item 
+ITimeBaseProvider $\ast$ \textbf{getTimeBaseProvider} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_51212b023936add3caef01c093f06f39}
+
+\item 
+void \textbf{setVisible} (string objectId, string visible, AttributionEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_9614c08639e7f01b7e54a034b0f2cbed}
+
+\item 
+bool \textbf{removePlayer} (void $\ast$object)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_d04c276ab76a7bb48b11223ef5857c50}
+
+\item 
+void \textbf{setNclEditListener} ({\bf INclEditListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_c93507f3caf7d9f57e8dc4f55f824fe5}
+
+\item 
+{\bf FormatterPlayerAdapter} $\ast$ \textbf{getPlayer} (ExecutionObject $\ast$execObj)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_e791d3d39404def36c23676f2368ebee}
+
+\item 
+void \textbf{setStandByState} (bool standBy)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_ec91d5450ec8c5bd48870cb2e1f5596f}
+
+\item 
+void \textbf{pushEPGEventToEPGFactory} (map$<$ string, string $>$ t)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_03f0f1e577dc80fc2e776c470579b17c}
+
+\item 
+void \textbf{timeShift} (string direction)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_4c957efac0cbe36537ad4b97184298dc}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static bool \textbf{isEmbeddedApp} (NodeEntity $\ast$dataObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_0345b9e3ae604e7e6cc760c4d9291610}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{clearDeletePlayers} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_94e06c1be09db595271be4c1f2ef8379}
+
+\item 
+void \textbf{run} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_13a43e6d814de94978c515cb084873b1}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+string \textbf{getPlayerClass} (CascadingDescriptor $\ast$descriptor, NodeEntity $\ast$dataObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_1ff60292da9bb1016fd007d31917bf65}
+
+\item 
+bool \textbf{removePlayer} (string objectId)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_ea934d8e427c85000a418751ffd7110c}
+
+\item 
+void \textbf{clear} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_c8bb3912a3ce86b15842e79d0b421204}
+
+\item 
+void \textbf{readConfigFiles} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_371c1ff8d2b5c14ef46dddc9570cb508}
+
+\item 
+{\bf FormatterPlayerAdapter} $\ast$ \textbf{initializePlayer} (ExecutionObject $\ast$object)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_42e9a278f5b1ba8bfbd22e2057244709}
+
+\end{CompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{CompactItemize}
+\item 
+static bool \textbf{isEmbeddedAppMediaType} (string mediaType)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_64536fa08de4f84e08431f08ba89425d}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, {\bf IPlayerAdapter} $\ast$ $>$ $\ast$ {\bf objectPlayers}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_12e57ff8c01b5659749a5ff5ce47557b}
+
+\item 
+map$<$ string, {\bf IPlayerAdapter} $\ast$ $>$ $\ast$ {\bf deletePlayers}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_c48e6dcc803333cd1e6dca483b97a0e7}
+
+\item 
+map$<$ {\bf IPlayerAdapter} $\ast$, string $>$ $\ast$ {\bf playerNames}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_ba35667c5c96c58aba4275bbda87d0f0}
+
+\item 
+map$<$ string, string $>$ $\ast$ {\bf mimeDefaultTable}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_4d31037041fd6a071cefdd5e38c86d8a}
+
+\item 
+map$<$ string, string $>$ $\ast$ {\bf playerTable}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_bc2f0530aec6abd9ab1f018686bab0af}
+
+\item 
+{\bf INclEditListener} $\ast$ {\bf editingCommandListener}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_03c0933ef4583b4d5d6bffee883712ae}
+
+\item 
+{\bf IPlayerAdapter} $\ast$ {\bf epgFactoryAdapter}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_6667f2c1eb8a2ff1f8614714c88d733b}
+
+\item 
+bool {\bf running}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_36f7b6be7108281af77939ceaec42fd6}
+
+\item 
+ITimeBaseProvider $\ast$ {\bf timeBaseProvider}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_a768d0b9325a7db85149852491c20fe1}
+
+\item 
+NclPlayerData $\ast$ {\bf nclPlayerData}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_86e30b92a6edf1adbd512221e70a9b91}
+
+\item 
+pthread\_\-mutex\_\-t {\bf mutexPlayer}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1PlayerAdapterManager_e56a5e489dc1e7abc14252f946fa82a6}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 85 of file PlayerAdapterManager.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/adapters/PlayerAdapterManager.h\end{CompactItemize}

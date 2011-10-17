@@ -1,0 +1,69 @@
+\section{Trie Class Reference}
+\label{classTrie}\index{Trie@{Trie}}
+{\tt \#include $<$Trie.hpp$>$}
+
+Collaboration diagram for Trie:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{Trie} (const unsigned long init\_\-counter)\label{classTrie_a69a43e2b203fb1d941ef775ab418653}
+
+\item 
+const {\bf Trie} $\ast$ {\bf is\_\-included} (const set$<$ itemtype $>$ \&an\_\-itemset, set$<$ itemtype $>$::const\_\-iterator item\_\-it) const \label{classTrie_6ffeb178c753d43db1b2ab913010f7b2}
+
+\begin{CompactList}\small\item\em Decide se o itemset será ou não incluído na árvore. \item\end{CompactList}\item 
+void {\bf find\_\-candidate} (vector$<$ itemtype $>$::const\_\-iterator it\_\-basket\_\-upper\_\-bound, const itemtype distance\_\-from\_\-candidate, vector$<$ itemtype $>$::const\_\-iterator it\_\-basket, const unsigned long counter\_\-incr=1)\label{classTrie_ad76607a96c1459a8f2b9b8a8b188e92}
+
+\begin{CompactList}\small\item\em Incrementa o contator dos itemsets. \item\end{CompactList}\item 
+void {\bf delete\_\-infrequent} (const double min\_\-occurrence, const itemtype distance\_\-from\_\-candidate)\label{classTrie_d11c3c3c62ab2c917b7e9a461e9cafa2}
+
+\begin{CompactList}\small\item\em Apaga as arvores que contém os itens que ocorrem poucas vezes. \item\end{CompactList}\item 
+void {\bf show\_\-content\_\-preorder} () const\label{classTrie_9b6487026b7a776c542c80002d14ae7d}
+
+\begin{CompactList}\small\item\em exibe a árvore em pré-ordem \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf add\_\-empty\_\-state} (const itemtype item, const unsigned long init\_\-counter=0)\label{classTrie_402abb731c04ad86f0cd9eeb54d84551}
+
+\begin{CompactList}\small\item\em adiciona um nó vazio na árvore \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+unsigned long {\bf counter}\label{classTrie_2c605870a4e5975004e2e04a9a033d35}
+
+\begin{CompactList}\small\item\em contator que armazena o número de nós na trie (Árvore) \item\end{CompactList}\item 
+vector$<$ {\bf Edge} $>$ {\bf edgevector}
+\item 
+itemtype {\bf maxpath}\label{classTrie_ae77c1b5a29edfa8834f3c5bbadefcaa}
+
+\begin{CompactList}\small\item\em armazena o tamanho do maior caminho até os nós folha da árvore (trie) inicia no nó raiz \item\end{CompactList}\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+class {\bf Apriori\_\-Trie}\label{classTrie_a52b9f7760d9f17dbec03a4bc3e9408c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A classe trie é uma abstração para uma estrutura de dados recursivas. Cada nó raíz representa um itemset. 
+
+
+
+Definition at line 93 of file Trie.hpp.
+
+\subsection{Member Data Documentation}
+\index{Trie@{Trie}!edgevector@{edgevector}}
+\index{edgevector@{edgevector}!Trie@{Trie}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Edge}$>$ {\bf edgevector}\hspace{0.3cm}{\tt  [private]}}\label{classTrie_3dd0e49d650f9d55898a747ef135a01d}
+
+
+edgevector armazena os nós raízes das trie
+
+edgevector é organizado. Em linhas gerais é um vector de tries que são estruturas de dados do tipo árvores 
+
+Definition at line 142 of file Trie.hpp.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/MiningAlgorithm/include/apriori23/Trie.hpp\end{CompactItemize}

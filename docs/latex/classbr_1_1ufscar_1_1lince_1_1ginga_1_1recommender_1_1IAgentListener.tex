@@ -1,0 +1,84 @@
+\section{IAgentListener Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener}\index{br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}}
+Inheritance diagram for IAgentListener:Collaboration diagram for IAgentListener:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void {\bf volUp} ()=0
+\item 
+virtual void {\bf volDown} ()=0
+\item 
+virtual void {\bf channelUp} ()=0
+\item 
+virtual void {\bf channelDown} ()=0
+\item 
+virtual void {\bf channelChange} (const char $\ast$info)=0
+\item 
+virtual void {\bf nclChange} (const char $\ast$info)=0
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 8 of file IAgentListener.h.
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}!volUp@{volUp}}
+\index{volUp@{volUp}!br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void volUp ()\hspace{0.3cm}{\tt  [pure virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener_0dbb22fd07f6b6f11d96c6c70c82b809}
+
+
+Método acionado quando o volume é incrementado. 
+
+Implements {\bf AgentListener} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener_0dbb22fd07f6b6f11d96c6c70c82b809}.\index{br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}!volDown@{volDown}}
+\index{volDown@{volDown}!br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void volDown ()\hspace{0.3cm}{\tt  [pure virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener_624b5b52ebf030ee447e5f702229374d}
+
+
+Método acionado quando o volume é decrementado. 
+
+Implements {\bf AgentListener} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener_624b5b52ebf030ee447e5f702229374d}.\index{br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}!channelUp@{channelUp}}
+\index{channelUp@{channelUp}!br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void channelUp ()\hspace{0.3cm}{\tt  [pure virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener_ca8e0764b67cc2c42a30c463b63cd16b}
+
+
+Método acionado quando o canal é incrementado. 
+
+Implements {\bf AgentListener} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener_ca8e0764b67cc2c42a30c463b63cd16b}.\index{br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}!channelDown@{channelDown}}
+\index{channelDown@{channelDown}!br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void channelDown ()\hspace{0.3cm}{\tt  [pure virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener_e0732bcd5af1b26c4b8342ca833ed49c}
+
+
+Método acionado quando o canal é decrementado. 
+
+Implements {\bf AgentListener} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener_e0732bcd5af1b26c4b8342ca833ed49c}.\index{br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}!channelChange@{channelChange}}
+\index{channelChange@{channelChange}!br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void channelChange (const char $\ast$ {\em info})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener_737d4559561932e01efccef748924b60}
+
+
+Método acionado quando ocorre uma mudança de canal. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em info}]informações do canal anterior e do novo canal sintonizado. \end{description}
+\end{Desc}
+
+
+Implements {\bf AgentListener} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener_737d4559561932e01efccef748924b60}.\index{br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}!nclChange@{nclChange}}
+\index{nclChange@{nclChange}!br::ufscar::lince::ginga::recommender::IAgentListener@{br::ufscar::lince::ginga::recommender::IAgentListener}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}virtual void nclChange (const char $\ast$ {\em info})\hspace{0.3cm}{\tt  [pure virtual]}}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1IAgentListener_604ca1ded2b08d82e7b647b38cb20134}
+
+
+Método acionado quando ocorre uma interação com uma aplicação NCL. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em info}]informações da interação realizada. \end{description}
+\end{Desc}
+
+
+Implements {\bf AgentListener} \doxyref{}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1AgentListener_604ca1ded2b08d82e7b647b38cb20134}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/AgentListener/include/IAgentListener.h\end{CompactItemize}

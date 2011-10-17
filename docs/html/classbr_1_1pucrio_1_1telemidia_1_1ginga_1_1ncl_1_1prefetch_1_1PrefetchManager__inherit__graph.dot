@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{PrefetchManager\n|- localToRemoteUris\l- urisToLocalRoots\l- scheduledRemoteUris\l- scheduledLocalUris\l- icm\l- prefetchRoot\l- synch\l- kbytes\l- filesDown\l- filesSched\l- _instance\l|+ release()\l+ releaseContents()\l+ createDocumentPrefetcher()\l+ createSourcePrefetcher()\l+ hasIChannel()\l+ hasRemoteLocation()\l+ getRemoteLocation()\l+ getLocalRoot()\l+ setSynchPrefetch()\l+ getScheduledContent()\l+ getScheduledContents()\l+ getInstance()\l- PrefetchManager()\l- ~PrefetchManager()\l- createDirectory()\l- getContent()\l- scheduleContent()\l- receiveCode()\l- receiveDataStream()\l- receiveDataPipe()\l- downloadCompleted()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node2 [label="{IPrefetchManager\n||+ ~IPrefetchManager()\l+ release()\l+ releaseContents()\l+ createDocumentPrefetcher()\l+ createSourcePrefetcher()\l+ hasIChannel()\l+ hasRemoteLocation()\l+ getRemoteLocation()\l+ getLocalRoot()\l+ setSynchPrefetch()\l+ getScheduledContent()\l+ getScheduledContents()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1IPrefetchManager.html"];
+  Node3 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty",fontname="FreeSans.ttf"];
+  Node3 [label="{IInteractiveChannelListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

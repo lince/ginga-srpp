@@ -1,0 +1,104 @@
+\section{ApplicationPlayerAdapter Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter}\index{br::pucrio::telemidia::ginga::ncl::adapters::application::ApplicationPlayerAdapter@{br::pucrio::telemidia::ginga::ncl::adapters::application::ApplicationPlayerAdapter}}
+Inheritance diagram for ApplicationPlayerAdapter:Collaboration diagram for ApplicationPlayerAdapter:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{ApplicationPlayerAdapter} ({\bf IPlayerAdapterManager} $\ast${\bf manager})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_44f4106e61d37cfea7c1de6fb6439ae4}
+
+\item 
+void \textbf{setNclEditListener} ({\bf INclEditListener} $\ast$listener)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_c93507f3caf7d9f57e8dc4f55f824fe5}
+
+\item 
+virtual bool \textbf{hasPrepared} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_54fc8af2d22bee49a7858c6e0df829db}
+
+\item 
+virtual bool \textbf{prepare} (ExecutionObject $\ast${\bf object}, FormatterEvent $\ast$mainEvent)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_96d0bce73b715f0a6fe5dedf903a5529}
+
+\item 
+virtual bool \textbf{start} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_2a1dbe283ac44900c920f3f79339f9f6}
+
+\item 
+virtual bool \textbf{stop} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_3d0f1501fa4ccfb9e3f868ab4a185856}
+
+\item 
+virtual bool \textbf{pause} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_1bb2a8fd099734a2a6d1cab9fbca1939}
+
+\item 
+virtual bool \textbf{resume} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_0c7b890cc1963471052f4d51db565f8a}
+
+\item 
+virtual bool \textbf{abort} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_fd9013d2c3c1e4507a6ba5bb5cdac9f6}
+
+\item 
+virtual bool \textbf{unprepare} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_e7bf99c1347e02aa34a54ed2e1d00865}
+
+\item 
+virtual void \textbf{naturalEnd} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_0e08b713f0740e1881952f0cc8c307fe}
+
+\item 
+virtual void \textbf{updateStatus} (short code, string parameter=\char`\"{}\char`\"{}, short type=10)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_c03f218bb250bf9c4176bd75a5fee484}
+
+\item 
+virtual void \textbf{setCurrentEvent} (FormatterEvent $\ast$event)=0\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_9792359635112024365e4d17ff7ae5a0}
+
+\item 
+virtual void {\bf flip} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_c72f57586f07b19e412cc260d54c715b}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{prepare} (FormatterEvent $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_031985ded10c444e2db49e40c828ab88}
+
+\item 
+bool \textbf{startEvent} (string anchorId, short type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_ad41686a46bcf6c89f70ab957885ff08}
+
+\item 
+bool \textbf{stopEvent} (string anchorId, short type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_971fe73c9725d5bae9ca030cf404496e}
+
+\item 
+bool \textbf{abortEvent} (string anchorId, short type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_e96e198e322e2b8d99fe5f5682dfa2a3}
+
+\item 
+bool \textbf{pauseEvent} (string anchorId, short type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_4eedc7289b5f1bc4a889f550268a4b25}
+
+\item 
+bool \textbf{resumeEvent} (string anchorId, short type)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_ddb9287c453f55ee0f7431be23cf73af}
+
+\item 
+void \textbf{lockEvent} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_ab9544acc633c3be1ecbf645a8ba1692}
+
+\item 
+void \textbf{unlockEvent} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_c8d60ce5b32cb745777c282c60a58074}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, FormatterEvent $\ast$ $>$ $\ast$ {\bf preparedEvents}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_a43d2bb8f3756816973fe3cefcdcd569}
+
+\item 
+FormatterEvent $\ast$ {\bf currentEvent}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_513496d6a12bbfe8aa02a68a3572701c}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf INclEditListener} $\ast$ {\bf editingCommandListener}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_03c0933ef4583b4d5d6bffee883712ae}
+
+\item 
+pthread\_\-mutex\_\-t {\bf eventMutex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1adapters_1_1application_1_1ApplicationPlayerAdapter_8a8305704a13064a359c8d9cd98597df}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 68 of file ApplicationPlayerAdapter.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/adapters/application/ApplicationPlayerAdapter.h\end{CompactItemize}

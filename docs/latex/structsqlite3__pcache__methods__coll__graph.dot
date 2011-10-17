@@ -1,0 +1,28 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{sqlite3_pcache_methods\n|+ pArg\l+ xInit\l+ xShutdown\l+ xCreate\l+ xCachesize\l+ xPagecount\l+ xFetch\l+ xUnpin\l+ xRekey\l+ xTruncate\l+ xDestroy\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xFetch",arrowtail="open"];
+  Node2 [label="{void *(*)(sqlite3_pcache *, unsigned key, int createFlag)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xShutdown",arrowtail="open"];
+  Node3 [label="{void(*)(void *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xRekey",arrowtail="open"];
+  Node4 [label="{void(*)(sqlite3_pcache *, void *, unsigned oldKey, unsigned newKey)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xPagecount",arrowtail="open"];
+  Node5 [label="{int(*)(sqlite3_pcache *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xDestroy",arrowtail="open"];
+  Node6 [label="{void(*)(sqlite3_pcache *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xInit",arrowtail="open"];
+  Node7 [label="{int(*)(void *)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xTruncate",arrowtail="open"];
+  Node8 [label="{void(*)(sqlite3_pcache *, unsigned iLimit)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node9 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xCreate",arrowtail="open"];
+  Node9 [label="{sqlite3_pcache *(*)(int szPage, int bPurgeable)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xCachesize",arrowtail="open"];
+  Node10 [label="{void(*)(sqlite3_pcache *, int nCachesize)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node11 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="pArg",arrowtail="open"];
+  Node11 [label="{void *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node12 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="xUnpin",arrowtail="open"];
+  Node12 [label="{void(*)(sqlite3_pcache *, void *, int discard)\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

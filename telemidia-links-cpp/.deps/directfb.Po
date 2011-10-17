@@ -1,0 +1,5 @@
+directfb.o directfb.o: directfb.c cfg.h config.h
+
+cfg.h:
+
+config.h:

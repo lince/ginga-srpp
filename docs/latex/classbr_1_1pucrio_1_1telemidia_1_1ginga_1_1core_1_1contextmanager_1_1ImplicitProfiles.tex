@@ -1,0 +1,342 @@
+\section{ImplicitProfiles Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles}\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+{\tt \#include $<$ImplicitProfiles.h$>$}
+
+Collaboration diagram for ImplicitProfiles:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf ImplicitProfiles} ({\bf PresentationContext} $\ast${\bf pctx})
+\item 
+{\bf $\sim$ImplicitProfiles} ()
+\item 
+void {\bf createProfile} (int uid)
+\item 
+int {\bf getCurrentId} (int userid)
+\item 
+bool {\bf setCurrentImplicitUserId} (int userid)
+\item 
+bool {\bf setCurrentId} (int userid, int profid)
+\item 
+{\bf tIProfiles} $\ast$ {\bf get} ()
+\item 
+vector$<$ int $>$ $\ast$ {\bf get} (int userid, int profid)
+\item 
+int {\bf findLastUpdateInDays} (int userid, int profid)
+\item 
+int {\bf getLastUpdateInDays} (int t)
+\item 
+bool {\bf insert} (int userid, vector$<$ int $>$ $\ast$v, int \&profid)
+\item 
+bool {\bf remove} (int userid, int profid)
+\item 
+bool {\bf modify} (int userid, int profid)
+\item 
+void {\bf show} ()
+\item 
+int {\bf getAxis} (string s)
+\item 
+int {\bf getSize} (void)
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void {\bf deleteOld} ()
+\item 
+void {\bf cluster} ()
+\item 
+void {\bf setValue} (int userid, string property, string value)
+\item 
+void {\bf delVar} (int userid, string property)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+{\bf PresentationContext} $\ast$ {\bf pctx}
+\item 
+{\bf tIProfiles} $\ast$ {\bf iprofiles}
+\item 
+map$<$ int, int $>$ $\ast$ {\bf nextpid}
+\item 
+map$<$ int, int $>$ $\ast$ {\bf curProfile}
+\item 
+int {\bf profileSize}
+\item 
+map$<$ string, int $>$ {\bf s2i}
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static const int {\bf MAX\_\-PROFILE\_\-UNUSED\_\-TIME} = 365
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class \doxyref{ImplicitProfiles}{p.}{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles} Implicit user profiles \begin{Desc}
+\item[Author:]Marco Cristo \& Angelo Bittar \end{Desc}
+
+
+
+
+Definition at line 117 of file ImplicitProfiles.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!ImplicitProfiles@{ImplicitProfiles}}
+\index{ImplicitProfiles@{ImplicitProfiles}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf ImplicitProfiles} ({\bf PresentationContext} $\ast$ {\em pctx})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_790a70156c37408c0e89a2cdec46b56d}
+
+
+Get instance of (explicit) presentation context and corresponding context manager. Load users and profiles and create new implicit profiles for users that do not have one. Set current profile for each user and current implicit user profile. Clean up profile base by eliminating old profiles and clustering similar profiles. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pcxt}]pointer to Presentation Context \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!~ImplicitProfiles@{$\sim$ImplicitProfiles}}
+\index{~ImplicitProfiles@{$\sim$ImplicitProfiles}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf ImplicitProfiles} ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_22663948da38e25eeece596bb5570627}
+
+
+Destructor for implicit profiles 
+
+\subsection{Member Function Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!deleteOld@{deleteOld}}
+\index{deleteOld@{deleteOld}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void deleteOld ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_3b9bbdc794ffa241409a3bb32c733fb8}
+
+
+Delete profiles that have not been updated for a long time \index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!cluster@{cluster}}
+\index{cluster@{cluster}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void cluster ()\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_844bcda4813f21ce530f76e978bdb544}
+
+
+Merge very similar pofiles, if number of profiles is greater than a certain threshold \index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!setValue@{setValue}}
+\index{setValue@{setValue}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setValue (int {\em userid}, string {\em property}, string {\em value})\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_30d93d346ca37e7a309621a6b9f9d913}
+
+
+Set the value of an implicit profile property for a given user id, that is, property[userid] = value. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]integer user id \item[{\em property}]the string property to be set \item[{\em value}]the string value to be instantiated \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!delVar@{delVar}}
+\index{delVar@{delVar}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void delVar (int {\em userid}, string {\em property})\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_8917124bd2f1b88822b2635e86467646}
+
+
+Delete an implicit profile property for a given user id. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]the user id \item[{\em property}]the string property to be deleted \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!createProfile@{createProfile}}
+\index{createProfile@{createProfile}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void createProfile (int {\em uid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_818bb124a924868d3609af9aca55f2a8}
+
+
+Create a new implicit profile \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em uid}]user id \end{description}
+\end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!getCurrentId@{getCurrentId}}
+\index{getCurrentId@{getCurrentId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getCurrentId (int {\em userid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_bf722950d5e3ed3ab428c6fc6a87203c}
+
+
+Returns current profile id for giver user id \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int current profile id \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!setCurrentImplicitUserId@{setCurrentImplicitUserId}}
+\index{setCurrentImplicitUserId@{setCurrentImplicitUserId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setCurrentImplicitUserId (int {\em userid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_f8282268ae3e39c031b2119f3cdfd7a5}
+
+
+Returns true if current implicit user id was set \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!setCurrentId@{setCurrentId}}
+\index{setCurrentId@{setCurrentId}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool setCurrentId (int {\em userid}, int {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_0ef7a5384f01a505afe788965a76abb2}
+
+
+Returns true if current profile id was set \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \item[{\em profid}]profile id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!get@{get}}
+\index{get@{get}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf tIProfiles}$\ast$ get ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_4a45c2fe59d367890f5a47f8b961788e}
+
+
+Returns map profiles which stores the profiles of all users \begin{Desc}
+\item[Returns:]map$<$int, map$<$int, pair$<$time\_\-t, vector$<$int$>$$\ast$$>$ $>$$\ast$$>$$\ast$ pointer for all profiles \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!get@{get}}
+\index{get@{get}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ get (int {\em userid}, int {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_a8c5e6e6935bb13ae11d13b948d96857}
+
+
+Returns a profile vector of a user \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \item[{\em profid}]profile id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]vector$<$int$>$$\ast$ pointer for a feature vector which corresponds to the user profile \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!findLastUpdateInDays@{findLastUpdateInDays}}
+\index{findLastUpdateInDays@{findLastUpdateInDays}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int findLastUpdateInDays (int {\em userid}, int {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_f6c27aa1b5fc25fc86fe0d6d469f94dc}
+
+
+Find profile age in days \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \item[{\em profid}]profile id \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int profile age (note: if profile has 4.7 days, function will return 4 days) \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!getLastUpdateInDays@{getLastUpdateInDays}}
+\index{getLastUpdateInDays@{getLastUpdateInDays}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getLastUpdateInDays (int {\em t})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_d886bdadb69409e6513d982c3225e15c}
+
+
+Calculate profile age in days given a certain unix timestamp t \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em t}]timestamp \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int profile age (note: if profile has 4.7 days, function will return 4 days) \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!insert@{insert}}
+\index{insert@{insert}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool insert (int {\em userid}, vector$<$ int $>$ $\ast$ {\em v}, int \& {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_76d5d6d3915998a5d9f219194ae1e184}
+
+
+Returns true if profile profid of user userid given by vector v was inserted \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \item[{\em $\ast$v}]pointer to profile vector \item[{\em profid}]profile id given for inserted profile \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!remove@{remove}}
+\index{remove@{remove}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool remove (int {\em userid}, int {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_e3408a24af581339c7c6f12b94d0f115}
+
+
+Returns true if profile profid of user userid was deleted \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \item[{\em profid}]profile id of deleted profile \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!modify@{modify}}
+\index{modify@{modify}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool modify (int {\em userid}, int {\em profid})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_669270f13474ffbc075eb89b55536caf}
+
+
+Returns true if profile profid of user userid was modified \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em userid}]user id \item[{\em profid}]profile id of modified profile \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool value indicating if opeation was performed \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!show@{show}}
+\index{show@{show}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void show ()}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_4b148f40a95444d5669406b918ad2f52}
+
+
+Show implicit profiles -- debug assistance. \index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!getAxis@{getAxis}}
+\index{getAxis@{getAxis}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getAxis (string {\em s})}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_967310fe1f13010368caaafe49f9b705}
+
+
+Indicating the position of subgenre in the vector Get axis value associated with input data. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]name of the subGenre. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int value indicating the position of subgenre in the vector. \end{Desc}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!getSize@{getSize}}
+\index{getSize@{getSize}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int getSize (void)\hspace{0.3cm}{\tt  [inline]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_f92ffa1be8327b05eea16967164cbcde}
+
+
+Return the size that profiles have. Get profile size. \begin{Desc}
+\item[Returns:]int the size of profiles. \end{Desc}
+
+
+Definition at line 293 of file ImplicitProfiles.h.
+
+References ImplicitProfiles::profileSize.
+
+\subsection{Member Data Documentation}
+\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!pctx@{pctx}}
+\index{pctx@{pctx}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf PresentationContext}$\ast$ {\bf pctx}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_f7b4b50fbbf7df8416480bc884dd2909}
+
+
+! Pointer to Ginga presentation context. Allows for access to live context variables. 
+
+Definition at line 122 of file ImplicitProfiles.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!iprofiles@{iprofiles}}
+\index{iprofiles@{iprofiles}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf tIProfiles}$\ast$ {\bf iprofiles}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_7cc4f0d5a9ca6b03bad304041526efd9}
+
+
+! Implicit profiles. 
+
+Definition at line 125 of file ImplicitProfiles.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!nextpid@{nextpid}}
+\index{nextpid@{nextpid}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}map$<$int, int$>$$\ast$ {\bf nextpid}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_49cef86015dec7b2ecade0f841d3550f}
+
+
+! Next pid to be used for each user. 
+
+Definition at line 128 of file ImplicitProfiles.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!curProfile@{curProfile}}
+\index{curProfile@{curProfile}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}map$<$int, int$>$$\ast$ {\bf curProfile}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_2d9db6de508b5c29f31efdc6f068cf75}
+
+
+! Current profile for each user 
+
+Definition at line 131 of file ImplicitProfiles.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!profileSize@{profileSize}}
+\index{profileSize@{profileSize}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int {\bf profileSize}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_ed58005521299320e77a605e7d741c33}
+
+
+! Size (number of features) of the profile vector. 
+
+Definition at line 134 of file ImplicitProfiles.h.
+
+Referenced by ImplicitProfiles::getSize().\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!MAX_PROFILE_UNUSED_TIME@{MAX\_\-PROFILE\_\-UNUSED\_\-TIME}}
+\index{MAX_PROFILE_UNUSED_TIME@{MAX\_\-PROFILE\_\-UNUSED\_\-TIME}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}const int {\bf MAX\_\-PROFILE\_\-UNUSED\_\-TIME} = 365\hspace{0.3cm}{\tt  [static, private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_795b6fc7855b69271297a79c160789b7}
+
+
+! Maximum time the profile stays in database without being used. 
+
+Definition at line 138 of file ImplicitProfiles.h.\index{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}!s2i@{s2i}}
+\index{s2i@{s2i}!br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles@{br::pucrio::telemidia::ginga::core::contextmanager::ImplicitProfiles}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}map$<$string, int$>$ {\bf s2i}\hspace{0.3cm}{\tt  [private]}}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1core_1_1contextmanager_1_1ImplicitProfiles_8ba020d8fd601b323bae98361b35b453}
+
+
+! Map data to axis in internal vector representation 
+
+Definition at line 141 of file ImplicitProfiles.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingacc-cpp/gingacc-contextmanager/include/ImplicitProfiles.h\end{CompactItemize}

@@ -1,0 +1,107 @@
+#ifndef _LOCAL_AGENT_H_
+#define _LOCAL_AGENT_H_
+
+#include <ginga/recommender/agentlistener/AgentListener.h>
+#include <ginga/recommender/database/Database.h>
+#include <ginga/recommender/systemresource/SystemResource.h>
+
+#include "system/io/IInputManager.h"
+using namespace ::br::pucrio::telemidia::ginga::core::system::io;
+
+#include "thread/Thread.h"
+using namespace ::br::pucrio::telemidia::ginga::recommender::thread;
+
+#include <ginga/recommender/utils/Utils.h>
+using namespace ::br::ufscar::lince::ginga::recommender::util;
+
+#include "User.h"
+
+#include <vector>
+
+using namespace std;
+
+namespace br {
+    namespace ufscar {
+        namespace lince {
+            namespace ginga {
+                namespace recommender {
+                    class LocalAgent: public Thread {
+                    public:
+
+						/**
+	                     * Construtor vazio
+		                 */
+                        LocalAgent();
+
+                        /**
+                         * Destrutor.
+                         */
+                        ~LocalAgent();
+                        
+                        /**
+						 * Inicializa parâmetros necessários da classe.
+                         * @param DB banco de dados onde serão armazendas as informações coletadas.
+                         * @param Prop informa quais tipos de interação devem ser coletadas: 1 - Canal; 10 - Volume; 100 - NCL 
+                         * (exemplo: 101 coleta informações de interações com canal e com aplicações NCL.
+                         */
+                        void initialize(Database* DB, int prop);
+                        
+						/**
+	                     * Retorna a instancia única da classe
+		                 */
+                        LocalAgent* getInstance();
+
+                        /**
+                         * Retorna o banco de dados onde são armazendas as informações coletadas.
+                         * @return banco de dados onde são armazendas as informações coletadas.
+                         */
+                        Database* getDatabase();
+
+                        /**
+                         * Inicia a execução do LocalAgent.
+                         * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                         */
+                        void start();
+
+                        /**
+                         * Pára a execução do LocalAgent.
+                         * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                         */
+                        bool stop();
+
+                        /**
+                         * Adiciona um AgentListener ao LocalAgent.
+                         * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                         */
+                        bool addAgentListener(AgentListener* listener);
+
+                        /**
+                         * Remove um AgentListener do LocalAgent.
+                         * @return true, caso a operação seja executada com sucesso, ou false, caso contrário.
+                         */
+                        bool removeAgentListener(AgentListener* listener);
+                        
+                        void run();
+                        
+                        bool getEstado();
+                        
+                        void setEstado(bool estado);
+                        
+                        void setInfo(User* info);
+
+                    private:
+                        vector<AgentListener*>* listeners;
+                        Database* db;
+                        bool channel, volume, ncl;
+                        bool estado; // "true": LocalAgent ativado | "false": LocalAgent desativado
+                        User* info;
+                        static LocalAgent* _instance;
+                    };
+                }
+            }
+        }
+    }
+}
+
+#endif
+

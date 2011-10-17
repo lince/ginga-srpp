@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{FormatterFocusManager\n|- focusTable\l- focusSequence\l- isHandler\l- currentFocus\l- objectToSelect\l- selectedObject\l- defaultFocusBorderColor\l- defaultFocusBorderWidth\l- defaultSelBorderColor\l- playerManager\l- parentManager\l- multiDevice\l- converter\l- mutexFocus\l- mutexTable\l- im\l|+ FormatterFocusManager()\l+ ~FormatterFocusManager()\l+ setParent()\l+ setKeyHandler()\l+ setKeyMaster()\l+ setStandByState()\l+ setFocus()\l+ showObject()\l+ hideObject()\l+ setDefaultFocusBorderColor()\l+ setDefaultFocusBorderWidth()\l+ setDefaultSelBorderColor()\l+ userEventReceived()\l- setHandlingObjects()\l- setFocus()\l- recoveryDefaultState()\l- getObjectFromFocusIndex()\l- insertObject()\l- removeObject()\l- keyCodeOk()\l- keyCodeBack()\l- enterSelection()\l- exitSelection()\l- registerNavigationKeys()\l- registerBackKeys()\l- unregister()\l- changeSettingState()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize=10,style="solid",arrowtail="empty"];
+  Node2 [label="{IInputEventListener\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

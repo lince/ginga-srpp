@@ -1,0 +1,5 @@
+lru.o lru.o: lru.c cfg.h config.h
+
+cfg.h:
+
+config.h:

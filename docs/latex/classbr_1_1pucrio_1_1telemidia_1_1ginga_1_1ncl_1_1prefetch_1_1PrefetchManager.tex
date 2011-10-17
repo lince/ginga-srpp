@@ -1,0 +1,119 @@
+\section{PrefetchManager Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager}\index{br::pucrio::telemidia::ginga::ncl::prefetch::PrefetchManager@{br::pucrio::telemidia::ginga::ncl::prefetch::PrefetchManager}}
+Inheritance diagram for PrefetchManager:Collaboration diagram for PrefetchManager:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{release} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_23b477d0e2d399f75d585d154c346591}
+
+\item 
+void \textbf{releaseContents} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_57fd02f79913ae866bd4fe3e7298d2cb}
+
+\item 
+string \textbf{createDocumentPrefetcher} (string remoteDocUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_e0d3648c57a84fe11efc44c2dce98f17}
+
+\item 
+string \textbf{createSourcePrefetcher} (string localDocUri, string srcUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_69392c1b1778beabfde72a17300a1fb2}
+
+\item 
+bool \textbf{hasIChannel} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_d6b5ba3e548a3f14c03593f7e45c52ed}
+
+\item 
+bool \textbf{hasRemoteLocation} (string localUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_7912244e19271bd578454632d910b9da}
+
+\item 
+string \textbf{getRemoteLocation} (string localUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_663203b2fef27841f3a8e984ef81a091}
+
+\item 
+string \textbf{getLocalRoot} (string remoteUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_c5187a62a514f26103b9abe2ec9e27aa}
+
+\item 
+void \textbf{setSynchPrefetch} (bool {\bf synch})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_45cfe7df2fcc711f7581e91458afa9a3}
+
+\item 
+void \textbf{getScheduledContent} (string clientUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_cee12527791e503005dc770c4dd41326}
+
+\item 
+void \textbf{getScheduledContents} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_97dacec09fb088b090f09a7a226952de}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static {\bf IPrefetchManager} $\ast$ \textbf{getInstance} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_a1fd1c2b4416e0c387c61f84410a0d65}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{createDirectory} (string newDir)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_8488793a46c9a84265711e09094dd12f}
+
+\item 
+void \textbf{getContent} (string remoteUri, string localUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_9b5e7aa874137635f54008d16a09c86d}
+
+\item 
+void \textbf{scheduleContent} (string remoteUri, string localUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_1135c6b6f10f6c5147df5f18d78d4669}
+
+\item 
+void {\bf receiveCode} (long respCode)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_8c3dc204c3ecdf08a78fbf98290034c7}
+
+\item 
+void {\bf receiveDataStream} (char $\ast$buffer, int size)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_35cb545927a7fdd47a4f6694dd8af8b8}
+
+\item 
+void \textbf{receiveDataPipe} (int fd, int size)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_12edc1a6825db40670b0badba388343b}
+
+\item 
+void {\bf downloadCompleted} (const char $\ast$localUri)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_cd7dd8570d54efa5d8eea180f1608c99}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+map$<$ string, string $>$ $\ast$ {\bf localToRemoteUris}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_efb291bff7c6ae3546e76d2a325732b9}
+
+\item 
+map$<$ string, string $>$ $\ast$ {\bf urisToLocalRoots}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_85bc3c626feec53a5631de355ecfb586}
+
+\item 
+set$<$ string $>$ $\ast$ {\bf scheduledRemoteUris}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_8550f13f18d1ef5662e8736f97e976b5}
+
+\item 
+set$<$ string $>$ $\ast$ {\bf scheduledLocalUris}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_8e444c0b30f71ca8068e23e185b90476}
+
+\item 
+IInteractiveChannelManager $\ast$ {\bf icm}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_0031ba91fa2b40477855eacfea1b1a94}
+
+\item 
+string {\bf prefetchRoot}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_000fa6824d9fe0f360fd380235350e95}
+
+\item 
+bool {\bf synch}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_a13c3210c751d3d99a12934d2588a2cc}
+
+\item 
+int {\bf kbytes}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_0a49bb44507005527dd7849fee99c1ce}
+
+\item 
+int {\bf filesDown}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_267e78dc8258b190326a7667d09ff3d1}
+
+\item 
+int {\bf filesSched}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_88c520723bc62b78f29060af6120a780}
+
+\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static {\bf IPrefetchManager} $\ast$ {\bf \_\-instance}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1prefetch_1_1PrefetchManager_b1a1f41f8676435af29346541918d008}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 66 of file PrefetchManager.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/prefetch/PrefetchManager.h\end{CompactItemize}

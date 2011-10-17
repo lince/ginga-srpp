@@ -1,0 +1,145 @@
+\section{Database Class Reference}
+\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database}\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+Collaboration diagram for Database:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+{\bf Database} (const char $\ast${\bf User}, const char $\ast$Password, const char $\ast${\bf Database})
+\item 
+{\bf $\sim$Database} ()
+\item 
+bool {\bf createDatabase} ()
+\item 
+bool {\bf deleteDatabase} ()
+\item 
+bool {\bf closeDatabase} ()
+\item 
+void {\bf setMaxSize} (long MaxSize)
+\item 
+long {\bf getMaxSize} ()
+\item 
+long {\bf getCurrentSize} ()
+\item 
+bool {\bf query} (const char $\ast$sql)
+\item 
+bool {\bf query} (const char $\ast$sql, vector$<$ string $>$ $\ast$head, vector$<$ string $>$ $\ast$data)
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+string {\bf user}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_e315dc7095b2ab26df1efb90a58f6345}
+
+\item 
+string {\bf password}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_c0d6a26a6e1c25921ff65ba7790ee92d}
+
+\item 
+string {\bf database}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_12c37a680fe5182318595bf9889ff04f}
+
+\item 
+long {\bf maxSize}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_879d379d5a6855dfc76f9630ef525b51}
+
+\item 
+sqlite3 $\ast$ {\bf db}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_d6e663497d2c934364b3bcf07496b30b}
+
+\begin{CompactList}\small\item\em Abstração para o banco de dados sqlite. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 37 of file Database.h.
+
+\subsection{Constructor \& Destructor Documentation}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!Database@{Database}}
+\index{Database@{Database}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Database} (const char $\ast$ {\em User}, const char $\ast$ {\em Password}, const char $\ast$ {\em Database})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_0355c28214a19e9165c87dc84010cdcd}
+
+
+Construtor. Devolve uma instância de \doxyref{Database}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database}. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em user}]nome de usuário do banco de dados. \item[{\em password}]senha do banco de dados. \item[{\em database}]nome do banco de dados para conexão ou criação. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!~Database@{$\sim$Database}}
+\index{~Database@{$\sim$Database}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf Database} ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_342c80a368f70212c6a7b8c21b1f8648}
+
+
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!createDatabase@{createDatabase}}
+\index{createDatabase@{createDatabase}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool createDatabase ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_d35a860e0d80ec9afb1ce5e95b3751fd}
+
+
+Cria o banco de dados com o nome, usuário e senha especificados no construtor. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!deleteDatabase@{deleteDatabase}}
+\index{deleteDatabase@{deleteDatabase}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool deleteDatabase ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_349615cda647d8579e9b8aa8a60ce9b4}
+
+
+Apaga o banco de dados com o nome, usuário e senha especificados no construtor. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!closeDatabase@{closeDatabase}}
+\index{closeDatabase@{closeDatabase}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool closeDatabase ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_3b3db35f455f0c65b7e89d397108cb4e}
+
+
+Fecha a conexão com o banco de dados especificado no construtor. \begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!setMaxSize@{setMaxSize}}
+\index{setMaxSize@{setMaxSize}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void setMaxSize (long {\em MaxSize})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_794c3c14690922be523685ad153fa19e}
+
+
+Configura o tamanho máximo que o banco de dados poderá ocupar no disco. Deve ser acionado antes da chamada do método \doxyref{createDatabase()}{p.}{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_d35a860e0d80ec9afb1ce5e95b3751fd}. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em maxSize}]tamanho máximo (em bytes) que o banco de dados poderá ocupar no disco. \end{description}
+\end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!getMaxSize@{getMaxSize}}
+\index{getMaxSize@{getMaxSize}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long getMaxSize ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_d80dbcfadf1ea56de8511ec4fbb593a6}
+
+
+Retorna o tamanho máximo que o banco de dados pode ocupar no disco. \begin{Desc}
+\item[Returns:]tamanho máximo (em bytes) que o banco de dados pode ocupar no disco. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!getCurrentSize@{getCurrentSize}}
+\index{getCurrentSize@{getCurrentSize}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}long getCurrentSize ()}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_68e0d6c44bbed2596aa65b9c302caca4}
+
+
+Retorna o tamanho atual do banco de dados no disco. \begin{Desc}
+\item[Returns:]tamanho atual (em bytes) do banco de dados no disco. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!query@{query}}
+\index{query@{query}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool query (const char $\ast$ {\em sql})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_ab3bab26e58949344412ca0321f8f055}
+
+
+Executa um comando SQL. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sql}]comando SQL. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+\index{br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}!query@{query}}
+\index{query@{query}!br::ufscar::lince::ginga::recommender::Database@{br::ufscar::lince::ginga::recommender::Database}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}bool query (const char $\ast$ {\em sql}, vector$<$ string $>$ $\ast$ {\em head}, vector$<$ string $>$ $\ast$ {\em data})}\label{classbr_1_1ufscar_1_1lince_1_1ginga_1_1recommender_1_1Database_16e7c15fba39f1af16ca09064acaf670}
+
+
+Executa um comando SQL. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sql}]comando SQL. \item[{\em head}]variável para retorno do cabeçalho da consulta SQL. \item[{\em data}]variável para retorno dos dados da consulta SQL. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, caso a operação seja executada com sucesso, ou false, caso contrário. \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/Database/include/Database.h\end{CompactItemize}

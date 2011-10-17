@@ -1,0 +1,67 @@
+\section{Input\_\-Output\_\-Manager Class Reference}
+\label{classInput__Output__Manager}\index{Input_Output_Manager@{Input\_\-Output\_\-Manager}}
+{\tt \#include $<$Input\_\-Output\_\-Manager.hpp$>$}
+
+Inheritance diagram for Input\_\-Output\_\-Manager:Collaboration diagram for Input\_\-Output\_\-Manager:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{Input\_\-Output\_\-Manager} (ifstream \&{\bf basket\_\-file}, const char $\ast$output\_\-file\_\-name)\label{classInput__Output__Manager_1e5c7811f3c8a9996d54451d411713ae}
+
+\item 
+int {\bf read\_\-in\_\-a\_\-line} (set$<$ itemtype $>$ \&basket)\label{classInput__Output__Manager_cf1d636c031a221338fffd430a2f09f4}
+
+\begin{CompactList}\small\item\em Realizar a leitura de uma linha do arquivo de entrada (uma transação). \item\end{CompactList}\item 
+unsigned long {\bf find\_\-frequent\_\-items} (const double min\_\-supp, vector$<$ unsigned long $>$ \&support\_\-of\_\-items)\label{classInput__Output__Manager_d1e82b140c9666e428c27eec6a270d64}
+
+\begin{CompactList}\small\item\em Determina a frequencia de cada item. \item\end{CompactList}\item 
+void {\bf basket\_\-recode} (const set$<$ itemtype $>$ \&original\_\-basket, vector$<$ itemtype $>$ \&new\_\-basket)\label{classInput__Output__Manager_94e6ee10dde867a1b9b63b18913e0a4f}
+
+\begin{CompactList}\small\item\em Criar um arquivo temporário com os itemsets mais frequentes. \item\end{CompactList}\item 
+void {\bf write\_\-out\_\-basket} (const set$<$ itemtype $>$ \&itemset)\label{classInput__Output__Manager_8e278d77f2e21a833f6c4d3c4b2cba1f}
+
+\begin{CompactList}\small\item\em Escreve um itemset para um arquivo. \item\end{CompactList}\item 
+void {\bf write\_\-out\_\-basket\_\-and\_\-counter} (const set$<$ itemtype $>$ \&itemset, const unsigned long counter)\label{classInput__Output__Manager_460117062808432662d5e7e79325d03f}
+
+\begin{CompactList}\small\item\em Escreve o itemset e seu contador de frequencia para um arquivo. \item\end{CompactList}\item 
+void \textbf{rewind} ()\label{classInput__Output__Manager_b8734e666421c9fe3b6380a818c6c727}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+ifstream \& {\bf basket\_\-file}\label{classInput__Output__Manager_e362f0acf7cbba2362139356ef51ce09}
+
+\begin{CompactList}\small\item\em Arquivo que contém as transações. Arquivo de entrada do algoritmo. \item\end{CompactList}\item 
+vector$<$ itemtype $>$ {\bf new\_\-code}
+\item 
+vector$<$ itemtype $>$ {\bf new\_\-code\_\-inverse}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Essa classe é responsável pelas operações de entrada e saída (I/O Operations) 
+
+
+
+Definition at line 78 of file Input\_\-Output\_\-Manager.hpp.
+
+\subsection{Member Data Documentation}
+\index{Input_Output_Manager@{Input\_\-Output\_\-Manager}!new_code@{new\_\-code}}
+\index{new_code@{new\_\-code}!Input_Output_Manager@{Input\_\-Output\_\-Manager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$itemtype$>$ {\bf new\_\-code}\hspace{0.3cm}{\tt  [private]}}\label{classInput__Output__Manager_4b455899d5a99cf9f5f68e6cad31dda9}
+
+
+Vector que representa a frequência de cada item. 
+
+Definition at line 115 of file Input\_\-Output\_\-Manager.hpp.\index{Input_Output_Manager@{Input\_\-Output\_\-Manager}!new_code_inverse@{new\_\-code\_\-inverse}}
+\index{new_code_inverse@{new\_\-code\_\-inverse}!Input_Output_Manager@{Input\_\-Output\_\-Manager}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}vector$<$itemtype$>$ {\bf new\_\-code\_\-inverse}\hspace{0.3cm}{\tt  [private]}}\label{classInput__Output__Manager_8f17854f249d0dc72d69bdb7e469e16f}
+
+
+O inverso de new\_\-code vector. 
+
+Definition at line 120 of file Input\_\-Output\_\-Manager.hpp.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Recommender/MiningAlgorithm/include/apriori23/Input\_\-Output\_\-Manager.hpp\end{CompactItemize}

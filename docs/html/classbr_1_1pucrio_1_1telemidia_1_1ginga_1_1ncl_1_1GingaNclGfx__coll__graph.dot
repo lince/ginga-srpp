@@ -1,0 +1,14 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{GingaNclGfx\n|- w\l- h\l- animes\l- bg\l- top\l- bottom\l|+ show()\l+ release()\l+ showTop()\l+ showBottom()\l- roll()\l- createAnimePlayer()\l- showText()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="animes",arrowtail="open",fontname="FreeSans.ttf"];
+  Node2 [label="{vector\< AnimePlayer * \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node2 [dir=back,color="orange",fontsize=10,style="dashed",label="\< AnimePlayer * \>",fontname="FreeSans.ttf"];
+  Node3 [label="{vector\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="bg\nbottom\ntop",arrowtail="open",fontname="FreeSans.ttf"];
+  Node4 [label="{static IWindow *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="w\nh",arrowtail="open",fontname="FreeSans.ttf"];
+  Node5 [label="{static int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

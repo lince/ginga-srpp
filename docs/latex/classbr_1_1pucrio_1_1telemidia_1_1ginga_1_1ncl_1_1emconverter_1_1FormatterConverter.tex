@@ -1,0 +1,146 @@
+\section{FormatterConverter Class Reference}
+\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter}\index{br::pucrio::telemidia::ginga::ncl::emconverter::FormatterConverter@{br::pucrio::telemidia::ginga::ncl::emconverter::FormatterConverter}}
+Inheritance diagram for FormatterConverter:Collaboration diagram for FormatterConverter:\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\textbf{FormatterConverter} (RuleAdapter $\ast${\bf ruleAdapter})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_512d39d67168a29d4f4fef63e609b4ce}
+
+\item 
+void \textbf{stopListening} (void $\ast$event)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_30fe02416806f60f10cfcc8e42cbefb3}
+
+\item 
+set$<$ ExecutionObject $\ast$ $>$ $\ast$ \textbf{getRunningObjects} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_35b87aba248cb45d5a865463c0f67a54}
+
+\item 
+void \textbf{setHandlingStatus} (bool hanling)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_5de48b8f7342a6c209987a8493283779}
+
+\item 
+ExecutionObject $\ast$ \textbf{getObjectFromNodeId} (string id)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_de2114a15bc1adea59e0de11075bfdb5}
+
+\item 
+void \textbf{setScheduler} ({\bf FormatterScheduler} $\ast${\bf scheduler})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_d08c528e926dd20eda4d1b5931d2d585}
+
+\item 
+void \textbf{setDepthLevel} (int level)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_6cc1df8863810a31889fd61256f04076}
+
+\item 
+int \textbf{getDepthLevel} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_ac5a7abaf1bd5e762c9b23ebd5b562ed}
+
+\item 
+void \textbf{checkGradSameInstance} (set$<$ ReferNode $\ast$ $>$ $\ast$gradSame, ExecutionObject $\ast$object)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_d7afdbc4c6d9d232f74932fe8032f602}
+
+\item 
+CompositeExecutionObject $\ast$ \textbf{addSameInstance} (ExecutionObject $\ast$executionObject, ReferNode $\ast$referNode)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_2cbef3fea16a4351e6564deef0d8bb52}
+
+\item 
+void \textbf{compileExecutionObjectLinks} (ExecutionObject $\ast$executionObject, int {\bf depthLevel})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_bcdc5fb3b216292279ced203cadd5297}
+
+\item 
+ExecutionObject $\ast$ \textbf{getExecutionObject} (NodeNesting $\ast$perspective, GenericDescriptor $\ast$descriptor, int {\bf depthLevel})  throw (ObjectCreationForbiddenException$\ast$)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_f725abf9aa7e08f31b0b54b5fce47e2a}
+
+\item 
+set$<$ ExecutionObject $\ast$ $>$ $\ast$ \textbf{getSettingNodeObjects} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_57493e624442dff0b5b14de5bb08003b}
+
+\item 
+FormatterEvent $\ast$ \textbf{getEvent} (ExecutionObject $\ast$executionObject, InterfacePoint $\ast$interfacePoint, int ncmEventType, string key)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_6c731b841843e6f7465fa7bc442c0954}
+
+\item 
+void \textbf{compileExecutionObjectLinks} (ExecutionObject $\ast$executionObject, Node $\ast$dataObject, CompositeExecutionObject $\ast$parentObject, int {\bf depthLevel})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_953da82e9b57653d1ad8a8dde1f77531}
+
+\item 
+ExecutionObject $\ast$ \textbf{processExecutionObjectSwitch} (ExecutionObjectSwitch $\ast$switchObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_7266d8edd850ca9ae602ddd7e01e663c}
+
+\item 
+FormatterEvent $\ast$ \textbf{insertContext} (NodeNesting $\ast$contextPerspective, Port $\ast$port)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_6542792f04ee69e171c20d9d40a5a04e}
+
+\item 
+bool \textbf{removeExecutionObject} (ExecutionObject $\ast$executionObject, ReferNode $\ast$referNode)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_9be863f5cf21361309d32df7de6aa49e}
+
+\item 
+bool \textbf{removeExecutionObject} (ExecutionObject $\ast$executionObject)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_efb3c864ce4b4110be243f718dad6228}
+
+\item 
+ExecutionObject $\ast$ \textbf{hasExecutionObject} (Node $\ast$node, GenericDescriptor $\ast$descriptor)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_1994a285cccbfa1d720b7d7b50ed3d6e}
+
+\item 
+FormatterCausalLink $\ast$ \textbf{addCausalLink} (ContextNode $\ast$context, CausalLink $\ast$link)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_5f5adc424d16c4e9e293bbde440eaca8}
+
+\item 
+void \textbf{eventStateChanged} (void $\ast$someEvent, short transition, short previousState)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_e3c1ec29e93bffe641750e6209a8b2b8}
+
+\item 
+short \textbf{getPriorityType} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_ae7d2f7d0ac4466813deee19bbea7ebe}
+
+\item 
+void \textbf{reset} ()\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_d20897c5c8bd47f5d4005989bead0e55}
+
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static CascadingDescriptor $\ast$ \textbf{getCascadingDescriptor} (NodeNesting $\ast$nodePerspective, GenericDescriptor $\ast$descriptor)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_a508bc9da22af793e3d9201dfa99a4f1}
+
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{addExecutionObject} (ExecutionObject $\ast$executionObject, CompositeExecutionObject $\ast$parentObject, int {\bf depthLevel})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_cc6dd77e10f65272d45e0f428620839c}
+
+\item 
+CompositeExecutionObject $\ast$ \textbf{getParentExecutionObject} (NodeNesting $\ast$perspective, int {\bf depthLevel})  throw (ObjectCreationForbiddenException$\ast$)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_2dd5e7497e0dc915727f1029e8e68a9d}
+
+\item 
+void \textbf{createMultichannelObject} (CompositeExecutionObject $\ast$compositeObject, int {\bf depthLevel})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_10994b3a8b7c87abc147236cade79b88}
+
+\item 
+ExecutionObject $\ast$ \textbf{createExecutionObject} (string id, NodeNesting $\ast$perspective, CascadingDescriptor $\ast$descriptor, int {\bf depthLevel})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_1f0f41771b8690a91283dfd1bdec1eaf}
+
+\item 
+void \textbf{setActionListener} (LinkAction $\ast$action)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_b97d44d6b583b94c53c0e57a726b52ac}
+
+\item 
+void \textbf{resolveSwitchEvents} (ExecutionObjectSwitch $\ast$switchObject, int {\bf depthLevel})\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_e7d678029aac009baa5287f719f5eb81}
+
+\item 
+FormatterEvent $\ast$ \textbf{insertNode} (NodeNesting $\ast$perspective, InterfacePoint $\ast$interfacePoint, GenericDescriptor $\ast$descriptor)\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_6b8e874fccaedafa95f5d1e05519f167}
+
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+int {\bf depthLevel}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_51e6397c8c34598d3476e7ce3c2b97df}
+
+\item 
+map$<$ string, ExecutionObject $\ast$ $>$ $\ast$ {\bf executionObjects}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_17505c7424ec3c69fb7edcde42d0f575}
+
+\item 
+set$<$ ExecutionObject $\ast$ $>$ $\ast$ {\bf settingObjects}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_7fde2cd7629692b40a67604b76177b4a}
+
+\item 
+void $\ast$ {\bf linkCompiler}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_cb3d6e0d031513761d98b82980040aeb}
+
+\item 
+{\bf FormatterScheduler} $\ast$ {\bf scheduler}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_fb7aae6c31924e21d6df13d25c5f2aad}
+
+\item 
+RuleAdapter $\ast$ {\bf ruleAdapter}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_50d33e558d7649f9855c50bfdafee9ff}
+
+\item 
+pthread\_\-mutex\_\-t {\bf objectsMutex}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_ef5575049c2fa98c56bb36d1c3e0a0b5}
+
+\item 
+bool {\bf handling}\label{classbr_1_1pucrio_1_1telemidia_1_1ginga_1_1ncl_1_1emconverter_1_1FormatterConverter_3d1feff49c5f556e3c4adb737126a9c3}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+Definition at line 131 of file FormatterConverter.h.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+gingancl-cpp/include/emconverter/FormatterConverter.h\end{CompactItemize}

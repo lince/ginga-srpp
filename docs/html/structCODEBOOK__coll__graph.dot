@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  Node1 [label="{CODEBOOK\n|+ Versionstr\l+ BlockSizeX\l+ BlockSizeY\l+ CodebookSize\l+ TotalFreq\l+ BytesPerElement\l+ MinValue\l+ MaxValue\l+ Preprocessing\l+ GenerationMethod\l+ Book\l+ AllocatedSize\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="Versionstr\nGenerationMethod",arrowtail="open",fontname="FreeSans.ttf"];
+  Node2 [label="{char\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="MaxValue\nTotalFreq\nBytesPerElement\nBlockSizeX\nAllocatedSize\nBlockSizeY\nPreprocessing\nCodebookSize\nMinValue",arrowtail="open",fontname="FreeSans.ttf"];
+  Node3 [label="{int\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="Book",arrowtail="open",fontname="FreeSans.ttf"];
+  Node4 [label="{BOOKNODE\n|+ vector\l+ vmean\l+ freq\l+ name\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structBOOKNODE.html"];
+  Node5 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="vector",arrowtail="open",fontname="FreeSans.ttf"];
+  Node5 [label="{VECTORTYPE\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="vmean",arrowtail="open",fontname="FreeSans.ttf"];
+  Node6 [label="{VECTORELEMENT\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="freq",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 -> Node4 [dir=back,color="darkorchid3",fontsize=10,style="dashed",label="name",arrowtail="open",fontname="FreeSans.ttf"];
+  Node7 [label="{char *\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}
